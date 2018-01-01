@@ -1,0 +1,491 @@
+<html>
+<head>
+  <title>Grady Berry Ward</title>
+  <meta name="viewport" content="width=device-width">
+<style>
+.for-screen-readers {
+  position: fixed;
+  opacity: 0;
+  z-index: -1;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  font-weight: 800;
+  text-align: center;
+}
+
+.width-wrapper {
+  width: Calc(100% - 2rem);
+  max-width: 52rem;
+  min-width: Calc(320px - 2rem);
+  margin: 0 1rem 1rem 1rem;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.width-wrapper h1,
+.width-wrapper h2,
+.width-wrapper nav>a {
+  transition: opacity .5s;
+  opacity: 1;
+}
+
+.pre-transition h1,
+.pre-transition h2,
+.pre-transition nav>a {
+  opacity: 0;
+}
+
+.top {
+  height: Calc(100vh - 27rem);
+  position: relative;
+  min-height: 9rem;
+}
+
+.name-wrapper {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  height: 3rem;
+  width: Calc(50% + 4rem);
+  max-width: Calc(100% - 5rem);
+}
+
+.name-wrapper h1 {
+  margin: 0;
+  font-size: 3rem;
+  transition-delay: Calc(6 * .5s);
+}
+
+.bottom {
+  position: relative;
+}
+
+.title-wrapper {
+  position: absolute;
+  width: 50%;
+  max-width: 16rem;
+  min-width: 12rem;
+  height: 6rem;
+  top: 0;
+  right: 0;
+}
+
+.title-wrapper h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1.5rem;
+  transition-delay: Calc(4 * .5s);
+}
+
+nav.menu {
+  width: 10rem;
+  font-size: 1.5rem;
+  margin-left: Calc(50% - 10rem);
+  padding-left: 5rem;
+  padding-top: 5.5rem;
+  padding-bottom: 4.5rem;
+}
+
+nav>a {
+  display: block;
+  height: 4rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  line-height: 4rem;
+}
+
+nav>a:nth-of-type(1) {
+  transition-delay: Calc(9 * .5s);
+}
+
+nav>a:nth-of-type(2) {
+  transition-delay: Calc(10 * .5s);
+}
+
+nav>a:nth-of-type(3) {
+  transition-delay: Calc(11 * .5s);
+}
+
+nav>a:nth-of-type(4) {
+  transition-delay: Calc(11 * .5s);
+}
+
+nav>a:hover {
+  padding-left: 1rem;
+  border-right: 1rem solid;
+}
+
+* {
+  color: #272727;
+}
+
+.black {
+  background: #272727;
+}
+
+.red {
+  background: #d20909;
+}
+
+.yellow {
+  background: #eac40a;
+}
+
+.blue {
+  background: #1444b1;
+}
+
+.black,
+.red,
+.blue,
+.yellow {
+  display: block;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  transition: width .5s linear, height .5s linear;
+}
+
+.black.a {
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition-delay: Calc(1 * .5s);
+}
+
+.black.b {
+  width: Calc(100% - 1rem);
+  left: 1rem;
+  bottom: 0;
+  transition-delay: Calc(2 * .5s);
+}
+
+.black.c {
+  height: 100%;
+  top: 0;
+  right: 0;
+  transition-delay: Calc(3 * .5s);
+}
+
+.black.d {
+  width: Calc(50% + 4rem);
+  top: 5rem;
+  right: 1rem;
+  transition-delay: Calc(4 * .5s);
+}
+
+.black.e {
+  height: Calc(100% - 10rem);
+  top: 6rem;
+  transition-delay: Calc(5 * .5s);
+}
+
+.black.f {
+  width: 11rem;
+  left: Calc(50% - 4rem);
+  bottom: 4rem;
+  transition-delay: Calc(6 * .5s);
+}
+
+.black.g {
+  top: 9rem;
+  width: 9rem;
+  left: Calc(50% - 4rem);
+  transition-delay: Calc(9 * .5s);
+}
+
+.black.h {
+  width: 9rem;
+  top: 13rem;
+  left: Calc(50% - 4rem);
+  transition-delay: Calc(10 * .5s);
+}
+
+.black.i {
+  width: 9rem;
+  top: 17rem;
+  left: Calc(50% - 4rem);
+  transition-delay: Calc(11 * .5s);
+}
+
+.black.j {
+  height: 10rem;
+  right: Calc(50% - 7rem);
+  bottom: 5rem;
+  transition-delay: Calc(7 * .5s);
+}
+
+.black.k {
+  width: Calc(50% - 7rem);
+  bottom: 14rem;
+  left: Calc(50% + 7rem);
+  transition-delay: Calc(8 * .5s);
+}
+
+.red.a {
+  height: Calc(100% - 2rem);
+  right: 0;
+  bottom: 1rem;
+  transition-delay: Calc(3 * .5s);
+}
+
+.red.b {
+  width: Calc(100% - 3rem);
+  right: 1rem;
+  top: 1rem;
+  transition-delay: Calc(4 * .5s);
+}
+
+.red.c {
+  top: 2rem;
+  left: 2rem;
+  height: Calc(100% - 7rem);
+  transition-delay: Calc(5 * .5s);
+}
+
+.red.d {
+  width: Calc(100% - 2rem);
+  top: 0;
+  left: 2rem;
+  transition-delay: Calc(6 * .5s);
+}
+
+.red.e {
+  height: Calc(100% - 1.5rem);
+  top: 1rem;
+  right: 0;
+  transition-delay: Calc(7 * .5s);
+}
+
+.red.f {
+  right: Calc(50% - 7rem);
+  top: 6.5rem;
+  height: 3.5rem;
+  transition-delay: Calc(9 * .5s);
+}
+
+.red.g {
+  top: 9rem;
+  left: Calc(50% + 7rem);
+  width: Calc(50% - 7rem);
+  transition-delay: Calc(10 * .5s);
+}
+
+.yellow.a {
+  height: 2rem;
+  bottom: 1rem;
+  left: 0;
+  transition-delay: Calc(5 * .5s);
+}
+
+.yellow.b {
+  width: Calc(50% - 2rem);
+  top: 3rem;
+  min-width: Calc(100% - 18rem);
+  max-width: Calc(100% - 14rem);
+  left: 2rem;
+  transition-delay: Calc(6 * .5s);
+}
+
+.yellow.c {
+  height: Calc(100% - 6rem);
+  top: 4rem;
+  left: 2rem;
+  transition-delay: Calc(7 * .5s);
+}
+
+.yellow.d {
+  width: Calc(50% + 6rem);
+  bottom: 2rem;
+  left: 3rem;
+  transition-delay: Calc(8 * .5s);
+}
+
+.yellow.e {
+  height: Calc(100% - 16rem);
+  bottom: 3rem;
+  right: Calc(50% - 9rem);
+  transition-delay: Calc(9 * .5s);
+}
+
+.yellow.f {
+  width: Calc(50% - 9rem);
+  top: 13rem;
+  left: Calc(50% + 9rem);
+  transition-delay: Calc(10 * .5s);
+}
+
+.blue.a {
+  height: 2rem;
+  top: 0;
+  left: 0;
+  transition-delay: Calc(5 * .5s);
+}
+
+.blue.b {
+  max-width: Calc(100% - 12rem);
+  min-width: Calc(100% - 16rem);
+  width: 50%;
+  top: 1rem;
+  transition-delay: Calc(6 * .5s);
+}
+
+.blue.c {
+  height: Calc(100% - 2rem);
+  top: 2rem;
+  left: 0;
+  transition-delay: Calc(7 * .5s);
+}
+
+.blue.d {
+  width: Calc(50% + 10rem);
+  bottom: 0;
+  left: 1rem;
+  transition-delay: Calc(8 * .5s);
+}
+
+.blue.e {
+  height: 8rem;
+  left: Calc(50% + 10rem);
+  bottom: 1rem;
+  transition-delay: Calc(9 * .5s);
+}
+
+.blue.f {
+  width: Calc(50% - 11rem);
+  left: Calc(50% + 11rem);
+  bottom: 8rem;
+  transition-delay: Calc(10 * .5s);
+}
+
+.pre-transition .black.a,
+.pre-transition .black.c,
+.pre-transition .black.e,
+.pre-transition .black.j,
+.pre-transition .red.a,
+.pre-transition .red.c,
+.pre-transition .red.e,
+.pre-transition .red.f,
+.pre-transition .blue.a,
+.pre-transition .blue.c,
+.pre-transition .blue.e,
+.pre-transition .yellow.a,
+.pre-transition .yellow.c,
+.pre-transition .yellow.e {
+  height: 0;
+  /* min-height: 0; */
+}
+
+.pre-transition .black.b,
+.pre-transition .black.d,
+.pre-transition .black.f,
+.pre-transition .black.g,
+.pre-transition .black.h,
+.pre-transition .black.i,
+.pre-transition .black.k,
+.pre-transition .red.b,
+.pre-transition .red.d,
+.pre-transition .red.g,
+.pre-transition .blue.b,
+.pre-transition .blue.d,
+.pre-transition .blue.f,
+.pre-transition .yellow.b,
+.pre-transition .yellow.d,
+.pre-transition .yellow.f {
+  width: 0;
+  /* min-width: 0; */
+}
+
+@media only screen and (max-width: 760px) {
+  .hide-under-760 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .hide-under-560 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .hide-under-460 {
+    display: none;
+  }
+}
+
+</style>
+
+</head>
+<body>
+<div class="for-screen-readers">
+  <h1>Grady Berry Ward</h1>
+  <h2>Engineer</h2>
+  <nav class="menu">
+    <a href="about">About</a>
+    <a href="projects">Projects</a>
+    <a href="resume">Resume</a>
+    <a href="contact">Contact</a>
+  </nav>
+</div>
+<div class="width-wrapper pre-transition" id="width-wrapper" aria-hidden="true">
+<div class="top">
+	<div class="name-wrapper">
+		<h1>Grady 
+		  <span class="hide-under-560">B<span class="hide-under-760">erry
+		</span></span> <span class="hide-under-460">Ward</span></h1>
+		<div class="red d" aria-hidden="true"></div>
+		<div class="red e" aria-hidden="true"></div>
+	</div>
+	<div class="black a"></div>
+	<div class="black b"></div>
+	<div class="red a"></div>
+	<div class="red b"></div>
+	<div class="red c"></div>
+</div>
+<div class="bottom">
+  <div class="title-wrapper">
+    <h2>Engineer</h2>
+    <div class="black c"></div>
+    <div class="yellow a"></div>
+    <div class="blue a"></div>
+  </div>
+  <nav class="menu">
+    <a href="about">About</a>
+    <a href="projects">Projects</a>
+    <a href="resume">Resume</a>
+    <a href="contact">Contact</a>
+    <div class="black d"></div>
+    <div class="black e"></div>
+    <div class="black f"></div>
+    <div class="black g"></div>
+    <div class="black h"></div>
+    <div class="black i"></div>
+  </nav>
+  <div class="red f"></div>
+  <div class="red g"></div>
+  <div class="yellow b"></div>
+  <div class="yellow c"></div>
+  <div class="yellow d"></div>
+  <div class="yellow e"></div>
+  <div class="yellow f"></div>
+  <div class="blue b"></div>
+  <div class="blue c"></div>
+  <div class="blue d"></div>
+  <div class="blue e"></div>
+  <div class="blue f"></div>
+  <div class="black j"></div>
+  <div class="black k"></div>
+</div>
+</div>
+<script>
+  var wrapper = document.getElementById("width-wrapper");
+  wrapper.classList.remove("pre-transition")
+</script>
+</body>
+</html>

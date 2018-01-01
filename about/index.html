@@ -1,0 +1,411 @@
+<html>
+<head>
+  <title>Grady Berry Ward | About</title>
+  <meta name="viewport" content="width=device-width">
+<style>
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  font-weight: 800;
+  text-align: center;
+}
+
+.width-wrapper {
+  width: Calc(100% - 2rem);
+  max-width: 800px;
+  min-width: Calc(320px - 2rem);
+  margin: 0 1rem 1rem 1rem;
+  display: inline-block;
+  position: relative;
+  height: Calc(100% - 1rem);
+}
+
+.row {
+    width: Calc(100%);
+    position:  relative;
+}
+
+.row.a {
+    min-height: 6rem;
+    height:  25vh;
+}
+
+.row.e {
+  min-height: 3rem;
+  height: Calc(10vh + 3rem);
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align: left;
+    padding: 1rem 6rem 2rem 6rem;
+    margin:  0;
+}
+
+h4.back-btn {
+    position:  absolute;
+    top: 1rem;
+    left:  8rem;
+    margin:  0;
+}
+
+h1 {
+    position: absolute;
+    font-size: 3rem;
+    left: 8rem;
+    bottom: 0rem;
+}
+
+
+* {
+  color: #272727;
+}
+
+.black {
+  background: #272727;
+}
+
+.red {
+  background: #d20909;
+}
+
+.yellow {
+  background: #eac40a;
+}
+
+.blue {
+  background: #1444b1;
+}
+
+.black,
+.red,
+.blue,
+.yellow {
+  display: block;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  transition: width .5s linear, height .5s linear;
+}
+
+
+.black.a {
+    height:  100%;
+    top: 0;
+    left:  6rem;
+}
+.black.b {
+    width:  Calc(100% - 11rem);
+    left:  7rem;
+    top: Calc(100% - 1rem);
+}
+.black.c {
+    height: Calc(100% - 1.5rem);
+    top: 0;
+    right: 4rem;
+}
+.black.d {
+    top: .5rem;
+    right:  4rem;
+    height:  Calc(100% - 2rem);
+}
+.black.e {
+    right:  4rem;
+    top: .5rem;
+    height:  Calc(100% - .5rem);
+}
+.black.f {
+    right: 4rem;
+    top: 0rem;
+    height: 100%;
+}
+
+.red.a {
+    height:  100%;
+    top: 0;
+    left:  0;
+}
+.red.b {
+    height:  100%;
+    top: 0;
+    left:  0;
+}
+.red.c {
+    width:  .5rem;
+    bottom:  0;
+    left: 1rem;
+}
+.red.d {
+    width: Calc(100% - 7.5rem);
+    bottom:  0;
+    left: 5.5rem;
+}
+.red.e {
+    top: 0;
+    right: 2rem;
+    height:  Calc(100% - 1.5rem);
+}
+.red.f {
+    top: .5rem;
+    right:  2rem;
+    height:  Calc(100% - .5rem);
+}
+.red.g {
+    height: 100%;
+    right:  2rem;
+    top: 0rem;
+}
+
+.yellow.a {
+    top: 0;
+    left:  2rem;
+    height:  100%;
+}
+.yellow.b {
+    height:  100%;
+    left:  2rem;
+    top: 0;
+}
+.yellow.c {
+    left:  2rem;
+    height:  100%;
+    top: 0;
+}
+.yellow.d {
+    width:  .5rem;
+    bottom:  0;
+    left:  3rem;
+}
+.yellow.e {
+    bottom:  0;
+    left:  5.5rem;
+    width: Calc(100% - 5.5rem);
+}
+.yellow.f {
+    top: 0;
+    right: 0rem;
+    height: 100%
+}
+.yellow.g {
+    right:  0rem;
+    top: 0rem;
+    height:  100%
+}
+
+.blue.a {
+    height:  100%;
+    top: 0;
+    left:  4rem;
+}
+.blue.b {
+    height:  100%;
+    left:  4rem;
+    top: 0;
+}
+.blue.c {
+    left:  4rem;
+    height:  100%;
+}
+.blue.d {
+    height:  100%;
+    left:  4rem;
+}
+.blue.e {
+    width: Calc(100% - 11rem);
+    left:  5em;
+    bottom:  0;
+}
+.blue.f {
+    right:  6rem;
+    height:  100%;
+    top: 0;
+}
+
+.pre-transition .black.a,
+.pre-transition .black.c,
+.pre-transition .black.d,
+.pre-transition .black.e,
+.pre-transition .black.f,
+.pre-transition .red.a,
+.pre-transition .red.b,
+.pre-transition .red.e,
+.pre-transition .red.f,
+.pre-transition .red.g,
+.pre-transition .yellow.a,
+.pre-transition .yellow.b,
+.pre-transition .yellow.c,
+.pre-transition .yellow.f,
+.pre-transition .yellow.g,
+.pre-transition .blue.a, 
+.pre-transition .blue.b, 
+.pre-transition .blue.c, 
+.pre-transition .blue.d, 
+.pre-transition .blue.f  {
+  height: 0;
+  min-height: 0;
+}
+
+.pre-transition .black.b,
+.pre-transition .red.c,
+.pre-transition .red.d,
+.pre-transition .yellow.d,
+.pre-transition .yellow.e,
+.pre-transition .blue.e {
+  width: 0;
+  min-width: 0;
+}
+
+.red.d {
+  transition-delay: Calc(3 * .5s);
+}
+.red.e, .yellow.e {
+  transition-delay: Calc(4 * .5s);
+}
+.red.f, .yellow.f {
+  transition-delay: Calc(5 * .5s);
+}
+.red.g, .yellow.g {
+  transition-delay: Calc(6 * .5s);
+}
+
+.a {
+  transition-delay: Calc(1 * .5s);
+}
+.b {
+  transition-delay: Calc(2 * .5s);
+}
+.c {
+  transition-delay: Calc(3 * .5s);
+}
+.d {
+  transition-delay: Calc(4 * .5s);
+}
+.e {
+  transition-delay: Calc(5 * .5s);
+}
+.f {
+  transition-delay: Calc(6 * .5s);
+}
+.g {
+  transition-delay: Calc(7 * .5s);
+}
+
+.row.a h4, 
+.row.a h1, 
+.row.b p, 
+.row.c p, 
+.row.d p {
+  opacity: 1;
+  transition: opacity .5s linear;
+}
+
+.pre-transition .row.a h4, 
+.pre-transition .row.a h1, 
+.pre-transition .row.b p, 
+.pre-transition .row.c p, 
+.pre-transition .row.d p {
+  opacity: 0;
+}
+
+.row.a h4, 
+.row.a h1 {
+  transition-delay: Calc(2 * .5s);
+}
+
+.row.b p {
+  transition-delay: Calc(3 * .5s);
+}
+
+.row.c p {
+  transition-delay: Calc(4 * .5s);
+}
+
+.row.d p {
+  transition-delay: Calc(5 * .5s);
+}
+
+@media only screen and (max-width: 540px) {
+  html {
+    font-size: 12px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  html {
+    font-size: 10px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  html {
+    font-size: 6px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+</style>
+<body>
+<div class="width-wrapper pre-transition" id="width-wrapper">
+<div class="row a">
+  <h4 class="back-btn"><a href="../">Back</a></h4>
+  <h1>About</h1>
+  <div class="red a"></div>
+  <div class="yellow a"></div>
+  <div class="blue a"></div>
+  <div class="black a"></div>
+  <div class="black b"></div>
+</div>
+<div class="row b">
+  <div class="red b"></div>
+  <div class="red c"></div>
+  <div class="red d"></div>
+  <div class="yellow b"></div>
+  <div class="blue b"></div>
+  <p>
+    Hello, my name is Grady Ward and I am an engineer living and working in the San Francisco Bay Area. At the moment, I work at Google on the core enterprise infrastructure team of the GSuite product. My work focuses on data validation, retention and compliance. 
+  </p>
+  <div class="black c"></div>
+</div>
+<div class="row c">
+  <div class="yellow c"></div>
+  <div class="yellow d"></div>
+  <div class="yellow e"></div>
+  <div class="blue c"></div>
+  <p>
+    I also am involved in local San Francisco governance as a member of the 2017-18 Civil Grand Jury, where we are tasked with overseeing the faithful and efficent implementation of San Francisco’s city and county government. It is engaging work that always challenges me to dive deep into unfamiliar subjects. As a chairperson for two committees, it also requires careful organization, planning and team-building.
+  </p>
+  <div class="black d"></div>
+  <div class="red e"></div>
+</div>
+<div class="row d">
+  <div class="blue d"></div>
+  <div class="blue e"></div>
+  <p>
+    I choose to spend most of my free time outside, enjoing the mountains, roads, trails, and slopes that the Bay Area has to offer. When the sun is not out, I enjoy making things that I find useful or beautiful, and these projects span wood, origami and code.  Many of the results are shown in my portfolio on this site, including ones not built with computers.
+  </p>
+  <div class="black e"></div>
+  <div class="red f"></div>
+  <div class="yellow f"></div>
+</div>
+<div class="row e">
+  <div class="blue f"></div>
+  <div class="black f"></div>
+  <div class="red g"></div>
+  <div class="yellow g"></div>
+</div>
+<script>
+  var wrapper = document.getElementById("width-wrapper");
+  wrapper.classList.remove("pre-transition")
+</script>
+</body>
+</html>
