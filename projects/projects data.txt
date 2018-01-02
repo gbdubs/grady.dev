@@ -1,0 +1,236 @@
+Projects
+Back End Systems
+Grady.In
+July, 2017
+serverless, node.js, backend
+
+Go Links are a system used interally at google to create semantically meaningful short links. Grady.In replicates this functionality for use outside of the company, allowing anyone to construct short and human readable links. 
+
+This was my first forray into a serverless architechure. The system is built using Google Cloud Functions. The primary function validates a request and writes the new link (as a simple redirect) to a CDN. The client (when looking at the grady.in/xxx address) is pointed toward the CDN, and the static content served from the CDN redirects them to the pre-specified link, if it exists.
+
+Notably absent from the implementation is any kind of rate limiting or authentication. This was really just meant as a fun way to play around with GCP’s cloud functions, and the lack of sophistication shows through in these obvious flaws.
+DumbDB
+December, 2017
+Serverless, node.js, backend
+
+While protyping front end interfaces for responsive web applications, I frequently have to mock out the data interactions with static constants in my javascript that mock server requests and responses. This has several downsides: you cannot change the data in a demo situation, inserting real requests requires you to construct the remoteand the number of mocks can explode if you are trying to make a CRUD user interface.
+
+DumbDB is a better way.  DumbDB is a remote server/database that accepts arbitrary post and get messages, and maintains an object store that maps the requested paths to the objects that have previously been stored at each.  This mapping between path and object is the simplest form of an object-store (dumb), but is a functionally complete database (db).
+
+DumbDB has already helped me accelerate my prototyping on several projects.
+
+It is implemented as a MongoDB database on GCP with a thin layer of GCP cloud functions on top. One of the features of DumbDB is that it dosen’t have authentication, but does have rate limiting by IP. This prevents eggregiously abusive behavior, but requires no configuration on the client side.
+Find A Clinic
+Please note - I deeply respect various opinions on the moral wight of abortion, but personally [^1] fully support the right of a woman to make her own judgements about the matter. For that reason, I believe that women should have full knowledge of all of their options when they become pregnant, and that is the aim that this project is directed toward.
+
+[^1] I think most of us would agree that there is a difference in value between the existence of a day-old fertilized human egg, and a pregnancy that is about to be birthed. This implies that there is a spectrum of moral culpability along this timeline. I believe that because the challenge of obtaining the right ethical point at which the act of terminating a pregancy is unacceptable, the person with the most knowledge and proximity (the woman who is preganant) is ultimately the best informed to be making the decision as to whether or not an abortion is morally acceptable.
+
+In 2017 there was an unprecedented attack on a woman’s right to obtain a safe and legal abortion in the United States.  Many states have used arbitrary (non-health driven) regulations to try to force abortion clinics to close.  As a result, many women live in “clinic-deserts”, where no clinics exist within a reasonable radius.  These women must choose between birthing a child that they are unprepared for and finding their way to an abortion clinic which might be hundreds of miles away. 
+
+Find a Clinic was an effort by myself and four others to try to make this situation clearer and enumerate all of the options for women in this dangerous situation.  Our goal was to collect information on the clinics in the United States, the abortion regulations in every state, the costs of procedures at different locations and pull in APIs with current flight, train, and bussing options. This data was then synthesized into a set of options - different clinic/date pairs that would minimize cost, or get around certian regulations like partner consent restrictions.
+
+For this effort, I was in charge of building a robust backend that could handle the entry and exposition of clinic data. 
+
+This effort ended up failing. There are many factors that led to this failure, but the main one was problems around data collection. We had overestimated the willingness of clinics to give us cost and procedure information, and the willingness of volunteers to call to ask for it during working hours.  In the end, we built a fairly robust system, with a gorgeous front end and reasonably well built back end, only to have it fail because some of our fundamental assumptions were flawed. Once the problems with data collection became apparent, our group found it signifigantly harder to concentrate on the project, and we ended up disbanding a few weeks after this problem came to light.
+
+However, I am deeply proud of this work, and hopeful to work on things like it in the future. 
+Full Stack Web Applications
+Hardscrabble
+
+Pair programming is a stellar way for people to learn, particularly when paired with a partner at the same level.  I saw this multiple times in action in my time as a teaching assistant for courses at Brandeis.  However, the problem of assigning pairs is fundamentally challenging - if the students are given free reign, they will likely pick their friends, and the skill level of the two will be (largely) uncorrelated.  If the teacher assigns specific pairs, this may be more effective, but is unscalable at high student volumes.
+
+A better approach is to do it programmatically. Working for professor Antonella Di Lillo, I single handedly designed and implemented a system for pairing students up in class, and enabling them to communicate with one another via a shared document with set phases to enable live-coding excercises while in lecture.  The students would be presented with a shared problem that the professor would introduce in lecture. They would then be assigned a partner based on past performance of programs written using the software. Each student would independently try to solve the problem in a text editor that only they could see.  Then came a comment period, where each student could write comments on the code of the other.  Finally, the two students would be able to chat in a modal while they collaboratively work on coming up with a joint solution.
+
+The student would be evaluated (for purposes of future pairing) based on their initila submission.  Basic metrics like attendance, pair history, lines of code and distance from ideal solution were reported to the professor in aggregated form. 
+
+This was technically demanding - both figuring out a real time pairing algorithm for maximal skill matching, and figuring out the intricacies of how to write a real time code editor that the two students can pair program in. At the time, I was pretty unfamiliar with all of this stuff, so I did it poorly - using app engine and a basic state sharing algorithm.
+
+This project was hacked together hastily as a favor for a favorite professor. Today, I would design the system quite differently - setting up peer-to-peer data channels in the browser between the lead computer and the followers, and each of the programming pairs. 
+
+This project got signifigant use. In the year it was built, it served 200 students in the fall and 150 in the spring. In both semesters, both students and TAs were happy with the way it helped students learn.  This is a project I am proud of because of the ideas behind it, but also one where I recognize the deep and profound technical flaws. I hope someday to have the time and energy to write this code again to be (A) more technically sophistocated and robust (B) scalable (C) cost effective and (D) siloed for use in more than one classroom. 
+Student Union 
+
+In my time at Brandeis University, I spent 3 years working hard for the Brandeis Student Union. Over those three years, we had three different computer science students as “web-master”, and three politicos as “communications director”.  The problem was that each “web-master” would build a beautiful website that was never able to be updated because the communications director never had the technical expertiese to update the HTML or use the static site generator.
+
+As college was coming to an end, I was frusturated because my time with the board of trustees had not been as productive as I had originally hoped. Looking for a place I could have a lasting legacy and impact, I found it in the Student Union’s website.
+
+At its heart, the problem is one of distributed data management and editing.  Students within the union should have different access to edit different data, but the site should be rendered in a way that does not reflect this mutliple authorship - components should be rigid enough that an author’s style does not bleed into a unifying presence.  In addition, a distributed ownership model for content needed to be (A) version controlled (B) auditable (C) completely non-technical.
+
+So I built it! 
+
+The end product is pretty sweet, and uses some smart optimizations to minimize hosting costs and maximize page load.  I took advantage of Github’s “pages” platform to serve the static HTML renedered by the site.  A change in one of the underlying sets of data would trigger a re-render of the HTML generated by the data, and then would be written out to github pages.  This had two main benefits - github automatically maintains version control history, which enabled auditing of who wrote what and when, and github stores its HTML files in pages in a blazing fast CDN. This meant that lookups to the webpage were infinitely scalable and cheap (from my perspective), and meant that there were not “read” server costs.
+
+The server that processed writes was built on app engine, using JSTL templating over datastore objects to render the HTML to write to github pages.  More exciting than that was the group strucuture that I made so that sub-groups of the Student Union could have access to different sets of permissions for editing. This formed the basis of Committee pages, and organization pages, which were only editible by their members. 
+ 
+Additionally, the data was reused between pages for commen elements (for example, all committees should have the names and bios of their members, even if each member is in 10 committees).
+
+On the front end, I used a “Medium”-esque visual markdown editor to enable the construction of HTML elements from a given set of supported ones (which I provided a cohesive design language for on the rendering side).
+
+The result is gorgeous, and far more importantly, meets the needs of the Union. I left Brandeis two years ago (writing this from 2018), and it has been used effectivley by three Student Unions since.  I do occaisional performance upgrades and feature requests, but I’ve seen the site updated by dozens of Union Members without any technical knowledge. 
+
+I’m quite proud of this project because it stands solidly at the intersection of technical simplicity and client needs. I have confidence that the Union will be using this product long after anyone remembers me at Brandeis. 
+
+Grady Docs V1
+
+I one time made the mistake of looking at how the Google Docs DOM is structured. I wondered if I could make a functional front end that looked similar without half a meg of divs, so I tried!
+
+Then I wrote a backend for it (node-js, socketio), and got the project to the point where two users could edit the document together with sub-second lag. 
+
+The underlying data model for this was not only flawed, it is abysmal.  Each movement, keypress and modification that a user makes was logged as a change event. Every change event was sent through a server on AWS-beanstalk in Node, via socket-io to every other web client subscribed to the same document.
+
+It was honestly expensive to run this server, so I shut it down a while ago. When 10+ people were on a document it became expensive. 
+
+Additionally, I had no server side compilation logic, so all of the docs were just stored as a series of event modifications.  Horrifying. 
+
+I hope to revisit this project in the future, because it was really fun to write.  I wrote it in two weeks over my christmas break, at a time when I didn’t know much about much.  I would love to take another stab at it and set up a mesh of peer-to-peer connections with a sane document reconsiliaiton model in the future.
+Calc U
+I frontloaded my classes to heavily at Brandeis, and coming into my Junior Spring Semester, I was mostly done my majors.  Since most of my friends were abroad, I decided to work on a side project for the semester, with my only class being French.  This was one of the best decisions of my life. 
+
+CalcU emerged from a need I saw when tutoring. I was a math tutor throughout highschool and into part of college, and I frequently helped out folks who needed refreshers on stuff far before the material they were working on.  A student in calculus is forgetting basic rules of geometry, a student in microeconomics forgets derivative rules, a student in multivariate calculus has never taken linear algebra. Students in this position need a resource which has a plethora of examples, sample questions and explanations, but more importantly, they need a resource that is able to quickly determine what they know, what they do not know, and what they are trying to learn.  CalcU sought to fill this niche. 
+
+I could talk about CalcU for days, but I will not. The project expanded when I got a grant to continue the work over the summer before my Senior year, and with the funding was able to hire three interns. The fundamental premise was that we used web-scraping to get the data from a large number of open source text books (including problems, examples, solutions and explanations).  We then used manual categorization into a taxonomy of problems that we created.  This taxonomy was both recursive and strongly ordered.  A student’s familiarity with different areas of the taxonomy was recursively explored through a placement quiz which sought to understand the set of problems the student understood and those that they did not. CalcU built a rating system to enable the best examples and problems to drift toward the top, and had the ultimate goal of identifiying learning styles and common patterns amoung learners that would enable machine prediction of the next problem a student should see. 
+
+CalcU was my first big independent project, and I loved it.  It showed me how much fun desigining and building a system from scratch can be.  It taught me more than I can say about how to manage engineers.  It made me believe that I am capable of building big, complicated, and technically complex systems. It was the project that enabled me to identify as an engineer. 
+
+It ultimately failed.  The system and software are good at what they do.  They are built in a way that minimizes server costs, and are fairly well exposed for future data science work.  However, I failed to generate the enthusiasm about the system that I had hoped. I did the classic engineering mistake of building without consulting real users, and trying to present a polished end result without thinking about whether it is what people wanted. I avoided pushing the software into the hands of users because I was afraid of what they would think, and by the time I was satisfied with it, it was too rigid to enable valid user feedback to influence the final product. 
+
+I am deeply thankful for the experience. The folks I got to work with (students and teachers in the high-schools, the faculty at Brandeis who advised me (Profs. XXXX and Hickey), and my friends and interns Russ, Roger and Danny) made it one of the most fun and exciting projects I’ve ever worked on.
+Parley
+Comment threads are an inherently flawed way to have a discussion, because they are strictly linear.  In recent years, large organizations like facebook have realized this and have tried to reconsile it with a binary tree pattern of _deeper_ or _next_. This only partially solves the problem. Far more frequently, if I want to respond to a comment, there are multiple peices of it that I want to respond to, and some may already be addressed further down the thread.  The heart of the matter is that a meaningful static discussion is not best facilitated by a linear progression of strings.
+
+Parley was my idea on how to change this. It views a document as something which is not responed to in whole, but which can be annotated with comments by different authors.  The comments (in turn) become top level objects which are just as open to annotation and further comment. The recursive, n-ary tree nature of this structure has multiple advantages, but the big one is that you can dive deep on a given line of argument naturally, by clicking through and understanding the points as made in isolation.
+
+This idea in and of itself is not revolutionary, but I wanted to see if I could make a demo where this is implemented in a way that is comprehensible and intuitive.  I half succeeded here.  The parley interface used the Draw Me CSS pattern to create a right-left layout where the content is displayed with underlines corresponding to annotations, and the text of the annotation is displayed in a scrolling left hand column.  The interface is flexible, relativley intuitive, and fairly simple.
+
+Where I ran into problems was in the minutia -- what about really long annotations? What about annotations stacked 15 high? How do you link effectively (as links cannot then be annotated)? 
+
+The backend is lame (an app engine hack), but I stand behind the fundamental idea (recursive comment sections, rather than linear ones), and I stand behind the UI for what it is - a proof of concept. 
+
+
+Front End Web Development
+Website V1
+
+In my original website, I wanted to play with the fundamental assumption of what a webpage renders as - a series of nested boxes.  The idea of an expanding button that becomes the page facinated me, particularly since the new page had buttons for the old one (I was reading all about golden-braids in GEB at the time).
+
+This isn’t great work, but it reflects where I was at at the time - having fun, experimenting, and learning Javascript.
+Website V2
+I took an architechure class in my Senior Year at Brandeis that awoke an asthetic sense I had not previously identified or listened to. In particular, the de-stijl primitive of intersecting planes struck a resonant chord in my sense of beauty. 
+
+That new asthetic, in combination with “draw me CSS” was the inspiration for V2 of my website - meant to resemble something in between a circut board, the maurader’s map, and the de-stijl classic “Composition in black, red, yellow and blue”.
+
+Notable: the code that generates the site went through a series of refactors to try to make it more consistent across browsers and screen sizes.  Underlying these problems was the fact that draw-me-css is too generalizable to be able to produce elegant code.
+
+In Version 3, I abandoned the auto-generated code in favor of well written (if slightly more time consuming) CSS.
+Website V3 (Current)
+When I tried to update my website in December of 2017, I couldn’t find the files anywhere on my laptop or github.  This was a surprise, but one that I took as an opporotunity to recreate the site from scratch, using best practices from the start, and making some design changes. Luckily I later found these files, and posted them as V2 on this page.
+
+The result is the site you see before you - with a detailed portfolio section, some nice hugo-templated HTML, and the cute animations (which are NOT generated via draw-me-css). In this version of the site, I attempted to focus on how I could go beyond the original circut-board design of V2.
+WSMD - What Should Maddie Do
+Maddie Dollins is a dear friend who is frequently frustratingly indecisive. One night at dinner she asked if she should have chocolate milk - to which I said “I do not care”. She then asked if she should have regular milk. This broke the camel’s back, and in a rush of an hour, I built and published WSMD - What Should Maddie Do - a simplified magic-eight-ball that simply returns a yes or no.
+
+No frills, basic code, cute styles. 
+Kerry Chase Website
+When I was taking his class of US foreign economic policy, Professor Chase asked me to build him a website, which I did. I have to say that the asthetic is way too “1982” for me, but hey, you have to build what the client wants!
+Wardlab.us
+My father is a professor at UVM, where he studies microbiology and molecular genetics.  In 2017 as a birthday present, I made him a website using Hugo, and the Academic theme. The theme I used was superb at providing most of the functionality required, but it took a few months of tinkering with my father to get everything exactly the way he wanted (publications ordered in certain ways, display settings configuration based, etc.)
+
+The end result is lovely, and supremely updatable.  I wrote some scripts so that he can easily publish his work to the site (with two clicks) and veiw local edits as they happen (all without ever touching the command line).
+ZinaBWard.com
+Over christmas break, I got frusturated with my sister’s incredibly specific asks from a wordpress template, so I built her a website instead. After a brief period of haggling over the acceptable level of bells and whilstles (I wanted more), we came to a resonable design consensus, and I implemented the site and fine tuned it with its owner in about five hours.
+Art
+Flux
+
+I saw this blog post by an extremely talented programmer, and was suprised (as he was) to find that there was a natural symmetry to the patterns he was describing.  However, in digging into his code, I found that it was not actually symmetrical, but he had just made a very understandable typo which introduced this artificial symmetry.
+
+Working with these equations, I found that the surfaces generated by them were gorgeous, and that the surface appeared to be differentiable with respect to every one of the input paramters.  In my experience, this is rare for a multi-dimensional equation. 
+
+Just iterating around a bit, I found that the most “interesting” cases all happened at a relatively uniform distance from the origin of the parameter space.  I then thought about how I could generate a nice video of a tour of the parameter space, and my mind lept to an orbit.  I created the software to output a gif of the generated curve for a given circular or eliptical orbit around the center of the parameter space.
+
+I then made many of these gifs, all of which share a starting and ending position in the parameter space. This means that played in any sequence, the gifs will make a beautiful pattern that appears continuous, infinite and quazi-random.
+
+This work insipred me to do more code-art for the sake of the art, rather than the sake of the code.
+
+NOTE it is not recommended that you view this over a mobile connection - the page is about 100MB in total
+
+NOTE it might take a while for this page to load. Give it several minutes. It loops, so you will not miss anything if you come back to it later.
+Drawme CSS
+
+In the third Harry Potter book, Harry is given the “Maurauder’s Map”, and one of the many images I like about this map is how the ink spreads outward from the point that it is awoken. 
+
+I wondered if you could do this in CSS, so I poked around, learned about CSS Transitions, and came up with a generalized framework for making a set of boxes animate on to the page. The final product takes in a source file of HTML, and generates minimized CSS that includes all of the style classes needed to animate the page according to the class specification.
+
+DrawMeCSS was used to create several other sites, including Parley (which I worked on co-concurrently) and V2 of my personal website (which was the main test case). 
+
+I have ultimately abaondoned DMCSS because it generates too much code, requires too much thought and logic to be placed in the DOM, and leads to lots of empty and meaningless divs. Version 3 of my portfolio abandoned it for all of these reasons.
+VOAT
+A good piece of art compells you to understand the process that created it, whether it is the emotion of the composer, or the logic of the painter. A revlation while looking at a piece by Frank Stella made me understand the fundamental mechanism that was generating the work, and gave me confidence that I could recreate it.
+
+Squares (with side of size 1), with two quarter-circles in opposite corners (with radius one-half), in both configurations, with space filling between regions, forms the basis of this work by stella.
+
+After more time than I would like to admit, I was able to recreate stella’s work in the browser.  There were so many minutia and little tricks that if even slightly off in any function, the code would mis-render the full piece.  I came to enjoy these mis-renderings more than I enjoyed the final piece, so once it was completed, I looked to see if I could alter the rules slightly and capture different feelings/emotions with the results.
+
+The results were so varried and interesting that I had to share them.  Each had a personality I could never have tried to design.  The overall impression each left was distinct, and the commonalites between them felt just as important as their many differences. 
+
+I ened up publishing a set of them as “VOATCSS” - Variations on a theme - a reference to Edward Elgar’s piece by the same name, where he paints portraits of his close friends through the stroke of a common musical theme. Similarly, each of the components of this collection were given a color scheme that reminds me of a person that I cared deeply for.
+Cindi
+If you haven’t yet listened to Janelle Monae’s “Metropolis” suite, drop all the committments you can, pour yourself some coffee and wine, and listen to it straight through. Monae is a magician, a siren, an entertainer, a theorist, a historian, and a visionary. Metropolis helped me understand so much about so much that talking about it here will certainly do it an injustice. If you are interested, check out my 2016 term paper on her work within the context of historical waves of Black Feminism. Or, more realisitically, read one of the many articles by people who know her work better than me about why it is the best music and art from the last decade. 
+
+Within the context of this project, one of the questions Monae raises is about the intersection of technology, humanity and art. Cindi is an attempt to programmatically generate art that evokes real human emotion. To understand this full ambition, check out the page itself.
+
+This was an expansion of the work in VOAT - rather than using squares with a predictible and pre-defined set of ports to connect, I use polygons with arbitrarily defined sub-regions. The results are wild: extreme variance, never dull.  To see how some of these were generated, check out the tesselation photos here. 
+
+I’ve since used the patterns from CINDI to create some scarves for my family.  Photos Attached. 
+
+I hope to do more work in this space, and would love to see these patterns in more places. I would ideally like to encorporate images, create non-fluid spacefilling, create classifications for common aesthetic patterns and entropy filters to filter out boring or repetitive generations. I hope this project goes somewhere, but I need time to work on it.
+Computational Complexity Experimentation
+3-SAT decomposition
+Haven’t you ever looked at SAT (the problem of finding a solution to an arbitrary expression of boolean predicates), and thought it must be solvable in sub-polynomial time? My intuition says so too, but this is clearly a function of naievite. 
+
+The thing that struck me about 3-SAT is that it is fundamentally trying to explore a bunch of different roads at once, and reporting back the ones that don’t hit dead ends.  You can do this in exponential time on a single processor, or you can do it in (near) constant time on an exponential number of processors.  However I was wondering if you could do it in linear time with a single processor by using an exponential amount of memory.  The answer, it turns out, is yes!
+
+By using the OR bitwise operator, you can do SAT in linear time and exponential space (which for problems with fewer than 8 boolean variables, is constant on a 64 bit processor). This was really jsut an academic endeavour, but it was fun to design and run, and was my first exploration of the world of computational complexity.
+
+Trees
+Recursively enumerating all possible sparse binary trees is easy.  Far harder is coming up with a stable mapping between the integers and this set of trees. I was able to do this after a lot of thought, but I don’t really remember how. The code is here, but it is from like four years ago, so please be warned. 
+Senior Thesis 
+I wrote my undergraduate thesis on the Graph Isomorphism problem, and within that, the “Paths” invariant, which is incredibly powerful test for discerning between potentially isomorphic graphs in cubic (and fully paralellizable) time. 
+
+The main findings of my thesis were that:
+Unlike was theorized by XXX, copaths graphs exist, and finding them is easily done through some mapreduces, or on a GPU.
+Measuring discriminatory power to value ratio of invariants within graph isomorphism is possible and can help us devise better algorithms for practical isomorphism detection. 
+Paths as an invariant does not need to be calculated past N.
+
+
+
+Since I did the paths stuff earlier than expected, I started working on Random Graph theory and found that:
+
+Random Graph generators almost all are random matrix generators. This understates the frequency of highly auto-isomorphic graphs by one-to-factorial odds. 
+We can create a better random graph generator to evaluate random graph algorithms, and doing so changes the running time bounds that we have been able to determine for the algorithm.
+
+
+
+This thesis was successfully defended in May of 2016, and recieved highest honors in Computer Science.
+AI Science Test
+This one is lame - for an ML projectin in my AI class, we were assigned a task from Kaggle - answering multiple choice questions from a ninth grade science test. Tensor flow had been released a week beforehand, and I used it out of the box (with slight model refactoring) to train an ML model for the competition. Ours did really well - I think top 10 out of 500 contenders, and was simply well trained ML.  Thanks Tensor Flow!
+
+Birth Certificate Scraping
+Professor Linda Bui is a gem who really helped me enjoy my economics degree at Brandeis.  So when she asked me if I could scrape all birth certificates from 1900 to 1950 in Massachusetts, I said “maybe”, rather than “no”.
+
+I ended up using matlab to do OCR with a combination of models.  The forms were either hand written or were machine printed, and I generated seperate models for each.  The full accuracy of the system (having zero errors on the 21 fields) was about 40%.  80% got 18 of 21 fields correct.
+
+Ultimately the algorithm I designed was too resource intensive to be runnable on the full set of data. I hadn’t considered that using a proprietary codebase like matlab would have the drawback that I wouldn’t be able to scale it on rented server time. 
+
+I ended up passing this project off to a research assistant of Prof. Bui’s, and I don’t know what ended up happening to it.  
+
+
+
+
+
+
+
+
+
+Hello, my name is Grady Ward and I am an engineer living and working in the San Francisco Bay Area. At the moment, I work at Google on the core enterprise infrastructure team of the GSuite product. My work focuses on data validation, retention and compliance. 
+I also am involved in local San Francisco governance as a member of the 2017-18 Civil Grand Jury, where we are tasked with overseeing the faithful and efficent implementation of San Francisco’s governance.
+
+I choose to spend most of my free time outside, enjoing the mountains, roads, trails, and slopes that the bay area has to offer. When the sun is not out, I enjoy making things that I find useful or beautiful, and these projects span wood, paper and code.  Many of these side projects are shown in my portfolio on this site.

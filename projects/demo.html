@@ -1,0 +1,74 @@
+<html>
+<head>
+  <title>Grady Berry Ward | Contact</title>
+  <meta name="viewport" content="width=device-width">
+<style>
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  font-weight: 800;
+  text-align: center;
+}
+
+.width-wrapper {
+  width: Calc(100% - 2rem);
+  max-width: 80%;
+  min-width: Calc(320px - 2rem);
+  margin: 0 1rem 1rem 1rem;
+  display: inline-block;
+  position: relative;
+  height: Calc(100% - 1rem);
+}
+
+* {
+  color: #272727;
+}
+
+.black {
+  background: #272727;
+}
+
+.red {
+  background: #d20909;
+}
+
+.yellow {
+  background: #eac40a;
+}
+
+.blue {
+  background: #1444b1;
+}
+
+.black,
+.red,
+.blue,
+.yellow {
+  display: block;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  transition: width .5s linear, height .5s linear;
+}
+
+@media only screen and (max-width: 1040px) {
+
+}
+
+</style>
+<body>
+<div class="width-wrapper pre-transition" id="width-wrapper">
+
+<p>
+
+
+
+
+</div>
+<script>
+  var wrapper = document.getElementById("width-wrapper");
+  wrapper.classList.remove("pre-transition")
+</script>
+</body>
+</html>

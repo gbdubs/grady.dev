@@ -69,9 +69,11 @@ body {
   width: 50%;
   max-width: 16rem;
   min-width: 12rem;
-  height: 6rem;
+  height: 5rem;
   top: 0;
   right: 0;
+  z-index: 1;
+  background: white;
 }
 
 .title-wrapper h2 {
@@ -166,7 +168,7 @@ nav>a:hover {
 }
 
 .black.c {
-  height: 100%;
+  height: Calc(100% + 1rem);
   top: 0;
   right: 0;
   transition-delay: Calc(3 * .5s);
@@ -278,17 +280,15 @@ nav>a:hover {
 
 .yellow.a {
   height: 2rem;
-  bottom: 1rem;
+  bottom: 0;
   left: 0;
   transition-delay: Calc(5 * .5s);
 }
 
 .yellow.b {
-  width: Calc(50% - 2rem);
+  width: Calc(100% - 14rem);
+  right: 12rem;
   top: 3rem;
-  min-width: Calc(100% - 18rem);
-  max-width: Calc(100% - 14rem);
-  left: 2rem;
   transition-delay: Calc(6 * .5s);
 }
 
@@ -328,10 +328,9 @@ nav>a:hover {
 }
 
 .blue.b {
-  max-width: Calc(100% - 12rem);
-  min-width: Calc(100% - 16rem);
-  width: 50%;
+  width: Calc(100% - 12rem);
   top: 1rem;
+  right: 12rem;
   transition-delay: Calc(6 * .5s);
 }
 
@@ -378,7 +377,6 @@ nav>a:hover {
 .pre-transition .yellow.c,
 .pre-transition .yellow.e {
   height: 0;
-  /* min-height: 0; */
 }
 
 .pre-transition .black.b,
@@ -398,7 +396,6 @@ nav>a:hover {
 .pre-transition .yellow.d,
 .pre-transition .yellow.f {
   width: 0;
-  /* min-width: 0; */
 }
 
 @media only screen and (max-width: 760px) {
