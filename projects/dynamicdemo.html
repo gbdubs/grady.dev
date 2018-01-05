@@ -7,19 +7,73 @@
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
-  font-weight: 800;
   text-align: center;
+}
+
+h4 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: left;
+  margin: 1rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height:  1.5rem;
+  text-align: justify;
 }
 
 .width-wrapper {
   width: Calc(100% - 2rem);
-  max-width: 80%;
+  max-width: 1000px;
   min-width: Calc(320px - 2rem);
   margin: 0 1rem 1rem 1rem;
   display: inline-block;
   position: relative;
   height: Calc(100% - 1rem);
 }
+
+.decorated-box {
+    height:  auto;
+    position:  relative;
+}
+
+.decorated-content {
+    width:  Calc(100% - 16rem);
+    top: 0;
+    margin: 0rem 8rem 0;
+    padding:  1rem 0 2rem 0;
+}
+
+.vertical {
+  position: absolute;
+  height: Calc(100% - 1rem);
+  width: 8rem;
+  top:0;
+}
+.left.vertical {
+    left:  0;
+}
+.right.vertical {
+    right:  0;
+}
+
+.horizontal {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+}
+.horizontal > div {
+    width:  100%;
+}
+
 
 * {
   color: #272727;
@@ -52,53 +106,25 @@ body {
   transition: width .5s linear, height .5s linear;
 }
 
-p {
-    line-height:  1.25rem;
-    text-align:  justify;
-}
-
-.paragraph-box {
-    height:  auto;
-    position:  relative;
-}
-
-.paragraph-box >
- p {
-    /* position:  absolute; */
-    width:  Calc(100% - 16rem);
-    top: 0;
-    margin: 0rem 8rem 0;
-    padding:  1rem 0 2rem 0;
-}
-
-
-
-.verticals {
-    position: absolute;
-    height: Calc(100% - 1rem);
-    width:  8rem;
-    top: 0;
-}
-.left.verticals {
-    left:  0;
-}
-.right.verticals {
-    right:  0;
-}
-.verticals > div {
+.vertical > div {
     height: Calc(100% - 1rem);
     top: .5rem;
 }
 
-
-.bottom sidebar {
-    position:  absolute;
-    bottom:  0;
-    left:  0;
-    width:  100%;
-    height: 1rem;
+.vertical > div.has-top {
+   top: -1rem;
+   height: Calc(100% + .5rem);
 }
 
+.vertical > div.has-bottom {
+   top: .5rem;
+   height: Calc(100% + .5rem);
+}
+
+.vertical > div.has-bottom.has-top {
+   top: -1rem;
+   height: Calc(100% + 2rem);
+}
 
 .pos-0 { left: 0rem; }
 .pos-1 { left: 2rem; }
@@ -107,15 +133,8 @@ p {
 .pos-4 { right: 6rem; }
 .pos-5 { right: 4rem; }
 .pos-6 { right: 2rem; }
-.pos-7 { left: 0rem; }
+.pos-7 { right: 0rem; }
 
-.div.with-top {
-    top: 0;
-}
-
-.bottom sidebar > div {
-    width:  100%;
-}
 
 .from-0 { left: 1rem; }
 .from-1 { left: 3rem; }
@@ -124,7 +143,7 @@ p {
 .from-4 { right: 7rem; }
 .from-5 { right: 5rem; }
 .from-6 { right: 3rem; }
-.from-7 { left: 1rem; }
+.from-7 { right: 1rem; }
 
 .from-3.to-4, 
 .from-4.to-3 {
@@ -179,21 +198,6 @@ p {
     width: Calc(100% - 2rem);
 }
 
-.paragraph-box div.with-top {
-    top: -1rem;
-    height: Calc(100% + .5rem);
-}
-
-.paragraph-box .with-top.with-bottom {
-    top: -1rem;
-    height: Calc(100% + 2rem);
-}
-
-.paragraph-box .with-bottom {
-    top: .5rem;
-    height:  Calc(100% + .5rem);
-}
-
 @media only screen and (max-width: 1040px) {
 
 }
@@ -201,137 +205,91 @@ p {
 </style>
 <body>
 <div class="width-wrapper pre-transition" id="width-wrapper">
-<h1>
-Find A Clinic
-</h1>
-<div class="paragraph-box">
-  <div class="left verticals">
-    <div class="black pos-1 with-top with-bottom"></div>
-    <div class="yellow pos-2 with-top"></div>
-    <div class="red pos-3 with-top"></div>
-    <div class="blue pos-4 with-top"></div>
+<div class="decorated-box">
+  <div class="left vertical"></div>
+  <div class="decorated-content">
+    <h4><a href="..">Back</a></h4>
+    <h1>Find A Clinic</h1>
   </div>
-  <p>
+<div class="right vertical"></div>
+  <div class="horizontal"></div>
+</div>
+<div class="decorated-box">
+  <div class="left vertical"></div>
+  <p class="decorated-content">
   Please note - I deeply respect various opinions on the moral wight of abortion, but personally [^1] fully support the right of a woman to make her own judgements about the matter. For that reason, I believe that women should have full knowledge of all of their options when they become pregnant, and that is the aim that this project is directed toward.
   </p>
-  <div class="right verticals"></div>
-  <div class="bottom sidebar">
-    <div class="black from-1 to-1"></div>
-  </div>
+  <div class="right vertical"></div>
+  <div class="horizontal"></div>
 </div>
 
 
-<div class="paragraph-box">
-  <div class="left verticals">
-    <div class="yellow pos-2 with-bottom"></div>
-    <div class="red pos-3"></div>
-    <div class="blue pos-4"></div>
-  </div>
-  <p>
+<div class="decorated-box">
+  <div class="left vertical"></div>
+  <p class="decorated-content">
 [^1] I think most of us would agree that there is a difference in value between the existence of a day-old fertilized human egg, and a pregnancy that is about to be birthed. This implies that there is a spectrum of moral culpability along this timeline. I believe that because the challenge of obtaining the right ethical point at which the act of terminating a pregancy is unacceptable, the person with the most knowledge and proximity (the woman who is preganant) is ultimately the best informed to be making the decision as to whether or not an abortion is morally acceptable.
-</p>
-  <div class="right verticals">
-    <div class="black pos-1 with-top"></div>
-  </div>
-  <div class="bottom sidebar">
-    <div class="yellow from-2 to-2"></div>
-  </div>
+  </p>
+  <div class="right vertical"></div>
+  <div class="horizontal"></div>
 </div>
 
 
-<div class="paragraph-box">
-  <div class="left verticals">
-    <div class="red pos-3"></div>
-    <div class="blue pos-4"></div>
-  </div>
-  <p>
+<div class="decorated-box">
+  <div class="left vertical"></div>
+  <p class="decorated-content">
 In 2017 there was an unprecedented attack on a woman’s right to obtain a safe and legal abortion in the United States.  Many states have used arbitrary (non-health driven) regulations to try to force abortion clinics to close.  As a result, many women live in “clinic-deserts”, where no clinics exist within a reasonable radius.  These women must choose between birthing a child that they are unprepared for and finding their way to an abortion clinic which might be hundreds of miles away. 
-</p>
-  <div class="right verticals">
-    <div class="black pos-1 with-bottom"></div>
-    <div class="yellow pos-2 with-top with-bottom"></div>
-  </div>
-  <div class="bottom sidebar">
-    <div class="black from-2 to-1"></div>
-  </div>
+  </p>
+  <div class="right vertical"></div>
+  <div class="horizontal"></div>
 </div>
 
-<div class="paragraph-box">
-  <div class="left verticals">
-    <div class="black pos-2 with-bottom with-top"></div>
-    <div class="red pos-3 with-bottom"></div>
-    <div class="blue pos-4 with-bottom"></div>
-  </div>
-  <p>
+
+<div class="decorated-box">
+  <div class="left vertical"></div>
+  <p class="decorated-content">
 Find a Clinic was an effort by myself and four others to try to make this situation clearer and enumerate all of the options for women in this dangerous situation.  Our goal was to collect information on the clinics in the United States, the abortion regulations in every state, the costs of procedures at different locations and pull in APIs with current flight, train, and bussing options. This data was then synthesized into a set of options - different clinic/date pairs that would minimize cost, or get around certian regulations like partner consent restrictions.
-</p>
-  <div class="right verticals">
-    <div class="yellow pos-2 with-top with-bottom"></div>
-  </div>
-  <div class="bottom sidebar">
-    <div class="blue from-4 to-1"></div>
-  </div>
+  </p>
+  <div class="right vertical"></div>
+  <div class="horizontal"></div>
 </div>
-<div class="paragraph-box">
-  <div class="left verticals">
-    <div class="black pos-2 with-bottom with-top"></div>
-    <div class="red pos-3 with-bottom with-top"></div>
-  </div>
-  <p>
+
+
+<div class="decorated-box">
+  <div class="left vertical"></div>
+  <p class="decorated-content">
 For this effort, I was in charge of building a robust backend that could handle the entry and exposition of clinic data. 
-</p>
-  <div class="right verticals">
-    <div class="blue pos-1 with-top"></div>
-    <div class="yellow pos-2 with-top with-bottom"></div>
-  </div>
-  <div class="bottom sidebar">
-    <div class="yellow from-4 to-2"></div>
-  </div>
+  </p>
+  <div class="right vertical"></div>
+  <div class="horizontal"></div>
 </div>
-<div class="paragraph-box">
-  <div class="left verticals">
-    <div class="black pos-2 with-bottom with-top"></div>
-    <div class="red pos-3 with-bottom with-top"></div>
-    <div class="yellow pos-4 with-top"></div>
-  </div>
-  <p>
+
+
+<div class="decorated-box">
+  <div class="left vertical"></div>
+  <p class="decorated-content">
 This effort ended up failing. There are many factors that led to this failure, but the main one was problems around data collection. We had overestimated the willingness of clinics to give us cost and procedure information, and the willingness of volunteers to call to ask for it during working hours.  In the end, we built a fairly robust system, with a gorgeous front end and reasonably well built back end, only to have it fail because some of our fundamental assumptions were flawed. Once the problems with data collection became apparent, our group found it signifigantly harder to concentrate on the project, and we ended up disbanding a few weeks after this problem came to light.
-</p>
-  <div class="right verticals">
-    <div class="blue pos-1"></div>
-  </div>
-  <div class="bottom sidebar">
-    <div class="red from-3 to-3"></div>
-  </div>
+  </p>
+  <div class="right vertical"></div>
+  <div class="horizontal"></div>
 </div>
-<div class="paragraph-box">
-  <div class="left verticals">
-    <div class="black pos-2 with-bottom with-top"></div>
-    <div class="yellow pos-4 with-bottom"></div>
-  </div>
-  <p>
+
+
+<div class="decorated-box">
+  <div class="left vertical"></div>
+  <p class="decorated-content">
 However, I am deeply proud of this work, and hopeful to work on things like it in the future. 
-</p>
-  <div class="right verticals">
-    <div class="blue pos-1"></div>
-    <div class="red pos-3 with-bottom with-top"></div>
-  </div>
-  <div class="bottom sidebar">
-    <div class="yellow from-4 to-2"></div>
-  </div>
+ </p>
+  <div class="right vertical"></div>
+  <div class="horizontal"></div>
 </div>
-<div class="paragraph-box">
-  <div class="left verticals">
-    <div class="black pos-2 with-bottom with-top"></div>
-  </div>
-  <p></p>
-  <div class="right verticals">
-    <div class="blue pos-1 with-bottom"></div>
-    <div class="yellow pos-2 with-top with-bottom"></div>
-    <div class="red pos-3 with-bottom with-top"></div>
-  </div>
-  <div class="bottom sidebar">
-  </div>
+
+
+<div class="decorated-box">
+  <div class="left vertical"></div>
+  <p class="decorated-content">
+  </p>
+  <div class="right vertical"></div>
+  <div class="horizontal"></div>
 </div>
 </div>
 <script>
@@ -398,37 +356,60 @@ However, I am deeply proud of this work, and hopeful to work on things like it i
     return ((a < b) == (b < c));
   }
   
-  function assignAssignmentToParagraphBox(previousAssignment, assignment, box) {
+  function assignAssignmentToParagraphBox(lastAssignment, assignment, box) {
   
-    var bottomSidebar = box.getElementByClassName('bottom sidebar')[0];
-    bottomSidebar.classList.append("from-" + assignment.origin);
-    bottomSidebar.classList.append("to-" + assignment.destination);
+    var bottomSidebar = box.getElementsByClassName('horizontal')[0];
+    var classesForBottom = assignment[assignment.origin] + " from-" + assignment.origin + " to-" + assignment.destination;
+    var bottomSidebarHtml = "<div class=\"" + classesForBottom + "\"></div>";
+    bottomSidebar.innerHTML = bottomSidebarHtml;
   
-    var leftSidebar = box.getElementByClassName('left verticals')[0];
     var leftSidebarHtml = "";
     for (var i = 0; i < 4; i++) {
       if (assignment[i] !== EMPTY) {
-        var classesToAdd = assignment[i];
-        if (!isInBetween(lastAssignment.origin, i, lastAssignment.destination)){
-          classesToAdd = classesToAdd + " has-bottom";
-        }
-        if (!isInBetween(assignment.origin, i, assignment.destination)){
+        var classesToAdd = assignment[i] + " pos-" + i;
+        if (!isInBetween(lastAssignment.origin, i, lastAssignment.destination) || lastAssignment.destination == i){
           classesToAdd = classesToAdd + " has-top";
+        }
+        if (!isInBetween(assignment.origin, i, assignment.destination) || assignment.origin == i){
+          classesToAdd = classesToAdd + " has-bottom";
         }
         leftSidebarHtml = leftSidebarHtml + '<div class="' +classesToAdd + '"></div>';
       }
-      
+    }
+    var leftSidebar = box.getElementsByClassName('left')[0];
+    leftSidebar.innerHTML = leftSidebarHtml;
+    
+    var rightSidebarHtml = "";
+    for (var i = 4; i < 8; i++) {
+      if (assignment[i] !== EMPTY) {
+        var classesToAdd = assignment[i] + " pos-" + i;
+        if (!isInBetween(lastAssignment.origin, i, lastAssignment.destination) || lastAssignment.destination == i){
+          classesToAdd = classesToAdd + " has-top";
+        }
+        if (!isInBetween(assignment.origin, i, assignment.destination) || assignment.origin == i){
+          classesToAdd = classesToAdd + " has-bottom";
+        }
+        rightSidebarHtml = rightSidebarHtml + '<div class="' +classesToAdd + '"></div>';
+      }
+    }
+    var rightSidebar = box.getElementsByClassName('right')[0];
+    rightSidebar.innerHTML = rightSidebarHtml;
+  }
+
+  window.onload = function () {
+    var paragraphsBoxes = document.getElementsByClassName("decorated-box");
+    var paragraphAssignments = createParagraphAssignments(paragraphsBoxes.length);
+    console.log(paragraphAssignments);
+  
+    for (var i = 0; i < paragraphsBoxes.length; i++){
+      var previous = {origin: -1, destination: -1};
+      if (i > 0) {
+        previous = paragraphAssignments[i - 1];
+      }
+      assignAssignmentToParagraphBox(previous, paragraphAssignments[i], paragraphsBoxes[i]);
     }
   }
   
-  var paragraphsBoxes = document.getElementsByClassName("paragraph-box");
-  var paragraphAssignments = createParagraphAssignments(paragraphsBoxes.length);
-  console.log(paragraphAssignments);
-  /*
-  for (var i = 0; i < paragraphsBoxes.length; i++){
-    assignAssignmentToParagraphBox(paragraphAssignments[i], paragraphsBoxes[i]);
-  }
-  */
 </script>
 </body>
 </html>
