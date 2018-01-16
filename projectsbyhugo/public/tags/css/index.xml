@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Css on Grady Berry Ward</title>
+    <link>http://gradybward.com/tags/css/</link>
+    <description>Recent content in Css on Grady Berry Ward</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://gradybward.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/draw_me_css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/draw_me_css/</guid>
+      <description>In the third Harry Potter book, Harry is given the “Maurauder’s Map”, and one of the many images I like about this map is how the ink spreads outward from the point that it is awoken.
+I wondered if you could do this in CSS, so I poked around, learned about CSS Transitions, and came up with a generalized framework for making a set of boxes animate on to the page.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/website_v1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/website_v1/</guid>
+      <description>In my original website, I wanted to play with the fundamental assumption of what a webpage renders as - a series of nested boxes. The idea of an expanding button that becomes the page facinated me, particularly since the new page had buttons for the old one (I was reading all about golden-braids in GEB at the time).
+This isn’t great work, but it reflects where I was at at the time - having fun, experimenting, and learning Javascript.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/website_v2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/website_v2/</guid>
+      <description>I took an architechure class in my Senior Year at Brandeis that awoke an asthetic sense I had not previously identified or listened to. In particular, the de-stijl primitive of intersecting planes struck a resonant chord in my sense of beauty.
+That new asthetic, in combination with “draw me CSS” was the inspiration for V2 of my website - meant to resemble something in between a circut board, the maurader’s map, and the de-stijl classic “Composition in black, red, yellow and blue”.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/website_v3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/website_v3/</guid>
+      <description>When I tried to update my website in December of 2017, I couldn’t find the files anywhere on my laptop or github. This was a surprise, but one that I took as an opporotunity to recreate the site from scratch, using best practices from the start, and making some design changes. Luckily I later found these files, and posted them as V2 on this page.
+The result is the site you see before you - with a detailed portfolio section, some nice hugo-templated HTML, and the cute animations (which are NOT generated via draw-me-css).</description>
+    </item>
+    
+  </channel>
+</rss>

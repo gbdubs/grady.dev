@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on Grady Berry Ward</title>
+    <link>http://gradybward.com/tags/design/</link>
+    <description>Recent content in Design on Grady Berry Ward</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://gradybward.com/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/in_line/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/in_line/</guid>
+      <description>In my time at Brandeis University, I spent 3 years working hard for the Brandeis Student Union. Over those three years, we had three different computer science students as “web-master”, and three politicos as “communications director”. The problem was that each “web-master” would build a beautiful website that was never able to be updated because the communications director never had the technical expertiese to update the HTML or use the static site generator.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/parley/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/parley/</guid>
+      <description>Comment threads are an inherently flawed way to have a discussion, because they are strictly linear. In recent years, large organizations like facebook have realized this and have tried to reconsile it with a binary tree pattern of deeper or next. This only partially solves the problem. Far more frequently, if I want to respond to a comment, there are multiple peices of it that I want to respond to, and some may already be addressed further down the thread.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/ward_lab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/ward_lab/</guid>
+      <description>My father is a professor at UVM, where he studies microbiology and molecular genetics. In 2017 as a birthday present, I made him a website using Hugo, and the Academic theme. The theme I used was superb at providing most of the functionality required, but it took a few months of tinkering with my father to get everything exactly the way he wanted (publications ordered in certain ways, display settings configuration based, etc.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/website_v1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/website_v1/</guid>
+      <description>In my original website, I wanted to play with the fundamental assumption of what a webpage renders as - a series of nested boxes. The idea of an expanding button that becomes the page facinated me, particularly since the new page had buttons for the old one (I was reading all about golden-braids in GEB at the time).
+This isn’t great work, but it reflects where I was at at the time - having fun, experimenting, and learning Javascript.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/website_v2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/website_v2/</guid>
+      <description>I took an architechure class in my Senior Year at Brandeis that awoke an asthetic sense I had not previously identified or listened to. In particular, the de-stijl primitive of intersecting planes struck a resonant chord in my sense of beauty.
+That new asthetic, in combination with “draw me CSS” was the inspiration for V2 of my website - meant to resemble something in between a circut board, the maurader’s map, and the de-stijl classic “Composition in black, red, yellow and blue”.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/website_v3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/website_v3/</guid>
+      <description>When I tried to update my website in December of 2017, I couldn’t find the files anywhere on my laptop or github. This was a surprise, but one that I took as an opporotunity to recreate the site from scratch, using best practices from the start, and making some design changes. Luckily I later found these files, and posted them as V2 on this page.
+The result is the site you see before you - with a detailed portfolio section, some nice hugo-templated HTML, and the cute animations (which are NOT generated via draw-me-css).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/wsmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/wsmd/</guid>
+      <description>Maddie Dollins is a dear friend who is frequently frustratingly indecisive.
+One night at dinner she asked if she should have chocolate milk - to which I said “I do not care”. She then asked if she should have regular milk. This broke the camel’s back, and in a rush of an hour, I built and published WSMD - What Should Maddie Do - a simplified magic-eight-ball that simply returns a yes or no.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,423 @@
+<html>
+<head>
+  <title>Grady Berry Ward | CalcU</title>
+  <meta name="viewport" content="width=device-width">
+<style>
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: left;
+  margin: 1rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height:  1.5rem;
+  text-align: justify;
+}
+
+.width-wrapper {
+  width: Calc(100% - 2rem);
+  max-width: 1000px;
+  min-width: Calc(320px - 2rem);
+  margin: 0 1rem 1rem 1rem;
+  display: inline-block;
+  position: relative;
+  height: Calc(100% - 1rem);
+}
+
+.decorated-box {
+    height:  auto;
+    position:  relative;
+}
+
+.decorated-content {
+    width:  Calc(100% - 16rem);
+    top: 0;
+    margin: 0rem 8rem 0;
+    padding:  1rem 0 2rem 0;
+}
+
+.vertical {
+  position: absolute;
+  height: Calc(100% - 1rem);
+  width: 8rem;
+  top:0;
+}
+.left.vertical {
+    left:  0;
+}
+.right.vertical {
+    right:  0;
+}
+
+.horizontal {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+}
+.horizontal > div {
+    width:  100%;
+}
+
+
+* {
+  color: #272727;
+}
+
+.black {
+  background: #272727;
+}
+
+.red {
+  background: #d20909;
+}
+
+.yellow {
+  background: #eac40a;
+}
+
+.blue {
+  background: #1444b1;
+}
+
+.black,
+.red,
+.blue,
+.yellow {
+  display: block;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  transition: width .5s linear, height .5s linear;
+}
+
+.vertical > div {
+    height: Calc(100% - 1rem);
+    top: .5rem;
+}
+
+.vertical > div.has-top {
+   top: -1rem;
+   height: Calc(100% + .5rem);
+}
+
+.vertical > div.has-bottom {
+   top: .5rem;
+   height: Calc(100% + .5rem);
+}
+
+.vertical > div.has-bottom.has-top {
+   top: -1rem;
+   height: Calc(100% + 2rem);
+}
+
+.pos-0 { left: 0rem; }
+.pos-1 { left: 2rem; }
+.pos-2 { left: 4rem; }
+.pos-3 { left: 6rem; }
+.pos-4 { right: 6rem; }
+.pos-5 { right: 4rem; }
+.pos-6 { right: 2rem; }
+.pos-7 { right: 0rem; }
+
+
+.from-0 { left: 1rem; }
+.from-1 { left: 3rem; }
+.from-2 { left: 5rem; }
+.from-3 { left: 7rem; }
+.from-4 { right: 7rem; }
+.from-5 { right: 5rem; }
+.from-6 { right: 3rem; }
+.from-7 { right: 1rem; }
+
+.from-3.to-4, 
+.from-4.to-3 {
+    width: Calc(100% - 14rem);
+}
+
+.from-2.to-4,
+.from-3.to-5,
+.from-4.to-2,
+.from-5.to-3 {
+    width: Calc(100% - 12rem);
+}
+
+.from-1.to-4,
+.from-2.to-5,
+.from-3.to-6,
+.from-4.to-1,
+.from-5.to-2,
+.from-6.to-3 {
+    width: Calc(100% - 10rem);
+}
+
+.from-0.to-4,
+.from-1.to-5,
+.from-2.to-6,
+.from-3.to-7,
+.from-4.to-0,
+.from-5.to-1,
+.from-6.to-2,
+.from-7.to-3 {
+    width: Calc(100% - 8rem);
+}
+
+.from-0.to-5,
+.from-1.to-6,
+.from-2.to-7,
+.from-5.to-0,
+.from-6.to-1,
+.from-7.to-2 {
+    width: Calc(100% - 6rem);
+}
+
+.from-0.to-6,
+.from-1.to-7,
+.from-6.to-0,
+.from-7.to-1 {
+    width: Calc(100% - 4rem);
+}
+
+.from-0.to-7,
+.from-7.to-0 {
+    width: Calc(100% - 2rem);
+}
+
+@media only screen and (max-width: 1040px) {
+
+}
+
+</style>
+<body>
+<div class="width-wrapper pre-transition" id="width-wrapper">
+<div class="decorated-box">
+  <div class="left vertical"></div>
+  <div class="decorated-content">
+    <h4><a href="..">Back</a></h4>
+    <h1> CalcU</h1>
+  </div>
+<div class="right vertical"></div>
+  <div class="horizontal"></div>
+</div>
+
+
+
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <p class="decorated-content">
+        I frontloaded my classes to heavily at Brandeis, and coming into my Junior Spring Semester, I was mostly done my majors.  Since most of my friends were abroad, I decided to work on a side project for the semester, with my only class being French.  This was one of the best decisions of my life.
+      </p>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <p class="decorated-content">
+        CalcU emerged from a need I saw when tutoring. I was a math tutor throughout highschool and into part of college, and I frequently helped out folks who needed refreshers on stuff far before the material they were working on.  A student in calculus is forgetting basic rules of geometry, a student in microeconomics forgets derivative rules, a student in multivariate calculus has never taken linear algebra. Students in this position need a resource which has a plethora of examples, sample questions and explanations, but more importantly, they need a resource that is able to quickly determine what they know, what they do not know, and what they are trying to learn.  CalcU sought to fill this niche.
+      </p>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <p class="decorated-content">
+        I could talk about CalcU for days, but I will not. The project expanded when I got a grant to continue the work over the summer before my Senior year, and with the funding was able to hire three interns. The fundamental premise was that we used web-scraping to get the data from a large number of open source text books (including problems, examples, solutions and explanations).  We then used manual categorization into a taxonomy of problems that we created.  This taxonomy was both recursive and strongly ordered.  A student’s familiarity with different areas of the taxonomy was recursively explored through a placement quiz which sought to understand the set of problems the student understood and those that they did not. CalcU built a rating system to enable the best examples and problems to drift toward the top, and had the ultimate goal of identifiying learning styles and common patterns amoung learners that would enable machine prediction of the next problem a student should see.
+      </p>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <p class="decorated-content">
+        CalcU was my first big independent project, and I loved it.  It showed me how much fun desigining and building a system from scratch can be.  It taught me more than I can say about how to manage engineers.  It made me believe that I am capable of building big, complicated, and technically complex systems. It was the project that enabled me to identify as an engineer.
+      </p>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <p class="decorated-content">
+        It ultimately failed.  The system and software are good at what they do.  They are built in a way that minimizes server costs, and are fairly well exposed for future data science work.  However, I failed to generate the enthusiasm about the system that I had hoped. I did the classic engineering mistake of building without consulting real users, and trying to present a polished end result without thinking about whether it is what people wanted. I avoided pushing the software into the hands of users because I was afraid of what they would think, and by the time I was satisfied with it, it was too rigid to enable valid user feedback to influence the final product.
+      </p>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <p class="decorated-content">
+        I am deeply thankful for the experience. The folks I got to work with (students and teachers in the high-schools, the faculty at Brandeis who advised me (Profs. XXXX and Hickey), and my friends and interns Russ, Roger and Danny) made it one of the most fun and exciting projects I’ve ever worked on.
+      </p>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+<div class="decorated-box">
+  <div class="left vertical"></div>
+  <p class="decorated-content">
+  </p>
+  <div class="right vertical"></div>
+  <div class="horizontal"></div>
+</div>
+</div>
+<script>
+  var wrapper = document.getElementById("width-wrapper");
+  wrapper.classList.remove("pre-transition");
+  
+  var EMPTY = "empty";
+  
+  function randomInitialAssignment() {
+    return ["red", "black", "yellow", "blue", EMPTY, EMPTY, EMPTY, EMPTY]
+  }
+  
+  function couldSwapPair(assignment, from, to) {
+    if (from < 4 == to < 4){
+      return false;
+    }
+    if (assignment[to] != EMPTY || assignment[from] == EMPTY) {
+      return false;
+    }
+    return true;
+  }
+  
+  function randomPairToSwap(assignment) {
+    var initialI = Math.floor(8 * Math.random());
+    var initialJ = Math.floor(8 * Math.random());
+    for (var incrementalI = 0; incrementalI < 8; incrementalI++) {
+      var i = (initialI + incrementalI) % 8;
+      for (var incrementalJ = 0; incrementalJ < 8; incrementalJ++) {
+        var j = (initialJ + incrementalJ) % 8;
+        if (couldSwapPair(assignment, i, j)) {
+          return {
+            "origin": i, 
+            "destination": j
+          };
+        }
+      }
+    }
+  }
+  
+  function createParagraphAssignments(numParagraphs) {
+    var paragraphAssignments = [];
+    paragraphAssignments[0] = randomInitialAssignment();
+    for (var i = 1; i < numParagraphs; i++) {
+      var pairToSwap = randomPairToSwap(paragraphAssignments[i-1]);
+      var newAssignment = [];
+      Object.assign(newAssignment, paragraphAssignments[i-1]);
+      newAssignment[pairToSwap.destination] = newAssignment[pairToSwap.origin];
+      newAssignment[pairToSwap.origin] = EMPTY;
+      newAssignment.origin = pairToSwap.origin;
+      newAssignment.destination = pairToSwap.destination;
+      paragraphAssignments.push(newAssignment);
+    }
+    for (var i = 0; i < numParagraphs - 1; i++) {
+      paragraphAssignments[i].origin = paragraphAssignments[i+1].origin;
+      paragraphAssignments[i].destination = paragraphAssignments[i+1].destination;
+    }
+    paragraphAssignments[numParagraphs-1].origin = -1;
+    paragraphAssignments[numParagraphs-1].destination = -1;
+    
+    return paragraphAssignments;
+  }
+  
+  function isInBetween(a, b, c){
+    return ((a < b) == (b < c));
+  }
+  
+  function assignAssignmentToParagraphBox(lastAssignment, assignment, box) {
+  
+    var bottomSidebar = box.getElementsByClassName('horizontal')[0];
+    var classesForBottom = assignment[assignment.origin] + " from-" + assignment.origin + " to-" + assignment.destination;
+    var bottomSidebarHtml = "<div class=\"" + classesForBottom + "\"></div>";
+    bottomSidebar.innerHTML = bottomSidebarHtml;
+  
+    var leftSidebarHtml = "";
+    for (var i = 0; i < 4; i++) {
+      if (assignment[i] !== EMPTY) {
+        var classesToAdd = assignment[i] + " pos-" + i;
+        if (!isInBetween(lastAssignment.origin, i, lastAssignment.destination) || lastAssignment.destination == i){
+          classesToAdd = classesToAdd + " has-top";
+        }
+        if (!isInBetween(assignment.origin, i, assignment.destination) || assignment.origin == i){
+          classesToAdd = classesToAdd + " has-bottom";
+        }
+        leftSidebarHtml = leftSidebarHtml + '<div class="' +classesToAdd + '"></div>';
+      }
+    }
+    var leftSidebar = box.getElementsByClassName('left')[0];
+    leftSidebar.innerHTML = leftSidebarHtml;
+    
+    var rightSidebarHtml = "";
+    for (var i = 4; i < 8; i++) {
+      if (assignment[i] !== EMPTY) {
+        var classesToAdd = assignment[i] + " pos-" + i;
+        if (!isInBetween(lastAssignment.origin, i, lastAssignment.destination) || lastAssignment.destination == i){
+          classesToAdd = classesToAdd + " has-top";
+        }
+        if (!isInBetween(assignment.origin, i, assignment.destination) || assignment.origin == i){
+          classesToAdd = classesToAdd + " has-bottom";
+        }
+        rightSidebarHtml = rightSidebarHtml + '<div class="' +classesToAdd + '"></div>';
+      }
+    }
+    var rightSidebar = box.getElementsByClassName('right')[0];
+    rightSidebar.innerHTML = rightSidebarHtml;
+  }
+
+  window.onload = function () {
+    var paragraphsBoxes = document.getElementsByClassName("decorated-box");
+    var paragraphAssignments = createParagraphAssignments(paragraphsBoxes.length);
+    console.log(paragraphAssignments);
+  
+    for (var i = 0; i < paragraphsBoxes.length; i++){
+      var previous = {origin: -1, destination: -1};
+      if (i > 0) {
+        previous = paragraphAssignments[i - 1];
+      }
+      assignAssignmentToParagraphBox(previous, paragraphAssignments[i], paragraphsBoxes[i]);
+    }
+  }
+  
+</script>
+</body>
+</html>

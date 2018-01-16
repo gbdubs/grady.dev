@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on Grady Berry Ward</title>
+    <link>http://gradybward.com/tags/web/</link>
+    <description>Recent content in Web on Grady Berry Ward</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://gradybward.com/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/draw_me_css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/draw_me_css/</guid>
+      <description>In the third Harry Potter book, Harry is given the “Maurauder’s Map”, and one of the many images I like about this map is how the ink spreads outward from the point that it is awoken.
+I wondered if you could do this in CSS, so I poked around, learned about CSS Transitions, and came up with a generalized framework for making a set of boxes animate on to the page.</description>
+    </item>
+    
+  </channel>
+</rss>

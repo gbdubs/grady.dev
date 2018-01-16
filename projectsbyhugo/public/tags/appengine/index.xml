@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Appengine on Grady Berry Ward</title>
+    <link>http://gradybward.com/tags/appengine/</link>
+    <description>Recent content in Appengine on Grady Berry Ward</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://gradybward.com/tags/appengine/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/parley/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/parley/</guid>
+      <description>Comment threads are an inherently flawed way to have a discussion, because they are strictly linear. In recent years, large organizations like facebook have realized this and have tried to reconsile it with a binary tree pattern of deeper or next. This only partially solves the problem. Far more frequently, if I want to respond to a comment, there are multiple peices of it that I want to respond to, and some may already be addressed further down the thread.</description>
+    </item>
+    
+  </channel>
+</rss>

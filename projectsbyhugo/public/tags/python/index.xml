@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Grady Berry Ward</title>
+    <link>http://gradybward.com/tags/python/</link>
+    <description>Recent content in Python on Grady Berry Ward</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://gradybward.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/ai_science_test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/ai_science_test/</guid>
+      <description>This project is not very exciting.
+For an ML projectin in my AI class, we were assigned a task from Kaggle - answering multiple choice questions from a ninth grade science test. Tensor flow had been released a week beforehand, and I used it out of the box (with slight model refactoring) to train an ML model for the competition. Ours did really well - top 10 out of 500 contenders.</description>
+    </item>
+    
+  </channel>
+</rss>

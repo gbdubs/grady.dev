@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webapp on Grady Berry Ward</title>
+    <link>http://gradybward.com/tags/webapp/</link>
+    <description>Recent content in Webapp on Grady Berry Ward</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://gradybward.com/tags/webapp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/calc_u/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/calc_u/</guid>
+      <description>I frontloaded my classes to heavily at Brandeis, and coming into my Junior Spring Semester, I was mostly done my majors. Since most of my friends were abroad, I decided to work on a side project for the semester, with my only class being French. This was one of the best decisions of my life.
+CalcU emerged from a need I saw when tutoring. I was a math tutor throughout highschool and into part of college, and I frequently helped out folks who needed refreshers on stuff far before the material they were working on.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/chase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/chase/</guid>
+      <description>When I was taking his class of US foreign economic policy, Professor Kerry Chase asked me to build him a website, which I did.
+I must say that the asthetic is way too “1982” for me, but hey, you have to build what the client wants!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/dumb_db/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/dumb_db/</guid>
+      <description>While protyping front end interfaces for responsive web applications, I frequently have to mock out the data interactions with static constants in my javascript that mock server requests and responses. This has several downsides: you cannot change the data in a demo situation, inserting real requests requires you to construct the remoteand the number of mocks can explode if you are trying to make a CRUD user interface.
+DumbDB is a better way.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/find_a_clinic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/find_a_clinic/</guid>
+      <description>Please note - I deeply respect various opinions on the moral wight of abortion, but personally [^1] fully support the right of a woman to make her own judgements about the matter. For that reason, I believe that women should have full knowledge of all of their options when they become pregnant, and that is the aim that this project is directed toward.
+[^1] I think most of us would agree that there is a difference in value between the existence of a day-old fertilized human egg, and a pregnancy that is about to be birthed.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/grady_docs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/grady_docs/</guid>
+      <description>I one time made the mistake of looking at how the Google Docs DOM is structured. I wondered if I could make a functional front end that looked similar without half a meg of divs, so I tried!
+Then I wrote a backend for it (node-js, socketio), and got the project to the point where two users could edit the document together with sub-second lag.
+The underlying data model for this was not only flawed, it is abysmal.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/grady_in/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/grady_in/</guid>
+      <description>Go Links are a system used interally at google to create semantically meaningful short links. Grady.In replicates this functionality for use outside of the company, allowing anyone to construct short and human readable links.
+This was my first forray into a serverless architechure. The system is built using Google Cloud Functions. The primary function validates a request and writes the new link (as a simple redirect) to a CDN. The client (when looking at the grady.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/hard_scrabble/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/hard_scrabble/</guid>
+      <description>Pair programming is a stellar way for people to learn, particularly when paired with a partner at the same level. I saw this multiple times in action in my time as a teaching assistant for courses at Brandeis. However, the problem of assigning pairs is fundamentally challenging - if the students are given free reign, they will likely pick their friends, and the skill level of the two will be (largely) uncorrelated.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/in_line/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/in_line/</guid>
+      <description>In my time at Brandeis University, I spent 3 years working hard for the Brandeis Student Union. Over those three years, we had three different computer science students as “web-master”, and three politicos as “communications director”. The problem was that each “web-master” would build a beautiful website that was never able to be updated because the communications director never had the technical expertiese to update the HTML or use the static site generator.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/parley/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/parley/</guid>
+      <description>Comment threads are an inherently flawed way to have a discussion, because they are strictly linear. In recent years, large organizations like facebook have realized this and have tried to reconsile it with a binary tree pattern of deeper or next. This only partially solves the problem. Far more frequently, if I want to respond to a comment, there are multiple peices of it that I want to respond to, and some may already be addressed further down the thread.</description>
+    </item>
+    
+  </channel>
+</rss>

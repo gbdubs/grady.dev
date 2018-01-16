@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Collaborative on Grady Berry Ward</title>
+    <link>http://gradybward.com/tags/collaborative/</link>
+    <description>Recent content in Collaborative on Grady Berry Ward</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://gradybward.com/tags/collaborative/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/chase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/chase/</guid>
+      <description>When I was taking his class of US foreign economic policy, Professor Kerry Chase asked me to build him a website, which I did.
+I must say that the asthetic is way too “1982” for me, but hey, you have to build what the client wants!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/find_a_clinic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/find_a_clinic/</guid>
+      <description>Please note - I deeply respect various opinions on the moral wight of abortion, but personally [^1] fully support the right of a woman to make her own judgements about the matter. For that reason, I believe that women should have full knowledge of all of their options when they become pregnant, and that is the aim that this project is directed toward.
+[^1] I think most of us would agree that there is a difference in value between the existence of a day-old fertilized human egg, and a pregnancy that is about to be birthed.</description>
+    </item>
+    
+  </channel>
+</rss>

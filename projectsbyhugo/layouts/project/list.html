@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>Grady Berry Ward | Projects</title>
+</head>
+<body>
+<h1>Projects</h1>
+<ul>
+{{ range where $.Data.Pages "Type" "project" }}
+  <li>
+    <a href="{{ .Permalink }}">{{ .Params.name }}</a>
+    -
+    {{ .Params.short_desc }}
+  </li>
+{{ end }}
+</ul>
+</body>
+</html>

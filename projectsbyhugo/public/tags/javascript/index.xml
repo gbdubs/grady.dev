@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on Grady Berry Ward</title>
+    <link>http://gradybward.com/tags/javascript/</link>
+    <description>Recent content in Javascript on Grady Berry Ward</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://gradybward.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/dumb_db/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/dumb_db/</guid>
+      <description>While protyping front end interfaces for responsive web applications, I frequently have to mock out the data interactions with static constants in my javascript that mock server requests and responses. This has several downsides: you cannot change the data in a demo situation, inserting real requests requires you to construct the remoteand the number of mocks can explode if you are trying to make a CRUD user interface.
+DumbDB is a better way.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/voat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/voat/</guid>
+      <description>A good piece of art compells you to understand the process that created it, whether it is the emotion of the composer, or the logic of the painter. A revlation while looking at a piece by Frank Stella made me understand the fundamental mechanism that was generating the work, and gave me confidence that I could recreate it.
+Squares (with side of size 1), with two quarter-circles in opposite corners (with radius one-half), in both configurations, with space filling between regions, forms the basis of this work by stella.</description>
+    </item>
+    
+  </channel>
+</rss>

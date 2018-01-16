@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Theory on Grady Berry Ward</title>
+    <link>http://gradybward.com/tags/theory/</link>
+    <description>Recent content in Theory on Grady Berry Ward</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://gradybward.com/tags/theory/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/3_sat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/3_sat/</guid>
+      <description>Haven’t you ever looked at SAT (the problem of finding a solution to an arbitrary expression of boolean predicates), and thought it must be solvable in sub-polynomial time? My intuition says so too, but this is clearly a function of naievite.
+The thing that struck me about 3-SAT is that it is fundamentally trying to explore a bunch of different roads at once, and reporting back the ones that don’t hit dead ends.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/bananagrams/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/bananagrams/</guid>
+      <description>BANNNANNNNNAAAA</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/senior_thesis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/senior_thesis/</guid>
+      <description>I wrote my undergraduate thesis on the Graph Isomorphism problem, and within that, the “Paths” invariant, which is incredibly powerful test for discerning between potentially isomorphic graphs in cubic (and fully paralellizable) time.
+The main findings of my thesis were that: Unlike was theorized by XXX, copaths graphs exist, and finding them is easily done through some mapreduces, or on a GPU. Measuring discriminatory power to value ratio of invariants within graph isomorphism is possible and can help us devise better algorithms for practical isomorphism detection.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/trees/</guid>
+      <description>Recursively enumerating all possible sparse binary trees is easy. Far harder is coming up with a stable mapping between the integers and this set of trees. I was able to do this after a lot of thought.
+The code is here, but it is from like four years ago, so please be warned.</description>
+    </item>
+    
+  </channel>
+</rss>
