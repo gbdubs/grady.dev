@@ -12,13 +12,16 @@ body {
 h4 {
   font-size: 1.5rem;
   text-align: left;
-  margin: 1rem 0;
+  margin: 0;
+  position: absolute;
+  top: 1rem;
+  left: 8rem;
 }
 
 h1 {
   font-size: 3rem;
   text-align: left;
-  margin: 1rem 0;
+  margin: 5rem 0 1rem 0;
 }
 
 .width-wrapper {
@@ -67,6 +70,18 @@ h1 {
     position: relative;
     display: inline-block;
     font-size:  1.25rem;
+}
+.decorated-box.indent-4 {
+  padding-left: 8rem;
+}
+.decorated-box.indent-3 {
+  padding-left: 6rem;
+}
+.decorated-box.indent-2 {
+  padding-left: 4rem;
+}
+.decorated-box.indent-1 {
+  padding-left: 2rem;
 }
 
 .decorated-contents {
@@ -164,8 +179,8 @@ h1 {
     <h1>Projects</h1>
   </div>
 {{ range $index, $project := ( where $.Data.Pages "Type" "project" ) }}
-  <div class="decorated-box delay-{{ add $index 2 }}">
-  {{ if ( lt $index ( mul ( div ( len $.Data.Pages ) 4 ) 1 ) )}} 
+  {{ if ( lt $index ( mul ( div ( len $.Data.Pages ) 4 ) 1 ) )}}
+  <div class="decorated-box delay-{{ add $index 2 }} indent-4"> 
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
@@ -174,6 +189,7 @@ h1 {
     </div>
     <div class="red bottom"></div>
   {{ else if ( lt $index ( div ( len $.Data.Pages ) 2 ) )}}
+  <div class="decorated-box delay-{{ add $index 2 }} indent-3">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
@@ -181,12 +197,14 @@ h1 {
     </div>
     <div class="black bottom"></div>
   {{ else if ( lt $index ( mul ( div ( len $.Data.Pages ) 4 )  3 ) )}}
+  <div class="decorated-box delay-{{ add $index 2 }} indent-2">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
     </div>
     <div class="yellow bottom"></div>
   {{ else }}
+  <div class="decorated-box delay-{{ add $index 2 }} indent-1">
     <div class="sidebar">
       <div class="blue"></div>
     </div>
