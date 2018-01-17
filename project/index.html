@@ -12,13 +12,13 @@ body {
 h4 {
   font-size: 1.5rem;
   text-align: left;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 h1 {
   font-size: 3rem;
   text-align: left;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 .width-wrapper {
@@ -28,7 +28,6 @@ h1 {
   margin: 0 1rem 1rem 1rem;
   display: inline-block;
   position: relative;
-  height: Calc(100% - 1rem);
   text-align: left;
 }
 
@@ -60,14 +59,19 @@ h1 {
   position: absolute;
   width: 1rem;
   height: 1rem;
-  transition: width .5s linear, height .5s linear;
+  transition: width .125s linear, height .125s linear;
 }
 
 .decorated-box {
     padding: 1rem 1rem 2rem 8rem;
     position: relative;
     display: inline-block;
-    font-size:  1.5rem;
+    font-size:  1.25rem;
+}
+
+.decorated-contents {
+    opacity: 1;
+    transition: opacity linear .125s;
 }
 
 .sidebar {
@@ -80,6 +84,7 @@ h1 {
 
 .sidebar > * {
     height: 100%;
+    top: 0;
 }
 
 .sidebar .blue {
@@ -120,11 +125,305 @@ h1 {
     left:  1rem;
 }
 
+.pre-transition .sidebar > * {
+  height: 0;
+}
+
+.pre-transition .bottom {
+  width: 0;
+}
+
+.pre-transition .decorated-contents {
+  opacity: 0;
+}
+
+
+.delay-1 .sidebar > * {
+  transition-delay: Calc(1 * .125s);
+}
+.delay-1 .bottom  {
+  transition-delay: Calc(2 * .125s);
+}
+.delay-1 .decorated-contents  {
+  transition-delay: Calc(3 * .125s);
+}
+
+.delay-2 .sidebar > * {
+  transition-delay: Calc(2 * .125s);
+}
+.delay-2 .bottom  {
+  transition-delay: Calc(3 * .125s);
+}
+.delay-2 .decorated-contents  {
+  transition-delay: Calc(4 * .125s);
+}
+
+.delay-3 .sidebar > * {
+  transition-delay: Calc(3 * .125s);
+}
+.delay-3 .bottom  {
+  transition-delay: Calc(4 * .125s);
+}
+.delay-3 .decorated-contents  {
+  transition-delay: Calc(5 * .125s);
+}
+
+.delay-4 .sidebar > * {
+  transition-delay: Calc(4 * .125s);
+}
+.delay-4 .bottom  {
+  transition-delay: Calc(5 * .125s);
+}
+.delay-4 .decorated-contents  {
+  transition-delay: Calc(6 * .125s);
+}
+
+.delay-5 .sidebar > * {
+  transition-delay: Calc(5 * .125s);
+}
+.delay-5 .bottom  {
+  transition-delay: Calc(6 * .125s);
+}
+.delay-5 .decorated-contents  {
+  transition-delay: Calc(7 * .125s);
+}
+
+.delay-6 .sidebar > * {
+  transition-delay: Calc(6 * .125s);
+}
+.delay-6 .bottom  {
+  transition-delay: Calc(7 * .125s);
+}
+.delay-6 .decorated-contents  {
+  transition-delay: Calc(8 * .125s);
+}
+
+.delay-7 .sidebar > * {
+  transition-delay: Calc(7 * .125s);
+}
+.delay-7 .bottom  {
+  transition-delay: Calc(8 * .125s);
+}
+.delay-7 .decorated-contents  {
+  transition-delay: Calc(9 * .125s);
+}
+
+.delay-8 .sidebar > * {
+  transition-delay: Calc(8 * .125s);
+}
+.delay-8 .bottom  {
+  transition-delay: Calc(9 * .125s);
+}
+.delay-8 .decorated-contents  {
+  transition-delay: Calc(10 * .125s);
+}
+
+.delay-9 .sidebar > * {
+  transition-delay: Calc(9 * .125s);
+}
+.delay-9 .bottom  {
+  transition-delay: Calc(10 * .125s);
+}
+.delay-9 .decorated-contents  {
+  transition-delay: Calc(11 * .125s);
+}
+
+.delay-10 .sidebar > * {
+  transition-delay: Calc(10 * .125s);
+}
+.delay-10 .bottom  {
+  transition-delay: Calc(11 * .125s);
+}
+.delay-10 .decorated-contents  {
+  transition-delay: Calc(12 * .125s);
+}
+
+.delay-11 .sidebar > * {
+  transition-delay: Calc(11 * .125s);
+}
+.delay-11 .bottom  {
+  transition-delay: Calc(12 * .125s);
+}
+.delay-11 .decorated-contents  {
+  transition-delay: Calc(13 * .125s);
+}
+
+.delay-12 .sidebar > * {
+  transition-delay: Calc(12 * .125s);
+}
+.delay-12 .bottom  {
+  transition-delay: Calc(13 * .125s);
+}
+.delay-12 .decorated-contents  {
+  transition-delay: Calc(14 * .125s);
+}
+
+.delay-13 .sidebar > * {
+  transition-delay: Calc(13 * .125s);
+}
+.delay-13 .bottom  {
+  transition-delay: Calc(14 * .125s);
+}
+.delay-13 .decorated-contents  {
+  transition-delay: Calc(15 * .125s);
+}
+
+.delay-14 .sidebar > * {
+  transition-delay: Calc(14 * .125s);
+}
+.delay-14 .bottom  {
+  transition-delay: Calc(15 * .125s);
+}
+.delay-14 .decorated-contents  {
+  transition-delay: Calc(16 * .125s);
+}
+
+.delay-15 .sidebar > * {
+  transition-delay: Calc(15 * .125s);
+}
+.delay-15 .bottom  {
+  transition-delay: Calc(16 * .125s);
+}
+.delay-15 .decorated-contents  {
+  transition-delay: Calc(17 * .125s);
+}
+
+.delay-16 .sidebar > * {
+  transition-delay: Calc(16 * .125s);
+}
+.delay-16 .bottom  {
+  transition-delay: Calc(17 * .125s);
+}
+.delay-16 .decorated-contents  {
+  transition-delay: Calc(18 * .125s);
+}
+
+.delay-17 .sidebar > * {
+  transition-delay: Calc(17 * .125s);
+}
+.delay-17 .bottom  {
+  transition-delay: Calc(18 * .125s);
+}
+.delay-17 .decorated-contents  {
+  transition-delay: Calc(19 * .125s);
+}
+
+.delay-18 .sidebar > * {
+  transition-delay: Calc(18 * .125s);
+}
+.delay-18 .bottom  {
+  transition-delay: Calc(19 * .125s);
+}
+.delay-18 .decorated-contents  {
+  transition-delay: Calc(20 * .125s);
+}
+
+.delay-19 .sidebar > * {
+  transition-delay: Calc(19 * .125s);
+}
+.delay-19 .bottom  {
+  transition-delay: Calc(20 * .125s);
+}
+.delay-19 .decorated-contents  {
+  transition-delay: Calc(21 * .125s);
+}
+
+.delay-20 .sidebar > * {
+  transition-delay: Calc(20 * .125s);
+}
+.delay-20 .bottom  {
+  transition-delay: Calc(21 * .125s);
+}
+.delay-20 .decorated-contents  {
+  transition-delay: Calc(22 * .125s);
+}
+
+.delay-21 .sidebar > * {
+  transition-delay: Calc(21 * .125s);
+}
+.delay-21 .bottom  {
+  transition-delay: Calc(22 * .125s);
+}
+.delay-21 .decorated-contents  {
+  transition-delay: Calc(23 * .125s);
+}
+
+.delay-22 .sidebar > * {
+  transition-delay: Calc(22 * .125s);
+}
+.delay-22 .bottom  {
+  transition-delay: Calc(23 * .125s);
+}
+.delay-22 .decorated-contents  {
+  transition-delay: Calc(24 * .125s);
+}
+
+.delay-23 .sidebar > * {
+  transition-delay: Calc(23 * .125s);
+}
+.delay-23 .bottom  {
+  transition-delay: Calc(24 * .125s);
+}
+.delay-23 .decorated-contents  {
+  transition-delay: Calc(25 * .125s);
+}
+
+.delay-24 .sidebar > * {
+  transition-delay: Calc(24 * .125s);
+}
+.delay-24 .bottom  {
+  transition-delay: Calc(25 * .125s);
+}
+.delay-24 .decorated-contents  {
+  transition-delay: Calc(26 * .125s);
+}
+
+.delay-25 .sidebar > * {
+  transition-delay: Calc(25 * .125s);
+}
+.delay-25 .bottom  {
+  transition-delay: Calc(26 * .125s);
+}
+.delay-25 .decorated-contents  {
+  transition-delay: Calc(27 * .125s);
+}
+
+.delay-26 .sidebar > * {
+  transition-delay: Calc(26 * .125s);
+}
+.delay-26 .bottom  {
+  transition-delay: Calc(27 * .125s);
+}
+.delay-26 .decorated-contents  {
+  transition-delay: Calc(28 * .125s);
+}
+
+.delay-27 .sidebar > * {
+  transition-delay: Calc(27 * .125s);
+}
+.delay-27 .bottom  {
+  transition-delay: Calc(28 * .125s);
+}
+.delay-27 .decorated-contents  {
+  transition-delay: Calc(29 * .125s);
+}
+
+.delay-28 .sidebar > * {
+  transition-delay: Calc(28 * .125s);
+}
+.delay-28 .bottom  {
+  transition-delay: Calc(29 * .125s);
+}
+.delay-28 .decorated-contents  {
+  transition-delay: Calc(30 * .125s);
+}
+
+
   </style>
 </head>
 <body>
-<div class="width-wrapper">
-  <div class="decorated-box">
+<div class="width-wrapper pre-transition" id="width-wrapper">
+  <div class="decorated-box delay-1">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
@@ -135,8 +434,8 @@ h1 {
     <h1>Projects</h1>
   </div>
 
+  <div class="decorated-box delay-2">
    
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
@@ -145,13 +444,15 @@ h1 {
     </div>
     <div class="red bottom"></div>
   
-    <b><a href="http://gradybward.com/project/3_sat/">3-SAT decomposition</a></b>
-    -
-    Using 64 bit architecture to perform fast 3-SAT calculations
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/3_sat/">3-SAT decomposition</a></b>
+      -
+      Using 64 bit architecture to perform fast 3-SAT calculations
+    </div>
   </div>
 
+  <div class="decorated-box delay-3">
    
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
@@ -160,13 +461,15 @@ h1 {
     </div>
     <div class="red bottom"></div>
   
-    <b><a href="http://gradybward.com/project/ai_science_test/">AI Science Test</a></b>
-    -
-    Basic Tensorflow model predicting results of 8th grade science test
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/ai_science_test/">AI Science Test</a></b>
+      -
+      Basic Tensorflow model predicting results of 8th grade science test
+    </div>
   </div>
 
+  <div class="decorated-box delay-4">
    
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
@@ -175,13 +478,15 @@ h1 {
     </div>
     <div class="red bottom"></div>
   
-    <b><a href="http://gradybward.com/project/bananagrams/">Banannagrams</a></b>
-    -
-    A sub-linear time algorithm for playing Bananagrams
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/bananagrams/">Banannagrams</a></b>
+      -
+      A sub-linear time algorithm for playing Bananagrams
+    </div>
   </div>
 
+  <div class="decorated-box delay-5">
    
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
@@ -190,13 +495,15 @@ h1 {
     </div>
     <div class="red bottom"></div>
   
-    <b><a href="http://gradybward.com/project/birth_certificate_scraping/">Birth Certificate Scraping</a></b>
-    -
-    Scraping data from birth certificates between 1900 and 1950 for an Economics paper.
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/birth_certificate_scraping/">Birth Certificate Scraping</a></b>
+      -
+      Scraping data from birth certificates between 1900 and 1950 for an Economics paper.
+    </div>
   </div>
 
+  <div class="decorated-box delay-6">
    
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
@@ -205,13 +512,15 @@ h1 {
     </div>
     <div class="red bottom"></div>
   
-    <b><a href="http://gradybward.com/project/calc_u/">CalcU</a></b>
-    -
-    A course aid for mathematics based on a taxonomy of learning
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/calc_u/">CalcU</a></b>
+      -
+      A course aid for mathematics based on a taxonomy of learning
+    </div>
   </div>
 
+  <div class="decorated-box delay-7">
    
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
@@ -220,13 +529,15 @@ h1 {
     </div>
     <div class="red bottom"></div>
   
-    <b><a href="http://gradybward.com/project/chase/">Kerry Chase Website</a></b>
-    -
-    Find a Clinic is the best!
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/chase/">Kerry Chase Website</a></b>
+      -
+      Find a Clinic is the best!
+    </div>
   </div>
 
+  <div class="decorated-box delay-8">
   
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
@@ -234,13 +545,15 @@ h1 {
     </div>
     <div class="black bottom"></div>
   
-    <b><a href="http://gradybward.com/project/cindi/">Cindi</a></b>
-    -
-    Algorithmically generated art - inspired by Janelle Monae
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/cindi/">Cindi</a></b>
+      -
+      Algorithmically generated art - inspired by Janelle Monae
+    </div>
   </div>
 
+  <div class="decorated-box delay-9">
   
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
@@ -248,13 +561,15 @@ h1 {
     </div>
     <div class="black bottom"></div>
   
-    <b><a href="http://gradybward.com/project/draw_me_css/">Draw Me CSS</a></b>
-    -
-    Simple framework for making websites that magically appear
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/draw_me_css/">Draw Me CSS</a></b>
+      -
+      Simple framework for making websites that magically appear
+    </div>
   </div>
 
+  <div class="decorated-box delay-10">
   
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
@@ -262,13 +577,15 @@ h1 {
     </div>
     <div class="black bottom"></div>
   
-    <b><a href="http://gradybward.com/project/dumb_db/">DumbDB</a></b>
-    -
-    Dumb databases make for good prototypes
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/dumb_db/">DumbDB</a></b>
+      -
+      Dumb databases make for good prototypes
+    </div>
   </div>
 
+  <div class="decorated-box delay-11">
   
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
@@ -276,13 +593,15 @@ h1 {
     </div>
     <div class="black bottom"></div>
   
-    <b><a href="http://gradybward.com/project/find_a_clinic/">Find A Clinic</a></b>
-    -
-    Find a Clinic is the best!
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/find_a_clinic/">Find A Clinic</a></b>
+      -
+      Find a Clinic is the best!
+    </div>
   </div>
 
+  <div class="decorated-box delay-12">
   
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
@@ -290,13 +609,15 @@ h1 {
     </div>
     <div class="black bottom"></div>
   
-    <b><a href="http://gradybward.com/project/flux/">Flux</a></b>
-    -
-    Modifying attractor parameters via a parameter space orbit
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/flux/">Flux</a></b>
+      -
+      Modifying attractor parameters via a parameter space orbit
+    </div>
   </div>
 
+  <div class="decorated-box delay-13">
   
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
@@ -304,173 +625,205 @@ h1 {
     </div>
     <div class="black bottom"></div>
   
-    <b><a href="http://gradybward.com/project/grady_docs/">GradyDocs</a></b>
-    -
-    GradyDocs - a shittier version of Google Docs
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/grady_docs/">GradyDocs</a></b>
+      -
+      GradyDocs - a shittier version of Google Docs
+    </div>
   </div>
 
+  <div class="decorated-box delay-14">
   
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
     </div>
     <div class="yellow bottom"></div>
   
-    <b><a href="http://gradybward.com/project/grady_in/">Grady.In</a></b>
-    -
-    Go-Links for everybody
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/grady_in/">Grady.In</a></b>
+      -
+      Go-Links for everybody
+    </div>
   </div>
 
+  <div class="decorated-box delay-15">
   
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
     </div>
     <div class="yellow bottom"></div>
   
-    <b><a href="http://gradybward.com/project/hard_scrabble/">Hardscrabble</a></b>
-    -
-    Interactive pair programming webapp for a class of 200&#43; students
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/hard_scrabble/">Hardscrabble</a></b>
+      -
+      Interactive pair programming webapp for a class of 200&#43; students
+    </div>
   </div>
 
+  <div class="decorated-box delay-16">
   
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
     </div>
     <div class="yellow bottom"></div>
   
-    <b><a href="http://gradybward.com/project/in_line/">Student Union (In Line)</a></b>
-    -
-    A multi-owner distributed WYSIWYG editor for the Student Union website
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/in_line/">Student Union (In Line)</a></b>
+      -
+      A multi-owner distributed WYSIWYG editor for the Student Union website
+    </div>
   </div>
 
+  <div class="decorated-box delay-17">
   
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
     </div>
     <div class="yellow bottom"></div>
   
-    <b><a href="http://gradybward.com/project/parley/">Parley</a></b>
-    -
-    Recursive annotations as a counter-proposal to the comment thread
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/parley/">Parley</a></b>
+      -
+      Recursive annotations as a counter-proposal to the comment thread
+    </div>
   </div>
 
+  <div class="decorated-box delay-18">
   
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
     </div>
     <div class="yellow bottom"></div>
   
-    <b><a href="http://gradybward.com/project/senior_thesis/">Senior Thesis </a></b>
-    -
-    Senior thesis on the graph isomorphism (GI) problem
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/senior_thesis/">Senior Thesis </a></b>
+      -
+      Senior thesis on the graph isomorphism (GI) problem
+    </div>
   </div>
 
+  <div class="decorated-box delay-19">
   
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
     </div>
     <div class="yellow bottom"></div>
   
-    <b><a href="http://gradybward.com/project/trees/">Trees</a></b>
-    -
-    Invertible enumeration of the set of possible Binary Trees
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/trees/">Trees</a></b>
+      -
+      Invertible enumeration of the set of possible Binary Trees
+    </div>
   </div>
 
+  <div class="decorated-box delay-20">
   
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
     </div>
     <div class="blue bottom"></div>
   
-    <b><a href="http://gradybward.com/project/voat/">VOAT</a></b>
-    -
-    Variations on a Theme (Elgar) meets a classic by Frank Stella
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/voat/">VOAT</a></b>
+      -
+      Variations on a Theme (Elgar) meets a classic by Frank Stella
+    </div>
   </div>
 
+  <div class="decorated-box delay-21">
   
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
     </div>
     <div class="blue bottom"></div>
   
-    <b><a href="http://gradybward.com/project/ward_lab/">Ward Lab</a></b>
-    -
-    An academic profile for my father&#39;s lab work
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/ward_lab/">Ward Lab</a></b>
+      -
+      An academic profile for my father&#39;s lab work
+    </div>
   </div>
 
+  <div class="decorated-box delay-22">
   
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
     </div>
     <div class="blue bottom"></div>
   
-    <b><a href="http://gradybward.com/project/website_v1/">Personal Website V1</a></b>
-    -
-    The very deprecated version of my personal portfolio
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/website_v1/">Personal Website V1</a></b>
+      -
+      The very deprecated version of my personal portfolio
+    </div>
   </div>
 
+  <div class="decorated-box delay-23">
   
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
     </div>
     <div class="blue bottom"></div>
   
-    <b><a href="http://gradybward.com/project/website_v2/">Personal Website V2</a></b>
-    -
-    The deprecated version of my personal portfolio
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/website_v2/">Personal Website V2</a></b>
+      -
+      The deprecated version of my personal portfolio
+    </div>
   </div>
 
+  <div class="decorated-box delay-24">
   
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
     </div>
     <div class="blue bottom"></div>
   
-    <b><a href="http://gradybward.com/project/website_v3/">Personal Website V3</a></b>
-    -
-    The site you find yourself on right now
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/website_v3/">Personal Website V3</a></b>
+      -
+      The site you find yourself on right now
+    </div>
   </div>
 
+  <div class="decorated-box delay-25">
   
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
     </div>
     <div class="blue bottom"></div>
   
-    <b><a href="http://gradybward.com/project/wsmd/">WSMD - What should Maddie Do?</a></b>
-    -
-    A sprint-written tool for the indecisive
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/wsmd/">WSMD - What should Maddie Do?</a></b>
+      -
+      A sprint-written tool for the indecisive
+    </div>
   </div>
 
+  <div class="decorated-box delay-26">
   
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
     </div>
     <div class="blue bottom"></div>
   
-    <b><a href="http://gradybward.com/project/zina_b_ward/">Zina Ward Website</a></b>
-    -
-    My sister&#39;s professional profile
+    <div class="decorated-contents">
+      <b><a href="http://gradybward.com/project/zina_b_ward/">Zina Ward Website</a></b>
+      -
+      My sister&#39;s professional profile
+    </div>
   </div>
 
 </div>
+<script>
+  var wrapper = document.getElementById("width-wrapper");
+  wrapper.classList.remove("pre-transition")
+</script>
 </body>
 </html>

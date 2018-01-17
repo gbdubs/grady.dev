@@ -12,13 +12,13 @@ body {
 h4 {
   font-size: 1.5rem;
   text-align: left;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 h1 {
   font-size: 3rem;
   text-align: left;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 .width-wrapper {
@@ -28,7 +28,6 @@ h1 {
   margin: 0 1rem 1rem 1rem;
   display: inline-block;
   position: relative;
-  height: Calc(100% - 1rem);
   text-align: left;
 }
 
@@ -60,14 +59,19 @@ h1 {
   position: absolute;
   width: 1rem;
   height: 1rem;
-  transition: width .5s linear, height .5s linear;
+  transition: width .125s linear, height .125s linear;
 }
 
 .decorated-box {
     padding: 1rem 1rem 2rem 8rem;
     position: relative;
     display: inline-block;
-    font-size:  1.5rem;
+    font-size:  1.25rem;
+}
+
+.decorated-contents {
+    opacity: 1;
+    transition: opacity linear .125s;
 }
 
 .sidebar {
@@ -80,6 +84,7 @@ h1 {
 
 .sidebar > * {
     height: 100%;
+    top: 0;
 }
 
 .sidebar .blue {
@@ -120,11 +125,35 @@ h1 {
     left:  1rem;
 }
 
+.pre-transition .sidebar > * {
+  height: 0;
+}
+
+.pre-transition .bottom {
+  width: 0;
+}
+
+.pre-transition .decorated-contents {
+  opacity: 0;
+}
+
+{{ range $index := ( seq (add 3 (len $.Data.Pages))) }}
+.delay-{{ $index }} .sidebar > * {
+  transition-delay: Calc({{ $index }} * .125s);
+}
+.delay-{{ $index }} .bottom  {
+  transition-delay: Calc({{ add $index 1 }} * .125s);
+}
+.delay-{{ $index }} .decorated-contents  {
+  transition-delay: Calc({{ add $index 2 }} * .125s);
+}
+{{ end }}
+
   </style>
 </head>
 <body>
-<div class="width-wrapper">
-  <div class="decorated-box">
+<div class="width-wrapper pre-transition" id="width-wrapper">
+  <div class="decorated-box delay-1">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
@@ -135,8 +164,8 @@ h1 {
     <h1>Projects</h1>
   </div>
 {{ range $index, $project := ( where $.Data.Pages "Type" "project" ) }}
+  <div class="decorated-box delay-{{ add $index 2 }}">
   {{ if ( lt $index ( mul ( div ( len $.Data.Pages ) 4 ) 1 ) )}} 
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
@@ -145,7 +174,6 @@ h1 {
     </div>
     <div class="red bottom"></div>
   {{ else if ( lt $index ( div ( len $.Data.Pages ) 2 ) )}}
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
@@ -153,24 +181,28 @@ h1 {
     </div>
     <div class="black bottom"></div>
   {{ else if ( lt $index ( mul ( div ( len $.Data.Pages ) 4 )  3 ) )}}
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
     </div>
     <div class="yellow bottom"></div>
   {{ else }}
-  <div class="decorated-box">
     <div class="sidebar">
       <div class="blue"></div>
     </div>
     <div class="blue bottom"></div>
   {{ end }}
-    <b><a href="{{ $project.Permalink }}">{{ $project.Params.name }}</a></b>
-    -
-    {{ $project.Params.short_desc }}
+    <div class="decorated-contents">
+      <b><a href="{{ $project.Permalink }}">{{ $project.Params.name }}</a></b>
+      -
+      {{ $project.Params.short_desc }}
+    </div>
   </div>
 {{ end }}
 </div>
+<script>
+  var wrapper = document.getElementById("width-wrapper");
+  wrapper.classList.remove("pre-transition")
+</script>
 </body>
 </html>
