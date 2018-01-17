@@ -10,19 +10,24 @@ body {
   text-align: center;
 }
 
+h1 {
+  font-size: 3rem;
+  text-align: left;
+  margin: 4rem 0 0rem 0;
+  line-height: 3rem;
+}
+
 h4 {
   font-size: 1.5rem;
   text-align: left;
   margin: 1rem 0;
 }
 
-h1 {
-  font-size: 3rem;
-  text-align: left;
-  margin: 1rem 0;
+img {
+  max-width: 100%;
 }
 
-p {
+.decorated-content {
   font-size: 1.25rem;
   line-height:  1.5rem;
   text-align: justify;
@@ -223,9 +228,9 @@ p {
   
     <div class="decorated-box">
       <div class="left vertical"></div>
-      <p class="decorated-content">
+      <div class="decorated-content">
         Haven’t you ever looked at SAT (the problem of finding a solution to an arbitrary expression of boolean predicates), and thought it must be solvable in sub-polynomial time? My intuition says so too, but this is clearly a function of naievite.
-      </p>
+      </div>
       <div class="right vertical"></div>
       <div class="horizontal"></div>
     </div>
@@ -235,9 +240,9 @@ p {
   
     <div class="decorated-box">
       <div class="left vertical"></div>
-      <p class="decorated-content">
+      <div class="decorated-content">
         The thing that struck me about 3-SAT is that it is fundamentally trying to explore a bunch of different roads at once, and reporting back the ones that don’t hit dead ends.  You can do this in exponential time on a single processor, or you can do it in (near) constant time on an exponential number of processors.  However I was wondering if you could do it in linear time with a single processor by using an exponential amount of memory.  The answer, it turns out, is yes!
-      </p>
+      </div>
       <div class="right vertical"></div>
       <div class="horizontal"></div>
     </div>
@@ -247,9 +252,9 @@ p {
   
     <div class="decorated-box">
       <div class="left vertical"></div>
-      <p class="decorated-content">
+      <div class="decorated-content">
         By using the OR bitwise operator, you can do SAT in linear time and exponential space (which for problems with fewer than 8 boolean variables, is constant on a 64 bit processor).
-      </p>
+      </div>
       <div class="right vertical"></div>
       <div class="horizontal"></div>
     </div>
@@ -259,9 +264,9 @@ p {
   
     <div class="decorated-box">
       <div class="left vertical"></div>
-      <p class="decorated-content">
+      <div class="decorated-content">
         This was really jsut an academic endeavour, but it was fun to design and run, and was my first exploration of the world of computational complexity.
-      </p>
+      </div>
       <div class="right vertical"></div>
       <div class="horizontal"></div>
     </div>

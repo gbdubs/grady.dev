@@ -10,19 +10,24 @@ body {
   text-align: center;
 }
 
+h1 {
+  font-size: 3rem;
+  text-align: left;
+  margin: 4rem 0 0rem 0;
+  line-height: 3rem;
+}
+
 h4 {
   font-size: 1.5rem;
   text-align: left;
   margin: 1rem 0;
 }
 
-h1 {
-  font-size: 3rem;
-  text-align: left;
-  margin: 1rem 0;
+img {
+  max-width: 100%;
 }
 
-p {
+.decorated-content {
   font-size: 1.25rem;
   line-height:  1.5rem;
   text-align: justify;
@@ -223,9 +228,9 @@ p {
   
     <div class="decorated-box">
       <div class="left vertical"></div>
-      <p class="decorated-content">
+      <div class="decorated-content">
         Go Links are a system used interally at google to create semantically meaningful short links. Grady.In replicates this functionality for use outside of the company, allowing anyone to construct short and human readable links.
-      </p>
+      </div>
       <div class="right vertical"></div>
       <div class="horizontal"></div>
     </div>
@@ -235,9 +240,9 @@ p {
   
     <div class="decorated-box">
       <div class="left vertical"></div>
-      <p class="decorated-content">
+      <div class="decorated-content">
         This was my first forray into a serverless architechure. The system is built using Google Cloud Functions. The primary function validates a request and writes the new link (as a simple redirect) to a CDN. The client (when looking at the grady.in/xxx address) is pointed toward the CDN, and the static content served from the CDN redirects them to the pre-specified link, if it exists.
-      </p>
+      </div>
       <div class="right vertical"></div>
       <div class="horizontal"></div>
     </div>
@@ -247,9 +252,9 @@ p {
   
     <div class="decorated-box">
       <div class="left vertical"></div>
-      <p class="decorated-content">
+      <div class="decorated-content">
         Notably absent from the implementation is any kind of rate limiting or authentication. This was really just meant as a fun way to play around with GCP’s cloud functions, and the lack of sophistication shows through in these obvious flaws.
-      </p>
+      </div>
       <div class="right vertical"></div>
       <div class="horizontal"></div>
     </div>

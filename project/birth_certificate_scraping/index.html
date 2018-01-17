@@ -10,19 +10,24 @@ body {
   text-align: center;
 }
 
+h1 {
+  font-size: 3rem;
+  text-align: left;
+  margin: 4rem 0 0rem 0;
+  line-height: 3rem;
+}
+
 h4 {
   font-size: 1.5rem;
   text-align: left;
   margin: 1rem 0;
 }
 
-h1 {
-  font-size: 3rem;
-  text-align: left;
-  margin: 1rem 0;
+img {
+  max-width: 100%;
 }
 
-p {
+.decorated-content {
   font-size: 1.25rem;
   line-height:  1.5rem;
   text-align: justify;
@@ -223,9 +228,9 @@ p {
   
     <div class="decorated-box">
       <div class="left vertical"></div>
-      <p class="decorated-content">
+      <div class="decorated-content">
         Professor Linda Bui is a gem who really helped me enjoy my economics degree at Brandeis.  So when she asked me if I could scrape all birth certificates from 1900 to 1950 in Massachusetts, I said “maybe”, rather than “no”.
-      </p>
+      </div>
       <div class="right vertical"></div>
       <div class="horizontal"></div>
     </div>
@@ -235,9 +240,9 @@ p {
   
     <div class="decorated-box">
       <div class="left vertical"></div>
-      <p class="decorated-content">
+      <div class="decorated-content">
         I ended up using matlab to do OCR with a combination of models.  The forms were either hand written or were machine printed, and I generated seperate models for each.  The full accuracy of the system (having zero errors on the 21 fields) was about 40%.  80% got 18 of 21 fields correct.
-      </p>
+      </div>
       <div class="right vertical"></div>
       <div class="horizontal"></div>
     </div>
@@ -247,9 +252,9 @@ p {
   
     <div class="decorated-box">
       <div class="left vertical"></div>
-      <p class="decorated-content">
+      <div class="decorated-content">
         Ultimately the algorithm I designed was too resource intensive to be runnable on the full set of data. I hadn’t considered that using a proprietary codebase like matlab would have the drawback that I wouldn’t be able to scale it on rented server time.
-      </p>
+      </div>
       <div class="right vertical"></div>
       <div class="horizontal"></div>
     </div>
@@ -259,9 +264,9 @@ p {
   
     <div class="decorated-box">
       <div class="left vertical"></div>
-      <p class="decorated-content">
+      <div class="decorated-content">
         I ended up passing this project off to a research assistant of Prof. Bui’s, and I don’t know what ended up happening to it.
-      </p>
+      </div>
       <div class="right vertical"></div>
       <div class="horizontal"></div>
     </div>
