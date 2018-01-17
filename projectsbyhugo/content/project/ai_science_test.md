@@ -3,6 +3,8 @@
 name = "AI Science Test"
 external_url = "https://www.kaggle.com/c/the-allen-ai-science-challenge/leaderboard"
 
+image_url = "img/ai_science_test.png"
+
 short_desc = "Basic Tensorflow model predicting results of 8th grade science test"
 tags = ["tensorflow", "python"]
 

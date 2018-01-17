@@ -1,17 +1,176 @@
 <html>
 <head>
   <title>Grady Berry Ward | Projects</title>
+  <style>
+  
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: left;
+  margin: 1rem;
+}
+
+.width-wrapper {
+  width: Calc(100% - 2rem);
+  max-width: 1000px;
+  min-width: Calc(320px - 2rem);
+  margin: 0 1rem 1rem 1rem;
+  display: inline-block;
+  position: relative;
+  height: Calc(100% - 1rem);
+  text-align: left;
+}
+
+* {
+  color: #272727;
+}
+
+.black {
+  background: #272727;
+}
+
+.red {
+  background: #d20909;
+}
+
+.yellow {
+  background: #eac40a;
+}
+
+.blue {
+  background: #1444b1;
+}
+
+.black,
+.red,
+.blue,
+.yellow {
+  display: block;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  transition: width .5s linear, height .5s linear;
+}
+
+.decorated-box {
+    padding: 1rem 1rem 2rem 8rem;
+    position: relative;
+    display: inline-block;
+    font-size:  1.5rem;
+}
+
+.sidebar {
+    width: 7rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:  0;
+}
+
+.sidebar > * {
+    height: 100%;
+}
+
+.sidebar .blue {
+    left:  0;
+}
+
+.sidebar > .yellow {left: 2rem;}
+
+.sidebar > .black {
+    left:  4rem;
+}
+
+.sidebar > .red {
+    left:  6rem;
+}
+
+.bottom {
+    bottom:  0;
+}
+
+.red.bottom {
+    width: Calc(100% - 7rem);
+    left: 7rem;
+}
+
+.black.bottom {
+    width: Calc(100% - 5rem);
+    left:  5rem;
+}
+
+.yellow.bottom {
+    width: Calc(100% - 3rem);
+    left:  3rem;
+}
+
+.blue.bottom {
+    width: Calc(100% - 1rem);
+    left:  1rem;
+}
+
+  </style>
 </head>
 <body>
-<h1>Projects</h1>
-<ul>
-{{ range where $.Data.Pages "Type" "project" }}
-  <li>
-    <a href="{{ .Permalink }}">{{ .Params.name }}</a>
+<div class="width-wrapper">
+  <div class="decorated-box">
+    <div class="sidebar">
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="black"></div>
+      <div class="red"></div>
+    </div>
+    <h4><a href="../">Back</a></h4>
+    <h1>Projects</h1>
+  </div>
+{{ range $index, $project := ( where $.Data.Pages "Type" "project" ) }}
+  {{ if ( lt $index ( mul ( div ( len $.Data.Pages ) 4 ) 1 ) )}} 
+  <div class="decorated-box">
+    <div class="sidebar">
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="black"></div>
+      <div class="red"></div>
+    </div>
+    <div class="red bottom"></div>
+  {{ else if ( lt $index ( div ( len $.Data.Pages ) 2 ) )}}
+  <div class="decorated-box">
+    <div class="sidebar">
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="black"></div>
+    </div>
+    <div class="black bottom"></div>
+  {{ else if ( lt $index ( mul ( div ( len $.Data.Pages ) 4 )  3 ) )}}
+  <div class="decorated-box">
+    <div class="sidebar">
+      <div class="blue"></div>
+      <div class="yellow"></div>
+    </div>
+    <div class="yellow bottom"></div>
+  {{ else }}
+  <div class="decorated-box">
+    <div class="sidebar">
+      <div class="blue"></div>
+    </div>
+    <div class="blue bottom"></div>
+  {{ end }}
+    <b><a href="{{ $project.Permalink }}">{{ $project.Params.name }}</a></b>
     -
-    {{ .Params.short_desc }}
-  </li>
+    {{ $project.Params.short_desc }}
+  </div>
 {{ end }}
-</ul>
+</div>
 </body>
 </html>
