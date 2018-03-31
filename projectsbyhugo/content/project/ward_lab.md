@@ -1,5 +1,7 @@
 +++
 
+order = 30
+
 name = "Ward Lab"
 external_url = "http://www.wardlab.us"
 

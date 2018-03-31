@@ -1,5 +1,7 @@
 +++
 
+order = 1500
+
 name = "Cindi"
 external_url = "http://cindi.in"
 

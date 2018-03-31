@@ -1,9 +1,11 @@
 +++
 
+order = 0
+
 name = "Kerry Chase Website"
 external_url = "http://people.brandeis.edu/~chase/"
 
-short_desc = "Find a Clinic is the best!"
+short_desc = "A basic website for a politics professor"
 tags = ["webapp", "collaborative"]
 
 +++

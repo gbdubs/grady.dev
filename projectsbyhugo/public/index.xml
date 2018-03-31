@@ -16,8 +16,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gradybward.com/project/3_sat/</guid>
-      <description>Haven’t you ever looked at SAT (the problem of finding a solution to an arbitrary expression of boolean predicates), and thought it must be solvable in sub-polynomial time? My intuition says so too, but this is clearly a function of naievite.
-The thing that struck me about 3-SAT is that it is fundamentally trying to explore a bunch of different roads at once, and reporting back the ones that don’t hit dead ends.</description>
+      <description>Haven’t you ever looked at SAT (the problem of finding a solution to an arbitrary expression of boolean predicates), and, realizing it can be reduced to 3-SAT, thought it must be solvable in sub-polynomial time? My intuition says so too, but this is clearly a function of naievite.
+The thing that struck me about SAT generally is that it is fundamentally trying to explore a bunch of different roads at once, and reporting back the ones that don’t hit dead ends.</description>
     </item>
     
     <item>
@@ -26,8 +26,10 @@ The thing that struck me about 3-SAT is that it is fundamentally trying to explo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gradybward.com/project/ai_science_test/</guid>
-      <description>This project is not very exciting.
-For an ML projectin in my AI class, we were assigned a task from Kaggle - answering multiple choice questions from a ninth grade science test. Tensor flow had been released a week beforehand, and I used it out of the box (with slight model refactoring) to train an ML model for the competition. Ours did really well - top 10 out of 500 contenders.</description>
+      <description>This project is one of my least exciting.
+For an ML projectin in my AI class, we were assigned a task from Kaggle - answering multiple choice questions from a ninth grade science test.
+Tensor flow had been released a week beforehand, and our team used it out of the box (with slight model refactoring) to train an ML model for the competition.
+Ours did really well - top 10!</description>
     </item>
     
     <item>
@@ -36,7 +38,8 @@ For an ML projectin in my AI class, we were assigned a task from Kaggle - answer
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gradybward.com/project/bananagrams/</guid>
-      <description>BANNNANNNNNAAAA</description>
+      <description>In 2016, I had just started at Google, and had started having breakfast every day with the same group of folks - Chris, Brett, Andrew and Brandon. All of us being nerds, techno-optimists and deeply competitive, at one point Brandon described having a competition amongst us to see who could write the best AI to play the game bananagrams.
+My productivity dipped precipitously over the next few days as I considered how to crush my good friends.</description>
     </item>
     
     <item>
@@ -45,8 +48,8 @@ For an ML projectin in my AI class, we were assigned a task from Kaggle - answer
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gradybward.com/project/birth_certificate_scraping/</guid>
-      <description>Professor Linda Bui is a gem who really helped me enjoy my economics degree at Brandeis. So when she asked me if I could scrape all birth certificates from 1900 to 1950 in Massachusetts, I said “maybe”, rather than “no”.
-I ended up using matlab to do OCR with a combination of models. The forms were either hand written or were machine printed, and I generated seperate models for each. The full accuracy of the system (having zero errors on the 21 fields) was about 40%.</description>
+      <description>Professor Linda Bui is a gem who really helped me enjoy the last class of my economics degree at Brandeis. So when she asked me if I could scrape all birth certificates from 1900 to 1950 in Massachusetts, I said “maybe”, rather than “no”.
+I ended up using Matlab to do OCR with a combination of models for segmenting the certificates, and extracting the text for each field. The forms were either hand written or were machine printed, and I generated seperate models for each.</description>
     </item>
     
     <item>
@@ -55,8 +58,17 @@ I ended up using matlab to do OCR with a combination of models. The forms were e
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gradybward.com/project/calc_u/</guid>
-      <description>I frontloaded my classes to heavily at Brandeis, and coming into my Junior Spring Semester, I was mostly done my majors. Since most of my friends were abroad, I decided to work on a side project for the semester, with my only class being French. This was one of the best decisions of my life.
-CalcU emerged from a need I saw when tutoring. I was a math tutor throughout highschool and into part of college, and I frequently helped out folks who needed refreshers on stuff far before the material they were working on.</description>
+      <description>I frontloaded my classes to heavily at Brandeis, and coming into my Junior Spring Semester, I had completed the majority of the coursework requisite for my majors. During that semester, as most of my friends were abroad, I decided to work on a side project for the semester, accompanied only by a French class requisite for my graduation. This was one of the best decisions of my life.
+CalcU emerged from a need I saw when tutoring.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/cgj/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/cgj/</guid>
+      <description>xxx</description>
     </item>
     
     <item>

@@ -1,5 +1,7 @@
 +++
 
+order = 1100
+
 name = "Parley"
 external_url = "http://www.parley.us"
 

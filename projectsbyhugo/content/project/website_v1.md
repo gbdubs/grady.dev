@@ -1,5 +1,7 @@
 +++
 
+order = 100
+
 name = "Personal Website V1"
 external_url = "http://www.gradybward.com/v1"
 

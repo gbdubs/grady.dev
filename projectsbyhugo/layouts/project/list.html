@@ -178,7 +178,7 @@ h1 {
     <h4><a href="../">Back</a></h4>
     <h1>Projects</h1>
   </div>
-{{ range $index, $project := ( where $.Data.Pages "Type" "project" ) }}
+{{ range $index, $project := (sort ( where $.Data.Pages "Type" "project" ) ".Params.order" "desc" )}}
   {{ if ( lt $index ( mul ( div ( len $.Data.Pages ) 4 ) 1 ) )}}
   <div class="decorated-box delay-{{ add $index 2 }} indent-4"> 
     <div class="sidebar">

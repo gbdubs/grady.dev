@@ -1,5 +1,7 @@
 +++
 
+order = 800
+
 name = "Flux"
 external_url = "https://github.com/gbdubs/flux"
 

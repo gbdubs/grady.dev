@@ -23,6 +23,10 @@
   </url>
   
   <url>
+    <loc>http://gradybward.com/project/cgj/</loc>
+  </url>
+  
+  <url>
     <loc>http://gradybward.com/project/chase/</loc>
   </url>
   
@@ -138,6 +142,11 @@
   </url>
   
   <url>
+    <loc>http://gradybward.com/tags/cgj/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://gradybward.com/tags/collaborative/</loc>
     <priority>0</priority>
   </url>
@@ -159,6 +168,11 @@
   
   <url>
     <loc>http://gradybward.com/tags/functions/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://gradybward.com/tags/government/</loc>
     <priority>0</priority>
   </url>
   
@@ -189,6 +203,11 @@
   
   <url>
     <loc>http://gradybward.com/tags/matlab/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://gradybward.com/tags/ml/</loc>
     <priority>0</priority>
   </url>
   

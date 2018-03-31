@@ -1,5 +1,7 @@
 +++
 
+order = 20
+
 name = "WSMD - What should Maddie Do?"
 external_url = "http://gbdubs.github.io/whatshouldmaddiedo/"
 

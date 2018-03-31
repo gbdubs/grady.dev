@@ -1,9 +1,11 @@
 +++
 
+order = 900
+
 name = "Find A Clinic"
 external_url = "http://www.findaclinic.org"
 
-short_desc = "Find a Clinic is the best!"
+short_desc = "An effort to make all options clear and comparable to women seeking an abortion"
 tags = ["webapp", "collaborative"]
 
 +++

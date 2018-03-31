@@ -16,8 +16,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gradybward.com/project/birth_certificate_scraping/</guid>
-      <description>Professor Linda Bui is a gem who really helped me enjoy my economics degree at Brandeis. So when she asked me if I could scrape all birth certificates from 1900 to 1950 in Massachusetts, I said “maybe”, rather than “no”.
-I ended up using matlab to do OCR with a combination of models. The forms were either hand written or were machine printed, and I generated seperate models for each. The full accuracy of the system (having zero errors on the 21 fields) was about 40%.</description>
+      <description>Professor Linda Bui is a gem who really helped me enjoy the last class of my economics degree at Brandeis. So when she asked me if I could scrape all birth certificates from 1900 to 1950 in Massachusetts, I said “maybe”, rather than “no”.
+I ended up using Matlab to do OCR with a combination of models for segmenting the certificates, and extracting the text for each field. The forms were either hand written or were machine printed, and I generated seperate models for each.</description>
     </item>
     
   </channel>

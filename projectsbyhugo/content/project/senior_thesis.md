@@ -1,5 +1,7 @@
 +++
 
+order = 1300
+
 name = "Senior Thesis "
 external_url = "https://github.com/gbdubs/thesis"
 

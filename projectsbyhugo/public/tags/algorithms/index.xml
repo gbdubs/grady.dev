@@ -12,11 +12,22 @@
     
     <item>
       <title></title>
+      <link>http://gradybward.com/project/3_sat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/3_sat/</guid>
+      <description>Haven’t you ever looked at SAT (the problem of finding a solution to an arbitrary expression of boolean predicates), and, realizing it can be reduced to 3-SAT, thought it must be solvable in sub-polynomial time? My intuition says so too, but this is clearly a function of naievite.
+The thing that struck me about SAT generally is that it is fundamentally trying to explore a bunch of different roads at once, and reporting back the ones that don’t hit dead ends.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>http://gradybward.com/project/bananagrams/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gradybward.com/project/bananagrams/</guid>
-      <description>BANNNANNNNNAAAA</description>
+      <description>In 2016, I had just started at Google, and had started having breakfast every day with the same group of folks - Chris, Brett, Andrew and Brandon. All of us being nerds, techno-optimists and deeply competitive, at one point Brandon described having a competition amongst us to see who could write the best AI to play the game bananagrams.
+My productivity dipped precipitously over the next few days as I considered how to crush my good friends.</description>
     </item>
     
   </channel>

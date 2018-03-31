@@ -1,5 +1,7 @@
 +++
 
+order = 1050
+
 name = "Student Union (In Line)"
 external_url = "http://www.union.brandeis.edu"
 

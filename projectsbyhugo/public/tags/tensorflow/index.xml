@@ -16,8 +16,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gradybward.com/project/ai_science_test/</guid>
-      <description>This project is not very exciting.
-For an ML projectin in my AI class, we were assigned a task from Kaggle - answering multiple choice questions from a ninth grade science test. Tensor flow had been released a week beforehand, and I used it out of the box (with slight model refactoring) to train an ML model for the competition. Ours did really well - top 10 out of 500 contenders.</description>
+      <description>This project is one of my least exciting.
+For an ML projectin in my AI class, we were assigned a task from Kaggle - answering multiple choice questions from a ninth grade science test.
+Tensor flow had been released a week beforehand, and our team used it out of the box (with slight model refactoring) to train an ML model for the competition.
+Ours did really well - top 10!</description>
     </item>
     
   </channel>

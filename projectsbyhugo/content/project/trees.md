@@ -1,5 +1,7 @@
 +++
 
+order = 80
+
 name = "Trees"
 
 short_desc = "Invertible enumeration of the set of possible Binary Trees"

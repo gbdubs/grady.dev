@@ -1,5 +1,7 @@
 +++
 
+order = 10
+
 name = "Zina Ward Website"
 external_url = "http://www.ZinaBWard.com"
 

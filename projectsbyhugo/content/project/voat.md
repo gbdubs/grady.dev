@@ -1,5 +1,7 @@
 +++
 
+order = 600
+
 name = "VOAT"
 external_url = "http://www.voatcss.com"
 
