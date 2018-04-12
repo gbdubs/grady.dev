@@ -1,6 +1,7 @@
 <html>
 <head>
   <title>Grady Berry Ward | Projects</title>
+  <meta name="viewport" content="width=device-width">
   <style>
   
 body {
@@ -84,7 +85,7 @@ h1 {
   padding-left: 2rem;
 }
 
-.decorated-contents {
+.decorated-content {
     opacity: 1;
     transition: opacity linear .125s;
 }
@@ -148,7 +149,7 @@ h1 {
   width: 0;
 }
 
-.pre-transition .decorated-contents {
+.pre-transition .decorated-content {
   opacity: 0;
 }
 
@@ -159,10 +160,51 @@ h1 {
 .delay-{{ $index }} .bottom  {
   transition-delay: Calc({{ add $index 1 }} * .125s);
 }
-.delay-{{ $index }} .decorated-contents  {
+.delay-{{ $index }} .decorated-content  {
   transition-delay: Calc({{ add $index 2 }} * .125s);
 }
 {{ end }}
+
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 8px;
+  }
+
+  .decorated-content {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  h4 {
+      font-size: 3rem;
+  }
+
+  h1 {
+      font-size: 5rem;
+      line-height:  6rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 6px;
+  }
+  
+  .decorated-content {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .decorated-content {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+
 
   </style>
 </head>
@@ -210,7 +252,7 @@ h1 {
     </div>
     <div class="blue bottom"></div>
   {{ end }}
-    <div class="decorated-contents">
+    <div class="decorated-content">
       <b><a href="{{ $project.Permalink }}">{{ $project.Params.name }}</a></b>
       -
       {{ $project.Params.short_desc }}

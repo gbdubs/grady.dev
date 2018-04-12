@@ -26,8 +26,8 @@ I ended up using Matlab to do OCR with a combination of models for segmenting th
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gradybward.com/project/senior_thesis/</guid>
-      <description>I wrote my undergraduate thesis on the Graph Isomorphism problem, and within that, the “Paths” invariant, which is incredibly powerful test for discerning between potentially isomorphic graphs in cubic (and fully paralellizable) time.
-The main findings of my thesis were that: Unlike was theorized by XXX, copaths graphs exist, and finding them is easily done through some mapreduces, or on a GPU. Measuring discriminatory power to value ratio of invariants within graph isomorphism is possible and can help us devise better algorithms for practical isomorphism detection.</description>
+      <description>I wrote my undergraduate thesis on the Graph Isomorphism (GI) problem, and several topics within that space. My work was version controlled on github, and the final result is here.
+I was first interested in the “Paths” invariant, which is incredibly powerful test for discerning between potentially isomorphic graphs in cubic (and fully paralellizable) time, and was originally theorized to be a solution to GI. The primary findings of my thesis were that:</description>
     </item>
     
   </channel>

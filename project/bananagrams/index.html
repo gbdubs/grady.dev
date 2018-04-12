@@ -27,12 +27,6 @@ img {
   max-width: 100%;
 }
 
-.decorated-content {
-  font-size: 1.25rem;
-  line-height:  1.5rem;
-  text-align: justify;
-}
-
 .width-wrapper {
   width: Calc(100% - 2rem);
   max-width: 1000px;
@@ -44,41 +38,43 @@ img {
 }
 
 .decorated-box {
-    height:  auto;
-    position:  relative;
+  height:  auto;
+  position:  relative;
 }
 
 .decorated-content {
-    width:  Calc(100% - 16rem);
-    top: 0;
-    margin: 0rem 8rem 0;
-    padding:  1rem 0 2rem 0;
+  width:  Calc(100% - 16rem);
+  top: 0;
+  margin: 0rem 8rem 0;
+  padding:  1rem 0 2rem 0;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .vertical {
   position: absolute;
   height: Calc(100% - 1rem);
   width: 8rem;
-  top:0;
+  top: 0;
 }
 .left.vertical {
-    left:  0;
+  left:  0;
 }
 .right.vertical {
-    right:  0;
+  right:  0;
 }
 
 .horizontal {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1rem;
 }
 .horizontal > div {
-    width:  100%;
+  width:  100%;
 }
-
 
 * {
   color: #272727;
@@ -112,23 +108,23 @@ img {
 }
 
 .vertical > div {
-    height: Calc(100% - 1rem);
-    top: .5rem;
+  height: Calc(100% - 1rem);
+  top: .5rem;
 }
 
 .vertical > div.has-top {
-   top: -1rem;
-   height: Calc(100% + .5rem);
+  top: -1rem;
+  height: Calc(100% + .5rem);
 }
 
 .vertical > div.has-bottom {
-   top: .5rem;
-   height: Calc(100% + .5rem);
+  top: .5rem;
+  height: Calc(100% + .5rem);
 }
 
 .vertical > div.has-bottom.has-top {
-   top: -1rem;
-   height: Calc(100% + 2rem);
+  top: -1rem;
+  height: Calc(100% + 2rem);
 }
 
 .pos-0 { left: 0rem; }
@@ -203,8 +199,42 @@ img {
     width: Calc(100% - 2rem);
 }
 
-@media only screen and (max-width: 1040px) {
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 8px;
+  }
 
+  .decorated-content {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  h4 {
+      font-size: 3rem;
+  }
+
+  h1 {
+      font-size: 5rem;
+      line-height:  6rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 6px;
+  }
+  
+  .decorated-content {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .decorated-content {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
 }
 
 </style>
@@ -229,7 +259,7 @@ img {
     <div class="decorated-box">
       <div class="left vertical"></div>
       <div class="decorated-content">
-        In 2016, I had just started at Google, and had started having breakfast every day with the same group of folks - Chris, Brett, Andrew and Brandon. All of us being nerds, techno-optimists and deeply competitive, at one point Brandon described having a competition amongst us to see who could write the best AI to play the game <a href="www.gradybward.com">bananagrams</a>.
+        In 2016, when I began working at Google, I started having breakfast with the same group of folks every morning - Chris, Brett, Andrew and Brandon. All of us being nerds, techno-optimists and deeply competitive, at one point Brandon described having a competition to see who could write the best AI to play the game <a href="https://en.m.wikipedia.org/wiki/Bananagrams">bananagrams</a>.
       </div>
       <div class="right vertical"></div>
       <div class="horizontal"></div>
@@ -241,7 +271,7 @@ img {
     <div class="decorated-box">
       <div class="left vertical"></div>
       <div class="decorated-content">
-        My productivity dipped precipitously over the next few days as I considered how to crush my good friends.
+        My productivity dipped precipitously over the next few days as I considered how to destroy my good friends in tiled combat.
       </div>
       <div class="right vertical"></div>
       <div class="horizontal"></div>
@@ -253,7 +283,7 @@ img {
     <div class="decorated-box">
       <div class="left vertical"></div>
       <div class="decorated-content">
-        Here is the algorithm I designed.  I realized that searching for connections was going to take too long, and that I needed to support a simpler mechanism for tile addition.  I figured out a spatial layout that assigned ownership over strips of the grid in perpetuity to &ldquo;strands&rdquo;. Each Strand was a series of words where the ends form a two letter word and have no other interactions. In this way, each word simply becomes a starting character and finishing character, as length no longer matters, and this reduces the search costs considerably.
+        Here is the algorithm I designed.  I realized that searching for connections in any spatial model was going to dominate running time, and that I tile addition was going to be near-impossible if you had to maintain state over colliding words. To optimize so I didn&rsquo;t have to maintain a model of the board, I figured out a layout that assigned ownership over strips of the grid in perpetuity to &ldquo;strands&rdquo;.
       </div>
       <div class="right vertical"></div>
       <div class="horizontal"></div>
@@ -265,7 +295,31 @@ img {
     <div class="decorated-box">
       <div class="left vertical"></div>
       <div class="decorated-content">
-        TODO(gradyward) put a small scale diagram here.
+        <img src="../img/bananagrams_strand.png" alt="An Diagram of an example Strand" />
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        <img src="../img/bananagrams_dock.png" alt="An Diagram of how strands merge together to fill the full playing space." />
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        Each Strand was a series of words where the ends form a two letter word and have no other interactions. In this way, each word simply becomes a starting character and finishing character, as length no longer matters, and this reduces the search costs considerably.
       </div>
       <div class="right vertical"></div>
       <div class="horizontal"></div>
@@ -337,7 +391,13 @@ img {
     <div class="decorated-box">
       <div class="left vertical"></div>
       <div class="decorated-content">
-        I learned a good amount from this project. The first is that decomposing a problem into steps that computers are good at is the key to solving hard algorithmic challenges. It doesn&rsquo;t matter how fancy or complete your logic is if its orthogonal to the strengths of your processor and the data structures you are using. The second is that high-level languages are going to be easier to optimize down to their core precisely because they add layers of semantic meaning. Optimizing C is not something I do well, because my mind is too stuck in the operations of the computer, where as when I am optimizing Java, I see the problem in front of me clearly. Thirdly, competition drives me to do some of my best work. There is nothing more motivating than sitting around a breakfast table, plotting victory against friends. I rise to (and love) challenges.
+        I learned a good amount from this project:</p>
+
+<ul>
+<li>Decomposing a problem into steps that computers are good at is the key to solving hard algorithmic challenges. It doesn&rsquo;t matter how fancy or complete your logic is if its orthogonal to the strengths of your processor and the data structures you are using.</li>
+<li>High-level languages are going to be easier to optimize down to their core precisely because they add layers of semantic meaning. Optimizing C is not something I do well, because my mind is too stuck in the operations of the computer, where as when I am optimizing Java, I see the problem in front of me clearly.</li>
+<li>Competition drives me to do some of my best work. There is nothing more motivating than sitting around a breakfast table, plotting victory against friends. I rise to (and love) challenges.</li>
+</ul>
       </div>
       <div class="right vertical"></div>
       <div class="horizontal"></div>

@@ -26,8 +26,8 @@ The thing that struck me about SAT generally is that it is fundamentally trying 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gradybward.com/project/bananagrams/</guid>
-      <description>In 2016, I had just started at Google, and had started having breakfast every day with the same group of folks - Chris, Brett, Andrew and Brandon. All of us being nerds, techno-optimists and deeply competitive, at one point Brandon described having a competition amongst us to see who could write the best AI to play the game bananagrams.
-My productivity dipped precipitously over the next few days as I considered how to crush my good friends.</description>
+      <description>In 2016, when I began working at Google, I started having breakfast with the same group of folks every morning - Chris, Brett, Andrew and Brandon. All of us being nerds, techno-optimists and deeply competitive, at one point Brandon described having a competition to see who could write the best AI to play the game bananagrams.
+My productivity dipped precipitously over the next few days as I considered how to destroy my good friends in tiled combat.</description>
     </item>
     
     <item>
@@ -36,8 +36,8 @@ My productivity dipped precipitously over the next few days as I considered how 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gradybward.com/project/senior_thesis/</guid>
-      <description>I wrote my undergraduate thesis on the Graph Isomorphism problem, and within that, the “Paths” invariant, which is incredibly powerful test for discerning between potentially isomorphic graphs in cubic (and fully paralellizable) time.
-The main findings of my thesis were that: Unlike was theorized by XXX, copaths graphs exist, and finding them is easily done through some mapreduces, or on a GPU. Measuring discriminatory power to value ratio of invariants within graph isomorphism is possible and can help us devise better algorithms for practical isomorphism detection.</description>
+      <description>I wrote my undergraduate thesis on the Graph Isomorphism (GI) problem, and several topics within that space. My work was version controlled on github, and the final result is here.
+I was first interested in the “Paths” invariant, which is incredibly powerful test for discerning between potentially isomorphic graphs in cubic (and fully paralellizable) time, and was originally theorized to be a solution to GI. The primary findings of my thesis were that:</description>
     </item>
     
     <item>
