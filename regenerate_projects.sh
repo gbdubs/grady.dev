@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/Desktop/geebs/projectsbyhugo
+cd ~/Desktop/geebs/projectdata
 
 hugo
 
