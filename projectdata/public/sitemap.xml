@@ -75,6 +75,10 @@
   </url>
   
   <url>
+    <loc>http://gradybward.com/project/shoe_rack/</loc>
+  </url>
+  
+  <url>
     <loc>http://gradybward.com/project/trees/</loc>
   </url>
   
@@ -273,6 +277,11 @@
   
   <url>
     <loc>http://gradybward.com/tags/webapp/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://gradybward.com/tags/woodworking/</loc>
     <priority>0</priority>
   </url>
   

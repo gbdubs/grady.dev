@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Woodworking on Grady Berry Ward</title>
+    <link>http://gradybward.com/tags/woodworking/</link>
+    <description>Recent content in Woodworking on Grady Berry Ward</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://gradybward.com/tags/woodworking/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/shoe_rack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/shoe_rack/</guid>
+      <description>My partner and I really both like building things, which makes anniversaries both an occasion for expression of caring through mutal gift giving, and a bit of a self-indulgent excuse to carve out time to make stuff. It only took him noting once that the width of our shoe rack was exactly 2.5 shoes for me to think through how I could build something better.
+Over weeks of sketches, a trip to IKEA, and a trip to John Houston&amp;rsquo;s Kennebunkport workshop (unrelated), I was inspired by the idea of sneaky intersections - of furniture that has non-standard joints and that provides standard functionality in non-standard ways.</description>
+    </item>
+    
+  </channel>
+</rss>
