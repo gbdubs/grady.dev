@@ -1,0 +1,23 @@
+I just finished reading "Creditworthy", a thorough picture of the history and trajectory of consumer surveillance by the credit industry, written by Josh Lauer.
+
+Lauer's history of the credit industry illuminates the early evolution of the social contract at the heart of the information era: convenience, service, and social inclusion in exchange for privacy. Though this exchange is familiar to a twenty first century reader, details from the evolution of this contract (in the context of credit) offer us lessons as we seek to broadly re-negotiate the terms of our privacy forfeitures in all spheres of modern life.
+
+The first lesson is that information is unlike other commodities in how it is collected, synthesized and deployed, and that regulations that sought to ensure its responsible custodianship failed largely because they ignored key properties of data that were under-appreciated at the time of the regulation.
+
+- __Reproducibility__: Data can be copied any number of times, at close to zero cost, which creates an incentive for its infinite duplication and dissemination. Once a piece of data about an individual is collected, we should expect that market forces will lead the collecting actor to share or sell it broadly and without restraint.
+- __Supra-Summative__: Data is more identifying, valuable and intrusive the more of it that can be accessed and combined by any given actor. Linking two datasets together produces more value than the two datasets offer when ingested and examined in isolation. The increasing returns to scale of surveillance, synthesis and sale of information encourages "data-maximalism", the indiscriminate and unabashed collection of data in all spheres of life.
+- __Opaque__: Data can be used to predict outcomes (such as default rate) without offering explanations as to why the data is an indicator of the outcome. This, in concert with the world of dense correlations we live in, confounds efforts to root out social injustice buried in Black-Box algorithms. The same problems that plagued credit interpretation in the 1970's are rearing their heads in today's deep learning algorithms - nobody understands what inferences the system uses to draw its conclusions, but the conclusions reflect reality.
+
+The second lesson is that privacy is rarely taken, it is always traded away, primarily for convenience, service and social inclusion. In the early days of credit reporting, personal information was willingly relinquished in exchange for the convenience of deferring payment on purchased goods to a later date. As credit surveillance evolved, even purchasing goods in cash at many retailers was recorded for use in credit evaluation - access to the services rendered demanded the forfeiture of personal information to be shared with third parties. Later, credit report usage in job and rental applications, and even social club membership shows that ceding control over personal data was necessary for full participation in society. 
+
+Today we have to grapple with more totalizing and transparent exchanges of privacy, but the same elements of convenience, service and social inclusion are still the weights on the scale opposite privacy. TSA Pre Check offers the convenience of shorter airport security lines in exchange for detailed histories of your living arrangements, known connections and travel data. Department stores use sophisticated IMEI tracking to pinpoint your location while you enjoy the service of browsing in their stores. Social networks and ad providers siphon up your information as you browse the internet in order to offer more relevant (and lucrative) ads, and living without access to email, web content or xxx would be severely isolating in todays society. 
+
+Though each of these transactions taken individually might be worthwhile for the individual consumer, the broad base of concern about privacy is incongrous with the continued forefit of 
+
+
+The third lesson is a hopeful one. Regulation heavily shaped the consumer credit industry, and could influence the shape, scope and intrusions of the information economy in the future.
+
+
+
+
+Regulatory solutions here need to address (1) transparency to the owner of the data (2) editability of the data, including expunging (3) derived data products (4) consent for collection, distribution and sharing (5) notification of use (6) legitimate law enforcement usage of data (7) 

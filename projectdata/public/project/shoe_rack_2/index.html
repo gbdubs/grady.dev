@@ -575,20 +575,41 @@ shoe rack.
   }
   
   function randomPairToSwap(assignment) {
-    var initialI = Math.floor(8 * Math.random());
-    var initialJ = Math.floor(8 * Math.random());
-    for (var incrementalI = 0; incrementalI < 8; incrementalI++) {
-      var i = (initialI + incrementalI) % 8;
-      for (var incrementalJ = 0; incrementalJ < 8; incrementalJ++) {
-        var j = (initialJ + incrementalJ) % 8;
-        if (couldSwapPair(assignment, i, j)) {
-          return {
-            "origin": i, 
-            "destination": j
-          };
+    var fromIndexOfPopulated = Math.floor(4 * Math.random());
+    var fromIndex = -1;
+    for (var i = 0; i < 8; i++) {
+      if (assignment[i] != EMPTY) {
+        if (fromIndexOfPopulated == 0) {
+          fromIndex = i;
+          break;
         }
+        fromIndexOfPopulated--;
       }
     }
+    var numEmptyOnOtherSide = 0;
+    var otherSideStart = fromIndex < 4 ? 4 : 0;
+    for (var i = 0; i < 4; i++) {
+      if (assignment[i + otherSideStart] == EMPTY) {
+        numEmptyOnOtherSide++;
+      }
+    }
+    var toIndexOnOtherSideOfPopulated = Math.floor(numEmptyOnOtherSide * Math.random());
+    var toIndex = -1;
+    for (var i = otherSideStart; i < otherSideStart + 4; i++) {
+      if (assignment[i] == EMPTY) {
+        if (toIndexOnOtherSideOfPopulated == 0) {
+          toIndex = i;
+          break;
+        }
+        toIndexOnOtherSideOfPopulated--;
+      }
+    }
+    return {
+            "origin": fromIndex, 
+            "destination": toIndex
+          };
+    
+
   }
   
   function createParagraphAssignments(numParagraphs) {
