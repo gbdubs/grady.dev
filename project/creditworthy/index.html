@@ -288,7 +288,7 @@ img {
 <ul>
 <li><strong>Reproducibility</strong>: Data can be copied any number of times, at close to zero cost, which creates an incentive for its infinite duplication and dissemination. Once a piece of data about an individual is collected, we should expect that market forces will drive the collecting actor to share or sell it broadly and without restraint.</li>
 <li><strong>Supra-Summative</strong>: Data is more identifying, valuable and intrusive the more of it that can be accessed and combined by any given actor. Linking two datasets together routinely produces more value than the two datasets offer when ingested and examined in isolation. The increasing returns to scale of surveillance, synthesis and sale of information encourages &ldquo;data-maximalism&rdquo;, the indiscriminate and unabashed collection of data in all spheres of life.</li>
-<li><strong>Opaque</strong>: Data can be used to predict outcomes (such as default rate) without offering explanations as to why the data is an indicator of the outcome. This, in concert with the reality of dense correlations in all factors of life, confounds efforts to root out social injustice buried in Black-Box algorithms. Racism, sexism and abelism all still exist in credit scoring despite the prohibition on the explicit consideration of race, sex or ability. The same problems that plagued credit interpretation in the 1970&rsquo;s are compounded in today&rsquo;s deep learning algorithms, where nobody understands what inferences the system uses to draw its conclusions, even though the system may be able to consistently predict reality.</li>
+<li><strong>Opacity</strong>: Data can be used to predict outcomes (such as default rate) without offering explanations as to why the data is an indicator of the outcome. This, in concert with the reality of dense correlations in all factors of life, confounds efforts to root out social injustice buried in Black-Box algorithms. Racism, sexism and ableism all still exist in credit scoring despite the prohibition on the explicit consideration of race, sex or ability. The same problems that plagued credit interpretation in the 1970&rsquo;s are compounded in today&rsquo;s deep learning algorithms, where nobody understands what inferences the system uses to draw its conclusions, even though the system may be able to consistently predict reality.</li>
 </ul>
       </div>
       <div class="right vertical"></div>
@@ -452,11 +452,9 @@ img {
       }
     }
     return {
-            "origin": fromIndex, 
-            "destination": toIndex
-          };
-    
-
+      "origin": fromIndex, 
+      "destination": toIndex
+    };
   }
   
   function createParagraphAssignments(numParagraphs) {

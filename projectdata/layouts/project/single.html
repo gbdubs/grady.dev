@@ -323,27 +323,9 @@ img {
       }
     }
     return {
-            "origin": fromIndex, 
-            "destination": toIndex
-          };
-    /*
-    
-  
-    var initialI = Math.floor(8 * Math.random());
-    var initialJ = Math.floor(8 * Math.random());
-    for (var incrementalI = 0; incrementalI < 8; incrementalI++) {
-      var i = (initialI + incrementalI) % 8;
-      for (var incrementalJ = 0; incrementalJ < 8; incrementalJ++) {
-        var j = (initialJ + incrementalJ) % 8;
-        if (couldSwapPair(assignment, i, j)) {
-          return {
-            "origin": i, 
-            "destination": j
-          };
-        }
-      }
-    }
-    */
+      "origin": fromIndex, 
+      "destination": toIndex
+    };
   }
   
   function createParagraphAssignments(numParagraphs) {
