@@ -3,16 +3,16 @@
 order = 1500
 
 name = "Cindi"
-external_url = "http://cindi.in"
+external_url = "https://gbdubs.github.io/cindi-gallery"
 
 short_desc = "Algorithmically generated art inspired by Janelle Monae's Metropolis Suite"
 tags = ["art", "java"]
 
 +++
 
-TL;DR: Janelle Monae's art inspired me to try to build an algorithm that progamatically generates emotion-evoking art, and the results are [here](http://cindi.in). 
+TL;DR: Janelle Monae's art inspired me to try to build an algorithm that progamatically generates emotion-evoking art, and the results are [here](https://gbdubs.github.io/cindi-gallery/). 
 
-![A Photo of an incredibly dense bananagrams grid.](../img/CINDI1.png)
+![A rendering of the CINDI program](../img/CINDI1.png)
 
 If you haven’t yet listened to Janelle Monae’s “Metropolis” suite, I highly recommend that you drop  the committments you can, pour yourself some coffee and/or wine, and listen to it carefully. 
 
@@ -20,7 +20,7 @@ Monae is a magician, a siren, an entertainer, a theorist, a historian, and a vis
 
 Within the context of Metropolis, one of the (many) questions Monae raises is at the intersection of technology, humanity and art, and this project was an attempt to programmatically generate art that evokes real human emotion. To understand what I was trying to capture, check out [the page itself](http://cindi.in).
 
-![A Photo of an incredibly dense bananagrams grid.](../img/CINDI2.png)
+![A rendering of the CINDI program](../img/CINDI2.png)
 
 This was an expansion of the work I did in in [VOAT](../voat) - rather than using squares with a predictible and pre-defined set of ports to connect, I use polygons with arbitrarily defined sub-regions. The results are wild: extreme variance, never dull.  To see how some of these were generated, check out the tesselation photos below.
 
@@ -30,4 +30,4 @@ I hope to do more work in this space, and to keep thinking through where the roo
 
 I hope this project goes somewhere, but I need time to work on it.
 
-![A Photo of an incredibly dense bananagrams grid.](../img/cindi.png)
+![A rendering of the CINDI program](../img/cindi.png)
