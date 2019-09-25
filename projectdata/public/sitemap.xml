@@ -251,6 +251,11 @@
   </url>
   
   <url>
+    <loc>http://gradybward.com/tags/physics/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://gradybward.com/tags/privacy/</loc>
     <priority>0</priority>
   </url>

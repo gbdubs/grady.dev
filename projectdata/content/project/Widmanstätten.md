@@ -1,4 +1,4 @@
-# +++
++++
 
 order = 1700
 
@@ -13,8 +13,8 @@ When visiting the Smithsonian Natural History Museum, I saw the inside of a mete
 
 Here's what I learned from [Wikipedia](https://en.wikipedia.org/wiki/Widmanst%C3%A4tten_pattern): The meteorites that display this pattern are comprised of of two Iron-Nickel alloys, Kamacite and Taenite. This pattern is found in metiorites called Octahidrites, so named because the pattern is actually a result of a crystal structure of Taenite's crystal latice, which is hexoctahedral (cubic) in structure. The pattern generated when such a crystal is sliced along a "face" of the crystal is the Widmanstätten pattern, but cut along different axes you will see different patterns (a square equivalent to the Widmanstatten, or just chaotic beauty if not at a multiple of 15 degrees). Wikipedia's image here speaks a thousand words:
 
-![A visual explanation of how the Widmanstätten pattern comes to be from the crystal structure](https://en.wikipedia.org/wiki/Widmanst%C3%A4tten_pattern#/media/File:Cutting_the_octaedron.png)
-(Source: https://en.wikipedia.org/wiki/Widmanst%C3%A4tten_pattern#Shape_and_orientation)
+![Cutting the octaedron.png](../img/cutting_the_octaedron.png)
+(Source Davide Bolsi - Different cuts of the octaedron produces different kinds of Widmanstätten patterns. CC BY-SA 3.0, unedited, Created 9 June 2008, https://en.wikipedia.org/wiki/Widmanst%C3%A4tten_pattern#Shape_and_orientation)
 
 So I tried to simulate this, with some mixed effects!
 
