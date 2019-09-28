@@ -99,6 +99,10 @@
   </url>
   
   <url>
+    <loc>http://gradybward.com/project/terry/</loc>
+  </url>
+  
+  <url>
     <loc>http://gradybward.com/project/trees/</loc>
   </url>
   
@@ -217,6 +221,11 @@
   
   <url>
     <loc>http://gradybward.com/tags/javascript/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://gradybward.com/tags/law/</loc>
     <priority>0</priority>
   </url>
   

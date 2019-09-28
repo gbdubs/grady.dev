@@ -1,0 +1,540 @@
+<html>
+<head>
+  <title>Grady Berry Ward | Terry v. Ohio &#43; Aggregated Infringement</title>
+  <meta name="viewport" content="width=device-width">
+<style>
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: left;
+  margin: 4rem 0 0rem 0;
+  line-height: 3rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 1rem 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.width-wrapper {
+  width: Calc(100% - 2rem);
+  max-width: 1000px;
+  min-width: Calc(320px - 2rem);
+  margin: 0 1rem 1rem 1rem;
+  display: inline-block;
+  position: relative;
+  height: Calc(100% - 1rem);
+}
+
+.decorated-box {
+  height:  auto;
+  position:  relative;
+}
+
+.decorated-content {
+  width:  Calc(100% - 16rem);
+  top: 0;
+  margin: 0rem 8rem 0;
+  padding:  1rem 0 2rem 0;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.vertical {
+  position: absolute;
+  height: Calc(100% - 1rem);
+  width: 8rem;
+  top: 0;
+}
+.left.vertical {
+  left:  0;
+}
+.right.vertical {
+  right:  0;
+}
+
+.horizontal {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+}
+.horizontal > div {
+  width:  100%;
+}
+
+* {
+  color: #272727;
+}
+
+.black {
+  background: #272727;
+}
+
+.red {
+  background: #d20909;
+}
+
+.yellow {
+  background: #eac40a;
+}
+
+.blue {
+  background: #1444b1;
+}
+
+.black,
+.red,
+.blue,
+.yellow {
+  display: block;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  transition: width .5s linear, height .5s linear;
+}
+
+.vertical > div {
+  height: Calc(100% - 1rem);
+  top: .5rem;
+}
+
+.vertical > div.has-top {
+  top: -1rem;
+  height: Calc(100% + .5rem);
+}
+
+.vertical > div.has-bottom {
+  top: .5rem;
+  height: Calc(100% + .5rem);
+}
+
+.vertical > div.has-bottom.has-top {
+  top: -1rem;
+  height: Calc(100% + 2rem);
+}
+
+.pos-0 { left: 0rem; }
+.pos-1 { left: 2rem; }
+.pos-2 { left: 4rem; }
+.pos-3 { left: 6rem; }
+.pos-4 { right: 6rem; }
+.pos-5 { right: 4rem; }
+.pos-6 { right: 2rem; }
+.pos-7 { right: 0rem; }
+
+
+.from-0 { left: 1rem; }
+.from-1 { left: 3rem; }
+.from-2 { left: 5rem; }
+.from-3 { left: 7rem; }
+.from-4 { right: 7rem; }
+.from-5 { right: 5rem; }
+.from-6 { right: 3rem; }
+.from-7 { right: 1rem; }
+
+.from-3.to-4, 
+.from-4.to-3 {
+    width: Calc(100% - 14rem);
+}
+
+.from-2.to-4,
+.from-3.to-5,
+.from-4.to-2,
+.from-5.to-3 {
+    width: Calc(100% - 12rem);
+}
+
+.from-1.to-4,
+.from-2.to-5,
+.from-3.to-6,
+.from-4.to-1,
+.from-5.to-2,
+.from-6.to-3 {
+    width: Calc(100% - 10rem);
+}
+
+.from-0.to-4,
+.from-1.to-5,
+.from-2.to-6,
+.from-3.to-7,
+.from-4.to-0,
+.from-5.to-1,
+.from-6.to-2,
+.from-7.to-3 {
+    width: Calc(100% - 8rem);
+}
+
+.from-0.to-5,
+.from-1.to-6,
+.from-2.to-7,
+.from-5.to-0,
+.from-6.to-1,
+.from-7.to-2 {
+    width: Calc(100% - 6rem);
+}
+
+.from-0.to-6,
+.from-1.to-7,
+.from-6.to-0,
+.from-7.to-1 {
+    width: Calc(100% - 4rem);
+}
+
+.from-0.to-7,
+.from-7.to-0 {
+    width: Calc(100% - 2rem);
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 8px;
+  }
+
+  .decorated-content {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  h4 {
+      font-size: 3rem;
+  }
+
+  h1 {
+      font-size: 5rem;
+      line-height:  6rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 6px;
+  }
+  
+  .decorated-content {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .decorated-content {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+</style>
+<body>
+<div class="width-wrapper pre-transition" id="width-wrapper">
+<div class="decorated-box">
+  <div class="left vertical"></div>
+  <div class="decorated-content">
+    <h4><a href="..">Back</a></h4>
+    <h1> Terry v. Ohio &#43; Aggregated Infringement</h1>
+  </div>
+<div class="right vertical"></div>
+  <div class="horizontal"></div>
+</div>
+
+
+
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        <em>Terry v. Ohio</em> is known for it&rsquo;s implications on the probable cause requirement of the fourth amendment, but re-reading the decision over the weekend, something else jumped out at me when I put myself in the shoes of the Warren court: given the fact pattern, they were doing their best to encourage good policework, and in the case of stop and frisk the differentiation between &lsquo;good&rsquo; and &lsquo;bad&rsquo; policing hinges on the quality of the officer&rsquo;s decision making and the outcome of their choice:
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        The majority tries to write narrowly. I&rsquo;d guess that they thought that the correct outcome was to uphold the search and they were grasping for a reason why the stop could be justified without destroying probable cause. If so, I see where they are writing from. I&rsquo;m at all concerned with Terry&rsquo;s fate, but I definitely care about supporting the McFaddens of the world. McFadden made a judgement call to stop and frisk Terry and his coconspirators, and out of this individual decision, an agreeable outcome arose. Were McFadden less perceptive, more suspicious, or less discriminating we wouldn&rsquo;t be talking about <em>Terry</em>. But as it happened, the case that justifies Stop and Frisk is a <em>true positive</em>.
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        Zoom back for a second. An officer&rsquo;s decision on whether to Stop and Frisk (S+F) a civilian has four outcomes, based on whether the officer decides to stop (STOP) or not (PASS), and whether the civilian is actually in possession of illegal goods or arms (GUILTY) or not (INNOCENT):
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        (1) True Negative (PASS, INNOCENT)
+(2) False Negative (PASS, GUILTY)
+(3) False Positive (STOP, INNOCENT)
+(4) True Positive (STOP, ARREST)
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        There are clear downsides to False Positives and False Negatives. <strong>False positives</strong> seriously intrude on basic liberties to be secure in person and posession, tend to be racially biased, and create mistrust between law enforcement and civilians. <strong>False negatives</strong> likely increase crime rates and embolden criminals. A city&rsquo;s choice on how and if to conduct S+F <strong>should probably be based on a concious tradeoff between the relative incidence of false positives and false negatives</strong>.
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        But thats now how courts operate. In <em>Terry</em>, we only see a single instance, a True Positive. Were the circumstances in front of the Warren court not that of McFadden and Terry, but, say, Sandra Bland and Brian Encinia (a rage inducing <em>False Positive</em>), the court might arrive at a different outcome. Heck, if Officer McFadden had stopped 100 innocent people before stopping Terry, I&rsquo;d argue that should change the outcome, but we don&rsquo;t get to know that context in deciding this case. The problem with <em>Terry v. Ohio</em> is not (as some argue) that the fact pattern sits at the peak of the watershed &lsquo;probable&rsquo; divide (though it does). Instead, the problem with <em>Terry</em> is that it is a single case.
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        When constitutional rights are in conflict, courts perform our balancing. When the parties with competing constitutional claims are on opposite benches, performing this balancing is easier than when no single case can capture both of the claims. In thinking about S+F, the fact pattern in front of us heavily influences our intuition: true positives show that there are occasions when we want to defer to officer discretion, and false positives show that officer discretion should not be unlimited.
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        It would be impractical and unwise to conclude based on this sentiment that case by case analysis here can yield just outcomes. Repairing 4th amendment violations is fraught. Instead, we should take a wholistic approach to justice, outside of the confines of a fact pattern to bias our intuition. It is feasible to evaluate the actual numbers of the four outcomes above in any given city. The Positives just need record keeping, and the Negatives  need a few dozen (fully random) stops per day as controls (ignoring the clear constitutional problems with that practice). From there we could evaluate the harms of both groups in direct comparison (consider targeting a 4:1 FalsePositive to FalseNegative ratio).
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        What if a city is above this target ratio? Then officers should exercice more discretion before making a stop: instruct officers to have a higher degree of confidence before chosing to S+F! Rotate cops off of S+F if their ratio is bad! Provide more training on differentiating between suspicious and atypical behavior! Provide pay incentives for good ratios! Similar remedies could be imagined for a ratio below the target.
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        These are all specific recommendations to a very general and very hard problem: how do you improve the results (say S+F ratio) of a blackbox system (such as the brain of an officer) that can&rsquo;t be reliably inspected? <strong>You define a cost function, and instruct the system to self-optimize</strong>. Officers know how to police far better than I (or most judges) do. Rather than defining a set of operational rules (that would be near impossible to enforce or evaluate) for how an officer should decide whether to perform a S+F, I&rsquo;d rather we be honest about the aggregated harms of over or under stopping, and encode our relative thoughts about both in a function that can then be actualized by the experts.
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        More broadly, re-reading <em>Terry</em> I&rsquo;m reminded that cases are instructive, but single-case rulings probably wont consistently yield just outcomes. This has me thinking about a ton of topics: incremental rights and incremental infringement, actor driven optimization, and the boundaries of case law for achieving social justice.
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+<div class="decorated-box">
+  <div class="left vertical"></div>
+  <p class="decorated-content">
+  </p>
+  <div class="right vertical"></div>
+  <div class="horizontal"></div>
+</div>
+</div>
+<script>
+  var wrapper = document.getElementById("width-wrapper");
+  wrapper.classList.remove("pre-transition");
+  
+  var EMPTY = "empty";
+  
+  function randomInitialAssignment() {
+    return ["red", "black", "yellow", "blue", EMPTY, EMPTY, EMPTY, EMPTY]
+  }
+  
+  function couldSwapPair(assignment, from, to) {
+    if (from < 4 == to < 4){
+      return false;
+    }
+    if (assignment[to] != EMPTY || assignment[from] == EMPTY) {
+      return false;
+    }
+    return true;
+  }
+  
+  function randomPairToSwap(assignment) {
+    var fromIndexOfPopulated = Math.floor(4 * Math.random());
+    var fromIndex = -1;
+    for (var i = 0; i < 8; i++) {
+      if (assignment[i] != EMPTY) {
+        if (fromIndexOfPopulated == 0) {
+          fromIndex = i;
+          break;
+        }
+        fromIndexOfPopulated--;
+      }
+    }
+    var numEmptyOnOtherSide = 0;
+    var otherSideStart = fromIndex < 4 ? 4 : 0;
+    for (var i = 0; i < 4; i++) {
+      if (assignment[i + otherSideStart] == EMPTY) {
+        numEmptyOnOtherSide++;
+      }
+    }
+    var toIndexOnOtherSideOfPopulated = Math.floor(numEmptyOnOtherSide * Math.random());
+    var toIndex = -1;
+    for (var i = otherSideStart; i < otherSideStart + 4; i++) {
+      if (assignment[i] == EMPTY) {
+        if (toIndexOnOtherSideOfPopulated == 0) {
+          toIndex = i;
+          break;
+        }
+        toIndexOnOtherSideOfPopulated--;
+      }
+    }
+    return {
+      "origin": fromIndex, 
+      "destination": toIndex
+    };
+  }
+  
+  function createParagraphAssignments(numParagraphs) {
+    var paragraphAssignments = [];
+    paragraphAssignments[0] = randomInitialAssignment();
+    for (var i = 1; i < numParagraphs; i++) {
+      var pairToSwap = randomPairToSwap(paragraphAssignments[i-1]);
+      var newAssignment = [];
+      Object.assign(newAssignment, paragraphAssignments[i-1]);
+      newAssignment[pairToSwap.destination] = newAssignment[pairToSwap.origin];
+      newAssignment[pairToSwap.origin] = EMPTY;
+      newAssignment.origin = pairToSwap.origin;
+      newAssignment.destination = pairToSwap.destination;
+      paragraphAssignments.push(newAssignment);
+    }
+    for (var i = 0; i < numParagraphs - 1; i++) {
+      paragraphAssignments[i].origin = paragraphAssignments[i+1].origin;
+      paragraphAssignments[i].destination = paragraphAssignments[i+1].destination;
+    }
+    paragraphAssignments[numParagraphs-1].origin = -1;
+    paragraphAssignments[numParagraphs-1].destination = -1;
+    
+    return paragraphAssignments;
+  }
+  
+  function isInBetween(a, b, c){
+    return ((a < b) == (b < c));
+  }
+  
+  function assignAssignmentToParagraphBox(lastAssignment, assignment, box) {
+  
+    var bottomSidebar = box.getElementsByClassName('horizontal')[0];
+    var classesForBottom = assignment[assignment.origin] + " from-" + assignment.origin + " to-" + assignment.destination;
+    var bottomSidebarHtml = "<div class=\"" + classesForBottom + "\"></div>";
+    bottomSidebar.innerHTML = bottomSidebarHtml;
+  
+    var leftSidebarHtml = "";
+    for (var i = 0; i < 4; i++) {
+      if (assignment[i] !== EMPTY) {
+        var classesToAdd = assignment[i] + " pos-" + i;
+        if (!isInBetween(lastAssignment.origin, i, lastAssignment.destination) || lastAssignment.destination == i){
+          classesToAdd = classesToAdd + " has-top";
+        }
+        if (!isInBetween(assignment.origin, i, assignment.destination) || assignment.origin == i){
+          classesToAdd = classesToAdd + " has-bottom";
+        }
+        leftSidebarHtml = leftSidebarHtml + '<div class="' +classesToAdd + '"></div>';
+      }
+    }
+    var leftSidebar = box.getElementsByClassName('left')[0];
+    leftSidebar.innerHTML = leftSidebarHtml;
+    
+    var rightSidebarHtml = "";
+    for (var i = 4; i < 8; i++) {
+      if (assignment[i] !== EMPTY) {
+        var classesToAdd = assignment[i] + " pos-" + i;
+        if (!isInBetween(lastAssignment.origin, i, lastAssignment.destination) || lastAssignment.destination == i){
+          classesToAdd = classesToAdd + " has-top";
+        }
+        if (!isInBetween(assignment.origin, i, assignment.destination) || assignment.origin == i){
+          classesToAdd = classesToAdd + " has-bottom";
+        }
+        rightSidebarHtml = rightSidebarHtml + '<div class="' +classesToAdd + '"></div>';
+      }
+    }
+    var rightSidebar = box.getElementsByClassName('right')[0];
+    rightSidebar.innerHTML = rightSidebarHtml;
+  }
+
+  window.onload = function () {
+    var paragraphsBoxes = document.getElementsByClassName("decorated-box");
+    var paragraphAssignments = createParagraphAssignments(paragraphsBoxes.length);
+    console.log(paragraphAssignments);
+  
+    for (var i = 0; i < paragraphsBoxes.length; i++){
+      var previous = {origin: -1, destination: -1};
+      if (i > 0) {
+        previous = paragraphAssignments[i - 1];
+      }
+      assignAssignmentToParagraphBox(previous, paragraphAssignments[i], paragraphsBoxes[i]);
+    }
+  }
+  
+</script>
+</body>
+</html>
