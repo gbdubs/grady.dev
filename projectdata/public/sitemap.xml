@@ -39,6 +39,10 @@
   </url>
   
   <url>
+    <loc>http://gradybward.com/project/clock/</loc>
+  </url>
+  
+  <url>
     <loc>http://gradybward.com/project/consequential/</loc>
   </url>
   
@@ -226,6 +230,16 @@
   
   <url>
     <loc>http://gradybward.com/tags/law/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://gradybward.com/tags/loss/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://gradybward.com/tags/love/</loc>
     <priority>0</priority>
   </url>
   
