@@ -19,7 +19,7 @@ We'd made it more. We'd chosen mistmatched glasses, argued over the layout of th
 
 But things changed. We changed. What we needed and wanted and were changed. I moved out. He finished the lease. And on the 30th, I came over, scrubbed floorboards and toilets and when I looked up after a few hours, and loaded the cars, and came in to say goodbye to a home, I didn't find it in there.
 
-The only sound was from the only object - the clock hanging up where we'd removed the nails that the last tennants haphazardly threw in. Me on a chair with the back of a hammer, him with a bowl for the nails. Taking 60 out to put one in for the clock.
+The only sound was from the only object - the clock hanging up where we'd removed the nails that the last tenants haphazardly threw in. Me on a chair with the back of a hammer, him with a bowl for the nails. Taking 60 out to put one in for the clock.
 
 He came out of the bathroom, and I pointed out the clock. "I think we forgot something." "Do you want it?" "I think I like it being here-it fits the place." "Well it's always nice to have a clock - if you don't want it, can I take it?" "Sure."
 

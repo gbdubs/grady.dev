@@ -88,6 +88,8 @@ h1 {
 .decorated-content {
     opacity: 1;
     transition: opacity linear .125s;
+    z-index: 1;  /* Helps the decorated content appear in front of the sidebar, and be clickable. */
+    position: relative; /* Allows the Z-Index to have meaning. */
 }
 
 .sidebar {
@@ -96,6 +98,7 @@ h1 {
     position: absolute;
     top: 0;
     left:  0;
+    z-index: 0; /* Helps the decorated content appear in front of the sidebar, and be clickable. */
 }
 
 .sidebar > * {
