@@ -7,6 +7,8 @@ name = "Euclid"
 short_desc = "Give me a straightedge and a compass..."
 tags = ["art", "css"]
 
+custom_css = "img { height: 425px; width: 100%; }"
+
 +++
 
 Two of my all time favorite books are "Measurement" by Lockheart and "The Elements of Euclid" by Byrne. Both take nontraditional approaches to exploring geometry. Part of what is magical about them is the way that they build an intuitive depth that doesn't rely on formalism. This project came to me while trying to fall asleep one night. The code is [here](https://github.com/gbdubs/euclid). The premise is (I think) much more aptly described by showing intermediate results. 

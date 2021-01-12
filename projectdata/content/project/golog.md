@@ -2,9 +2,9 @@
 
 order = 1000
 
-name = "GoLog - A simple Go Logger"
+name = "GoLog"
 
-short_desc = ""
+short_desc = "a visual post-hoc logger for golang"
 tags = ["art", "css"]
 
 +++

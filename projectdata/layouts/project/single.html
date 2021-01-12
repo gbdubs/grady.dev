@@ -244,6 +244,12 @@ img {
   }
 }
 
+{{ if (not (isset .Page.Params "custom_css")) | or (eq .Page.Params.custom_css "") }}
+  /* No Custom Css */
+{{ else }}
+  {{ .Page.Params.custom_css | safeCSS }}
+{{ end }}
+
 </style>
 <body>
 <div class="width-wrapper pre-transition" id="width-wrapper">

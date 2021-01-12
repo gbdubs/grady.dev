@@ -43,23 +43,7 @@
   </url>
   
   <url>
-    <loc>http://gradybward.com/project/consequential/</loc>
-  </url>
-  
-  <url>
     <loc>http://gradybward.com/project/creditworthy/</loc>
-  </url>
-  
-  <url>
-    <loc>http://gradybward.com/project/drafts/audit_the_police/</loc>
-  </url>
-  
-  <url>
-    <loc>http://gradybward.com/project/drafts/compression/</loc>
-  </url>
-  
-  <url>
-    <loc>http://gradybward.com/project/drafts/vocabulary/</loc>
   </url>
   
   <url>
@@ -352,11 +336,6 @@
   
   <url>
     <loc>http://gradybward.com/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://gradybward.com/tags/tech/</loc>
     <priority>0</priority>
   </url>
   
