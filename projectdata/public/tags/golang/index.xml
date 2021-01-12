@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Golang on Grady Berry Ward</title>
+    <link>http://gradybward.com/tags/golang/</link>
+    <description>Recent content in Golang on Grady Berry Ward</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://gradybward.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/ecology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/ecology/</guid>
+      <description>This is work in progress, I&amp;rsquo;ve unpublished it for the time being in order to make sure I don&amp;rsquo;t accidentally encourage anyone to use it. I&amp;rsquo;m changing data formats considerably and think it would be irresponsible to publish a tool as &amp;ldquo;helpful&amp;rdquo; if it is incompatible with the future version.
+If you just want to create lambdas, the bash precursor to this project is up and very much still works: https://github.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>4th Ammendemnt</title>
+      <link>http://gradybward.com/tags/4th-ammendemnt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/tags/4th-ammendemnt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Algorithms</title>
       <link>http://gradybward.com/tags/algorithms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -52,6 +61,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gradybward.com/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Backend</title>
+      <link>http://gradybward.com/tags/backend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/tags/backend/</guid>
       <description></description>
     </item>
     
@@ -115,6 +133,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gradybward.com/tags/functions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>http://gradybward.com/tags/golang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/tags/golang/</guid>
       <description></description>
     </item>
     
@@ -268,6 +295,24 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gradybward.com/tags/scraping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Serverless</title>
+      <link>http://gradybward.com/tags/serverless/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/tags/serverless/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tech</title>
+      <link>http://gradybward.com/tags/tech/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/tags/tech/</guid>
       <description></description>
     </item>
     

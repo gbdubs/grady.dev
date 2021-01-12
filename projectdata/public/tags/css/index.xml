@@ -22,6 +22,36 @@ I wondered if you could do this in CSS, so I poked around, learned about CSS Tra
     
     <item>
       <title></title>
+      <link>http://gradybward.com/project/euclid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/euclid/</guid>
+      <description>Two of my all time favorite books are &amp;ldquo;Measurement&amp;rdquo; by Lockheart and &amp;ldquo;The Elements of Euclid&amp;rdquo; by Byrne. Both take nontraditional approaches to exploring geometry. Part of what is magical about them is the way that they build an intuitive depth that doesn&amp;rsquo;t rely on formalism. This project came to me while trying to fall asleep one night. The code is here. The premise is (I think) much more aptly described by showing intermediate results.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/golog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/golog/</guid>
+      <description>I&amp;rsquo;ve been writing a lot more golang of late, so I wrote a (gorgeous) visual debugger for helping to do post-hoc debugging. It&amp;rsquo;s been hugely helpful in my lambda based projects, where one often wants the ability to quickly view &amp;ldquo;what happened during this trace&amp;rdquo; without running locally with a traditional step based debugger.
+Unlike many of my projects, this one is pretty well supported, and I&amp;rsquo;ve continued to add features as I need them.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/voat_2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/voat_2/</guid>
+      <description>This project is a work in progress, it still has lots of work to be done.
+A few years ago, I created a project called VOAT, in which I used a simple space filling algorithm, alongside a variety of different CSS properties to generate goregeous patterns. I recently revisited this project with the intent on showing folks how it was made, and introducing folks to CSS.
+The result is a new site, voat.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>http://gradybward.com/project/website_v1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

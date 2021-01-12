@@ -51,6 +51,18 @@
   </url>
   
   <url>
+    <loc>http://gradybward.com/project/drafts/audit_the_police/</loc>
+  </url>
+  
+  <url>
+    <loc>http://gradybward.com/project/drafts/compression/</loc>
+  </url>
+  
+  <url>
+    <loc>http://gradybward.com/project/drafts/vocabulary/</loc>
+  </url>
+  
+  <url>
     <loc>http://gradybward.com/project/draw_me_css/</loc>
   </url>
   
@@ -59,11 +71,23 @@
   </url>
   
   <url>
+    <loc>http://gradybward.com/project/ecology/</loc>
+  </url>
+  
+  <url>
+    <loc>http://gradybward.com/project/euclid/</loc>
+  </url>
+  
+  <url>
     <loc>http://gradybward.com/project/find_a_clinic/</loc>
   </url>
   
   <url>
     <loc>http://gradybward.com/project/flux/</loc>
+  </url>
+  
+  <url>
+    <loc>http://gradybward.com/project/golog/</loc>
   </url>
   
   <url>
@@ -103,6 +127,10 @@
   </url>
   
   <url>
+    <loc>http://gradybward.com/project/sniff/</loc>
+  </url>
+  
+  <url>
     <loc>http://gradybward.com/project/terry/</loc>
   </url>
   
@@ -112,6 +140,10 @@
   
   <url>
     <loc>http://gradybward.com/project/voat/</loc>
+  </url>
+  
+  <url>
+    <loc>http://gradybward.com/project/voat_2/</loc>
   </url>
   
   <url>
@@ -139,6 +171,11 @@
   </url>
   
   <url>
+    <loc>http://gradybward.com/tags/4th-ammendemnt/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://gradybward.com/tags/algorithms/</loc>
     <priority>0</priority>
   </url>
@@ -160,6 +197,11 @@
   
   <url>
     <loc>http://gradybward.com/tags/aws/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://gradybward.com/tags/backend/</loc>
     <priority>0</priority>
   </url>
   
@@ -200,6 +242,11 @@
   
   <url>
     <loc>http://gradybward.com/tags/functions/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://gradybward.com/tags/golang/</loc>
     <priority>0</priority>
   </url>
   
@@ -299,7 +346,17 @@
   </url>
   
   <url>
+    <loc>http://gradybward.com/tags/serverless/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://gradybward.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://gradybward.com/tags/tech/</loc>
     <priority>0</priority>
   </url>
   

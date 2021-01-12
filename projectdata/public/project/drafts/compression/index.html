@@ -1,0 +1,695 @@
+<html>
+<head>
+  <title>Grady Berry Ward | Compression</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width">
+<style>
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: left;
+  margin: 4rem 0 0rem 0;
+  line-height: 3rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 1rem 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.width-wrapper {
+  width: Calc(100% - 2rem);
+  max-width: 1000px;
+  min-width: Calc(320px - 2rem);
+  margin: 0 1rem 1rem 1rem;
+  display: inline-block;
+  position: relative;
+  height: Calc(100% - 1rem);
+}
+
+.decorated-box {
+  height:  auto;
+  position:  relative;
+}
+
+.decorated-content {
+  width:  Calc(100% - 16rem);
+  top: 0;
+  margin: 0rem 8rem 0;
+  padding:  1rem 0 2rem 0;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.vertical {
+  position: absolute;
+  height: Calc(100% - 1rem);
+  width: 8rem;
+  top: 0;
+}
+.left.vertical {
+  left:  0;
+}
+.right.vertical {
+  right:  0;
+}
+
+.horizontal {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+}
+.horizontal > div {
+  width:  100%;
+}
+
+* {
+  color: #272727;
+}
+
+.black {
+  background: #272727;
+}
+
+.red {
+  background: #d20909;
+}
+
+.yellow {
+  background: #eac40a;
+}
+
+.blue {
+  background: #1444b1;
+}
+
+.black,
+.red,
+.blue,
+.yellow {
+  display: block;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  transition: width .5s linear, height .5s linear;
+}
+
+.vertical > div {
+  height: Calc(100% - 1rem);
+  top: .5rem;
+}
+
+.vertical > div.has-top {
+  top: -1rem;
+  height: Calc(100% + .5rem);
+}
+
+.vertical > div.has-bottom {
+  top: .5rem;
+  height: Calc(100% + .5rem);
+}
+
+.vertical > div.has-bottom.has-top {
+  top: -1rem;
+  height: Calc(100% + 2rem);
+}
+
+.pos-0 { left: 0rem; }
+.pos-1 { left: 2rem; }
+.pos-2 { left: 4rem; }
+.pos-3 { left: 6rem; }
+.pos-4 { right: 6rem; }
+.pos-5 { right: 4rem; }
+.pos-6 { right: 2rem; }
+.pos-7 { right: 0rem; }
+
+
+.from-0 { left: 1rem; }
+.from-1 { left: 3rem; }
+.from-2 { left: 5rem; }
+.from-3 { left: 7rem; }
+.from-4 { right: 7rem; }
+.from-5 { right: 5rem; }
+.from-6 { right: 3rem; }
+.from-7 { right: 1rem; }
+
+.from-3.to-4, 
+.from-4.to-3 {
+    width: Calc(100% - 14rem);
+}
+
+.from-2.to-4,
+.from-3.to-5,
+.from-4.to-2,
+.from-5.to-3 {
+    width: Calc(100% - 12rem);
+}
+
+.from-1.to-4,
+.from-2.to-5,
+.from-3.to-6,
+.from-4.to-1,
+.from-5.to-2,
+.from-6.to-3 {
+    width: Calc(100% - 10rem);
+}
+
+.from-0.to-4,
+.from-1.to-5,
+.from-2.to-6,
+.from-3.to-7,
+.from-4.to-0,
+.from-5.to-1,
+.from-6.to-2,
+.from-7.to-3 {
+    width: Calc(100% - 8rem);
+}
+
+.from-0.to-5,
+.from-1.to-6,
+.from-2.to-7,
+.from-5.to-0,
+.from-6.to-1,
+.from-7.to-2 {
+    width: Calc(100% - 6rem);
+}
+
+.from-0.to-6,
+.from-1.to-7,
+.from-6.to-0,
+.from-7.to-1 {
+    width: Calc(100% - 4rem);
+}
+
+.from-0.to-7,
+.from-7.to-0 {
+    width: Calc(100% - 2rem);
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 8px;
+  }
+
+  .decorated-content {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  h4 {
+      font-size: 3rem;
+  }
+
+  h1 {
+      font-size: 5rem;
+      line-height:  6rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 6px;
+  }
+  
+  .decorated-content {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .decorated-content {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+</style>
+<body>
+<div class="width-wrapper pre-transition" id="width-wrapper">
+<div class="decorated-box">
+  <div class="left vertical"></div>
+  <div class="decorated-content">
+    <h4><a href="..">Back</a></h4>
+    <h1> Compression</h1>
+  </div>
+<div class="right vertical"></div>
+  <div class="horizontal"></div>
+</div>
+
+
+
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        A year ago I set out to better understand privacy. I read about the history of data collection, I became certified in privacy practices, I began working on privacy issues in my day-to-day work. But what I first looked for has proven to be the most elusive, a general model for thinking about issues of privacy - one that isn&rsquo;t based in a given historical or ethical frame. I think I&rsquo;ve started to settle on such a model, so I figured I&rsquo;d write down my thoughts to help me make more sense of them.</p>
+
+<h2 id="the-core-transaction">The core transaction</h2>
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        As we move through the world, information about our circumstances and choices are collected, compiled, and bought and sold. This practice dates back at least a century with approximately the same roles in the &ldquo;core&rdquo; transaction:</p>
+
+<ul>
+<li><strong>People</strong> exist and make choices</li>
+<li><strong>Collectors</strong> record information about their existence and choices</li>
+<li><strong>Availers</strong> purchase this information for their benefit</li>
+</ul>
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        First to dispatch an often included addition to this model: it is often posited that the person consents into this transaction, and receives benefit. We can obviously dismiss this potential addition by noting that in many cases people do not benefit. But this also misses the mark at a much more structural level. People are not the principle beneficiaries of the transaction. The transaction is ultimately mediated by, and to the principle benefit of, the availer.</p>
+
+<ul>
+<li>Regardless of the mechanism, what the availer gets from this transaction is the reduction of uncertainty. Crudely, we know the value of this uncertainty reduction is larger than the one the availer pays to a collector.</li>
+<li>But think about uncertainty from the perspective of the person. In a natural state, the person is the best forecaster of their future actions - an inherent personal knowledge. This knowledge is powerful, and is the basis on which the person forecasts and charts their future.</li>
+<li>This transaction cedes (or, at minimum, duplicates) some of this power from the person to the availer. Availers pay collectors as a means to increase their power in the context of the person.</li>
+</ul>
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        Once the availer has reduced uncertainty, this brings them some benefit (below), and in some cases they choose to pass part of this benefit on to the person, but it is a mistake to equate the voluntary capitulation of value to the person as a part of the core transaction. No matter how appreciable the benefits the person gets after the fact, the availer determines this reward from a place of (increased) power, and certain financial gain.</p>
+
+<h2 id="what-do-availers-want">What do availers want?</h2>
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        <strong>Availers seek to reduce uncertainty about a person, either to predict their future or to try to shape it.</strong>
+- <strong>Prediction</strong> comprises estimation of the likelihood of a person&rsquo;s future state (what are the odds P will have lung disease at 68?) or choices (what are the odds P attempts to quit smoking this year?)
+- <strong>Manipulation</strong> comprises attempts to alter a person&rsquo;s future behavior (what series of messages will be most likely to help P quit smoking?)
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        These happen within two contexts:</p>
+
+<ul>
+<li><strong>Personal Context</strong> is the information from, and behaviors of, specific individuals</li>
+<li><strong>Aggregated Context</strong> is asking questions about a population that is sufficently large&hellip;</li>
+</ul>
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        These distinctions are subtle, but I promise they matter. Here&rsquo;s some helpful examples:</p>
+
+<ul>
+<li>A mortgage creditor looking at your previous credit history in order to inform what rate they will charge you is <em>personalized prediction</em>.</li>
+<li>A mortgage creditor looking at past records from other loans to inform their overall rates is <em>aggregated prediction</em>.</li>
+<li>A mortgage creditor using AB testing to decide to send red letters one day after late notices is <em>aggregated manipulation</em>.</li>
+<li>A mortgage creditor deciding how to frame delinquency to you based on information about you is <em>personalized manipulation</em>.</li>
+</ul>
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        PP is as old as time.
+AP has been around since the sci rev.
+AM peaked in the 50s.
+PM is today and the future.
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        CONCERNS
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        Compression is Lossy
+- rather than predicting what voters want based on demographics, what if you asked them directly?
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        Correlation is Lazy
+- Race + Credit Scores</p>
+
+<h2 id="opacity">opacity</h2>
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        power imbalance
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        narrative building and personhood
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        a shift toward a predictive society - where does room for redemption fit in?
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        &ldquo;attractive homogeneity&rdquo; - pushing you toward the persons that are most easily understood, not anything more meaningful
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        a toolbox for authoritarianism + outsized individual influence
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        a world that is more complex than we can reason about or substantively expect to maintain control over.
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        Things I&rsquo;d find compelling</p>
+
+<ul>
+<li>
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        restrict internet advertizing to the sale of goods and services. No political/issue based things, etc.</p></li>
+
+<li>
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        Introduce alternative mechana to optimize against. Time well spent, percieved value. Attention is the wrong metric.</p></li>
+</ul>
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+<div class="decorated-box">
+  <div class="left vertical"></div>
+  <p class="decorated-content">
+  </p>
+  <div class="right vertical"></div>
+  <div class="horizontal"></div>
+</div>
+</div>
+<script>
+  var wrapper = document.getElementById("width-wrapper");
+  wrapper.classList.remove("pre-transition");
+  
+  var EMPTY = "empty";
+  
+  function randomInitialAssignment() {
+    return ["red", "black", "yellow", "blue", EMPTY, EMPTY, EMPTY, EMPTY]
+  }
+  
+  function couldSwapPair(assignment, from, to) {
+    if (from < 4 == to < 4){
+      return false;
+    }
+    if (assignment[to] != EMPTY || assignment[from] == EMPTY) {
+      return false;
+    }
+    return true;
+  }
+  
+  function randomPairToSwap(assignment) {
+    var fromIndexOfPopulated = Math.floor(4 * Math.random());
+    var fromIndex = -1;
+    for (var i = 0; i < 8; i++) {
+      if (assignment[i] != EMPTY) {
+        if (fromIndexOfPopulated == 0) {
+          fromIndex = i;
+          break;
+        }
+        fromIndexOfPopulated--;
+      }
+    }
+    var numEmptyOnOtherSide = 0;
+    var otherSideStart = fromIndex < 4 ? 4 : 0;
+    for (var i = 0; i < 4; i++) {
+      if (assignment[i + otherSideStart] == EMPTY) {
+        numEmptyOnOtherSide++;
+      }
+    }
+    var toIndexOnOtherSideOfPopulated = Math.floor(numEmptyOnOtherSide * Math.random());
+    var toIndex = -1;
+    for (var i = otherSideStart; i < otherSideStart + 4; i++) {
+      if (assignment[i] == EMPTY) {
+        if (toIndexOnOtherSideOfPopulated == 0) {
+          toIndex = i;
+          break;
+        }
+        toIndexOnOtherSideOfPopulated--;
+      }
+    }
+    return {
+      "origin": fromIndex, 
+      "destination": toIndex
+    };
+  }
+  
+  function createParagraphAssignments(numParagraphs) {
+    var paragraphAssignments = [];
+    paragraphAssignments[0] = randomInitialAssignment();
+    for (var i = 1; i < numParagraphs; i++) {
+      var pairToSwap = randomPairToSwap(paragraphAssignments[i-1]);
+      var newAssignment = [];
+      Object.assign(newAssignment, paragraphAssignments[i-1]);
+      newAssignment[pairToSwap.destination] = newAssignment[pairToSwap.origin];
+      newAssignment[pairToSwap.origin] = EMPTY;
+      newAssignment.origin = pairToSwap.origin;
+      newAssignment.destination = pairToSwap.destination;
+      paragraphAssignments.push(newAssignment);
+    }
+    for (var i = 0; i < numParagraphs - 1; i++) {
+      paragraphAssignments[i].origin = paragraphAssignments[i+1].origin;
+      paragraphAssignments[i].destination = paragraphAssignments[i+1].destination;
+    }
+    paragraphAssignments[numParagraphs-1].origin = -1;
+    paragraphAssignments[numParagraphs-1].destination = -1;
+    
+    return paragraphAssignments;
+  }
+  
+  function isInBetween(a, b, c){
+    return ((a < b) == (b < c));
+  }
+  
+  function assignAssignmentToParagraphBox(lastAssignment, assignment, box) {
+  
+    var bottomSidebar = box.getElementsByClassName('horizontal')[0];
+    var classesForBottom = assignment[assignment.origin] + " from-" + assignment.origin + " to-" + assignment.destination;
+    var bottomSidebarHtml = "<div class=\"" + classesForBottom + "\"></div>";
+    bottomSidebar.innerHTML = bottomSidebarHtml;
+  
+    var leftSidebarHtml = "";
+    for (var i = 0; i < 4; i++) {
+      if (assignment[i] !== EMPTY) {
+        var classesToAdd = assignment[i] + " pos-" + i;
+        if (!isInBetween(lastAssignment.origin, i, lastAssignment.destination) || lastAssignment.destination == i){
+          classesToAdd = classesToAdd + " has-top";
+        }
+        if (!isInBetween(assignment.origin, i, assignment.destination) || assignment.origin == i){
+          classesToAdd = classesToAdd + " has-bottom";
+        }
+        leftSidebarHtml = leftSidebarHtml + '<div class="' +classesToAdd + '"></div>';
+      }
+    }
+    var leftSidebar = box.getElementsByClassName('left')[0];
+    leftSidebar.innerHTML = leftSidebarHtml;
+    
+    var rightSidebarHtml = "";
+    for (var i = 4; i < 8; i++) {
+      if (assignment[i] !== EMPTY) {
+        var classesToAdd = assignment[i] + " pos-" + i;
+        if (!isInBetween(lastAssignment.origin, i, lastAssignment.destination) || lastAssignment.destination == i){
+          classesToAdd = classesToAdd + " has-top";
+        }
+        if (!isInBetween(assignment.origin, i, assignment.destination) || assignment.origin == i){
+          classesToAdd = classesToAdd + " has-bottom";
+        }
+        rightSidebarHtml = rightSidebarHtml + '<div class="' +classesToAdd + '"></div>';
+      }
+    }
+    var rightSidebar = box.getElementsByClassName('right')[0];
+    rightSidebar.innerHTML = rightSidebarHtml;
+  }
+
+  window.onload = function () {
+    var paragraphsBoxes = document.getElementsByClassName("decorated-box");
+    var paragraphAssignments = createParagraphAssignments(paragraphsBoxes.length);
+    console.log(paragraphAssignments);
+  
+    for (var i = 0; i < paragraphsBoxes.length; i++){
+      var previous = {origin: -1, destination: -1};
+      if (i > 0) {
+        previous = paragraphAssignments[i - 1];
+      }
+      assignAssignmentToParagraphBox(previous, paragraphAssignments[i], paragraphsBoxes[i]);
+    }
+  }
+  
+</script>
+</body>
+</html>

@@ -1,0 +1,518 @@
+<html>
+<head>
+  <title>Grady Berry Ward | Curatorial Vocabulary</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width">
+<style>
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: left;
+  margin: 4rem 0 0rem 0;
+  line-height: 3rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 1rem 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.width-wrapper {
+  width: Calc(100% - 2rem);
+  max-width: 1000px;
+  min-width: Calc(320px - 2rem);
+  margin: 0 1rem 1rem 1rem;
+  display: inline-block;
+  position: relative;
+  height: Calc(100% - 1rem);
+}
+
+.decorated-box {
+  height:  auto;
+  position:  relative;
+}
+
+.decorated-content {
+  width:  Calc(100% - 16rem);
+  top: 0;
+  margin: 0rem 8rem 0;
+  padding:  1rem 0 2rem 0;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.vertical {
+  position: absolute;
+  height: Calc(100% - 1rem);
+  width: 8rem;
+  top: 0;
+}
+.left.vertical {
+  left:  0;
+}
+.right.vertical {
+  right:  0;
+}
+
+.horizontal {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+}
+.horizontal > div {
+  width:  100%;
+}
+
+* {
+  color: #272727;
+}
+
+.black {
+  background: #272727;
+}
+
+.red {
+  background: #d20909;
+}
+
+.yellow {
+  background: #eac40a;
+}
+
+.blue {
+  background: #1444b1;
+}
+
+.black,
+.red,
+.blue,
+.yellow {
+  display: block;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  transition: width .5s linear, height .5s linear;
+}
+
+.vertical > div {
+  height: Calc(100% - 1rem);
+  top: .5rem;
+}
+
+.vertical > div.has-top {
+  top: -1rem;
+  height: Calc(100% + .5rem);
+}
+
+.vertical > div.has-bottom {
+  top: .5rem;
+  height: Calc(100% + .5rem);
+}
+
+.vertical > div.has-bottom.has-top {
+  top: -1rem;
+  height: Calc(100% + 2rem);
+}
+
+.pos-0 { left: 0rem; }
+.pos-1 { left: 2rem; }
+.pos-2 { left: 4rem; }
+.pos-3 { left: 6rem; }
+.pos-4 { right: 6rem; }
+.pos-5 { right: 4rem; }
+.pos-6 { right: 2rem; }
+.pos-7 { right: 0rem; }
+
+
+.from-0 { left: 1rem; }
+.from-1 { left: 3rem; }
+.from-2 { left: 5rem; }
+.from-3 { left: 7rem; }
+.from-4 { right: 7rem; }
+.from-5 { right: 5rem; }
+.from-6 { right: 3rem; }
+.from-7 { right: 1rem; }
+
+.from-3.to-4, 
+.from-4.to-3 {
+    width: Calc(100% - 14rem);
+}
+
+.from-2.to-4,
+.from-3.to-5,
+.from-4.to-2,
+.from-5.to-3 {
+    width: Calc(100% - 12rem);
+}
+
+.from-1.to-4,
+.from-2.to-5,
+.from-3.to-6,
+.from-4.to-1,
+.from-5.to-2,
+.from-6.to-3 {
+    width: Calc(100% - 10rem);
+}
+
+.from-0.to-4,
+.from-1.to-5,
+.from-2.to-6,
+.from-3.to-7,
+.from-4.to-0,
+.from-5.to-1,
+.from-6.to-2,
+.from-7.to-3 {
+    width: Calc(100% - 8rem);
+}
+
+.from-0.to-5,
+.from-1.to-6,
+.from-2.to-7,
+.from-5.to-0,
+.from-6.to-1,
+.from-7.to-2 {
+    width: Calc(100% - 6rem);
+}
+
+.from-0.to-6,
+.from-1.to-7,
+.from-6.to-0,
+.from-7.to-1 {
+    width: Calc(100% - 4rem);
+}
+
+.from-0.to-7,
+.from-7.to-0 {
+    width: Calc(100% - 2rem);
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 8px;
+  }
+
+  .decorated-content {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  h4 {
+      font-size: 3rem;
+  }
+
+  h1 {
+      font-size: 5rem;
+      line-height:  6rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 6px;
+  }
+  
+  .decorated-content {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .decorated-content {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+</style>
+<body>
+<div class="width-wrapper pre-transition" id="width-wrapper">
+<div class="decorated-box">
+  <div class="left vertical"></div>
+  <div class="decorated-content">
+    <h4><a href="..">Back</a></h4>
+    <h1> Curatorial Vocabulary</h1>
+  </div>
+<div class="right vertical"></div>
+  <div class="horizontal"></div>
+</div>
+
+
+
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        In disagreements around the appropriate use of and justified restriction on technology (tech-use), you will rarely find compromise or gradation. I think this is because we lack a nuanced vocabulary to grapple with tech-use. Unlike other types ethical questions, tech-use doesn&rsquo;t have a storied history of thought experiments, historical error and fallacies to guide our reasoning. In addition, reducing tech-use questions to moral ones typically involves lots of assumptions, examples and hand waving, and with that much subjectivity, the conclusion is likely more indicative of the chosen translation than of an actual moral parallel. Because we lack this vocabulary, debates around tech-use tend to fall back to political memes that are capable of crystalizing the situation, engendering strong feelings without actually illuminating the interplay of competing values. I imagine that the next few decades (in both the public sphere and my professional life) will require a good deal of navigating questions of tech-use, so I figured it might be a good exercise to see if I can develop some of that vocabulary for myself.
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        Today I want to look at one such issue, and try to sketch out a set of terms and principles that can address it in a meaningful way. The issue I&rsquo;m interested in is what types of obligations user content platforms have to curate the data on their sites. This question if crystalized through the meme of Free Speech might lead one to think that no censorship of user content should be permitted. The same question crystalized through a utilitarian framework might justify a broad set of curatorial obligations. I don&rsquo;t think either of these are illuminating frames. Instead, let&rsquo;s start by choosing to define some terms.</p>
+
+<ul>
+<li>A <strong>platform</strong> is an entity that allows the input and retrieval of data generated by users.</li>
+<li><strong>Content</strong> is the data intentionally created by a user and uploaded to the platform.</li>
+<li>An <strong>Access</strong> is a user reading, downloading or otherwise engaging with a piece of Content.</li>
+<li><strong>Visibility</strong> describes the size of the audience that can access a piece of content.</li>
+
+<li>
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        <strong>Reach</strong> describes the size of the audience that actually ends up accessing a piece of content.</p></li>
+
+<li>
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        <strong>Transmission Pattern</strong> describes a processes that result in accesses.</p>
+
+<ul>
+<li><strong>Exogenous Transmission</strong> describes organic access patterns that are outside of the capacity for the platform to control or explain (ex: accesses of content that occur directly inbound).</li>
+<li><strong>Observed Transmission</strong> describes processes for triggering accesses that is visible and explicable to the platform, but outside of it&rsquo;s ability to control (ex: a user shares a piece of content directly with another user)</li>
+<li><strong>Unintentional Transmission</strong> describes a process for triggering accesses that is controlled by the platform, but is agnostic to the content and value of the item. (ex: searching within an email client &ldquo;email I received yesterday&rdquo;)</li>
+<li><strong>Intentional Transmission</strong> describes a process for triggering accesses that is controlled by the platform, and intended to guide the user to an outcome, using some inference about the value of the content to the user (ex: searching for &ldquo;dentist&rdquo; in a search engine)</li>
+<li><strong>Recommended Transmission</strong> describes a process for triggering accesses that is controlled by the platform and has the explicit objective of propagating the content (ex: a video platform that auto-plays a new video after you finish watching a video)
+<br /></li>
+</ul></li>
+
+<li>
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        <strong>Objection-ability</strong> describes the degree to which content is objectionable. Note that we assume some roughly consistent ethical frame for evaluating content, and fully accept that this is a glaring omission. For the sake of this discussion, assume the ethical frame inclusive of all common viewpoints in western liberal democracies.</p>
+
+<ul>
+<li><strong>Harm Derived Content</strong> is content that by it&rsquo;s very nature is objectionable because it&rsquo;s generation requires significant and agreed upon harm. Child sexual abuse imagery and terrorist beheadding videos are the only things I can think of in this category.</li>
+<li><strong>Harm Generating Content</strong> is content that is circulated with the intent or effect of bringing clearly demonstrable harm to the consumer of the content. Examples include bullying, encouragement to self harm, financial scams, malware and health frauds.</li>
+<li><strong>Harm Inciting Content</strong> is content that encourages others to actions that are not harmful to themselves, but are harmful to others. Hate speech.</li>
+<li><strong>Age Appropriate Content</strong> is content that is not suitable for young viewers, and may not be appropriate in all spheres of life, but is not objectionable in it&rsquo;s existence or consumption given an appropriate time place and manner.</li>
+<li><strong>Incorrect Content</strong> is content that makes incorrect claims (intentionally or otherwise) that is not likely to result in clearly explicable harms.</li>
+<li><strong>Sensitive Content</strong> describes content that is fully suitable for personal consumption, but that should not be shared broadly.
+<br /></li>
+</ul></li>
+
+<li>
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        <strong>Curatorial Obligation</strong> refers to the question of &ldquo;what ought a platform do in a certain situation&rdquo;</p></li>
+</ul>
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+<div class="decorated-box">
+  <div class="left vertical"></div>
+  <p class="decorated-content">
+  </p>
+  <div class="right vertical"></div>
+  <div class="horizontal"></div>
+</div>
+</div>
+<script>
+  var wrapper = document.getElementById("width-wrapper");
+  wrapper.classList.remove("pre-transition");
+  
+  var EMPTY = "empty";
+  
+  function randomInitialAssignment() {
+    return ["red", "black", "yellow", "blue", EMPTY, EMPTY, EMPTY, EMPTY]
+  }
+  
+  function couldSwapPair(assignment, from, to) {
+    if (from < 4 == to < 4){
+      return false;
+    }
+    if (assignment[to] != EMPTY || assignment[from] == EMPTY) {
+      return false;
+    }
+    return true;
+  }
+  
+  function randomPairToSwap(assignment) {
+    var fromIndexOfPopulated = Math.floor(4 * Math.random());
+    var fromIndex = -1;
+    for (var i = 0; i < 8; i++) {
+      if (assignment[i] != EMPTY) {
+        if (fromIndexOfPopulated == 0) {
+          fromIndex = i;
+          break;
+        }
+        fromIndexOfPopulated--;
+      }
+    }
+    var numEmptyOnOtherSide = 0;
+    var otherSideStart = fromIndex < 4 ? 4 : 0;
+    for (var i = 0; i < 4; i++) {
+      if (assignment[i + otherSideStart] == EMPTY) {
+        numEmptyOnOtherSide++;
+      }
+    }
+    var toIndexOnOtherSideOfPopulated = Math.floor(numEmptyOnOtherSide * Math.random());
+    var toIndex = -1;
+    for (var i = otherSideStart; i < otherSideStart + 4; i++) {
+      if (assignment[i] == EMPTY) {
+        if (toIndexOnOtherSideOfPopulated == 0) {
+          toIndex = i;
+          break;
+        }
+        toIndexOnOtherSideOfPopulated--;
+      }
+    }
+    return {
+      "origin": fromIndex, 
+      "destination": toIndex
+    };
+  }
+  
+  function createParagraphAssignments(numParagraphs) {
+    var paragraphAssignments = [];
+    paragraphAssignments[0] = randomInitialAssignment();
+    for (var i = 1; i < numParagraphs; i++) {
+      var pairToSwap = randomPairToSwap(paragraphAssignments[i-1]);
+      var newAssignment = [];
+      Object.assign(newAssignment, paragraphAssignments[i-1]);
+      newAssignment[pairToSwap.destination] = newAssignment[pairToSwap.origin];
+      newAssignment[pairToSwap.origin] = EMPTY;
+      newAssignment.origin = pairToSwap.origin;
+      newAssignment.destination = pairToSwap.destination;
+      paragraphAssignments.push(newAssignment);
+    }
+    for (var i = 0; i < numParagraphs - 1; i++) {
+      paragraphAssignments[i].origin = paragraphAssignments[i+1].origin;
+      paragraphAssignments[i].destination = paragraphAssignments[i+1].destination;
+    }
+    paragraphAssignments[numParagraphs-1].origin = -1;
+    paragraphAssignments[numParagraphs-1].destination = -1;
+    
+    return paragraphAssignments;
+  }
+  
+  function isInBetween(a, b, c){
+    return ((a < b) == (b < c));
+  }
+  
+  function assignAssignmentToParagraphBox(lastAssignment, assignment, box) {
+  
+    var bottomSidebar = box.getElementsByClassName('horizontal')[0];
+    var classesForBottom = assignment[assignment.origin] + " from-" + assignment.origin + " to-" + assignment.destination;
+    var bottomSidebarHtml = "<div class=\"" + classesForBottom + "\"></div>";
+    bottomSidebar.innerHTML = bottomSidebarHtml;
+  
+    var leftSidebarHtml = "";
+    for (var i = 0; i < 4; i++) {
+      if (assignment[i] !== EMPTY) {
+        var classesToAdd = assignment[i] + " pos-" + i;
+        if (!isInBetween(lastAssignment.origin, i, lastAssignment.destination) || lastAssignment.destination == i){
+          classesToAdd = classesToAdd + " has-top";
+        }
+        if (!isInBetween(assignment.origin, i, assignment.destination) || assignment.origin == i){
+          classesToAdd = classesToAdd + " has-bottom";
+        }
+        leftSidebarHtml = leftSidebarHtml + '<div class="' +classesToAdd + '"></div>';
+      }
+    }
+    var leftSidebar = box.getElementsByClassName('left')[0];
+    leftSidebar.innerHTML = leftSidebarHtml;
+    
+    var rightSidebarHtml = "";
+    for (var i = 4; i < 8; i++) {
+      if (assignment[i] !== EMPTY) {
+        var classesToAdd = assignment[i] + " pos-" + i;
+        if (!isInBetween(lastAssignment.origin, i, lastAssignment.destination) || lastAssignment.destination == i){
+          classesToAdd = classesToAdd + " has-top";
+        }
+        if (!isInBetween(assignment.origin, i, assignment.destination) || assignment.origin == i){
+          classesToAdd = classesToAdd + " has-bottom";
+        }
+        rightSidebarHtml = rightSidebarHtml + '<div class="' +classesToAdd + '"></div>';
+      }
+    }
+    var rightSidebar = box.getElementsByClassName('right')[0];
+    rightSidebar.innerHTML = rightSidebarHtml;
+  }
+
+  window.onload = function () {
+    var paragraphsBoxes = document.getElementsByClassName("decorated-box");
+    var paragraphAssignments = createParagraphAssignments(paragraphsBoxes.length);
+    console.log(paragraphAssignments);
+  
+    for (var i = 0; i < paragraphsBoxes.length; i++){
+      var previous = {origin: -1, destination: -1};
+      if (i > 0) {
+        previous = paragraphAssignments[i - 1];
+      }
+      assignAssignmentToParagraphBox(previous, paragraphAssignments[i], paragraphsBoxes[i]);
+    }
+  }
+  
+</script>
+</body>
+</html>

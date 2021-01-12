@@ -2,7 +2,7 @@
 
 order = 1200
 
-name = "Banannagrams"
+name = "Bananagrams"
 external_url = ""
 
 short_desc = "A beautiful algorithm for playing Bananagrams"

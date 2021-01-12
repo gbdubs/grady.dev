@@ -1,0 +1,508 @@
+<html>
+<head>
+  <title>Grady Berry Ward | Sniff</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width">
+<style>
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: left;
+  margin: 4rem 0 0rem 0;
+  line-height: 3rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 1rem 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.width-wrapper {
+  width: Calc(100% - 2rem);
+  max-width: 1000px;
+  min-width: Calc(320px - 2rem);
+  margin: 0 1rem 1rem 1rem;
+  display: inline-block;
+  position: relative;
+  height: Calc(100% - 1rem);
+}
+
+.decorated-box {
+  height:  auto;
+  position:  relative;
+}
+
+.decorated-content {
+  width:  Calc(100% - 16rem);
+  top: 0;
+  margin: 0rem 8rem 0;
+  padding:  1rem 0 2rem 0;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.vertical {
+  position: absolute;
+  height: Calc(100% - 1rem);
+  width: 8rem;
+  top: 0;
+}
+.left.vertical {
+  left:  0;
+}
+.right.vertical {
+  right:  0;
+}
+
+.horizontal {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+}
+.horizontal > div {
+  width:  100%;
+}
+
+* {
+  color: #272727;
+}
+
+.black {
+  background: #272727;
+}
+
+.red {
+  background: #d20909;
+}
+
+.yellow {
+  background: #eac40a;
+}
+
+.blue {
+  background: #1444b1;
+}
+
+.black,
+.red,
+.blue,
+.yellow {
+  display: block;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  transition: width .5s linear, height .5s linear;
+}
+
+.vertical > div {
+  height: Calc(100% - 1rem);
+  top: .5rem;
+}
+
+.vertical > div.has-top {
+  top: -1rem;
+  height: Calc(100% + .5rem);
+}
+
+.vertical > div.has-bottom {
+  top: .5rem;
+  height: Calc(100% + .5rem);
+}
+
+.vertical > div.has-bottom.has-top {
+  top: -1rem;
+  height: Calc(100% + 2rem);
+}
+
+.pos-0 { left: 0rem; }
+.pos-1 { left: 2rem; }
+.pos-2 { left: 4rem; }
+.pos-3 { left: 6rem; }
+.pos-4 { right: 6rem; }
+.pos-5 { right: 4rem; }
+.pos-6 { right: 2rem; }
+.pos-7 { right: 0rem; }
+
+
+.from-0 { left: 1rem; }
+.from-1 { left: 3rem; }
+.from-2 { left: 5rem; }
+.from-3 { left: 7rem; }
+.from-4 { right: 7rem; }
+.from-5 { right: 5rem; }
+.from-6 { right: 3rem; }
+.from-7 { right: 1rem; }
+
+.from-3.to-4, 
+.from-4.to-3 {
+    width: Calc(100% - 14rem);
+}
+
+.from-2.to-4,
+.from-3.to-5,
+.from-4.to-2,
+.from-5.to-3 {
+    width: Calc(100% - 12rem);
+}
+
+.from-1.to-4,
+.from-2.to-5,
+.from-3.to-6,
+.from-4.to-1,
+.from-5.to-2,
+.from-6.to-3 {
+    width: Calc(100% - 10rem);
+}
+
+.from-0.to-4,
+.from-1.to-5,
+.from-2.to-6,
+.from-3.to-7,
+.from-4.to-0,
+.from-5.to-1,
+.from-6.to-2,
+.from-7.to-3 {
+    width: Calc(100% - 8rem);
+}
+
+.from-0.to-5,
+.from-1.to-6,
+.from-2.to-7,
+.from-5.to-0,
+.from-6.to-1,
+.from-7.to-2 {
+    width: Calc(100% - 6rem);
+}
+
+.from-0.to-6,
+.from-1.to-7,
+.from-6.to-0,
+.from-7.to-1 {
+    width: Calc(100% - 4rem);
+}
+
+.from-0.to-7,
+.from-7.to-0 {
+    width: Calc(100% - 2rem);
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 8px;
+  }
+
+  .decorated-content {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  h4 {
+      font-size: 3rem;
+  }
+
+  h1 {
+      font-size: 5rem;
+      line-height:  6rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 6px;
+  }
+  
+  .decorated-content {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .decorated-content {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+</style>
+<body>
+<div class="width-wrapper pre-transition" id="width-wrapper">
+<div class="decorated-box">
+  <div class="left vertical"></div>
+  <div class="decorated-content">
+    <h4><a href="..">Back</a></h4>
+    <h1> Sniff</h1>
+  </div>
+<div class="right vertical"></div>
+  <div class="horizontal"></div>
+</div>
+
+
+
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        Justice Kagan&rsquo;s decision in <a href="https://en.wikipedia.org/wiki/Florida_v._Harris#Decision">Florida v. Harris</a> articulates a few principles on which we can build effective privacy preserving tools for law enforcement. In the unanimous decision, the court ruled that the indication of a Drug Sniffing Dog was grounds for search under the fourth amendment. In doing so, the court held up the drug sniffing dog as an exemplar of privacy preserving law enforcement tooling. It&rsquo;s worthwhile extracting a few lessons from the court&rsquo;s reasoning in considering the design of what makes a dog&rsquo;s nose, in contrast to most digital technology, such a satisfying balance of rights and state interests.
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        A key consideration that the court addresses is that of <em>statistically derived reliability</em> as assessed through false-positive rate. The court argues that there is likely some threshold of false positive/negative at which a search becomes unjustified. This is easy to see in the case of a drug sniffing dog because we have no other means by which to reason about the dog&rsquo;s judgement. Outcomes are all that we get to see.
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        As I&rsquo;ve described in my thoughts on <a href="../terry">Terry</a>, a balancing act of the competing harms in the case of search and seizure can&rsquo;t be effectively assessed by an individual case
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        Unfortunately we shed this common sense when applying the same logic to human judgement. Judges are not blinded by the personhood and autonomy of the dog in evaluating it&rsquo;s impact on competing rights claims. Dogs can&rsquo;t do post-hoc rationalization, a dog&rsquo;s thought process cannot be interrogated by the law. Kagan sees that in Harris - there&rsquo;s no sensible way of looking at probable cause (a question of prior knowledge) that relies solely on whether the dog is correct in their indication of drugs (knowledge derived after search).
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        By talking about the dog&rsquo;s perception in terms of false positive rate, Kagan concedes that explanation is <em>not a necessary component of an acceptable test for a decision criterion that results in search or seizure</em>. This is in stark contrast to the way that the court looks at officer discretion in Terry stops. In that case, because we can ask a human for an explanation, we put extensive weight on the explanation, without falling back or ever examining the far more compelling indica of rights-balancing - statistically derived accuracy.
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        In <em>Harris</em>, Kagan is making an argument about the dog that we should be making about any tool of law enforcement discernment (whether it is a drug sniffing dog, a UV filter, or a cop&rsquo;s judgement). All devices used to inform choices of search and seizure should be held against a rights balancing framework that analyzes real world statistical performance. Human judgement is a force that is better inspected from the cold evidence of outcomes, rather than the squishy (and time-skewed) process of post-hoc rationalization.
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        The second key consideration is the concept of <em>targeted information isolation</em>. A drug sniffing dog is processing information about a wide array of olfactory inputs, but only is expressing a verdict on a narrow set of targeted criteria. It&rsquo;s likely that a dog can smell a wide array of contents in the baggage of passengers, but the only information it expresses is that of the query <em>does this bag contain drugs</em>. This is supremely privacy preserving, because the only data that the system outputs (or even has the <em>capacity</em> to output) is the question of interest, and the test is one the state has a compelling interest in. If dogs could talk, they could tell us a wide array of information about the contents of passerby&rsquo;s suitcases. In that instance, the dog would serve as a broader means of surveillance than is proscribed by a legitimate law enforcement purpose. Good law enforcement tooling should fit this principle: limit the potential output of the system to the outcomes that are of state interest.
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+  
+    <div class="decorated-box">
+      <div class="left vertical"></div>
+      <div class="decorated-content">
+        The third and final thought that <em>Harris</em> brings up is the concept of interaction between tool and law. A consistent frustration for groups that try to combat stop-and-frisk policing is how officers adapt to court rulings about what constitutes articulable/reasonable suspcicion, and start to use that terminology in their reports. &ldquo;The odor of Marijuana&rdquo; is the classic example of this. One additional (unarticulated) benefit of a drug dog is that it is more immune from this interaction pattern. Dogs will be biased by their training, but their individualized decisions are &ldquo;individualized&rdquo; in the words of <em>Terry</em> in a way that human&rsquo;s thought processes can never really be. An officer&rsquo;s awareness of the law will always color both their decisions and how they describe their decisions. Man&rsquo;s best friend does not suffer from either of these defects.
+      </div>
+      <div class="right vertical"></div>
+      <div class="horizontal"></div>
+    </div>
+  
+
+
+<div class="decorated-box">
+  <div class="left vertical"></div>
+  <p class="decorated-content">
+  </p>
+  <div class="right vertical"></div>
+  <div class="horizontal"></div>
+</div>
+</div>
+<script>
+  var wrapper = document.getElementById("width-wrapper");
+  wrapper.classList.remove("pre-transition");
+  
+  var EMPTY = "empty";
+  
+  function randomInitialAssignment() {
+    return ["red", "black", "yellow", "blue", EMPTY, EMPTY, EMPTY, EMPTY]
+  }
+  
+  function couldSwapPair(assignment, from, to) {
+    if (from < 4 == to < 4){
+      return false;
+    }
+    if (assignment[to] != EMPTY || assignment[from] == EMPTY) {
+      return false;
+    }
+    return true;
+  }
+  
+  function randomPairToSwap(assignment) {
+    var fromIndexOfPopulated = Math.floor(4 * Math.random());
+    var fromIndex = -1;
+    for (var i = 0; i < 8; i++) {
+      if (assignment[i] != EMPTY) {
+        if (fromIndexOfPopulated == 0) {
+          fromIndex = i;
+          break;
+        }
+        fromIndexOfPopulated--;
+      }
+    }
+    var numEmptyOnOtherSide = 0;
+    var otherSideStart = fromIndex < 4 ? 4 : 0;
+    for (var i = 0; i < 4; i++) {
+      if (assignment[i + otherSideStart] == EMPTY) {
+        numEmptyOnOtherSide++;
+      }
+    }
+    var toIndexOnOtherSideOfPopulated = Math.floor(numEmptyOnOtherSide * Math.random());
+    var toIndex = -1;
+    for (var i = otherSideStart; i < otherSideStart + 4; i++) {
+      if (assignment[i] == EMPTY) {
+        if (toIndexOnOtherSideOfPopulated == 0) {
+          toIndex = i;
+          break;
+        }
+        toIndexOnOtherSideOfPopulated--;
+      }
+    }
+    return {
+      "origin": fromIndex, 
+      "destination": toIndex
+    };
+  }
+  
+  function createParagraphAssignments(numParagraphs) {
+    var paragraphAssignments = [];
+    paragraphAssignments[0] = randomInitialAssignment();
+    for (var i = 1; i < numParagraphs; i++) {
+      var pairToSwap = randomPairToSwap(paragraphAssignments[i-1]);
+      var newAssignment = [];
+      Object.assign(newAssignment, paragraphAssignments[i-1]);
+      newAssignment[pairToSwap.destination] = newAssignment[pairToSwap.origin];
+      newAssignment[pairToSwap.origin] = EMPTY;
+      newAssignment.origin = pairToSwap.origin;
+      newAssignment.destination = pairToSwap.destination;
+      paragraphAssignments.push(newAssignment);
+    }
+    for (var i = 0; i < numParagraphs - 1; i++) {
+      paragraphAssignments[i].origin = paragraphAssignments[i+1].origin;
+      paragraphAssignments[i].destination = paragraphAssignments[i+1].destination;
+    }
+    paragraphAssignments[numParagraphs-1].origin = -1;
+    paragraphAssignments[numParagraphs-1].destination = -1;
+    
+    return paragraphAssignments;
+  }
+  
+  function isInBetween(a, b, c){
+    return ((a < b) == (b < c));
+  }
+  
+  function assignAssignmentToParagraphBox(lastAssignment, assignment, box) {
+  
+    var bottomSidebar = box.getElementsByClassName('horizontal')[0];
+    var classesForBottom = assignment[assignment.origin] + " from-" + assignment.origin + " to-" + assignment.destination;
+    var bottomSidebarHtml = "<div class=\"" + classesForBottom + "\"></div>";
+    bottomSidebar.innerHTML = bottomSidebarHtml;
+  
+    var leftSidebarHtml = "";
+    for (var i = 0; i < 4; i++) {
+      if (assignment[i] !== EMPTY) {
+        var classesToAdd = assignment[i] + " pos-" + i;
+        if (!isInBetween(lastAssignment.origin, i, lastAssignment.destination) || lastAssignment.destination == i){
+          classesToAdd = classesToAdd + " has-top";
+        }
+        if (!isInBetween(assignment.origin, i, assignment.destination) || assignment.origin == i){
+          classesToAdd = classesToAdd + " has-bottom";
+        }
+        leftSidebarHtml = leftSidebarHtml + '<div class="' +classesToAdd + '"></div>';
+      }
+    }
+    var leftSidebar = box.getElementsByClassName('left')[0];
+    leftSidebar.innerHTML = leftSidebarHtml;
+    
+    var rightSidebarHtml = "";
+    for (var i = 4; i < 8; i++) {
+      if (assignment[i] !== EMPTY) {
+        var classesToAdd = assignment[i] + " pos-" + i;
+        if (!isInBetween(lastAssignment.origin, i, lastAssignment.destination) || lastAssignment.destination == i){
+          classesToAdd = classesToAdd + " has-top";
+        }
+        if (!isInBetween(assignment.origin, i, assignment.destination) || assignment.origin == i){
+          classesToAdd = classesToAdd + " has-bottom";
+        }
+        rightSidebarHtml = rightSidebarHtml + '<div class="' +classesToAdd + '"></div>';
+      }
+    }
+    var rightSidebar = box.getElementsByClassName('right')[0];
+    rightSidebar.innerHTML = rightSidebarHtml;
+  }
+
+  window.onload = function () {
+    var paragraphsBoxes = document.getElementsByClassName("decorated-box");
+    var paragraphAssignments = createParagraphAssignments(paragraphsBoxes.length);
+    console.log(paragraphAssignments);
+  
+    for (var i = 0; i < paragraphsBoxes.length; i++){
+      var previous = {origin: -1, destination: -1};
+      if (i > 0) {
+        previous = paragraphAssignments[i - 1];
+      }
+      assignAssignmentToParagraphBox(previous, paragraphAssignments[i], paragraphsBoxes[i]);
+    }
+  }
+  
+</script>
+</body>
+</html>

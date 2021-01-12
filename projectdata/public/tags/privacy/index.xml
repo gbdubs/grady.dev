@@ -35,6 +35,24 @@ Lauer&amp;rsquo;s work illuminates the early evolution of the social contract at
     
     <item>
       <title></title>
+      <link>http://gradybward.com/project/drafts/compression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/drafts/compression/</guid>
+      <description>A year ago I set out to better understand privacy. I read about the history of data collection, I became certified in privacy practices, I began working on privacy issues in my day-to-day work. But what I first looked for has proven to be the most elusive, a general model for thinking about issues of privacy - one that isn&amp;rsquo;t based in a given historical or ethical frame. I think I&amp;rsquo;ve started to settle on such a model, so I figured I&amp;rsquo;d write down my thoughts to help me make more sense of them.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/drafts/vocabulary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/drafts/vocabulary/</guid>
+      <description>In disagreements around the appropriate use of and justified restriction on technology (tech-use), you will rarely find compromise or gradation. I think this is because we lack a nuanced vocabulary to grapple with tech-use. Unlike other types ethical questions, tech-use doesn&amp;rsquo;t have a storied history of thought experiments, historical error and fallacies to guide our reasoning. In addition, reducing tech-use questions to moral ones typically involves lots of assumptions, examples and hand waving, and with that much subjectivity, the conclusion is likely more indicative of the chosen translation than of an actual moral parallel.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>http://gradybward.com/project/narratives/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -42,6 +60,15 @@ Lauer&amp;rsquo;s work illuminates the early evolution of the social contract at
       <description>I&amp;rsquo;ve started thinking about how to define privacy. Though I haven&amp;rsquo;t made any traction on that overall question, it&amp;rsquo;s helped me better understand the relationship between privacy and how we manufacture our identity.
 To avoid exclusively speaking in intelectualisms, I&amp;rsquo;ll describe the circumstances of my morning, which can illustrate the point I&amp;rsquo;m trying to make.
 I went out to get coffee. I usually make coffee at home, but my french press shattered, so I ordered a new one and it was slated for delivery a few days ago.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://gradybward.com/project/sniff/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://gradybward.com/project/sniff/</guid>
+      <description>Justice Kagan&amp;rsquo;s decision in Florida v. Harris articulates a few principles on which we can build effective privacy preserving tools for law enforcement. In the unanimous decision, the court ruled that the indication of a Drug Sniffing Dog was grounds for search under the fourth amendment. In doing so, the court held up the drug sniffing dog as an exemplar of privacy preserving law enforcement tooling. It&amp;rsquo;s worthwhile extracting a few lessons from the court&amp;rsquo;s reasoning in considering the design of what makes a dog&amp;rsquo;s nose, in contrast to most digital technology, such a satisfying balance of rights and state interests.</description>
     </item>
     
     <item>
