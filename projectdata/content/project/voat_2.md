@@ -1,6 +1,6 @@
 +++
 
-order = 1000
+order = 1600
 
 name = "VOAT - Interactive"
 
