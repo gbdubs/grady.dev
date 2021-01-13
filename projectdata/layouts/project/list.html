@@ -231,41 +231,43 @@ h1 {
     <h1>Projects</h1>
   </div>
 {{ range $index, $project := (sort ( where $.Data.Pages "Type" "project" ) ".Params.order" "desc" )}}
-  {{ if ( lt $index ( mul ( div ( len $.Data.Pages ) 4 ) 1 ) )}}
-  <div class="decorated-box delay-{{ add $index 2 }} indent-4"> 
-    <div class="sidebar">
-      <div class="blue"></div>
-      <div class="yellow"></div>
-      <div class="black"></div>
-      <div class="red"></div>
-    </div>
-    <div class="red bottom"></div>
-  {{ else if ( lt $index ( div ( len $.Data.Pages ) 2 ) )}}
-  <div class="decorated-box delay-{{ add $index 2 }} indent-3">
-    <div class="sidebar">
-      <div class="blue"></div>
-      <div class="yellow"></div>
-      <div class="black"></div>
-    </div>
-    <div class="black bottom"></div>
-  {{ else if ( lt $index ( mul ( div ( len $.Data.Pages ) 4 )  3 ) )}}
-  <div class="decorated-box delay-{{ add $index 2 }} indent-2">
-    <div class="sidebar">
-      <div class="blue"></div>
-      <div class="yellow"></div>
-    </div>
-    <div class="yellow bottom"></div>
-  {{ else }}
-  <div class="decorated-box delay-{{ add $index 2 }} indent-1">
-    <div class="sidebar">
-      <div class="blue"></div>
-    </div>
-    <div class="blue bottom"></div>
-  {{ end }}
-    <div class="decorated-content">
-      <b><a href="{{ $project.Permalink }}">{{ $project.Params.name }}</a></b>
-      -
-      {{ $project.Params.short_desc }}
+  <div class="decorated-box-wrapper">
+    {{ if ( lt $index ( mul ( div ( len $.Data.Pages ) 4 ) 1 ) )}}
+    <div class="decorated-box delay-{{ add $index 2 }} indent-4"> 
+      <div class="sidebar">
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="black"></div>
+        <div class="red"></div>
+      </div>
+      <div class="red bottom"></div>
+    {{ else if ( lt $index ( div ( len $.Data.Pages ) 2 ) )}}
+    <div class="decorated-box delay-{{ add $index 2 }} indent-3">
+      <div class="sidebar">
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="black"></div>
+      </div>
+      <div class="black bottom"></div>
+    {{ else if ( lt $index ( mul ( div ( len $.Data.Pages ) 4 )  3 ) )}}
+    <div class="decorated-box delay-{{ add $index 2 }} indent-2">
+      <div class="sidebar">
+        <div class="blue"></div>
+        <div class="yellow"></div>
+      </div>
+      <div class="yellow bottom"></div>
+    {{ else }}
+    <div class="decorated-box delay-{{ add $index 2 }} indent-1">
+      <div class="sidebar">
+        <div class="blue"></div>
+      </div>
+      <div class="blue bottom"></div>
+    {{ end }}
+      <div class="decorated-content">
+        <b><a href="{{ $project.Permalink }}">{{ $project.Params.name }}</a></b>
+        -
+        {{ $project.Params.short_desc }}
+      </div>
     </div>
   </div>
 {{ end }}
