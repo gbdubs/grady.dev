@@ -482,20 +482,17 @@ the binary OR operator can combine satisfiability statements in constant time if
     rightSidebar.innerHTML = rightSidebarHtml;
   }
 
-  window.onload = function () {
-    var paragraphsBoxes = document.getElementsByClassName("decorated-box");
-    var paragraphAssignments = createParagraphAssignments(paragraphsBoxes.length);
-    console.log(paragraphAssignments);
-  
-    for (var i = 0; i < paragraphsBoxes.length; i++){
-      var previous = {origin: -1, destination: -1};
-      if (i > 0) {
-        previous = paragraphAssignments[i - 1];
-      }
-      assignAssignmentToParagraphBox(previous, paragraphAssignments[i], paragraphsBoxes[i]);
+  var paragraphsBoxes = document.getElementsByClassName("decorated-box");
+  var paragraphAssignments = createParagraphAssignments(paragraphsBoxes.length);
+  console.log(paragraphAssignments);
+
+  for (var i = 0; i < paragraphsBoxes.length; i++){
+    var previous = {origin: -1, destination: -1};
+    if (i > 0) {
+      previous = paragraphAssignments[i - 1];
     }
+    assignAssignmentToParagraphBox(previous, paragraphAssignments[i], paragraphsBoxes[i]);
   }
-  
 </script>
 </body>
 </html>
