@@ -4,7 +4,7 @@ order = 1700
 
 name = "Widmanstätten pattern"
 
-short_desc = "Metiorites are beautiful - I learned some chemistry"
+short_desc = "Meteorites are beautiful - I learned some chemistry"
 tags = ["art", "physics"]
 
 +++

@@ -16,7 +16,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gradybward.com/project/sniff/</guid>
-      <description>Justice Kagan&amp;rsquo;s decision in Florida v. Harris articulates a few principles on which we can build effective privacy preserving tools for law enforcement. In the unanimous decision, the court ruled that the indication of a Drug Sniffing Dog was grounds for search under the fourth amendment. In doing so, the court held up the drug sniffing dog as an exemplar of privacy preserving law enforcement tooling. It&amp;rsquo;s worthwhile extracting a few lessons from the court&amp;rsquo;s reasoning in considering the design of what makes a dog&amp;rsquo;s nose, in contrast to most digital technology, such a satisfying balance of rights and state interests.</description>
+      <description>In _Florida v. Harris_ (2012) a unanimous Supreme Court held that statistically derived evidence of efficacy of a drug sniffing dog was not a requirement for establishing probable cause for evaluating fourth amendment claims. I think this misses the mark from one of my favorite cases _US v. Place_ (1983), in which O&amp;rsquo;Connor issued this gem of straightforward and balanced reasoning:
+&amp;ldquo;A &amp;ldquo;canine sniff&amp;rdquo; by a well-trained narcotics detection dog, however, does not require opening the luggage.</description>
     </item>
     
     <item>
