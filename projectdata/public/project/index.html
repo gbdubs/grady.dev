@@ -15,6 +15,7 @@ body {
   margin: 0;
   font-family: Helvetica, sans-serif;
   text-align: center;
+  line-height: 1.5em;
 }
 
 h4 {
@@ -575,6 +576,14 @@ h1 {
 }
 
 
+.sr-only {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
 
 @media only screen and (max-width: 800px) {
   html {
@@ -613,23 +622,22 @@ h1 {
     line-height: 3rem;
   }
 }
-
-
-
   </style>
 </head>
 <body>
+<div class="sr-only"><a href="#main">Skip to content</a></div>
 <div class="width-wrapper pre-transition" id="width-wrapper">
-  <div class="decorated-box delay-1">
-    <div aria-hidden="true" class="sidebar">
-      <div class="blue"></div>
-      <div class="yellow"></div>
-      <div class="black"></div>
-      <div class="red"></div>
-    </div>
-    <nav><a href="../">Back</a></nav>
-    <h1>Projects</h1>
+<header class="decorated-box delay-1">
+  <div aria-hidden="true" class="sidebar">
+    <div class="blue"></div>
+    <div class="yellow"></div>
+    <div class="black"></div>
+    <div class="red"></div>
   </div>
+  <nav><a href="../">Back</a></nav>
+  <h1>Projects</h1>
+</header>
+<main id="main">
 
   <div class="decorated-box-wrapper">
     
@@ -1294,6 +1302,7 @@ h1 {
     </div>
   </div>
 
+</main>
 </div>
 <script>
   var wrapper = document.getElementById("width-wrapper");

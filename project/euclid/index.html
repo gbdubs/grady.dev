@@ -207,6 +207,16 @@ img {
     width: Calc(100% - 2rem);
 }
 
+
+.sr-only {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
 @media only screen and (max-width: 800px) {
   html {
     font-size: 8px;
@@ -251,17 +261,19 @@ img {
 
 </style>
 <body>
+<div class="sr-only"><a href="#main">Skip to content</a></div>
 <div class="width-wrapper pre-transition" id="width-wrapper">
-<div class="decorated-box">
+<header class="decorated-box">
   <div aria-hidden="true" class="left vertical"></div>
   <div class="decorated-content">
     <nav><a href="..">Back</a></nav>
     <h1> Euclid</h1>
   </div>
-<div aria-hidden="true" class="right vertical"></div>
-  <div class="horizontal"></div>
-</div>
+  <div aria-hidden="true" class="right vertical"></div>
+  <div aria-hidden="true" class="horizontal"></div>
+</header>
 
+<main>
 
 
   
@@ -422,6 +434,7 @@ img {
     </div>
   
 
+</main>
 
 <div aria-hidden="true" class="decorated-box">
   <div class="left vertical"></div>
