@@ -404,6 +404,15 @@
     .pre-transition .yellow.f {
       width: 0;
     }
+    
+    .sr-only {
+      position:absolute;
+      left:-10000px;
+      top:auto;
+      width:1px;
+      height:1px;
+      overflow:hidden;
+    }
 
     @media only screen and (max-width: 760px) {
       .hide-under-760 {
@@ -425,9 +434,20 @@
   </style>
 </head>
 <body>
-<div class="width-wrapper pre-transition" id="width-wrapper">
+<div class="sr-only">
+  <h1>Grady Berry Ward</h1>
+  <h2>Software Engineer</h2>
+  <nav class="menu">
+    <a href="./about">About</a>
+    <a href="./project">Projects</a>
+    <a href="./resume.html">Resume</a>
+    <a href="./contact">Contact</a>
+  </nav>
+  <p>Please let me know if there is anything I can do to make this site more accessible!</p>
+</div>
+<div aria-hidden="true" class="width-wrapper pre-transition" id="width-wrapper">
 <div class="top">
-	<div class="name-wrapper">
+	<div class="name-wrapper" aria-hidden="true">
 		<h1>Grady 
 		  <span class="hide-under-560">B<span class="hide-under-760">erry
 		</span></span> <span class="hide-under-460">Ward</span></h1>
@@ -448,10 +468,10 @@
     <div class="blue a"></div>
   </div>
   <nav class="menu">
-    <a href="about">About</a>
-    <a href="project">Projects</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact">Contact</a>
+    <a href="./about">About</a>
+    <a href="./project">Projects</a>
+    <a href="./resume.html">Resume</a>
+    <a href="./contact">Contact</a>
     <div class="black d"></div>
     <div class="black e"></div>
     <div class="black f"></div>
