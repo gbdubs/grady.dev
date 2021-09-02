@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <head>
   <title>Grady Berry Ward | Contact</title>
   <meta name="viewport" content="width=device-width">
@@ -9,6 +9,7 @@ body {
   font-family: Helvetica, sans-serif;
   font-weight: 800;
   text-align: center;
+  line-height: 1.5rem;
 }
 
 .width-wrapper {
@@ -478,9 +479,29 @@ h1, h2, h4 {
     width: Calc(100% - 18rem);
   }
 }
+
+.sr-only {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
 </style>
 <body>
-<div class="width-wrapper pre-transition" id="width-wrapper">
+<div class="sr-only">
+  <h1>Contact</h1>
+  <nav>
+    <a href="mailto:grady.b.ward@gmail.com">Email</a>
+    <a href="https://github.com/gbdubs">Github: gbdubs</a>
+    <a href="https://www.linkedin.com/in/gradyward/">LinkedIn: gradyward</a>
+    <a href="../">Back</a>
+  </nav>
+  <p>Please let me know if there is anything I can do to make this site more accessible!</p>
+</div>
+
+<div aria-hidden="true" class="width-wrapper pre-transition" id="width-wrapper">
 <div class="left col">
   <div class="left row a">
   </div>

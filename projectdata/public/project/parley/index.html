@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <head>
   <title>Grady Berry Ward | Parley</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -15,6 +15,7 @@ body {
   margin: 0;
   font-family: Helvetica, sans-serif;
   text-align: center;
+  line-height: 1.5rem;
 }
 
 h1 {
@@ -56,7 +57,7 @@ img {
   padding:  1rem 0 2rem 0;
   text-align: left;
   font-size: 1.5rem;
-  line-height: 2rem;
+  line-height: 2.25rem;
 }
 
 .vertical {
@@ -252,12 +253,12 @@ img {
 <body>
 <div class="width-wrapper pre-transition" id="width-wrapper">
 <div class="decorated-box">
-  <div class="left vertical"></div>
+  <div aria-hidden="true" class="left vertical"></div>
   <div class="decorated-content">
-    <h4><a href="..">Back</a></h4>
+    <nav><a href="..">Back</a></nav>
     <h1> Parley</h1>
   </div>
-<div class="right vertical"></div>
+<div aria-hidden="true" class="right vertical"></div>
   <div class="horizontal"></div>
 </div>
 
@@ -268,89 +269,89 @@ img {
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         Comment threads are an inherently flawed way to have a discussion, because they are strictly linear.  In recent years, large organizations like facebook have realized this and have tried to reconsile it with a binary tree pattern of <em>deeper</em> or <em>next</em>. This only partially solves the problem. Far more frequently, if I want to respond to a comment, there are multiple peices of it that I want to respond to, and some may already be addressed further down the thread.  The heart of the matter is that a meaningful static discussion is not best facilitated by a linear progression of strings.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         Parley was my idea on how to change this. It views a document as something which is not responed to in whole, but which can be annotated with comments by different authors.  The comments (in turn) become top level objects which are just as open to annotation and further comment. The recursive, n-ary tree nature of this structure has multiple advantages, but the big one is that you can dive deep on a given line of argument naturally, by clicking through and understanding the points as made in isolation.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         <img src="../img/parly.png" alt="A Photo of the parley interface." />
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         This idea in and of itself is not revolutionary, but I wanted to see if I could make a demo where this is implemented in a way that is comprehensible and intuitive.  I half succeeded here.  The parley interface used the Draw Me CSS pattern to create a right-left layout where the content is displayed with underlines corresponding to annotations, and the text of the annotation is displayed in a scrolling left hand column.  The interface is flexible, relatively intuitive, and fairly simple.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         Where I ran into problems was in the minutia &ndash; what about really long annotations? What about annotations stacked 15 high? How do you link effectively (as links cannot then be annotated)?
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         The backend is lame (an app engine hack), but I stand behind the fundamental idea (recursive comment sections, rather than linear ones), and I stand behind the UI for what it is - a proof of concept.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         To use the system, go to <a href="http://parly.us">parly.us</a>, and be aware that the AppEngine backend takes up to a minute to spin up - so allow a minute to pass after a first page access, then reload the page to interact with the software.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
-<div class="decorated-box">
+<div aria-hidden="true" class="decorated-box">
   <div class="left vertical"></div>
   <p class="decorated-content">
   </p>

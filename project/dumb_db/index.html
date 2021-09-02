@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <head>
   <title>Grady Berry Ward | DumbDB</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -15,6 +15,7 @@ body {
   margin: 0;
   font-family: Helvetica, sans-serif;
   text-align: center;
+  line-height: 1.5rem;
 }
 
 h1 {
@@ -56,7 +57,7 @@ img {
   padding:  1rem 0 2rem 0;
   text-align: left;
   font-size: 1.5rem;
-  line-height: 2rem;
+  line-height: 2.25rem;
 }
 
 .vertical {
@@ -252,12 +253,12 @@ img {
 <body>
 <div class="width-wrapper pre-transition" id="width-wrapper">
 <div class="decorated-box">
-  <div class="left vertical"></div>
+  <div aria-hidden="true" class="left vertical"></div>
   <div class="decorated-content">
-    <h4><a href="..">Back</a></h4>
+    <nav><a href="..">Back</a></nav>
     <h1> DumbDB</h1>
   </div>
-<div class="right vertical"></div>
+<div aria-hidden="true" class="right vertical"></div>
   <div class="horizontal"></div>
 </div>
 
@@ -268,53 +269,53 @@ img {
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         While protyping front end interfaces for responsive web applications, I frequently have to mock out the data interactions with static constants in my javascript that mock server requests and responses. This has several downsides: you cannot change the data in a demo situation, inserting real requests requires you to construct the remoteand the number of mocks can explode if you are trying to make a CRUD user interface.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         DumbDB is a better way.  DumbDB is a remote server/database that accepts arbitrary post and get messages, and maintains an object store that maps the requested paths to the objects that have previously been stored at each.  This mapping between path and object is the simplest form of an object-store (dumb), but is a functionally complete database (db).
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         DumbDB has already helped me accelerate my prototyping on several projects.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         It is implemented as a MongoDB database on GCP with a thin layer of GCP cloud functions on top. One of the features of DumbDB is that it dosen’t have authentication, but does have rate limiting by IP. This prevents eggregiously abusive behavior, but requires no configuration on the client side.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
-<div class="decorated-box">
+<div aria-hidden="true" class="decorated-box">
   <div class="left vertical"></div>
   <p class="decorated-content">
   </p>
