@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <head>
   <title>Grady Berry Ward | Bananagrams</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -15,6 +15,7 @@ body {
   margin: 0;
   font-family: Helvetica, sans-serif;
   text-align: center;
+  line-height: 1.5rem;
 }
 
 h1 {
@@ -56,7 +57,7 @@ img {
   padding:  1rem 0 2rem 0;
   text-align: left;
   font-size: 1.5rem;
-  line-height: 2rem;
+  line-height: 2.25rem;
 }
 
 .vertical {
@@ -252,12 +253,12 @@ img {
 <body>
 <div class="width-wrapper pre-transition" id="width-wrapper">
 <div class="decorated-box">
-  <div class="left vertical"></div>
+  <div aria-hidden="true" class="left vertical"></div>
   <div class="decorated-content">
-    <h4><a href="..">Back</a></h4>
+    <nav><a href="..">Back</a></nav>
     <h1> Bananagrams</h1>
   </div>
-<div class="right vertical"></div>
+<div aria-hidden="true" class="right vertical"></div>
   <div class="horizontal"></div>
 </div>
 
@@ -268,139 +269,139 @@ img {
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         In 2016, when I began working at Google, I started having breakfast with the same group of folks every morning - Chris, Brett, Andrew and Brandon. All of us being nerds, techno-optimists and deeply competitive, at one point Brandon described having a competition to see who could write the best AI to play the game <a href="https://en.m.wikipedia.org/wiki/Bananagrams">bananagrams</a>.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         My productivity dipped precipitously over the next few days as I considered how to destroy my good friends in tiled combat.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         Here is the algorithm I designed.  I realized that searching for connections in any spatial model was going to dominate running time, and that I tile addition was going to be near-impossible if you had to maintain state over colliding words. To optimize so I didn&rsquo;t have to maintain a model of the board, I figured out a layout that assigned ownership over strips of the grid in perpetuity to &ldquo;strands&rdquo;.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         <img src="../img/bananagrams_strand.png" alt="An Diagram of an example Strand" />
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         <img src="../img/bananagrams_dock.png" alt="An Diagram of how strands merge together to fill the full playing space." />
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         Each Strand was a series of words where the ends form a two letter word and have no other interactions. In this way, each word simply becomes a starting character and finishing character, as length no longer matters, and this reduces the search costs considerably.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         With this model in mind, you can immediately discard all words that dont start and end with letters that are constituent to two letter words (on the same upbeat/downbeat, too). You can further simplify out all string comparisons and just look at character integers. You only need maintain a list of all of the open docks, and a simple function to add a new doc on the end.  Throw in some logic about which strands go up and which go down, and you have a blazingly fast addition algorithm.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         The code is <a href="http://github.com/gbdubs/bananagrams">here</a>, and the result is (in my mind) breathtaking.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         <img src="../img/bananagrams.png" alt="A Photo of an incredibly dense bananagrams grid." />
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         Because all lookups are heavily ammortized, and the set of words is large enough that you only need to look where there are available keys, as the number of words on the board increases, the addition time actually decreases, though you run into memory issues at some points.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         The format Brandon used to create the server (Captn&rsquo; Proto) doesn&rsquo;t have a Java API, so we didn&rsquo;t end up playing.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         I learned a good amount from this project:</p>
 
@@ -410,13 +411,13 @@ img {
 <li>Competition drives me to do some of my best work. There is nothing more motivating than sitting around a breakfast table, plotting victory against friends. I rise to (and love) challenges.</li>
 </ul>
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
-<div class="decorated-box">
+<div aria-hidden="true" class="decorated-box">
   <div class="left vertical"></div>
   <p class="decorated-content">
   </p>

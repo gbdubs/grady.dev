@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <head>
   <title>Grady Berry Ward | Student Union (In Line)</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -15,6 +15,7 @@ body {
   margin: 0;
   font-family: Helvetica, sans-serif;
   text-align: center;
+  line-height: 1.5rem;
 }
 
 h1 {
@@ -56,7 +57,7 @@ img {
   padding:  1rem 0 2rem 0;
   text-align: left;
   font-size: 1.5rem;
-  line-height: 2rem;
+  line-height: 2.25rem;
 }
 
 .vertical {
@@ -252,12 +253,12 @@ img {
 <body>
 <div class="width-wrapper pre-transition" id="width-wrapper">
 <div class="decorated-box">
-  <div class="left vertical"></div>
+  <div aria-hidden="true" class="left vertical"></div>
   <div class="decorated-content">
-    <h4><a href="..">Back</a></h4>
+    <nav><a href="..">Back</a></nav>
     <h1> Student Union (In Line)</h1>
   </div>
-<div class="right vertical"></div>
+<div aria-hidden="true" class="right vertical"></div>
   <div class="horizontal"></div>
 </div>
 
@@ -268,161 +269,161 @@ img {
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         In my time at Brandeis University, I spent 3 years working hard for the Brandeis Student Union as a Student Representative to the Board of Trustees, and an Executive Board member. Over those three years, we had three different computer science students as “web-master”, and three politicos as “communications director”.  The problem was that each web-master would build a beautiful website that was never able to be updated because the communications director never had the technical expertiese to update the HTML or use the static site generator.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         As college was coming to an end, I was frusturated because my time with the board of trustees had not been as productive as I had originally hoped. Looking for a place I could have a lasting legacy and impact, I found it in the Student Union’s website.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         At its heart, the problem is one of distributed data management and editing.  Students within the union should have different access to edit different data, but the site should be rendered in a way that does not reflect this mutliple authorship - components should be rigid enough that an author’s style does not bleed into a unifying presence.  In addition, a distributed ownership model for content needed to be (A) version controlled (B) auditable &copy; completely non-technical.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         So I built it! The source code is <a href="https://github.com/gbdubs/StudentUnion">here</a>.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         <img src="../img/in_line_edit_me.png" alt="A photo of where users could edit the site" />
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         The end product is pretty sweet, and uses some smart optimizations to minimize hosting costs and page serving.  I took advantage of Github’s “pages” platform to serve the static HTML rendered by the site.  A change in one of the underlying sets of data would trigger a re-render of the HTML generated by the data, and then would be written out to Github pages.  This had two main benefits - Github automatically maintains version control history, which enabled auditing of who wrote what and when, and Github stores its HTML files in pages in a blazing fast CDN. This meant that lookups to the webpage were infinitely scalable and cheap (from my perspective), and meant that there were not “read” server costs.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         The server that processed writes was built on AppEngine, using JSTL templating over datastore objects to render the HTML to write to Github pages.  More exciting than that was the group strucuture that I made so that sub-groups of the Student Union could have access to different sets of permissions for editing. This formed the basis of Committee pages, and organization pages, which were only editible by their members.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         <img src="../img/in_line_distributed.png" alt="User Management controls" />
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         Additionally, the data was reused between pages for commen elements (for example, all committees should have the names and bios of their members, even if each member is in 10 committees).
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         On the front end, I used a “Medium”-esque visual markdown editor to enable the construction of HTML elements from a given set of supported ones (which I provided a cohesive design language for on the rendering side).
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         <img src="../img/in_line_editor.png" alt="WISYWIG Editor" />
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         The result is <a href="http://union.brandeis.edu">gorgeous</a>, and far more importantly, meets the needs of the Union. I left Brandeis two years ago (writing this from 2018), and it has been used effectivley by three Student Unions since.  I do occaisional performance upgrades and feature requests, but I’ve seen the site updated by several dozen Union Members without any technical knowledge.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
   
     <div class="decorated-box">
-      <div class="left vertical"></div>
+      <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
         I’m quite proud of this project because it stands solidly at the intersection of technical simplicity and client needs. I have confidence that the Union will be using this product long after anyone remembers me at Brandeis.
       </div>
-      <div class="right vertical"></div>
-      <div class="horizontal"></div>
+      <div aria-hidden="true" class="right vertical"></div>
+      <div aria-hidden="true" class="horizontal"></div>
     </div>
   
 
 
-<div class="decorated-box">
+<div aria-hidden="true" class="decorated-box">
   <div class="left vertical"></div>
   <p class="decorated-content">
   </p>

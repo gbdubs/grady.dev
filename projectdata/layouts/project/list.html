@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <head>
   <title>Grady Berry Ward | Projects</title>
   <meta name="viewport" content="width=device-width">
@@ -221,20 +221,20 @@ h1 {
 <body>
 <div class="width-wrapper pre-transition" id="width-wrapper">
   <div class="decorated-box delay-1">
-    <div class="sidebar">
+    <div aria-hidden="true" class="sidebar">
       <div class="blue"></div>
       <div class="yellow"></div>
       <div class="black"></div>
       <div class="red"></div>
     </div>
-    <h4><a href="../">Back</a></h4>
+    <nav><a href="../">Back</a></nav>
     <h1>Projects</h1>
   </div>
 {{ range $index, $project := (sort ( where $.Data.Pages "Type" "project" ) ".Params.order" "desc" )}}
   <div class="decorated-box-wrapper">
     {{ if ( lt $index ( mul ( div ( len $.Data.Pages ) 4 ) 1 ) )}}
     <div class="decorated-box delay-{{ add $index 2 }} indent-4"> 
-      <div class="sidebar">
+      <div aria-hidden="true" class="sidebar">
         <div class="blue"></div>
         <div class="yellow"></div>
         <div class="black"></div>
@@ -243,7 +243,7 @@ h1 {
       <div class="red bottom"></div>
     {{ else if ( lt $index ( div ( len $.Data.Pages ) 2 ) )}}
     <div class="decorated-box delay-{{ add $index 2 }} indent-3">
-      <div class="sidebar">
+      <div aria-hidden="true" class="sidebar">
         <div class="blue"></div>
         <div class="yellow"></div>
         <div class="black"></div>
@@ -251,14 +251,14 @@ h1 {
       <div class="black bottom"></div>
     {{ else if ( lt $index ( mul ( div ( len $.Data.Pages ) 4 )  3 ) )}}
     <div class="decorated-box delay-{{ add $index 2 }} indent-2">
-      <div class="sidebar">
+      <div aria-hidden="true" class="sidebar">
         <div class="blue"></div>
         <div class="yellow"></div>
       </div>
       <div class="yellow bottom"></div>
     {{ else }}
     <div class="decorated-box delay-{{ add $index 2 }} indent-1">
-      <div class="sidebar">
+      <div aria-hidden="true" class="sidebar">
         <div class="blue"></div>
       </div>
       <div class="blue bottom"></div>
