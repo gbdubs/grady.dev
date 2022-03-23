@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Algorithms on Grady Berry Ward</title>
-    <link>http://gradybward.com/tags/algorithms/</link>
-    <description>Recent content in Algorithms on Grady Berry Ward</description>
+    <title>algorithms on grady.dev</title>
+    <link>https://grady.dev/tags/algorithms/</link>
+    <description>Recent content in algorithms on grady.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://gradybward.com/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://grady.dev/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://gradybward.com/project/3_sat/</link>
+      <link>https://grady.dev/project/3_sat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/project/3_sat/</guid>
+      <guid>https://grady.dev/project/3_sat/</guid>
       <description>Haven’t you ever looked at SAT (the problem of finding a solution to an arbitrary expression of boolean predicates), and, realizing it can be reduced to 3-SAT, thought it must be solvable in sub-polynomial time? My intuition says so too, but this is clearly a function of naievite.
 The thing that struck me about SAT generally is that it is fundamentally trying to explore a bunch of different roads at once, and reporting back the ones that don’t hit dead ends.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://gradybward.com/project/bananagrams/</link>
+      <link>https://grady.dev/project/bananagrams/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/project/bananagrams/</guid>
+      <guid>https://grady.dev/project/bananagrams/</guid>
       <description>In 2016, when I began working at Google, I started having breakfast with the same group of folks every morning - Chris, Brett, Andrew and Brandon. All of us being nerds, techno-optimists and deeply competitive, at one point Brandon described having a competition to see who could write the best AI to play the game bananagrams.
 My productivity dipped precipitously over the next few days as I considered how to destroy my good friends in tiled combat.</description>
     </item>

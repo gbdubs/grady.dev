@@ -1,21 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Management on Grady Berry Ward</title>
-    <link>http://gradybward.com/tags/management/</link>
-    <description>Recent content in Management on Grady Berry Ward</description>
+    <title>management on grady.dev</title>
+    <link>https://grady.dev/tags/management/</link>
+    <description>Recent content in management on grady.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://gradybward.com/tags/management/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://grady.dev/tags/management/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://gradybward.com/project/calc_u/</link>
+      <link>https://grady.dev/project/calc_u/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/project/calc_u/</guid>
+      <guid>https://grady.dev/project/calc_u/</guid>
       <description>I frontloaded my classes to heavily at Brandeis, and coming into my Junior Spring Semester, I had completed the majority of the coursework requisite for my majors. During that semester, as most of my friends were abroad, I decided to work on a side project for the semester, accompanied only by a French class requisite for my graduation. This was one of the best decisions of my life.
 CalcU emerged from a need I saw when tutoring.</description>
     </item>
