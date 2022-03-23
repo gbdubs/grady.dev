@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Matlab on Grady Berry Ward</title>
-    <link>http://gradybward.com/tags/matlab/</link>
-    <description>Recent content in Matlab on Grady Berry Ward</description>
+    <title>matlab on grady.dev</title>
+    <link>https://grady.dev/tags/matlab/</link>
+    <description>Recent content in matlab on grady.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://gradybward.com/tags/matlab/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://grady.dev/tags/matlab/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://gradybward.com/project/birth_certificate_scraping/</link>
+      <link>https://grady.dev/project/birth_certificate_scraping/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/project/birth_certificate_scraping/</guid>
+      <guid>https://grady.dev/project/birth_certificate_scraping/</guid>
       <description>Professor Linda Bui is a gem who really helped me enjoy the last class of my economics degree at Brandeis. So when she asked me if I could scrape all birth certificates from 1900 to 1950 in Massachusetts, I said “maybe”, rather than “no”.
 I ended up using Matlab to do OCR with a combination of models for segmenting the certificates, and extracting the text for each field. The forms were either hand written or were machine printed, and I generated seperate models for each.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://gradybward.com/project/senior_thesis/</link>
+      <link>https://grady.dev/project/senior_thesis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/project/senior_thesis/</guid>
+      <guid>https://grady.dev/project/senior_thesis/</guid>
       <description>I wrote my undergraduate thesis on the Graph Isomorphism (GI) problem, and several topics within that space. My work was version controlled on github, and the final result is here.
 I was first interested in the “Paths” invariant, which is incredibly powerful test for discerning between potentially isomorphic graphs in cubic (and fully paralellizable) time, and was originally theorized to be a solution to GI. The primary findings of my thesis were that:</description>
     </item>

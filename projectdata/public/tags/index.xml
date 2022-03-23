@@ -1,372 +1,372 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Grady Berry Ward</title>
-    <link>http://gradybward.com/tags/</link>
-    <description>Recent content in Tags on Grady Berry Ward</description>
+    <title>Tags on grady.dev</title>
+    <link>https://grady.dev/tags/</link>
+    <description>Recent content in Tags on grady.dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://gradybward.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://grady.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>4th Ammendemnt</title>
-      <link>http://gradybward.com/tags/4th-ammendemnt/</link>
+      <title>4th-ammendemnt</title>
+      <link>https://grady.dev/tags/4th-ammendemnt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/4th-ammendemnt/</guid>
+      <guid>https://grady.dev/tags/4th-ammendemnt/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Algorithms</title>
-      <link>http://gradybward.com/tags/algorithms/</link>
+      <title>algorithms</title>
+      <link>https://grady.dev/tags/algorithms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/algorithms/</guid>
+      <guid>https://grady.dev/tags/algorithms/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>App Engine</title>
-      <link>http://gradybward.com/tags/app-engine/</link>
+      <title>app engine</title>
+      <link>https://grady.dev/tags/app-engine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/app-engine/</guid>
+      <guid>https://grady.dev/tags/app-engine/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Appengine</title>
-      <link>http://gradybward.com/tags/appengine/</link>
+      <title>appengine</title>
+      <link>https://grady.dev/tags/appengine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/appengine/</guid>
+      <guid>https://grady.dev/tags/appengine/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Art</title>
-      <link>http://gradybward.com/tags/art/</link>
+      <title>art</title>
+      <link>https://grady.dev/tags/art/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/art/</guid>
+      <guid>https://grady.dev/tags/art/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Aws</title>
-      <link>http://gradybward.com/tags/aws/</link>
+      <title>aws</title>
+      <link>https://grady.dev/tags/aws/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/aws/</guid>
+      <guid>https://grady.dev/tags/aws/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Backend</title>
-      <link>http://gradybward.com/tags/backend/</link>
+      <title>backend</title>
+      <link>https://grady.dev/tags/backend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/backend/</guid>
+      <guid>https://grady.dev/tags/backend/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>C</title>
-      <link>http://gradybward.com/tags/c/</link>
+      <title>c</title>
+      <link>https://grady.dev/tags/c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/c/</guid>
+      <guid>https://grady.dev/tags/c/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Cgj</title>
-      <link>http://gradybward.com/tags/cgj/</link>
+      <title>cgj</title>
+      <link>https://grady.dev/tags/cgj/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/cgj/</guid>
+      <guid>https://grady.dev/tags/cgj/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Collaborative</title>
-      <link>http://gradybward.com/tags/collaborative/</link>
+      <title>collaborative</title>
+      <link>https://grady.dev/tags/collaborative/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/collaborative/</guid>
+      <guid>https://grady.dev/tags/collaborative/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Css</title>
-      <link>http://gradybward.com/tags/css/</link>
+      <title>css</title>
+      <link>https://grady.dev/tags/css/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/css/</guid>
+      <guid>https://grady.dev/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Design</title>
-      <link>http://gradybward.com/tags/design/</link>
+      <title>design</title>
+      <link>https://grady.dev/tags/design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/design/</guid>
+      <guid>https://grady.dev/tags/design/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Functional</title>
-      <link>http://gradybward.com/tags/functional/</link>
+      <title>functional</title>
+      <link>https://grady.dev/tags/functional/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/functional/</guid>
+      <guid>https://grady.dev/tags/functional/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Functions</title>
-      <link>http://gradybward.com/tags/functions/</link>
+      <title>functions</title>
+      <link>https://grady.dev/tags/functions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/functions/</guid>
+      <guid>https://grady.dev/tags/functions/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Golang</title>
-      <link>http://gradybward.com/tags/golang/</link>
+      <title>golang</title>
+      <link>https://grady.dev/tags/golang/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/golang/</guid>
+      <guid>https://grady.dev/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Government</title>
-      <link>http://gradybward.com/tags/government/</link>
+      <title>government</title>
+      <link>https://grady.dev/tags/government/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/government/</guid>
+      <guid>https://grady.dev/tags/government/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Hugo</title>
-      <link>http://gradybward.com/tags/hugo/</link>
+      <title>hugo</title>
+      <link>https://grady.dev/tags/hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/hugo/</guid>
+      <guid>https://grady.dev/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Java</title>
-      <link>http://gradybward.com/tags/java/</link>
+      <title>java</title>
+      <link>https://grady.dev/tags/java/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/java/</guid>
+      <guid>https://grady.dev/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Javascript</title>
-      <link>http://gradybward.com/tags/javascript/</link>
+      <title>javascript</title>
+      <link>https://grady.dev/tags/javascript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/javascript/</guid>
+      <guid>https://grady.dev/tags/javascript/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Law</title>
-      <link>http://gradybward.com/tags/law/</link>
+      <title>law</title>
+      <link>https://grady.dev/tags/law/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/law/</guid>
+      <guid>https://grady.dev/tags/law/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Loss</title>
-      <link>http://gradybward.com/tags/loss/</link>
+      <title>loss</title>
+      <link>https://grady.dev/tags/loss/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/loss/</guid>
+      <guid>https://grady.dev/tags/loss/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Love</title>
-      <link>http://gradybward.com/tags/love/</link>
+      <title>love</title>
+      <link>https://grady.dev/tags/love/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/love/</guid>
+      <guid>https://grady.dev/tags/love/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Management</title>
-      <link>http://gradybward.com/tags/management/</link>
+      <title>management</title>
+      <link>https://grady.dev/tags/management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/management/</guid>
+      <guid>https://grady.dev/tags/management/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Matlab</title>
-      <link>http://gradybward.com/tags/matlab/</link>
+      <title>matlab</title>
+      <link>https://grady.dev/tags/matlab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/matlab/</guid>
+      <guid>https://grady.dev/tags/matlab/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Ml</title>
-      <link>http://gradybward.com/tags/ml/</link>
+      <title>ml</title>
+      <link>https://grady.dev/tags/ml/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/ml/</guid>
+      <guid>https://grady.dev/tags/ml/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Mongodb</title>
-      <link>http://gradybward.com/tags/mongodb/</link>
+      <title>mongodb</title>
+      <link>https://grady.dev/tags/mongodb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/mongodb/</guid>
+      <guid>https://grady.dev/tags/mongodb/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Nodejs</title>
-      <link>http://gradybward.com/tags/nodejs/</link>
+      <title>nodejs</title>
+      <link>https://grady.dev/tags/nodejs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/nodejs/</guid>
+      <guid>https://grady.dev/tags/nodejs/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Ocr</title>
-      <link>http://gradybward.com/tags/ocr/</link>
+      <title>OCR</title>
+      <link>https://grady.dev/tags/ocr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/ocr/</guid>
+      <guid>https://grady.dev/tags/ocr/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Physics</title>
-      <link>http://gradybward.com/tags/physics/</link>
+      <title>physics</title>
+      <link>https://grady.dev/tags/physics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/physics/</guid>
+      <guid>https://grady.dev/tags/physics/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Privacy</title>
-      <link>http://gradybward.com/tags/privacy/</link>
+      <title>privacy</title>
+      <link>https://grady.dev/tags/privacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/privacy/</guid>
+      <guid>https://grady.dev/tags/privacy/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Python</title>
-      <link>http://gradybward.com/tags/python/</link>
+      <title>python</title>
+      <link>https://grady.dev/tags/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/python/</guid>
+      <guid>https://grady.dev/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Scraping</title>
-      <link>http://gradybward.com/tags/scraping/</link>
+      <title>scraping</title>
+      <link>https://grady.dev/tags/scraping/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/scraping/</guid>
+      <guid>https://grady.dev/tags/scraping/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Serverless</title>
-      <link>http://gradybward.com/tags/serverless/</link>
+      <title>serverless</title>
+      <link>https://grady.dev/tags/serverless/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/serverless/</guid>
+      <guid>https://grady.dev/tags/serverless/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Tensorflow</title>
-      <link>http://gradybward.com/tags/tensorflow/</link>
+      <title>tensorflow</title>
+      <link>https://grady.dev/tags/tensorflow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/tensorflow/</guid>
+      <guid>https://grady.dev/tags/tensorflow/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Theory</title>
-      <link>http://gradybward.com/tags/theory/</link>
+      <title>theory</title>
+      <link>https://grady.dev/tags/theory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/theory/</guid>
+      <guid>https://grady.dev/tags/theory/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Ux</title>
-      <link>http://gradybward.com/tags/ux/</link>
+      <title>ux</title>
+      <link>https://grady.dev/tags/ux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/ux/</guid>
+      <guid>https://grady.dev/tags/ux/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Web</title>
-      <link>http://gradybward.com/tags/web/</link>
+      <title>web</title>
+      <link>https://grady.dev/tags/web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/web/</guid>
+      <guid>https://grady.dev/tags/web/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Web Design</title>
-      <link>http://gradybward.com/tags/web-design/</link>
+      <title>web design</title>
+      <link>https://grady.dev/tags/web-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/web-design/</guid>
+      <guid>https://grady.dev/tags/web-design/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Webapp</title>
-      <link>http://gradybward.com/tags/webapp/</link>
+      <title>webapp</title>
+      <link>https://grady.dev/tags/webapp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/webapp/</guid>
+      <guid>https://grady.dev/tags/webapp/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Woodworking</title>
-      <link>http://gradybward.com/tags/woodworking/</link>
+      <title>woodworking</title>
+      <link>https://grady.dev/tags/woodworking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://gradybward.com/tags/woodworking/</guid>
+      <guid>https://grady.dev/tags/woodworking/</guid>
       <description></description>
     </item>
     
