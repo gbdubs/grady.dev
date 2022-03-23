@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-  <title>Grady Berry Ward | Projects</title>
+  <title>grady.dev | Projects</title>
   <meta name="viewport" content="width=device-width">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -10,7 +10,7 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <style>
-  
+
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
@@ -209,7 +209,7 @@ h1 {
   html {
     font-size: 6px;
   }
-  
+
   .decorated-content {
     font-size: 3rem;
     line-height: 3.5rem;
@@ -241,7 +241,7 @@ h1 {
 {{ range $index, $project := (sort ( where $.Data.Pages "Type" "project" ) ".Params.order" "desc" )}}
   <div class="decorated-box-wrapper">
     {{ if ( lt $index ( mul ( div ( len $.Data.Pages ) 4 ) 1 ) )}}
-    <div class="decorated-box delay-{{ add $index 2 }} indent-4"> 
+    <div class="decorated-box delay-{{ add $index 2 }} indent-4">
       <div aria-hidden="true" class="sidebar">
         <div class="blue"></div>
         <div class="yellow"></div>
