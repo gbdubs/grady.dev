@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-  <title>Grady Berry Ward | VOAT - Interactive</title>
+  <title>grady.dev | VOAT - Interactive</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -13,6 +13,9 @@
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: Helvetica, sans-serif;
   line-height: 1.5rem;
 }
@@ -153,7 +156,7 @@ img {
 .from-6 { right: 3rem; }
 .from-7 { right: 1rem; }
 
-.from-3.to-4, 
+.from-3.to-4,
 .from-4.to-3 {
     width: Calc(100% - 14rem);
 }
@@ -240,7 +243,7 @@ img {
   html {
     font-size: 6px;
   }
-  
+
   .decorated-content {
     font-size: 3rem;
     line-height: 3.5rem;
@@ -276,10 +279,13 @@ img {
 
 
   
+
+
+  
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        <strong>This project is a work in progress, it still has lots of work to be done.</strong>
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -291,7 +297,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        A few years ago, I created a project called <a href="../voat">VOAT</a>, in which I used a simple space filling algorithm, alongside a variety of different CSS properties to generate goregeous patterns. I recently revisited this project with the intent on showing folks how it was made, and introducing folks to CSS.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -303,7 +309,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        <img src="../img/voat_2_1.png" alt="The interactive voat editor">
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -315,7 +321,8 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        The result is a new site, <a href="https://voat.app">voat.app</a>, which houses an interactive editor for the underlying algorithm in VOAT, and has a UI friendly way of modifying the CSS properties that shape and influence the pattern. If you like a pattern, you can &ldquo;share&rdquo; it, and it will be recorded in a
+library of creations (which you can peruse via an infinite scroll in the library tab).
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -327,7 +334,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        <img src="../img/voat_2_2.png" alt="A collection of patterns in the voat libarary">
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -339,7 +346,8 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        This project has a ton more to go before it&rsquo;s ready for general release. My goal for the project is now significantly broader than when I first got started. I want to come up with a few other CSS-only
+backing patterns and algorithms (not just the original one), implement inheritance and priority effectively, and give folks the ability to create and name their own patterns.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -351,7 +359,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        However, given that this is a lower priority than some other projects I&rsquo;ve been working on recently, It&rsquo;s getting pushed to the wayside. I&rsquo;ll update this site when VOAT App is ready for public consumption.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -363,19 +371,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
-      </div>
-      <div aria-hidden="true" class="right vertical"></div>
-      <div aria-hidden="true" class="horizontal"></div>
-    </div>
-  
-
-
-  
-    <div class="decorated-box">
-      <div aria-hidden="true" class="left vertical"></div>
-      <div class="decorated-content">
-        </p>
+        <img src="../img/voat_2_3.png" alt="One of my favorites - is it a grid or a funky groove? Oh it&rsquo;s both my friend, it&rsquo;s both.">
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -395,13 +391,13 @@ img {
 <script>
   var wrapper = document.getElementById("width-wrapper");
   wrapper.classList.remove("pre-transition");
-  
+
   var EMPTY = "empty";
-  
+
   function randomInitialAssignment() {
     return ["red", "black", "yellow", "blue", EMPTY, EMPTY, EMPTY, EMPTY]
   }
-  
+
   function couldSwapPair(assignment, from, to) {
     if (from < 4 == to < 4){
       return false;
@@ -411,7 +407,7 @@ img {
     }
     return true;
   }
-  
+
   function randomPairToSwap(assignment) {
     var fromIndexOfPopulated = Math.floor(4 * Math.random());
     var fromIndex = -1;
@@ -443,11 +439,11 @@ img {
       }
     }
     return {
-      "origin": fromIndex, 
+      "origin": fromIndex,
       "destination": toIndex
     };
   }
-  
+
   function createParagraphAssignments(numParagraphs) {
     var paragraphAssignments = [];
     paragraphAssignments[0] = randomInitialAssignment();
@@ -467,21 +463,21 @@ img {
     }
     paragraphAssignments[numParagraphs-1].origin = -1;
     paragraphAssignments[numParagraphs-1].destination = -1;
-    
+
     return paragraphAssignments;
   }
-  
+
   function isInBetween(a, b, c){
     return ((a < b) == (b < c));
   }
-  
+
   function assignAssignmentToParagraphBox(lastAssignment, assignment, box) {
-  
+
     var bottomSidebar = box.getElementsByClassName('horizontal')[0];
     var classesForBottom = assignment[assignment.origin] + " from-" + assignment.origin + " to-" + assignment.destination;
     var bottomSidebarHtml = "<div class=\"" + classesForBottom + "\"></div>";
     bottomSidebar.innerHTML = bottomSidebarHtml;
-  
+
     var leftSidebarHtml = "";
     for (var i = 0; i < 4; i++) {
       if (assignment[i] !== EMPTY) {
@@ -497,7 +493,7 @@ img {
     }
     var leftSidebar = box.getElementsByClassName('left')[0];
     leftSidebar.innerHTML = leftSidebarHtml;
-    
+
     var rightSidebarHtml = "";
     for (var i = 4; i < 8; i++) {
       if (assignment[i] !== EMPTY) {

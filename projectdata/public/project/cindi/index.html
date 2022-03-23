@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-  <title>Grady Berry Ward | Cindi</title>
+  <title>grady.dev | Cindi</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -13,6 +13,9 @@
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: Helvetica, sans-serif;
   line-height: 1.5rem;
 }
@@ -153,7 +156,7 @@ img {
 .from-6 { right: 3rem; }
 .from-7 { right: 1rem; }
 
-.from-3.to-4, 
+.from-3.to-4,
 .from-4.to-3 {
     width: Calc(100% - 14rem);
 }
@@ -240,7 +243,7 @@ img {
   html {
     font-size: 6px;
   }
-  
+
   .decorated-content {
     font-size: 3rem;
     line-height: 3.5rem;
@@ -276,10 +279,13 @@ img {
 
 
   
+
+
+  
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        TL;DR: Janelle Monae&rsquo;s art inspired me to try to build an algorithm that progamatically generates emotion-evoking art, and the results are <a href="https://gbdubs.github.io/cindi-gallery/">here</a>.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -291,7 +297,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        <img src="../img/CINDI1.png" alt="A rendering of the CINDI program">
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -303,7 +309,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        If you haven’t yet listened to Janelle Monae’s “Metropolis” suite, I highly recommend that you drop  the committments you can, pour yourself some coffee and/or wine, and listen to it carefully.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -315,7 +321,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        Monae is a magician, a siren, an entertainer, a theorist, a historian, and a visionary. Metropolis helped me understand so much about so much that talking about it here will certainly do it an injustice. If you are interested, check out <a href="https://github.com/gbdubs/monae">my 2016 term paper</a> on her work within the context of the history of waves of <a href="https://en.wikipedia.org/wiki/Black_feminism">Black Feminism</a>. Or, preferably, read one of the many articles [<a href="https://medium.com/black-feminism/black-feminism-through-the-lens-of-janelle-monae-the-electric-lady-a0f917c547e7">1</a>] [<a href="https://pqdtopen.proquest.com/doc/1545710995.html?FMT=AI">2</a>] [<a href="https://repository.library.georgetown.edu/bitstream/handle/10822/760841/ZaGara_georgetown_0076M_12968.pdf?sequence=1&amp;isAllowed=y">3</a>] by people who have looked at Monae&rsquo;s work more carefully than I have, and have more interesting things to say about it.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -327,7 +333,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        Within the context of Metropolis, one of the (many) questions Monae raises is at the intersection of technology, humanity and art, and this project was an attempt to programmatically generate art that evokes real human emotion. To understand what I was trying to capture, check out <a href="http://cindi.in">the page itself</a>.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -339,7 +345,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        <img src="../img/CINDI2.png" alt="A rendering of the CINDI program">
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -351,7 +357,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        This was an expansion of the work I did in in <a href="../voat">VOAT</a> - rather than using squares with a predictible and pre-defined set of ports to connect, I use polygons with arbitrarily defined sub-regions. The results are wild: extreme variance, never dull.  To see how some of these were generated, check out the tesselation photos below.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -363,7 +369,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        TODO(gradyward) Add tesselation breakdown photos.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -375,7 +381,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        I hope to do more work in this space, and to keep thinking through where the root of emotion and power of art lies. From a technical perspective, I have a long backlog of features I want to build: I would ideally like to encorporate images, create non-fluid spacefilling, create classifications for common aesthetic patterns and entropy filters to filter out boring or repetitive generations. From an artistic perspective, I&rsquo;m not yet satisfied with this project - it has only begun to scratch the surface of what I think is possible.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -387,7 +393,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        I hope this project goes somewhere, but I need time to work on it.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -399,19 +405,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
-      </div>
-      <div aria-hidden="true" class="right vertical"></div>
-      <div aria-hidden="true" class="horizontal"></div>
-    </div>
-  
-
-
-  
-    <div class="decorated-box">
-      <div aria-hidden="true" class="left vertical"></div>
-      <div class="decorated-content">
-        </p>
+        <img src="../img/cindi.png" alt="A rendering of the CINDI program">
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -431,13 +425,13 @@ img {
 <script>
   var wrapper = document.getElementById("width-wrapper");
   wrapper.classList.remove("pre-transition");
-  
+
   var EMPTY = "empty";
-  
+
   function randomInitialAssignment() {
     return ["red", "black", "yellow", "blue", EMPTY, EMPTY, EMPTY, EMPTY]
   }
-  
+
   function couldSwapPair(assignment, from, to) {
     if (from < 4 == to < 4){
       return false;
@@ -447,7 +441,7 @@ img {
     }
     return true;
   }
-  
+
   function randomPairToSwap(assignment) {
     var fromIndexOfPopulated = Math.floor(4 * Math.random());
     var fromIndex = -1;
@@ -479,11 +473,11 @@ img {
       }
     }
     return {
-      "origin": fromIndex, 
+      "origin": fromIndex,
       "destination": toIndex
     };
   }
-  
+
   function createParagraphAssignments(numParagraphs) {
     var paragraphAssignments = [];
     paragraphAssignments[0] = randomInitialAssignment();
@@ -503,21 +497,21 @@ img {
     }
     paragraphAssignments[numParagraphs-1].origin = -1;
     paragraphAssignments[numParagraphs-1].destination = -1;
-    
+
     return paragraphAssignments;
   }
-  
+
   function isInBetween(a, b, c){
     return ((a < b) == (b < c));
   }
-  
+
   function assignAssignmentToParagraphBox(lastAssignment, assignment, box) {
-  
+
     var bottomSidebar = box.getElementsByClassName('horizontal')[0];
     var classesForBottom = assignment[assignment.origin] + " from-" + assignment.origin + " to-" + assignment.destination;
     var bottomSidebarHtml = "<div class=\"" + classesForBottom + "\"></div>";
     bottomSidebar.innerHTML = bottomSidebarHtml;
-  
+
     var leftSidebarHtml = "";
     for (var i = 0; i < 4; i++) {
       if (assignment[i] !== EMPTY) {
@@ -533,7 +527,7 @@ img {
     }
     var leftSidebar = box.getElementsByClassName('left')[0];
     leftSidebar.innerHTML = leftSidebarHtml;
-    
+
     var rightSidebarHtml = "";
     for (var i = 4; i < 8; i++) {
       if (assignment[i] !== EMPTY) {

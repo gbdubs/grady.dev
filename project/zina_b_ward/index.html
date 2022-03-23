@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-  <title>Grady Berry Ward | Zina Ward Website</title>
+  <title>grady.dev | Zina Ward Website</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -13,6 +13,9 @@
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: Helvetica, sans-serif;
   line-height: 1.5rem;
 }
@@ -153,7 +156,7 @@ img {
 .from-6 { right: 3rem; }
 .from-7 { right: 1rem; }
 
-.from-3.to-4, 
+.from-3.to-4,
 .from-4.to-3 {
     width: Calc(100% - 14rem);
 }
@@ -240,7 +243,7 @@ img {
   html {
     font-size: 6px;
   }
-  
+
   .decorated-content {
     font-size: 3rem;
     line-height: 3.5rem;
@@ -276,10 +279,13 @@ img {
 
 
   
+
+
+  
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        Over christmas break, I got frusturated with my sister’s incredibly specific asks from a wordpress template, so I <a href="http://zinabward.com/index.html">built her a website instead</a>.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -291,7 +297,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        After a brief period of haggling over the acceptable level of bells and whilstles (I wanted more), we came to a resonable design consensus, and I implemented the site and fine tuned it with its owner in about five hours.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -303,19 +309,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
-      </div>
-      <div aria-hidden="true" class="right vertical"></div>
-      <div aria-hidden="true" class="horizontal"></div>
-    </div>
-  
-
-
-  
-    <div class="decorated-box">
-      <div aria-hidden="true" class="left vertical"></div>
-      <div class="decorated-content">
-        </p>
+        Scroll down past the menu to see some fun. At some point I&rsquo;ll learn non-vanilla JavaScript, but it wasn&rsquo;t for this project.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -335,13 +329,13 @@ img {
 <script>
   var wrapper = document.getElementById("width-wrapper");
   wrapper.classList.remove("pre-transition");
-  
+
   var EMPTY = "empty";
-  
+
   function randomInitialAssignment() {
     return ["red", "black", "yellow", "blue", EMPTY, EMPTY, EMPTY, EMPTY]
   }
-  
+
   function couldSwapPair(assignment, from, to) {
     if (from < 4 == to < 4){
       return false;
@@ -351,7 +345,7 @@ img {
     }
     return true;
   }
-  
+
   function randomPairToSwap(assignment) {
     var fromIndexOfPopulated = Math.floor(4 * Math.random());
     var fromIndex = -1;
@@ -383,11 +377,11 @@ img {
       }
     }
     return {
-      "origin": fromIndex, 
+      "origin": fromIndex,
       "destination": toIndex
     };
   }
-  
+
   function createParagraphAssignments(numParagraphs) {
     var paragraphAssignments = [];
     paragraphAssignments[0] = randomInitialAssignment();
@@ -407,21 +401,21 @@ img {
     }
     paragraphAssignments[numParagraphs-1].origin = -1;
     paragraphAssignments[numParagraphs-1].destination = -1;
-    
+
     return paragraphAssignments;
   }
-  
+
   function isInBetween(a, b, c){
     return ((a < b) == (b < c));
   }
-  
+
   function assignAssignmentToParagraphBox(lastAssignment, assignment, box) {
-  
+
     var bottomSidebar = box.getElementsByClassName('horizontal')[0];
     var classesForBottom = assignment[assignment.origin] + " from-" + assignment.origin + " to-" + assignment.destination;
     var bottomSidebarHtml = "<div class=\"" + classesForBottom + "\"></div>";
     bottomSidebar.innerHTML = bottomSidebarHtml;
-  
+
     var leftSidebarHtml = "";
     for (var i = 0; i < 4; i++) {
       if (assignment[i] !== EMPTY) {
@@ -437,7 +431,7 @@ img {
     }
     var leftSidebar = box.getElementsByClassName('left')[0];
     leftSidebar.innerHTML = leftSidebarHtml;
-    
+
     var rightSidebarHtml = "";
     for (var i = 4; i < 8; i++) {
       if (assignment[i] !== EMPTY) {

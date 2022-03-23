@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-  <title>Grady Berry Ward | Birth Certificate Scraping</title>
+  <title>grady.dev | Birth Certificate Scraping</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -13,6 +13,9 @@
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: Helvetica, sans-serif;
   line-height: 1.5rem;
 }
@@ -153,7 +156,7 @@ img {
 .from-6 { right: 3rem; }
 .from-7 { right: 1rem; }
 
-.from-3.to-4, 
+.from-3.to-4,
 .from-4.to-3 {
     width: Calc(100% - 14rem);
 }
@@ -240,7 +243,7 @@ img {
   html {
     font-size: 6px;
   }
-  
+
   .decorated-content {
     font-size: 3rem;
     line-height: 3.5rem;
@@ -276,10 +279,13 @@ img {
 
 
   
+
+
+  
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        Professor Linda Bui is a gem who really helped me enjoy the last class of my economics degree at Brandeis.  So when she asked me if I could scrape all birth certificates from 1900 to 1950 in Massachusetts, I said “maybe”, rather than “no”.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -291,7 +297,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        I ended up using Matlab to do OCR with a combination of models for segmenting the certificates, and extracting the text for each field.  The forms were either hand written or were machine printed, and I generated seperate models for each.  The full accuracy of the system (having zero errors on the 21 fields) was about 40%.  80% got 18 of 21 fields correct.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -303,7 +309,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        Ultimately the algorithm I designed was too resource intensive to be runnable on the full set of data. I hadn’t considered that using a proprietary codebase like Matlab would have the drawback that I wouldn’t be able to scale it on rented server time.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -315,7 +321,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        I ended up passing this project off to a research assistant of Prof. Bui’s, and I don’t know what ended up happening to it.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -327,19 +333,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
-      </div>
-      <div aria-hidden="true" class="right vertical"></div>
-      <div aria-hidden="true" class="horizontal"></div>
-    </div>
-  
-
-
-  
-    <div class="decorated-box">
-      <div aria-hidden="true" class="left vertical"></div>
-      <div class="decorated-content">
-        </p>
+        One of the main things I learned from the project was that choice of the software the forms the building blocks of your system really matters. If you choose correctly, you are able to reap benefits in both implementation and scale, and if you choose for short term gains (i.e. Matlab&rsquo;s solid OCR library), you might end up paying the cost later.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -359,13 +353,13 @@ img {
 <script>
   var wrapper = document.getElementById("width-wrapper");
   wrapper.classList.remove("pre-transition");
-  
+
   var EMPTY = "empty";
-  
+
   function randomInitialAssignment() {
     return ["red", "black", "yellow", "blue", EMPTY, EMPTY, EMPTY, EMPTY]
   }
-  
+
   function couldSwapPair(assignment, from, to) {
     if (from < 4 == to < 4){
       return false;
@@ -375,7 +369,7 @@ img {
     }
     return true;
   }
-  
+
   function randomPairToSwap(assignment) {
     var fromIndexOfPopulated = Math.floor(4 * Math.random());
     var fromIndex = -1;
@@ -407,11 +401,11 @@ img {
       }
     }
     return {
-      "origin": fromIndex, 
+      "origin": fromIndex,
       "destination": toIndex
     };
   }
-  
+
   function createParagraphAssignments(numParagraphs) {
     var paragraphAssignments = [];
     paragraphAssignments[0] = randomInitialAssignment();
@@ -431,21 +425,21 @@ img {
     }
     paragraphAssignments[numParagraphs-1].origin = -1;
     paragraphAssignments[numParagraphs-1].destination = -1;
-    
+
     return paragraphAssignments;
   }
-  
+
   function isInBetween(a, b, c){
     return ((a < b) == (b < c));
   }
-  
+
   function assignAssignmentToParagraphBox(lastAssignment, assignment, box) {
-  
+
     var bottomSidebar = box.getElementsByClassName('horizontal')[0];
     var classesForBottom = assignment[assignment.origin] + " from-" + assignment.origin + " to-" + assignment.destination;
     var bottomSidebarHtml = "<div class=\"" + classesForBottom + "\"></div>";
     bottomSidebar.innerHTML = bottomSidebarHtml;
-  
+
     var leftSidebarHtml = "";
     for (var i = 0; i < 4; i++) {
       if (assignment[i] !== EMPTY) {
@@ -461,7 +455,7 @@ img {
     }
     var leftSidebar = box.getElementsByClassName('left')[0];
     leftSidebar.innerHTML = leftSidebarHtml;
-    
+
     var rightSidebarHtml = "";
     for (var i = 4; i < 8; i++) {
       if (assignment[i] !== EMPTY) {

@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-  <title>Grady Berry Ward | Civil Grand Jury</title>
+  <title>grady.dev | Civil Grand Jury</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -13,6 +13,9 @@
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: Helvetica, sans-serif;
   line-height: 1.5rem;
 }
@@ -153,7 +156,7 @@ img {
 .from-6 { right: 3rem; }
 .from-7 { right: 1rem; }
 
-.from-3.to-4, 
+.from-3.to-4,
 .from-4.to-3 {
     width: Calc(100% - 14rem);
 }
@@ -240,7 +243,7 @@ img {
   html {
     font-size: 6px;
   }
-  
+
   .decorated-content {
     font-size: 3rem;
     line-height: 3.5rem;
@@ -276,10 +279,13 @@ img {
 
 
   
+
+
+  
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        In it&rsquo;s state constitution, California defines a unique institution for each county called the <em>Civil Grand Jury</em>, which is tasked with overseeing the effectiveness and efficiency of the county&rsquo;s governance.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -291,7 +297,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        I volunteered to be on <a href="http://civilgrandjury.sfgov.org/">San Francisco&rsquo;s Civil Grand Jury</a> for the 2017-18 term, and began working with the Jury in September of 2017.  Though all jury proceedings operate under confidentiality, I can say that I have chaired up an investigative committee, and was one of the authors of one of the grand jury reports published in July of 2018.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -303,7 +309,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
+        You can find these reports <a href="http://civilgrandjury.sfgov.org/report.html">here</a>.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -315,19 +321,7 @@ img {
     <div class="decorated-box">
       <div aria-hidden="true" class="left vertical"></div>
       <div class="decorated-content">
-        </p>
-      </div>
-      <div aria-hidden="true" class="right vertical"></div>
-      <div aria-hidden="true" class="horizontal"></div>
-    </div>
-  
-
-
-  
-    <div class="decorated-box">
-      <div aria-hidden="true" class="left vertical"></div>
-      <div class="decorated-content">
-        </p>
+        I learned so much from this experience: managing a team of folks with wildly different skillsets and focuses, doing meticulously detailed researching and interviewing, and having a large number of tasks to juggle at every moment.
       </div>
       <div aria-hidden="true" class="right vertical"></div>
       <div aria-hidden="true" class="horizontal"></div>
@@ -347,13 +341,13 @@ img {
 <script>
   var wrapper = document.getElementById("width-wrapper");
   wrapper.classList.remove("pre-transition");
-  
+
   var EMPTY = "empty";
-  
+
   function randomInitialAssignment() {
     return ["red", "black", "yellow", "blue", EMPTY, EMPTY, EMPTY, EMPTY]
   }
-  
+
   function couldSwapPair(assignment, from, to) {
     if (from < 4 == to < 4){
       return false;
@@ -363,7 +357,7 @@ img {
     }
     return true;
   }
-  
+
   function randomPairToSwap(assignment) {
     var fromIndexOfPopulated = Math.floor(4 * Math.random());
     var fromIndex = -1;
@@ -395,11 +389,11 @@ img {
       }
     }
     return {
-      "origin": fromIndex, 
+      "origin": fromIndex,
       "destination": toIndex
     };
   }
-  
+
   function createParagraphAssignments(numParagraphs) {
     var paragraphAssignments = [];
     paragraphAssignments[0] = randomInitialAssignment();
@@ -419,21 +413,21 @@ img {
     }
     paragraphAssignments[numParagraphs-1].origin = -1;
     paragraphAssignments[numParagraphs-1].destination = -1;
-    
+
     return paragraphAssignments;
   }
-  
+
   function isInBetween(a, b, c){
     return ((a < b) == (b < c));
   }
-  
+
   function assignAssignmentToParagraphBox(lastAssignment, assignment, box) {
-  
+
     var bottomSidebar = box.getElementsByClassName('horizontal')[0];
     var classesForBottom = assignment[assignment.origin] + " from-" + assignment.origin + " to-" + assignment.destination;
     var bottomSidebarHtml = "<div class=\"" + classesForBottom + "\"></div>";
     bottomSidebar.innerHTML = bottomSidebarHtml;
-  
+
     var leftSidebarHtml = "";
     for (var i = 0; i < 4; i++) {
       if (assignment[i] !== EMPTY) {
@@ -449,7 +443,7 @@ img {
     }
     var leftSidebar = box.getElementsByClassName('left')[0];
     leftSidebar.innerHTML = leftSidebarHtml;
-    
+
     var rightSidebarHtml = "";
     for (var i = 4; i < 8; i++) {
       if (assignment[i] !== EMPTY) {
