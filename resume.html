@@ -23,8 +23,17 @@
 <div class="section experience">
   <h2 class="section-header">Experience</h2>
   <div class="entry">
+    <h3 class="entry-title">Engineer / Everything</h3>
+    <div class="entry-dates">2021-07 to Present</div>
+    <div class="entry-location">Boulder, CO</div>
+    <div class="entry-subtitle">Silicon Ally</div>
+    <p class="entry-body">
+    Building software to help effective nonprofits scale their impact. One-half of this two person operation - check us out at <a href="https://siliconally.org">SiliconAlly.org</a>.
+    </p>
+  </div>
+  <div class="entry">
     <h3 class="entry-title">Senior Software Engineer</h3>
-    <div class="entry-dates">2020-09 to Present</div>
+    <div class="entry-dates">2020-09 to 2022-01</div>
     <div class="entry-location">Boulder, CO</div>
     <div class="entry-subtitle">Google</div>
     <p class="entry-body">
@@ -137,12 +146,16 @@ body {
     margin: 0;
 }
 
-.identity-contact-details > h3 {
+.identity-contact-details > div {
     display: inline-block;
     margin: 0;
     border-left: 1rem solid;
     padding: .5rem;
     margin-bottom: 1rem;
+}
+
+.identity-contact-details .identity-website {
+  margin-left: -1rem;
 }
 
 .section.experience  {
@@ -168,21 +181,13 @@ body {
   margin: 0;
   border-width: 0 0 0 1rem;
   border-style: solid;
-  padding: .5rem;
+  padding: 1rem .5rem;
 }
 
 .identity-contact-details {
     display: inline-block;
     border-width: 1rem 0 0 1rem;
     border-style: solid;
-}
-
-.identity-contact-details > .identity-website {
-    margin-left: -1rem;
-}
-
-.identity {
-    margin-top: -1rem;
 }
 
 .entry-body {
@@ -230,7 +235,8 @@ body {
 }
 
 .section.side-projects::before,
-.section.side-projects::after {
+.section.side-projects::after,
+.identity::after {
   content: "";
   display: block;
   width: 1rem;
@@ -239,9 +245,10 @@ body {
 }
 
 .section.side-projects::before {
-  top: -1rem;
-  left: -1rem;
-  background: black;
+    top: -1rem;
+    left: Calc(400px - 50vw + 0.5rem);
+    background: black;
+    width: Calc(50vw - 400px - 0.5rem);
 }
 
 .section.side-projects::after {
@@ -250,13 +257,50 @@ body {
   background: #1444b1;
 }
 
+.identity::after {
+    width: Calc(400px - 15.5rem);
+    background: white;
+    left: Calc(15.5rem - 400px);
+    bottom: -1rem;
+}
+
+.identity {
+  position: relative;
+}
+
 .section-header {
     display: inline-block;
     margin: 0;
 }
 
 a {
-    color: blue;
+    color: rgb(20, 68, 177);
+}
+.sr-only {
+  display: none;
+}
+#main {
+  max-width: 800px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+@media only screen and (max-width: 560px) {
+  .identity-contact-details > div {
+    border-bottom: 1rem solid black;
+    border-left: none;
+    padding: .5rem 1rem;
+    margin: 0 100% 0 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .identity-linkedin {
+      border-bottom: none !important;
+  }
 }
 </style>
 </body>
