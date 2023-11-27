@@ -5,11 +5,7 @@
     <link>https://grady.dev/tags/functions/</link>
     <description>Recent content in functions on grady.dev</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://grady.dev/tags/functions/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://grady.dev/tags/functions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://grady.dev/project/grady_in/</link>
