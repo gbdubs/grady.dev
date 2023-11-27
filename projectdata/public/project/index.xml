@@ -5,11 +5,7 @@
     <link>https://grady.dev/project/</link>
     <description>Recent content in Projects on grady.dev</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://grady.dev/project/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://grady.dev/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://grady.dev/project/3_sat/</link>
@@ -18,6 +14,16 @@
       <guid>https://grady.dev/project/3_sat/</guid>
       <description>Haven’t you ever looked at SAT (the problem of finding a solution to an arbitrary expression of boolean predicates), and, realizing it can be reduced to 3-SAT, thought it must be solvable in sub-polynomial time? My intuition says so too, but this is clearly a function of naievite.
 The thing that struck me about SAT generally is that it is fundamentally trying to explore a bunch of different roads at once, and reporting back the ones that don’t hit dead ends.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://grady.dev/project/abound/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://grady.dev/project/abound/</guid>
+      <description>I like to build algorithmic art. The piece of it I find the most satisfying is the tinkering. You create some code to create an image from some settings, and then you play around with the settings to find the most satisfying combinations of inputs. This process isn&amp;rsquo;t technical, it&amp;rsquo;s just an expression of pure exploration and aesthetic judgement.
+To allow everyone the joy of this kind of tinkering and discovery, a friend and I built ABOUND.</description>
     </item>
     
     <item>
@@ -99,7 +105,7 @@ Monae is a magician, a siren, an entertainer, a theorist, a historian, and a vis
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://grady.dev/project/clock/</guid>
-      <description>&amp;ldquo;Let&amp;rsquo;s go say goodbye.&amp;quot;, &amp;ldquo;To the house?&amp;quot;, &amp;ldquo;To the house.&amp;rdquo;
+      <description>&amp;ldquo;Let&amp;rsquo;s go say goodbye.&amp;rdquo;, &amp;ldquo;To the house?&amp;rdquo;, &amp;ldquo;To the house.&amp;rdquo;
 It&amp;rsquo;s dark inside, the fading day is blue, filtered in. The bathroom light a contrasting a vibrant yellow as he goes for a final pee.
 I&amp;rsquo;m glued to the wall, seeing the house spotless for the first time since it was last a house.
 We&amp;rsquo;d made it more. We&amp;rsquo;d chosen mistmatched glasses, argued over the layout of the couch, compromised, built furniture to accomodate the compromise.</description>
@@ -172,6 +178,16 @@ If you just want to create lambdas, the bash precursor to this project is up and
       <guid>https://grady.dev/project/flux/</guid>
       <description>TL;DR: Check out this data intensive (not recommended for mobile) looping pattern of an attractor with a multi-dimensional parameter orbit.
 I saw a blog post by an extremely talented programmer, and was suprised (as he was) to find that there was a natural symmetry to the patterns he was describing. However, in digging into his code, I found that it was not actually symmetrical, but he had just made a very understandable typo which introduced this artificial symmetry.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://grady.dev/project/fof/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://grady.dev/project/fof/</guid>
+      <description>When I worked in Counter-Abuse at Google, I found the largest issue we faced wasn&amp;rsquo;t malicious users, but poorly thought out product decisions, and business model constraints. It&amp;rsquo;s very hard to &amp;ldquo;fix&amp;rdquo; problems on platforms when you are constrained to cleanup, and can&amp;rsquo;t try to change why things keep spilling.
+So when the Integrity Institutute (a small thinktank on content moderation issues, which I&amp;rsquo;ve been a member of for several years) sent out applications for visiting fellowships, I figured it was my chance to try to do something about it.</description>
     </item>
     
     <item>
@@ -370,6 +386,16 @@ The result is the site you see before you - with a detailed portfolio section, s
       <guid>https://grady.dev/project/widmanst%C3%A4tten/</guid>
       <description>When visiting the Smithsonian Natural History Museum, I saw the inside of a meteorite, stained and polished to reveal a beautiful pattern. Several months later, I remembered it while looking through some photos and decided to learn more about it and try to reproduce it.
 Here&amp;rsquo;s what I learned from Wikipedia: The meteorites that display this pattern are comprised of of two Iron-Nickel alloys, Kamacite and Taenite. This pattern is found in metiorites called Octahidrites, so named because the pattern is actually a result of a crystal structure of Taenite&amp;rsquo;s crystal latice, which is hexoctahedral (cubic) in structure.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://grady.dev/project/wingspan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://grady.dev/project/wingspan/</guid>
+      <description>One of my favorite board games is Wingspan - an engine building game where you collect different species of birds. The game instilled an appreciation for our avian friends in me, and was my introduction to the wonderful world of birding.
+As anyone who loves something desperately, the flaws in the wingspan game were more obvious to me than to most. The nest types were often incorrect. The clutch sizes capped out at six.</description>
     </item>
     
     <item>

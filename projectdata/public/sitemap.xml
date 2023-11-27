@@ -1,333 +1,181 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://grady.dev/project/3_sat/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://grady.dev/project/abound/</loc>
+  </url><url>
     <loc>https://grady.dev/project/ai_science_test/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/bananagrams/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/birth_certificate_scraping/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/calc_u/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/cgj/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/chase/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/cindi/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/clock/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/creditworthy/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/draw_me_css/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/dumb_db/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/ecology/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/euclid/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/find_a_clinic/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/flux/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://grady.dev/project/fof/</loc>
+  </url><url>
     <loc>https://grady.dev/project/golog/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/grady_docs/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/grady_in/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/hard_scrabble/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/in_line/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/narratives/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/parley/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/senior_thesis/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/shoe_rack/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/shoe_rack_2/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/sniff/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/terry/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/trees/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/voat/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/voat_2/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/ward_lab/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/website_v1/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/website_v2/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/website_v3/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/widmanst%C3%A4tten/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://grady.dev/project/wingspan/</loc>
+  </url><url>
     <loc>https://grady.dev/project/wsmd/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/zina_b_ward/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/4th-ammendemnt/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/algorithms/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/app-engine/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/appengine/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/art/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/aws/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/backend/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/c/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/cgj/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/collaborative/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/css/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/design/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/functional/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/functions/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/golang/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/government/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/hugo/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/java/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/javascript/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/law/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/loss/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/love/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/management/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/matlab/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/ml/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/mongodb/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/nodejs/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://grady.dev/tags/nuxt/</loc>
+  </url><url>
     <loc>https://grady.dev/tags/ocr/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/physics/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://grady.dev/tags/platform/</loc>
+  </url><url>
+    <loc>https://grady.dev/tags/policy/</loc>
+  </url><url>
     <loc>https://grady.dev/tags/privacy/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/project/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/python/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/scraping/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/serverless/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/tensorflow/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/theory/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/ux/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/web/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/web-design/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/webapp/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://grady.dev/tags/woodworking/</loc>
   </url>
-  
 </urlset>

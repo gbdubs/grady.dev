@@ -5,11 +5,7 @@
     <link>https://grady.dev/tags/theory/</link>
     <description>Recent content in theory on grady.dev</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://grady.dev/tags/theory/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://grady.dev/tags/theory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://grady.dev/project/3_sat/</link>
