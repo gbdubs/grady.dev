@@ -26,3 +26,5 @@ backing patterns and algorithms (not just the original one), implement inheritan
 However, given that this is a lower priority than some other projects I've been working on recently, It's getting pushed to the wayside. I'll update this site when VOAT App is ready for public consumption.
 
 ![One of my favorites - is it a grid or a funky groove? Oh it's both my friend, it's both.](../img/voat_2_3.png)
+
+UPDATE (2023): You can now play around with many derivative algorithms (and see the many beautiful images created through them) at [ABOUND.art](https://abound.art).

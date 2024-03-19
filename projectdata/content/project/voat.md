@@ -30,4 +30,4 @@ The results were so varried and interesting that I had to share them.  Each had 
 
 I ended up publishing a set of them as “VOATCSS” - Variations on a theme - a reference to Edward Elgar’s piece by the same name, where he paints portraits of his close friends through the stroke of a common musical theme. Similarly, each of the components of this collection were given a color scheme and parameterization that reminds me of a person that I cared deeply for.
 
-
+UPDATE (2023): You can now play around with many derivative algorithms (and see the many beautiful images created through them) at [ABOUND.art](https://abound.art).

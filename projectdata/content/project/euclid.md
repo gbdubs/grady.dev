@@ -36,3 +36,5 @@ Two of my all time favorite books are "Measurement" by Lockheart and "The Elemen
 ![More of that, but filled in and with colors.](../img/euclid_10.svg)
 
 This (along with CINDI) is a project I expect will continue to yield fruit for many years.
+
+UPDATE (2023): You can now play around with many derivative algorithms (and see the many beautiful images created through them) at [ABOUND.art](https://abound.art).
