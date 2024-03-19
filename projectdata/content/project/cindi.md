@@ -31,3 +31,5 @@ I hope to do more work in this space, and to keep thinking through where the roo
 I hope this project goes somewhere, but I need time to work on it.
 
 ![A rendering of the CINDI program](../img/cindi.png)
+
+UPDATE (2023): You can now play around with many derivative algorithms (and see the many beautiful images created through them) at [ABOUND.art](https://abound.art).
