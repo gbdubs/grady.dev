@@ -9,3 +9,5 @@ mkdir ../project
 mkdir ../project/img
 cp -R public/project/* ../project
 cp -R public/img/* ../project/img
+
+rm -R public
