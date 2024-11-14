@@ -1,30 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>woodworking on grady.dev</title>
+    <title>Woodworking on Grady.dev</title>
     <link>https://grady.dev/tags/woodworking/</link>
-    <description>Recent content in woodworking on grady.dev</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://grady.dev/tags/woodworking/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in Woodworking on Grady.dev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://grady.dev/tags/woodworking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://grady.dev/project/shoe_rack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/shoe_rack/</guid>
-      <description>My partner and I really both like building things, which makes anniversaries both an occasion for expression of caring through mutal gift giving, and a bit of a self-indulgent excuse to carve out time to make stuff. It only took him noting once that the width of our shoe rack was exactly 2.5 shoes for me to think through how I could build something better.
-Over weeks of sketches, a trip to IKEA, and a trip to John Houston&amp;rsquo;s Kennebunkport workshop (unrelated), I was inspired by the idea of sneaky intersections - of furniture that has non-standard joints and that provides standard functionality in non-standard ways.</description>
+      <description>My partner and I really both like building things, which makes anniversaries both an occasion for expression of caring through mutal gift giving, and a bit of a self-indulgent excuse to carve out time to make stuff. It only took him noting once that the width of our shoe rack was exactly 2.5 shoes for me to think through how I could build something better.&#xA;Over weeks of sketches, a trip to IKEA, and a trip to John Houston&amp;rsquo;s Kennebunkport workshop (unrelated), I was inspired by the idea of sneaky intersections - of furniture that has non-standard joints and that provides standard functionality in non-standard ways.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/shoe_rack_2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/shoe_rack_2/</guid>
-      <description>After seeing the shoe rack I made for my partner, my sister asked for one for her apartment as a Christmas gift. More precisely, I asked her what I could make her and she allowed me to make another shoe rack.
-The major design constraint on this project was that the end result had to be transported from Colorado to Pennsylvania, which as I figured out by looking at shipping costs, would be fairly significant if the piece was fully assembled when shipped.</description>
+      <description>After seeing the shoe rack I made for my partner, my sister asked for one for her apartment as a Christmas gift. More precisely, I asked her what I could make her and she allowed me to make another shoe rack.&#xA;The major design constraint on this project was that the end result had to be transported from Colorado to Pennsylvania, which as I figured out by looking at shipping costs, would be fairly significant if the piece was fully assembled when shipped.</description>
     </item>
-    
   </channel>
 </rss>

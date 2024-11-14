@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>aws on grady.dev</title>
+    <title>Aws on Grady.dev</title>
     <link>https://grady.dev/tags/aws/</link>
-    <description>Recent content in aws on grady.dev</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://grady.dev/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in Aws on Grady.dev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://grady.dev/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://grady.dev/project/grady_docs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/grady_docs/</guid>
-      <description>I one time made the mistake of looking at how the Google Docs DOM is structured. I wondered if I could make a functional front end that looked similar without half a meg of divs, so I tried!
-Then I wrote a backend for it (node-js, socketio), and got the project to the point where two users could edit the document together with sub-second lag.
-The underlying data model for this was not only flawed, it is abysmal.</description>
+      <description>I one time made the mistake of looking at how the Google Docs DOM is structured. I wondered if I could make a functional front end that looked similar without half a meg of divs, so I tried!&#xA;Then I wrote a backend for it (node-js, socketio), and got the project to the point where two users could edit the document together with sub-second lag.&#xA;The underlying data model for this was not only flawed, it is abysmal.</description>
     </item>
-    
   </channel>
 </rss>

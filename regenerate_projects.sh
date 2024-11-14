@@ -4,7 +4,6 @@ cd ~/gbdubs/grady.dev/projectdata
 
 hugo
 
-
 rm -R ../project/
 mkdir ../project
 mkdir ../project/img

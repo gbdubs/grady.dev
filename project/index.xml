@@ -1,441 +1,319 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on grady.dev</title>
+    <title>Projects on Grady.dev</title>
     <link>https://grady.dev/project/</link>
-    <description>Recent content in Projects on grady.dev</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://grady.dev/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in Projects on Grady.dev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://grady.dev/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://grady.dev/project/3_sat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/3_sat/</guid>
-      <description>Haven’t you ever looked at SAT (the problem of finding a solution to an arbitrary expression of boolean predicates), and, realizing it can be reduced to 3-SAT, thought it must be solvable in sub-polynomial time? My intuition says so too, but this is clearly a function of naievite.
-The thing that struck me about SAT generally is that it is fundamentally trying to explore a bunch of different roads at once, and reporting back the ones that don’t hit dead ends.</description>
+      <description>Haven’t you ever looked at SAT (the problem of finding a solution to an arbitrary expression of boolean predicates), and, realizing it can be reduced to 3-SAT, thought it must be solvable in sub-polynomial time? My intuition says so too, but this is clearly a function of naievite.&#xA;The thing that struck me about SAT generally is that it is fundamentally trying to explore a bunch of different roads at once, and reporting back the ones that don’t hit dead ends.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/abound/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/abound/</guid>
-      <description>I like to build algorithmic art. The piece of it I find the most satisfying is the tinkering. You create some code to create an image from some settings, and then you play around with the settings to find the most satisfying combinations of inputs. This process isn&amp;rsquo;t technical, it&amp;rsquo;s just an expression of pure exploration and aesthetic judgement.
-To allow everyone the joy of this kind of tinkering and discovery, a friend and I built ABOUND.</description>
+      <description>I like to build algorithmic art. The piece of it I find the most satisfying is the tinkering. You create some code to create an image from some settings, and then you play around with the settings to find the most satisfying combinations of inputs. This process isn&amp;rsquo;t technical, it&amp;rsquo;s just an expression of pure exploration and aesthetic judgement.&#xA;To allow everyone the joy of this kind of tinkering and discovery, a friend and I built ABOUND.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/ai_science_test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/ai_science_test/</guid>
-      <description>This project is one of my least exciting.
-For an ML projectin in my AI class, we were assigned a task from Kaggle - answering multiple choice questions from a ninth grade science test.
-Tensor flow had been released a week beforehand, and our team used it out of the box (with slight model refactoring) to train an ML model for the competition.
-Ours did really well - top 10!</description>
+      <description>This project is one of my least exciting.&#xA;For an ML projectin in my AI class, we were assigned a task from Kaggle - answering multiple choice questions from a ninth grade science test.&#xA;Tensor flow had been released a week beforehand, and our team used it out of the box (with slight model refactoring) to train an ML model for the competition.&#xA;Ours did really well - top 10!</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/bananagrams/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/bananagrams/</guid>
-      <description>In 2016, when I began working at Google, I started having breakfast with the same group of folks every morning - Chris, Brett, Andrew and Brandon. All of us being nerds, techno-optimists and deeply competitive, at one point Brandon described having a competition to see who could write the best AI to play the game bananagrams.
-My productivity dipped precipitously over the next few days as I considered how to destroy my good friends in tiled combat.</description>
+      <description>In 2016, when I began working at Google, I started having breakfast with the same group of folks every morning - Chris, Brett, Andrew and Brandon. All of us being nerds, techno-optimists and deeply competitive, at one point Brandon described having a competition to see who could write the best AI to play the game bananagrams.&#xA;My productivity dipped precipitously over the next few days as I considered how to destroy my good friends in tiled combat.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/birth_certificate_scraping/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/birth_certificate_scraping/</guid>
-      <description>Professor Linda Bui is a gem who really helped me enjoy the last class of my economics degree at Brandeis. So when she asked me if I could scrape all birth certificates from 1900 to 1950 in Massachusetts, I said “maybe”, rather than “no”.
-I ended up using Matlab to do OCR with a combination of models for segmenting the certificates, and extracting the text for each field. The forms were either hand written or were machine printed, and I generated seperate models for each.</description>
+      <description>Professor Linda Bui is a gem who really helped me enjoy the last class of my economics degree at Brandeis. So when she asked me if I could scrape all birth certificates from 1900 to 1950 in Massachusetts, I said “maybe”, rather than “no”.&#xA;I ended up using Matlab to do OCR with a combination of models for segmenting the certificates, and extracting the text for each field. The forms were either hand written or were machine printed, and I generated seperate models for each.</description>
     </item>
-    
+    <item>
+      <title></title>
+      <link>https://grady.dev/project/board_games/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/project/board_games/</guid>
+      <description>I love making board games for friends and family as gifts, often themed around a shared interest or an inside joke. While these were originally seperate posts, I&amp;rsquo;ve condensed them here for brevity.&#xA;2024 - FRONTIER I (and my boyfriend) both have a love-hate relationship with Frontier Airlines. The fares are impossibly cheap, and if you have their credit card and Discount Den memberhsip, things can be legitimately a fantastic bargin.</description>
+    </item>
     <item>
       <title></title>
       <link>https://grady.dev/project/calc_u/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/calc_u/</guid>
-      <description>I frontloaded my classes to heavily at Brandeis, and coming into my Junior Spring Semester, I had completed the majority of the coursework requisite for my majors. During that semester, as most of my friends were abroad, I decided to work on a side project for the semester, accompanied only by a French class requisite for my graduation. This was one of the best decisions of my life.
-CalcU emerged from a need I saw when tutoring.</description>
+      <description>I frontloaded my classes to heavily at Brandeis, and coming into my Junior Spring Semester, I had completed the majority of the coursework requisite for my majors. During that semester, as most of my friends were abroad, I decided to work on a side project for the semester, accompanied only by a French class requisite for my graduation. This was one of the best decisions of my life.&#xA;CalcU emerged from a need I saw when tutoring.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/cgj/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/cgj/</guid>
-      <description>In it&amp;rsquo;s state constitution, California defines a unique institution for each county called the Civil Grand Jury, which is tasked with overseeing the effectiveness and efficiency of the county&amp;rsquo;s governance.
-I volunteered to be on San Francisco&amp;rsquo;s Civil Grand Jury for the 2017-18 term, and began working with the Jury in September of 2017. Though all jury proceedings operate under confidentiality, I can say that I have chaired up an investigative committee, and was one of the authors of one of the grand jury reports published in July of 2018.</description>
+      <description>In it&amp;rsquo;s state constitution, California defines a unique institution for each county called the Civil Grand Jury, which is tasked with overseeing the effectiveness and efficiency of the county&amp;rsquo;s governance.&#xA;I volunteered to be on San Francisco&amp;rsquo;s Civil Grand Jury for the 2017-18 term, and began working with the Jury in September of 2017. Though all jury proceedings operate under confidentiality, I can say that I have chaired up an investigative committee, and was one of the authors of one of the grand jury reports published in July of 2018.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/chase/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/chase/</guid>
-      <description>When I was taking his class of US foreign economic policy, Professor Kerry Chase asked me to build him a website, which I did.
-I must say that the asthetic is way too “1982” for me, but hey, you have to build what the client wants!</description>
+      <description>When I was taking his class of US foreign economic policy, Professor Kerry Chase asked me to build him a website, which I did.&#xA;I must say that the asthetic is way too “1982” for me, but hey, you have to build what the client wants!</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/chores/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/chores/</guid>
       <description>I recently did one of my favorite winter activities: a backcountry hut trip. A group of us schlepped a bunch of gear and food into the woods, and spent a few days living simply: heating a rustic cabin with firewood, melting snow for water, cooking, eating, and exploring the outdoors together. After a long weekend in this environment, I feel refreshed, relaxed, and more deeply connected with the friends that I accompanied.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/cindi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/cindi/</guid>
-      <description>TL;DR: Janelle Monae&amp;rsquo;s art inspired me to try to build an algorithm that progamatically generates emotion-evoking art, and the results are here.
-If you haven’t yet listened to Janelle Monae’s “Metropolis” suite, I highly recommend that you drop the committments you can, pour yourself some coffee and/or wine, and listen to it carefully.
-Monae is a magician, a siren, an entertainer, a theorist, a historian, and a visionary. Metropolis helped me understand so much about so much that talking about it here will certainly do it an injustice.</description>
+      <description>TL;DR: Janelle Monae&amp;rsquo;s art inspired me to try to build an algorithm that progamatically generates emotion-evoking art, and the results are here.&#xA;If you haven’t yet listened to Janelle Monae’s “Metropolis” suite, I highly recommend that you drop the committments you can, pour yourself some coffee and/or wine, and listen to it carefully.&#xA;Monae is a magician, a siren, an entertainer, a theorist, a historian, and a visionary. Metropolis helped me understand so much about so much that talking about it here will certainly do it an injustice.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/clock/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/clock/</guid>
-      <description>&amp;ldquo;Let&amp;rsquo;s go say goodbye.&amp;rdquo;, &amp;ldquo;To the house?&amp;rdquo;, &amp;ldquo;To the house.&amp;rdquo;
-It&amp;rsquo;s dark inside, the fading day is blue, filtered in. The bathroom light a contrasting a vibrant yellow as he goes for a final pee.
-I&amp;rsquo;m glued to the wall, seeing the house spotless for the first time since it was last a house.
-We&amp;rsquo;d made it more. We&amp;rsquo;d chosen mistmatched glasses, argued over the layout of the couch, compromised, built furniture to accomodate the compromise.</description>
+      <description>&amp;ldquo;Let&amp;rsquo;s go say goodbye.&amp;rdquo;, &amp;ldquo;To the house?&amp;rdquo;, &amp;ldquo;To the house.&amp;rdquo;&#xA;It&amp;rsquo;s dark inside, the fading day is blue, filtered in. The bathroom light a contrasting a vibrant yellow as he goes for a final pee.&#xA;I&amp;rsquo;m glued to the wall, seeing the house spotless for the first time since it was last a house.&#xA;We&amp;rsquo;d made it more. We&amp;rsquo;d chosen mistmatched glasses, argued over the layout of the couch, compromised, built furniture to accomodate the compromise.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/creditworthy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/creditworthy/</guid>
-      <description>I just finished reading &amp;ldquo;Creditworthy&amp;rdquo;, Josh Lauer&amp;rsquo;s thorough picture of the history and trajectory of consumer surveillance by the credit industry.
-Lauer&amp;rsquo;s work illuminates the early evolution of the social contract at the heart of the information era: convenience, service, and social inclusion in exchange for privacy. Though this exchange is familiar to a twenty first century reader, details from the evolution of this contract (in the context of credit) offer us lessons as we seek to broadly re-negotiate the terms of our privacy forfeitures in all spheres of modern life.</description>
+      <description>I just finished reading &amp;ldquo;Creditworthy&amp;rdquo;, Josh Lauer&amp;rsquo;s thorough picture of the history and trajectory of consumer surveillance by the credit industry.&#xA;Lauer&amp;rsquo;s work illuminates the early evolution of the social contract at the heart of the information era: convenience, service, and social inclusion in exchange for privacy. Though this exchange is familiar to a twenty first century reader, details from the evolution of this contract (in the context of credit) offer us lessons as we seek to broadly re-negotiate the terms of our privacy forfeitures in all spheres of modern life.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/dogs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/dogs/</guid>
       <description>As a middle-schooler untethered from proscribed answers (I was raised without any connection to, or real awareness of religion), I dreaded the few dark minutes between bedtime and sleep. I&amp;rsquo;d zoom back from myself - the practiced lens of the NOVA documentaries that I loved at that age - losing myself in the big questions, the vastness of space, and the darkness in front of my eyes: Why was I here?</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/draw_me_css/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/draw_me_css/</guid>
-      <description>In the third Harry Potter book, Harry is given the “Maurauder’s Map”, and one of the many images I like about this map is how the ink spreads outward from the point that it is awoken.
-I wondered if you could do this in CSS, so I poked around, learned about CSS Transitions, and came up with a generalized framework for making a set of boxes animate on to the page.</description>
+      <description>In the third Harry Potter book, Harry is given the “Maurauder’s Map”, and one of the many images I like about this map is how the ink spreads outward from the point that it is awoken.&#xA;I wondered if you could do this in CSS, so I poked around, learned about CSS Transitions, and came up with a generalized framework for making a set of boxes animate on to the page.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/dumb_db/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/dumb_db/</guid>
-      <description>While protyping front end interfaces for responsive web applications, I frequently have to mock out the data interactions with static constants in my javascript that mock server requests and responses. This has several downsides: you cannot change the data in a demo situation, inserting real requests requires you to construct the remoteand the number of mocks can explode if you are trying to make a CRUD user interface.
-DumbDB is a better way.</description>
+      <description>While protyping front end interfaces for responsive web applications, I frequently have to mock out the data interactions with static constants in my javascript that mock server requests and responses. This has several downsides: you cannot change the data in a demo situation, inserting real requests requires you to construct the remoteand the number of mocks can explode if you are trying to make a CRUD user interface.&#xA;DumbDB is a better way.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/ecology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/ecology/</guid>
-      <description>This is work in progress, I&amp;rsquo;ve unpublished it for the time being in order to make sure I don&amp;rsquo;t accidentally encourage anyone to use it. I&amp;rsquo;m changing data formats considerably and think it would be irresponsible to publish a tool as &amp;ldquo;helpful&amp;rdquo; if it is incompatible with the future version.
-If you just want to create lambdas, the bash precursor to this project is up and very much still works: https://github.</description>
+      <description>This is work in progress, I&amp;rsquo;ve unpublished it for the time being in order to make sure I don&amp;rsquo;t accidentally encourage anyone to use it. I&amp;rsquo;m changing data formats considerably and think it would be irresponsible to publish a tool as &amp;ldquo;helpful&amp;rdquo; if it is incompatible with the future version.&#xA;If you just want to create lambdas, the bash precursor to this project is up and very much still works: https://github.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/euclid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/euclid/</guid>
       <description>Two of my all time favorite books are &amp;ldquo;Measurement&amp;rdquo; by Lockheart and &amp;ldquo;The Elements of Euclid&amp;rdquo; by Byrne. Both take nontraditional approaches to exploring geometry. Part of what is magical about them is the way that they build an intuitive depth that doesn&amp;rsquo;t rely on formalism. This project came to me while trying to fall asleep one night. The code is here. The premise is (I think) much more aptly described by showing intermediate results.</description>
     </item>
-    
-    <item>
-      <title></title>
-      <link>https://grady.dev/project/find_a_clinic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://grady.dev/project/find_a_clinic/</guid>
-      <description>Please note - I deeply respect various opinions on the moral wight of abortion, but personally [^1] fully support the right of a woman to make her own judgements about the matter. For that reason, I believe that women should have full knowledge of all of their options when they become pregnant, and that is the aim that this project is directed toward.
-[^1] I think most of us would agree that there is a difference in value between the existence of a day-old fertilized human egg, and a pregnancy that is about to be birthed.</description>
-    </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/flux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/flux/</guid>
-      <description>TL;DR: Check out this data intensive (not recommended for mobile) looping pattern of an attractor with a multi-dimensional parameter orbit.
-I saw a blog post by an extremely talented programmer, and was suprised (as he was) to find that there was a natural symmetry to the patterns he was describing. However, in digging into his code, I found that it was not actually symmetrical, but he had just made a very understandable typo which introduced this artificial symmetry.</description>
+      <description>TL;DR: Check out this data intensive (not recommended for mobile) looping pattern of an attractor with a multi-dimensional parameter orbit.&#xA;I saw a blog post by an extremely talented programmer, and was suprised (as he was) to find that there was a natural symmetry to the patterns he was describing. However, in digging into his code, I found that it was not actually symmetrical, but he had just made a very understandable typo which introduced this artificial symmetry.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/fof/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/fof/</guid>
-      <description>When I worked in Counter-Abuse at Google, I found the largest issue we faced wasn&amp;rsquo;t malicious users, but poorly thought out product decisions, and business model constraints. It&amp;rsquo;s very hard to &amp;ldquo;fix&amp;rdquo; problems on platforms when you are constrained to cleanup, and can&amp;rsquo;t try to change why things keep spilling.
-So when the Integrity Institutute (a small thinktank on content moderation issues, which I&amp;rsquo;ve been a member of for several years) sent out applications for visiting fellowships, I figured it was my chance to try to do something about it.</description>
+      <description>When I worked in Counter-Abuse at Google, I found the largest issue we faced wasn&amp;rsquo;t malicious users, but poorly thought out product decisions, and business model constraints. It&amp;rsquo;s very hard to &amp;ldquo;fix&amp;rdquo; problems on platforms when you are constrained to cleanup, and can&amp;rsquo;t try to change why things keep spilling.&#xA;So when the Integrity Institutute (a small thinktank on content moderation issues, which I&amp;rsquo;ve been a member of for several years) sent out applications for visiting fellowships, I figured it was my chance to try to do something about it.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/golog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/golog/</guid>
-      <description>I&amp;rsquo;ve been writing a lot more golang of late, so I wrote a (gorgeous) visual debugger for helping to do post-hoc debugging. It&amp;rsquo;s been hugely helpful in my lambda based projects, where one often wants the ability to quickly view &amp;ldquo;what happened during this trace&amp;rdquo; without running locally with a traditional step based debugger.
-Unlike many of my projects, this one is pretty well supported, and I&amp;rsquo;ve continued to add features as I need them.</description>
+      <description>I&amp;rsquo;ve been writing a lot more golang of late, so I wrote a (gorgeous) visual debugger for helping to do post-hoc debugging. It&amp;rsquo;s been hugely helpful in my lambda based projects, where one often wants the ability to quickly view &amp;ldquo;what happened during this trace&amp;rdquo; without running locally with a traditional step based debugger.&#xA;Unlike many of my projects, this one is pretty well supported, and I&amp;rsquo;ve continued to add features as I need them.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/grady_docs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/grady_docs/</guid>
-      <description>I one time made the mistake of looking at how the Google Docs DOM is structured. I wondered if I could make a functional front end that looked similar without half a meg of divs, so I tried!
-Then I wrote a backend for it (node-js, socketio), and got the project to the point where two users could edit the document together with sub-second lag.
-The underlying data model for this was not only flawed, it is abysmal.</description>
+      <description>I one time made the mistake of looking at how the Google Docs DOM is structured. I wondered if I could make a functional front end that looked similar without half a meg of divs, so I tried!&#xA;Then I wrote a backend for it (node-js, socketio), and got the project to the point where two users could edit the document together with sub-second lag.&#xA;The underlying data model for this was not only flawed, it is abysmal.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/grady_in/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/grady_in/</guid>
-      <description>Go Links are a system used interally at google to create semantically meaningful short links. Grady.In replicates this functionality for use outside of the company, allowing anyone to construct short and human readable links.
-This was my first forray into a serverless architechure. The system is built using Google Cloud Functions. The primary function validates a request and writes the new link (as a simple redirect) to a CDN. The client (when looking at the grady.</description>
+      <description>Go Links are a system used interally at google to create semantically meaningful short links. Grady.In replicates this functionality for use outside of the company, allowing anyone to construct short and human readable links.&#xA;This was my first forray into a serverless architechure. The system is built using Google Cloud Functions. The primary function validates a request and writes the new link (as a simple redirect) to a CDN. The client (when looking at the grady.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/hard_scrabble/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/hard_scrabble/</guid>
       <description>Pair programming is a stellar way for people to learn, particularly when paired with a partner at the same level. I saw this multiple times in action in my time as a teaching assistant for courses at Brandeis. However, the problem of assigning pairs is fundamentally challenging - if the students are given free reign, they will likely pick their friends, and the skill level of the two will be (largely) uncorrelated.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/in_line/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/in_line/</guid>
       <description>In my time at Brandeis University, I spent 3 years working hard for the Brandeis Student Union as a Student Representative to the Board of Trustees, and an Executive Board member. Over those three years, we had three different computer science students as “web-master”, and three politicos as “communications director”. The problem was that each web-master would build a beautiful website that was never able to be updated because the communications director never had the technical expertiese to update the HTML or use the static site generator.</description>
     </item>
-    
+    <item>
+      <title></title>
+      <link>https://grady.dev/project/laser_puzzles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/project/laser_puzzles/</guid>
+      <description>One of my best friends in the world - Brandon - got married in the summer of 2024, and insisted that no gifts would be exchanged. I nagged him ceaslessly on this point, and he eventually relented that only gifts of creative, rather than financial value would be accepted. Game on.&#xA;After much deliberation, I decided to make them a puzzle. I&amp;rsquo;d been looking for the opportunity to learn how to use a laser cutter, and thankfully both Boulder + Denver offer the tools in their makerspaces.</description>
+    </item>
     <item>
       <title></title>
       <link>https://grady.dev/project/narratives/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/narratives/</guid>
-      <description>I&amp;rsquo;ve started thinking about how to define privacy. Though I haven&amp;rsquo;t made any traction on that overall question, it&amp;rsquo;s helped me better understand the relationship between privacy and how we manufacture our identity.
-To avoid exclusively speaking in intelectualisms, I&amp;rsquo;ll describe the circumstances of my morning, which can illustrate the point I&amp;rsquo;m trying to make.
-I went out to get coffee. I usually make coffee at home, but my french press shattered, so I ordered a new one and it was slated for delivery a few days ago.</description>
+      <description>I&amp;rsquo;ve started thinking about how to define privacy. Though I haven&amp;rsquo;t made any traction on that overall question, it&amp;rsquo;s helped me better understand the relationship between privacy and how we manufacture our identity.&#xA;To avoid exclusively speaking in intelectualisms, I&amp;rsquo;ll describe the circumstances of my morning, which can illustrate the point I&amp;rsquo;m trying to make.&#xA;I went out to get coffee. I usually make coffee at home, but my french press shattered, so I ordered a new one and it was slated for delivery a few days ago.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/parley/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/parley/</guid>
       <description>Comment threads are an inherently flawed way to have a discussion, because they are strictly linear. In recent years, large organizations like facebook have realized this and have tried to reconsile it with a binary tree pattern of deeper or next. This only partially solves the problem. Far more frequently, if I want to respond to a comment, there are multiple peices of it that I want to respond to, and some may already be addressed further down the thread.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/senior_thesis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/senior_thesis/</guid>
-      <description>I wrote my undergraduate thesis on the Graph Isomorphism (GI) problem, and several topics within that space. My work was version controlled on github, and the final result is here.
-I was first interested in the “Paths” invariant, which is incredibly powerful test for discerning between potentially isomorphic graphs in cubic (and fully paralellizable) time, and was originally theorized to be a solution to GI. The primary findings of my thesis were that:</description>
+      <description>I wrote my undergraduate thesis on the Graph Isomorphism (GI) problem, and several topics within that space. My work was version controlled on github, and the final result is here.&#xA;I was first interested in the “Paths” invariant, which is incredibly powerful test for discerning between potentially isomorphic graphs in cubic (and fully paralellizable) time, and was originally theorized to be a solution to GI. The primary findings of my thesis were that:</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/shoe_rack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/shoe_rack/</guid>
-      <description>My partner and I really both like building things, which makes anniversaries both an occasion for expression of caring through mutal gift giving, and a bit of a self-indulgent excuse to carve out time to make stuff. It only took him noting once that the width of our shoe rack was exactly 2.5 shoes for me to think through how I could build something better.
-Over weeks of sketches, a trip to IKEA, and a trip to John Houston&amp;rsquo;s Kennebunkport workshop (unrelated), I was inspired by the idea of sneaky intersections - of furniture that has non-standard joints and that provides standard functionality in non-standard ways.</description>
+      <description>My partner and I really both like building things, which makes anniversaries both an occasion for expression of caring through mutal gift giving, and a bit of a self-indulgent excuse to carve out time to make stuff. It only took him noting once that the width of our shoe rack was exactly 2.5 shoes for me to think through how I could build something better.&#xA;Over weeks of sketches, a trip to IKEA, and a trip to John Houston&amp;rsquo;s Kennebunkport workshop (unrelated), I was inspired by the idea of sneaky intersections - of furniture that has non-standard joints and that provides standard functionality in non-standard ways.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/shoe_rack_2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/shoe_rack_2/</guid>
-      <description>After seeing the shoe rack I made for my partner, my sister asked for one for her apartment as a Christmas gift. More precisely, I asked her what I could make her and she allowed me to make another shoe rack.
-The major design constraint on this project was that the end result had to be transported from Colorado to Pennsylvania, which as I figured out by looking at shipping costs, would be fairly significant if the piece was fully assembled when shipped.</description>
+      <description>After seeing the shoe rack I made for my partner, my sister asked for one for her apartment as a Christmas gift. More precisely, I asked her what I could make her and she allowed me to make another shoe rack.&#xA;The major design constraint on this project was that the end result had to be transported from Colorado to Pennsylvania, which as I figured out by looking at shipping costs, would be fairly significant if the piece was fully assembled when shipped.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/sniff/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/sniff/</guid>
-      <description>In Florida v. Harris (2012) a unanimous Supreme Court held that statistically derived evidence of efficacy of a drug sniffing dog was not a requirement for establishing probable cause for evaluating fourth amendment claims. I think this misses the mark from one of my favorite cases US v. Place (1983), in which O&amp;rsquo;Connor issued this gem of straightforward and balanced reasoning:
-&amp;ldquo;A &amp;ldquo;canine sniff&amp;rdquo; by a well-trained narcotics detection dog, however, does not require opening the luggage.</description>
+      <description>In Florida v. Harris (2012) a unanimous Supreme Court held that statistically derived evidence of efficacy of a drug sniffing dog was not a requirement for establishing probable cause for evaluating fourth amendment claims. I think this misses the mark from one of my favorite cases US v. Place (1983), in which O&amp;rsquo;Connor issued this gem of straightforward and balanced reasoning:&#xA;&amp;ldquo;A &amp;ldquo;canine sniff&amp;rdquo; by a well-trained narcotics detection dog, however, does not require opening the luggage.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/terry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/terry/</guid>
       <description>Terry v. Ohio is known for it&amp;rsquo;s implications on the probable cause requirement of the fourth amendment, but re-reading the decision over the weekend, something else jumped out at me when I put myself in the shoes of the Warren court: given the fact pattern, they were doing their best to encourage good policework, and in the case of stop and frisk the differentiation between &amp;lsquo;good&amp;rsquo; and &amp;lsquo;bad&amp;rsquo; policing hinges on the quality of the officer&amp;rsquo;s decision making and the outcome of their choice:</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/trees/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/trees/</guid>
-      <description>Recursively enumerating all possible sparse binary trees is easy. Far harder is coming up with a stable mapping between the integers and this set of trees. I was able to do this after a lot of thought.
-The code is here, but it is from like four years ago, so please be warned.</description>
+      <description>Recursively enumerating all possible sparse binary trees is easy. Far harder is coming up with a stable mapping between the integers and this set of trees. I was able to do this after a lot of thought.&#xA;The code is here, but it is from like four years ago, so please be warned.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/voat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/voat/</guid>
-      <description>TL;DR: With a fun algorithm, slight parameter tweaks lead to really different results, as I show in a work based on Elgar&amp;rsquo;s enigma variations.
-A good piece of art compells you to understand the process that created it, whether it is the emotion of the composer, or the logic of the painter. A revlation while looking at a piece by Frank Stella made me understand the fundamental mechanism that was generating the work, and gave me confidence that I could recreate it.</description>
+      <description>TL;DR: With a fun algorithm, slight parameter tweaks lead to really different results, as I show in a work based on Elgar&amp;rsquo;s enigma variations.&#xA;A good piece of art compells you to understand the process that created it, whether it is the emotion of the composer, or the logic of the painter. A revlation while looking at a piece by Frank Stella made me understand the fundamental mechanism that was generating the work, and gave me confidence that I could recreate it.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/voat_2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/voat_2/</guid>
-      <description>This project is a work in progress, it still has lots of work to be done.
-A few years ago, I created a project called VOAT, in which I used a simple space filling algorithm, alongside a variety of different CSS properties to generate goregeous patterns. I recently revisited this project with the intent on showing folks how it was made, and introducing folks to CSS.
-The result is a new site, voat.</description>
+      <description>This project is a work in progress, it still has lots of work to be done.&#xA;A few years ago, I created a project called VOAT, in which I used a simple space filling algorithm, alongside a variety of different CSS properties to generate goregeous patterns. I recently revisited this project with the intent on showing folks how it was made, and introducing folks to CSS.&#xA;The result is a new site, voat.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/ward_lab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/ward_lab/</guid>
       <description>My father is a professor at UVM, where he studies microbiology and molecular genetics. In 2017 as a birthday present, I made him a website using Hugo, and the Academic theme. The theme I used was superb at providing most of the functionality required, but it took a few months of tinkering with my father to get everything exactly the way he wanted (publications ordered in certain ways, display settings configuration based, etc.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/website_v1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/website_v1/</guid>
-      <description>In my original website, I wanted to play with the fundamental assumption of what a webpage renders as - a series of nested boxes. The idea of an expanding button that becomes the page facinated me, particularly since the new page had buttons for the old one (I was reading all about golden-braids in GEB at the time).
-This isn’t great work, but it reflects where I was at at the time - having fun, experimenting, and learning Javascript.</description>
+      <description>In my original website, I wanted to play with the fundamental assumption of what a webpage renders as - a series of nested boxes. The idea of an expanding button that becomes the page facinated me, particularly since the new page had buttons for the old one (I was reading all about golden-braids in GEB at the time).&#xA;This isn’t great work, but it reflects where I was at at the time - having fun, experimenting, and learning Javascript.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/website_v2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/website_v2/</guid>
-      <description>I took an architechure class in my Senior Year at Brandeis that awoke an asthetic sense I had not previously identified or listened to. In particular, the de-stijl primitive of intersecting planes struck a resonant chord in my sense of beauty.
-That new asthetic, in combination with “draw me CSS” was the inspiration for V2 of my website - meant to resemble something in between a circut board, the maurader’s map, and the de-stijl classic “Composition in black, red, yellow and blue”.</description>
+      <description>I took an architechure class in my Senior Year at Brandeis that awoke an asthetic sense I had not previously identified or listened to. In particular, the de-stijl primitive of intersecting planes struck a resonant chord in my sense of beauty.&#xA;That new asthetic, in combination with “draw me CSS” was the inspiration for V2 of my website - meant to resemble something in between a circut board, the maurader’s map, and the de-stijl classic “Composition in black, red, yellow and blue”.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/website_v3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/website_v3/</guid>
-      <description>When I tried to update my website in December of 2017, I couldn’t find the files anywhere on my laptop or github. This was a surprise, but one that I took as an opporotunity to recreate the site from scratch, using best practices from the start, and making some design changes. Luckily I later found these files, and posted them as V2 on this page.
-The result is the site you see before you - with a detailed portfolio section, some nice hugo-templated HTML, and the cute animations (which are NOT generated via draw-me-css).</description>
+      <description>When I tried to update my website in December of 2017, I couldn’t find the files anywhere on my laptop or github. This was a surprise, but one that I took as an opporotunity to recreate the site from scratch, using best practices from the start, and making some design changes. Luckily I later found these files, and posted them as V2 on this page.&#xA;The result is the site you see before you - with a detailed portfolio section, some nice hugo-templated HTML, and the cute animations (which are NOT generated via draw-me-css).</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/widmanst%C3%A4tten/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/widmanst%C3%A4tten/</guid>
-      <description>When visiting the Smithsonian Natural History Museum, I saw the inside of a meteorite, stained and polished to reveal a beautiful pattern. Several months later, I remembered it while looking through some photos and decided to learn more about it and try to reproduce it.
-Here&amp;rsquo;s what I learned from Wikipedia: The meteorites that display this pattern are comprised of of two Iron-Nickel alloys, Kamacite and Taenite. This pattern is found in metiorites called Octahidrites, so named because the pattern is actually a result of a crystal structure of Taenite&amp;rsquo;s crystal latice, which is hexoctahedral (cubic) in structure.</description>
+      <description>When visiting the Smithsonian Natural History Museum, I saw the inside of a meteorite, stained and polished to reveal a beautiful pattern. Several months later, I remembered it while looking through some photos and decided to learn more about it and try to reproduce it.&#xA;Here&amp;rsquo;s what I learned from Wikipedia: The meteorites that display this pattern are comprised of of two Iron-Nickel alloys, Kamacite and Taenite. This pattern is found in metiorites called Octahidrites, so named because the pattern is actually a result of a crystal structure of Taenite&amp;rsquo;s crystal latice, which is hexoctahedral (cubic) in structure.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/wingspan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/wingspan/</guid>
-      <description>One of my favorite board games is Wingspan - an engine building game where you collect different species of birds. The game instilled an appreciation for our avian friends in me, and was my introduction to the wonderful world of birding.
-As anyone who loves something desperately, the flaws in the wingspan game were more obvious to me than to most. The nest types were often incorrect. The clutch sizes capped out at six.</description>
+      <description>One of my favorite board games is Wingspan - an engine building game where you collect different species of birds. The game instilled an appreciation for our avian friends in me, and was my introduction to the wonderful world of birding.&#xA;As anyone who loves something desperately, the flaws in the wingspan game were more obvious to me than to most. The nest types were often incorrect. The clutch sizes capped out at six.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/wsmd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/wsmd/</guid>
-      <description>Maddie Dollins is a dear friend who is frequently frustratingly indecisive.
-One night at dinner she asked if she should have chocolate milk - to which I said “I do not care”. She then asked if she should have regular milk. This broke the camel’s back, and in a rush of an hour, I built and published WSMD - What Should Maddie Do - a simplified magic-eight-ball that simply returns a yes or no.</description>
+      <description>Maddie Dollins is a dear friend who is frequently frustratingly indecisive.&#xA;One night at dinner she asked if she should have chocolate milk - to which I said “I do not care”. She then asked if she should have regular milk. This broke the camel’s back, and in a rush of an hour, I built and published WSMD - What Should Maddie Do - a simplified magic-eight-ball that simply returns a yes or no.</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://grady.dev/project/zina_b_ward/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/zina_b_ward/</guid>
-      <description>Over christmas break, I got frusturated with my sister’s incredibly specific asks from a wordpress template, so I built her a website instead.
-After a brief period of haggling over the acceptable level of bells and whilstles (I wanted more), we came to a resonable design consensus, and I implemented the site and fine tuned it with its owner in about five hours.
-Scroll down past the menu to see some fun.</description>
+      <description>Over christmas break, I got frusturated with my sister’s incredibly specific asks from a wordpress template, so I built her a website instead.&#xA;After a brief period of haggling over the acceptable level of bells and whilstles (I wanted more), we came to a resonable design consensus, and I implemented the site and fine tuned it with its owner in about five hours.&#xA;Scroll down past the menu to see some fun.</description>
     </item>
-    
   </channel>
 </rss>
