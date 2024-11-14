@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>automation on grady.dev</title>
+    <title>Automation on Grady.dev</title>
     <link>https://grady.dev/tags/automation/</link>
-    <description>Recent content in automation on grady.dev</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://grady.dev/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in Automation on Grady.dev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://grady.dev/tags/automation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://grady.dev/project/chores/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/chores/</guid>
       <description>I recently did one of my favorite winter activities: a backcountry hut trip. A group of us schlepped a bunch of gear and food into the woods, and spent a few days living simply: heating a rustic cabin with firewood, melting snow for water, cooking, eating, and exploring the outdoors together. After a long weekend in this environment, I feel refreshed, relaxed, and more deeply connected with the friends that I accompanied.</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>c on grady.dev</title>
+    <title>C on Grady.dev</title>
     <link>https://grady.dev/tags/c/</link>
-    <description>Recent content in c on grady.dev</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://grady.dev/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in C on Grady.dev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://grady.dev/tags/c/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://grady.dev/project/senior_thesis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/senior_thesis/</guid>
-      <description>I wrote my undergraduate thesis on the Graph Isomorphism (GI) problem, and several topics within that space. My work was version controlled on github, and the final result is here.
-I was first interested in the “Paths” invariant, which is incredibly powerful test for discerning between potentially isomorphic graphs in cubic (and fully paralellizable) time, and was originally theorized to be a solution to GI. The primary findings of my thesis were that:</description>
+      <description>I wrote my undergraduate thesis on the Graph Isomorphism (GI) problem, and several topics within that space. My work was version controlled on github, and the final result is here.&#xA;I was first interested in the “Paths” invariant, which is incredibly powerful test for discerning between potentially isomorphic graphs in cubic (and fully paralellizable) time, and was originally theorized to be a solution to GI. The primary findings of my thesis were that:</description>
     </item>
-    
   </channel>
 </rss>

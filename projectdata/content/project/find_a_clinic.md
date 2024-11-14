@@ -7,6 +7,7 @@ external_url = "http://www.findaclinic.org"
 
 short_desc = "An effort to make all options clear and comparable to women seeking an abortion"
 tags = ["webapp", "collaborative"]
+draft = true
 
 +++
 

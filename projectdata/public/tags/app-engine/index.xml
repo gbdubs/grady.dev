@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>app engine on grady.dev</title>
+    <title>App Engine on Grady.dev</title>
     <link>https://grady.dev/tags/app-engine/</link>
-    <description>Recent content in app engine on grady.dev</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://grady.dev/tags/app-engine/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in App Engine on Grady.dev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://grady.dev/tags/app-engine/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://grady.dev/project/hard_scrabble/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/hard_scrabble/</guid>
       <description>Pair programming is a stellar way for people to learn, particularly when paired with a partner at the same level. I saw this multiple times in action in my time as a teaching assistant for courses at Brandeis. However, the problem of assigning pairs is fundamentally challenging - if the students are given free reign, they will likely pick their friends, and the skill level of the two will be (largely) uncorrelated.</description>
     </item>
-    
   </channel>
 </rss>

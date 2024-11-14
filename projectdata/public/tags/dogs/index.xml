@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>dogs on grady.dev</title>
+    <title>Dogs on Grady.dev</title>
     <link>https://grady.dev/tags/dogs/</link>
-    <description>Recent content in dogs on grady.dev</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://grady.dev/tags/dogs/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in Dogs on Grady.dev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://grady.dev/tags/dogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>https://grady.dev/project/dogs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://grady.dev/project/dogs/</guid>
       <description>As a middle-schooler untethered from proscribed answers (I was raised without any connection to, or real awareness of religion), I dreaded the few dark minutes between bedtime and sleep. I&amp;rsquo;d zoom back from myself - the practiced lens of the NOVA documentaries that I loved at that age - losing myself in the big questions, the vastness of space, and the darkness in front of my eyes: Why was I here?</description>
     </item>
-    
   </channel>
 </rss>
