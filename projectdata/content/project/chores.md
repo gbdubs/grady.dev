@@ -10,6 +10,8 @@ tags = ["love", "meaning", "automation"]
 
 +++
 
+*A long-form narrative version of this essay appeared in a friend's literary magazine, [The Hart and The Curr](https://www.thehartandthecur.com/binding-beauty-of-chores).*
+
 I recently did one of my favorite winter activities: a backcountry hut trip. A group of us schlepped a bunch of gear and food into the woods, and spent a few days living simply: heating a rustic cabin with firewood, melting snow for water, cooking, eating, and exploring the outdoors together. After a long weekend in this environment, I feel refreshed, relaxed, and more deeply connected with the friends that I accompanied.
 
 Counterintuitively, part of the joy of a hut trip comes from the chores: the small, quaint, simple challenges that occupied much of our time. These included pumping water through a filter, splitting wood for kindling, and scraping ice from the door jam, to name a few. These activities may not sound like an integral part of a vacation, but they fulfill deeply: through chores we got to provide value to each other, and enact concrete transformation of our surroundings.
