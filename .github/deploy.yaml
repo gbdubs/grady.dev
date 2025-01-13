@@ -1,0 +1,42 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # or your default branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Setup Git LFS
+        run: |
+          git lfs fetch --all
+          git lfs checkout
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "latest"
+
+      - name: Build Site
+        run: |
+          cd projectdata
+          hugo
+          rm -R ../project/
+          mkdir ../project
+          mkdir ../project/img
+          cp -R public/project/* ../project
+          cp -R public/img/* ../project/img
+          rm -R public
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
