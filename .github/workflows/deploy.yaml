@@ -18,7 +18,19 @@ jobs:
         run: |
           git lfs fetch --all
           git lfs checkout
-
+      
+      - name: Ensure images are not LFS pointers
+        run: |
+          # Create a list of all LFS tracked files
+          git lfs track "*.jpg"
+          git lfs track "*.png"
+          git lfs track "*.gif"
+          
+          # Force checkout these files as real files, not pointers
+          git lfs pull
+          
+          # Verify we have actual files
+          file projectdata/static/img/* || true
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
