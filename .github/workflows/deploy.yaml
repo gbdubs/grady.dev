@@ -30,7 +30,7 @@ jobs:
           git lfs pull
 
           # Verify we have actual files
-          file projectdata/static/img/*
+          file hugoprojects/static/img/*
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -40,19 +40,19 @@ jobs:
       - name: Build Site
         run: |
           rm .gitattributes
-          cd projectdata
+          rm -R project
+          mkdir project
+          rm -R img
+          mkdir img
+          cd hugoprojects
           hugo
-          rm -R ../project/
-          mkdir ../project
-          mkdir ../project/img
           cp -R public/project/* ../project
-          cp -R public/img/* ../project/img
+          cp -R public/img/* ../img
           rm -R public
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
           force_orphan: true
-          exclude_assets: "projectdata,regenerate_projects.sh,LICENSE,.gitignore,.gitattributes,.github"
+          exclude_assets: "hugoprojects,regenerate_projects.sh,LICENSE,.gitignore,.gitattributes,.github"
