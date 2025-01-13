@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Build Changes + Commit to gh-pages branch
 
 on:
   push:
