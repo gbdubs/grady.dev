@@ -1,6 +1,6 @@
 +++
 
-order = 4000 
+order = 1740
 
 name = "Wingspan Deck Generation"
 external_url = ""

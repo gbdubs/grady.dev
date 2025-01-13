@@ -278,6 +278,7 @@ img {
 </header>
 
 <main id="main">
+
 {{ range $untrimmed := ( split .Content "<p>" ) }}
 {{ $.Scratch.Set "trimmed" (strings.Replace (trim ( chomp $untrimmed ) " ") "</p>" "") }}
   {{ if len ( $.Scratch.Get "trimmed" )}}

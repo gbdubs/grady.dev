@@ -1,6 +1,6 @@
 +++
 
-order = 1750
+order = 1600
 
 name = "Euclid"
 
