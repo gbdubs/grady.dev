@@ -39,16 +39,16 @@ jobs:
 
       - name: Build Site
         run: |
-          rm .gitattributes
-          rm -R project
+          rm -f .gitattributes
+          rm -R -f project
           mkdir project
-          rm -R img
+          rm -R -f img
           mkdir img
           cd hugoprojects
           hugo
           cp -R public/project/* ../project
           cp -R public/img/* ../img
-          rm -R public
+          rm -R -f public
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
