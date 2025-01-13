@@ -18,19 +18,20 @@ jobs:
         run: |
           git lfs fetch --all
           git lfs checkout
-      
+
       - name: Ensure images are not LFS pointers
         run: |
           # Create a list of all LFS tracked files
           git lfs track "*.jpg"
           git lfs track "*.png"
           git lfs track "*.gif"
-          
+
           # Force checkout these files as real files, not pointers
           git lfs pull
-          
+
           # Verify we have actual files
-          file projectdata/static/img/* || true
+          file projectdata/static/img/*
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -38,6 +39,7 @@ jobs:
 
       - name: Build Site
         run: |
+          rm .gitattributes
           cd projectdata
           hugo
           rm -R ../project/
@@ -53,4 +55,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
           force_orphan: true
-          exclude_assets: ''  # Don't exclude any assets
+          exclude_assets: "projectdata,regenerate_projects.sh,LICENSE,.gitignore,.gitattributes,.github,.git"
