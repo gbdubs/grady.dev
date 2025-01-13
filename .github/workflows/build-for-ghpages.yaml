@@ -44,7 +44,7 @@ jobs:
           mkdir project
           rm -R -f img
           mkdir img
-          cp -f -R favicons/ .
+          cp -f favicons/* .
           cd hugoprojects
           hugo
           cp -R public/project/* ../project
