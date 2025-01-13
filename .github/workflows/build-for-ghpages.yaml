@@ -1,4 +1,4 @@
-name: Build Changes + Commit to gh-pages branch
+name: GBW's build for gh=pages
 
 on:
   push:
@@ -32,27 +32,29 @@ jobs:
           # Verify we have actual files
           file hugoprojects/static/img/*
 
-      - name: Setup Hugo
+      - name: Install Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "latest"
 
-      - name: Build Site
+      - name: Run hugo + manually move site files
         run: |
           rm -f .gitattributes
           rm -R -f project
           mkdir project
           rm -R -f img
           mkdir img
+          cp -f -R favicons/ .
           cd hugoprojects
           hugo
           cp -R public/project/* ../project
           cp -R public/img/* ../img
           rm -R -f public
-      - name: Deploy
+
+      - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
           force_orphan: true
-          exclude_assets: "hugoprojects,regenerate_projects.sh,LICENSE,.gitignore,.gitattributes,.github"
+          exclude_assets: "README.md,hugoprojects,regenerate_projects.sh,.gitignore,.gitattributes,.github"
