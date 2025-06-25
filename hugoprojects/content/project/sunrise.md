@@ -17,15 +17,18 @@ I also love sunrises - you get to lay claim to one bookend of the day,
 and if seeing it being born doesn't allow you to sieze it, I can't imagine what could.
 
 For several years I had the idea of trying to build a webpage that would capture my
-love for this moment. I tinkered around with building gradients for it in Inkscape (
-an SVG editor). I tried to build an algorithm for it based off of photonic refraction
-for [Abound](../abound). But to no use. I could never get the colors right - even when
+love for this moment - I knew it would be V4 of my website, and would soften my dated [V3 de-stijl aesthetic](/oldindex/).
+I wanted it to feel like [Cory Wong's "Trail Songs" Albums](https://www.jambase.com/article/cory-wong-trail-songs-dusk-acoustic-album), both Daybreak and Dusk.
+
+I tinkered around with building gradients by hand in Inkscape (
+an SVG editor). I tried to build an algorithm for simulating a sunrise based off of photonic refraction
+for [Abound](../abound). But I came up dry. I could never get the colors right by eye - even when
 I was sampling from an image of a sunrise, the colors always felt either sterile or
 gaudy. I realized that to emulate the real thing I needed data from the real thing.
+**I needed to get a timelapse of the sky on the morning of a perfect sunrise.**
 
 ## Data
 
-**I needed to get a timelapse of the sky on the morning of a perfect sunrise.**
 It took me four tries. Three times I found myself up before
 dawn, perched somewhere in the foothills in Colordao, looking westward into the black.
 But the sunrise is tricky - you have to get up far before [Astronomical Twilight](https://www.timeanddate.com/sun/usa/boulder) to get in
@@ -59,9 +62,9 @@ the [cloud cover forecast on Open Snow](https://opensnow.com/news/post/cloud-cov
   car at 3:30 AM, and fitfully slept through howling winds until 6:30, when I crawled out of my car to
   bask in the warm glow of morning (the best time of the day).
 
-The timelapse was perfect - you can see it <a href="/img/sunrise-video.mp4" target="_blank">here</a>.
+The timelapse was perfect - you can see it [here](/img/sunrise-video.mp4).
 
-![The ersatz tripod](/img/sunrise-tripod.png)
+![The ersatz tripod](/img/sunrise-tripod.jpg)
 
 ## Building the Gradient
 
@@ -129,10 +132,10 @@ carries the scars of dozens of substantial revisions by multiple authors (me and
 
 ## The End Result
 
-I like it. I like watching it. It feels thoughtful - not overdone, not sloppy.
+I like it so much it's [my new homepage](/). I like watching it. It feels thoughtful - not overdone, not sloppy.
 
 I have a list of things I'd like to try to get working in the future, including a true radial gradient
-(in particular to capture the 3-5 second range of the <a href="/img/sunrise-video.mp4" target="_blank">original video</a>), getting the same view later in the year
+(in particular to capture the 3-5 second range of the original video [here](/img/sunrise-movie.mp4)), getting the same view later in the year
 (when the sun will rise in the gap in the mountains instead of over them), and trying a different angle/vantage
 to capture the impact of alpenglow on the atmosphere.
 
