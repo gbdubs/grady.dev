@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Education on grady.dev</title>
+    <link>http://localhost:1313/tags/education/</link>
+    <description>Recent content in Education on grady.dev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hardscrabble</title>
+      <link>http://localhost:1313/projects/hard_scrabble/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/hard_scrabble/</guid>
+      <description>Interactive pair programming webapp for a class of 200+ students</description>
+    </item>
+    <item>
+      <title>Kerry Chase Website</title>
+      <link>http://localhost:1313/projects/chase/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/chase/</guid>
+      <description>A basic website for a politics professor</description>
+    </item>
+    <item>
+      <title>Student Union (In Line)</title>
+      <link>http://localhost:1313/projects/in_line/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/in_line/</guid>
+      <description>A multi-owner distributed WYSIWYG editor with CDN hosting</description>
+    </item>
+    <item>
+      <title>VOAT - Interactive</title>
+      <link>http://localhost:1313/projects/voat_2/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/voat_2/</guid>
+      <description>Learn CSS while generating creative patterns</description>
+    </item>
+    <item>
+      <title>CalcU</title>
+      <link>http://localhost:1313/projects/calc_u/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/calc_u/</guid>
+      <description>A course aid for mathematics based on a taxonomy of learning</description>
+    </item>
+  </channel>
+</rss>

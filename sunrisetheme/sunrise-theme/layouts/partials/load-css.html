@@ -1,0 +1,33 @@
+{{/* 
+    CSS Loading Partial
+    Usage: {{ partial "load-css" (dict "files" (slice "globals" "fonts" "project") "inline" true) }}
+    
+    Parameters:
+    - files: array of CSS filenames (without .css extension)
+    - inline: boolean - true to inline CSS, false to link (default: false)
+*/}}
+
+{{ $inline := .inline | default false }}
+{{ $files := .files | default slice }}
+
+{{ if $inline }}
+    {{/* Inline CSS for production - reads from static directory */}}
+    <style>
+    {{ range $files }}
+        {{ $cssPath := printf "static/css/%s.css" . }}
+        {{ $cssContent := readFile $cssPath }}
+        {{ if $cssContent }}
+            /* Inlined from {{ . }}.css */
+            {{ $cssContent | safeCSS }}
+        {{ else }}
+            {{ warnf "CSS file not found: %s" $cssPath }}
+        {{ end }}
+    {{ end }}
+    </style>
+{{ else }}
+    {{/* Link CSS for development */}}
+    {{ range $files }}
+        {{ $cssPath := printf "css/%s.css" . | relURL }}
+        <link rel="stylesheet" href="{{ $cssPath }}">
+    {{ end }}
+{{ end }}

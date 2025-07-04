@@ -1,0 +1,16 @@
+/* Simple project page styles - placeholder */
+.simple-project .project-header {
+    margin-bottom: 2rem;
+}
+
+.simple-project .project-title {
+    font-size: 2rem;
+}
+
+.simple-project .project-body {
+    margin-bottom: 2rem;
+}
+
+.simple-project .related-projects {
+    display: none;
+}

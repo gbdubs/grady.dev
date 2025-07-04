@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags - {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/tag-list.css" | relURL }}">
+</head>
+<body class="tag-list-page">
+    <main class="tag-content">
+        <header class="tag-header">
+            <h1>All Tags</h1>
+        </header>
+        
+        <section class="tags-container">
+            {{ range .Site.Taxonomies.tags }}
+            {{ $tagName := .Page.Title }}
+            {{ $isNested := strings.Contains $tagName "/" }}
+            {{ $parentTag := "" }}
+            {{ if $isNested }}
+                {{ $parentTag = (split $tagName "/")._0 }}
+            {{ end }}
+            
+            <div class="tag-item {{ if $isNested }}nested-tag{{ end }}" 
+                 data-parent="{{ $parentTag }}">
+                <a href="{{ .Page.Permalink }}" class="tag-link">
+                    <span class="tag-name">{{ $tagName }}</span>
+                    <span class="tag-count">({{ .Count }})</span>
+                </a>
+                
+                {{ if .Page.Params.isPriority }}
+                <span class="priority-indicator">★</span>
+                {{ end }}
+            </div>
+            {{ end }}
+        </section>
+    </main>
+    
+    <script src="{{ "js/nested-tags.js" | relURL }}"></script>
+</body>
+</html>

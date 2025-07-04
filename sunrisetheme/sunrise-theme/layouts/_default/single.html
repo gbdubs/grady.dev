@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>{{ .Title }}</title></head>
+<body>
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+
+<h2>Data Debug:</h2>
+<p>Available data keys: {{ range $key, $value := .Site.Data }}{{ $key }}, {{ end }}</p>
+
+</body>
+</html>

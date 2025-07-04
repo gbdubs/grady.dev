@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webapp on grady.dev</title>
+    <link>http://localhost:1313/tags/webapp/</link>
+    <description>Recent content in Webapp on grady.dev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/webapp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Grady.In</title>
+      <link>http://localhost:1313/projects/grady_in/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/grady_in/</guid>
+      <description>Go-Links for everybody</description>
+    </item>
+    <item>
+      <title>Hardscrabble</title>
+      <link>http://localhost:1313/projects/hard_scrabble/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/hard_scrabble/</guid>
+      <description>Interactive pair programming webapp for a class of 200+ students</description>
+    </item>
+    <item>
+      <title>Parley</title>
+      <link>http://localhost:1313/projects/parley/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/parley/</guid>
+      <description>Recursive annotations as a counter-proposal to the comment thread</description>
+    </item>
+    <item>
+      <title>Student Union (In Line)</title>
+      <link>http://localhost:1313/projects/in_line/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/in_line/</guid>
+      <description>A multi-owner distributed WYSIWYG editor with CDN hosting</description>
+    </item>
+    <item>
+      <title>DumbDB</title>
+      <link>http://localhost:1313/projects/dumb_db/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/dumb_db/</guid>
+      <description>Dumb databases make for good prototypes</description>
+    </item>
+    <item>
+      <title>GradyDocs</title>
+      <link>http://localhost:1313/projects/grady_docs/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/grady_docs/</guid>
+      <description>GradyDocs - a shittier version of Google Docs</description>
+    </item>
+    <item>
+      <title>CalcU</title>
+      <link>http://localhost:1313/projects/calc_u/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/calc_u/</guid>
+      <description>A course aid for mathematics based on a taxonomy of learning</description>
+    </item>
+  </channel>
+</rss>

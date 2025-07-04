@@ -1,0 +1,29 @@
+{{/* 
+    Projects page gradient background
+    Uses an early frame from the sunrise animation
+*/}}
+
+{{ $matrixData := .Site.Data.sunrise_matrix }}
+{{ if not $matrixData }}
+    {{ errorf "SUNRISE MATRIX DATA NOT FOUND: Run 'go run extract_matrix_data.go' to generate sunrise_matrix.json from CSV data" }}
+{{ end }}
+
+{{/* Use frame 30 (early sunrise) for the background */}}
+{{ $frame := index $matrixData.frames 30 }}
+
+<style>
+/* Static gradient background for projects page */
+.projects-page {
+    {{/* Build gradient stops */}}
+    {{ $gradientStops := slice }}
+    {{ range $idx, $bp := $frame.breakpoints }}
+        {{ $offset := printf "%.1f%%" (mul (div (float $idx) 25.0) 100.0) }}
+        {{ $stop := printf "%s %s" $bp.rgb $offset }}
+        {{ $gradientStops = $gradientStops | append $stop }}
+    {{ end }}
+    background: linear-gradient(to bottom, {{ delimit $gradientStops ", " | safeCSS }});
+    background-attachment: fixed;
+}
+</style>
+<div class="unused">
+</div>

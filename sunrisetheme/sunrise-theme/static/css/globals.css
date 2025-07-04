@@ -1,0 +1,116 @@
+/* Global CSS - Applied to all pages */
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root variables */
+:root {
+    --max-content-width: 50rem;
+    --content-padding: 0rem;
+    --text-color: white;
+    --bg-color: #000;
+    --glass-bg: rgba(255,255,255,0.05);
+    --glass-hover: rgba(255,255,255,0.15);
+    --glass-border: rgba(255,255,255,0.15);
+    --glass-blur: 10px;
+}
+
+/* Body defaults */
+body {
+    color: var(--text-color);
+    font-family: 'Atkinson Hyperlegible', Helvetica, Arial, sans-serif;
+    line-height: 1.375;
+    overflow-x: hidden;
+    background: var(--bg-color);
+}
+
+/* Typography */
+h1 { font-size: 2.5rem; font-weight: 500; margin-bottom: 0; padding: 1.75rem 0 .25rem 0; }
+h2 { font-size: 2rem; font-weight: 500; margin-bottom: 0; padding: 1.25rem 0 .5rem 0; }
+h3 { font-size: 1.25rem; font-weight: 500; margin-bottom: 0; padding: 1.25rem 0 .5rem 0; }
+h4, h5, h6 { font-size: 1.1rem; font-weight: 500; margin-bottom: 0; padding: 1.25rem 0 .5rem 0; }
+p { margin-bottom: 0; padding: 0rem 0 1.25rem 0; }
+ul, ol {  margin-left: 1.75em; padding: 0rem 0 1.25rem 0; }
+li { margin-bottom: 0; padding-bottom: .5rem; }
+li:last-child { padding-bottom: 0; }
+.subtitle { font-size: 1.25rem; margin: 0; padding: 0; }
+
+/* Common elements */
+blockquote { 
+    border-left: 4px solid rgba(255,255,255,0.5); 
+    padding-left: 1rem; 
+    margin: 1rem 0; 
+    font-style: italic; 
+}
+
+img { 
+    max-width: 100%; 
+    height: auto; 
+    margin: 1rem 0; 
+    max-height: 50vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: rgba(255,255,255,0.5);
+}
+
+a:hover {
+    text-decoration-color: rgba(255,255,255,0.8);
+}
+
+/* Common UI components */
+.button, .tag {
+    display: inline-block;
+    background: var(--glass-bg);
+    color: white;
+    text-decoration: none;
+    border-radius: .25rem;
+    backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    transition: background 0.2s ease;
+    cursor: pointer;
+}
+
+.button:hover, .tag:hover {
+    background: var(--glass-hover);
+}
+
+.tag {
+    padding: 0.0rem 0.5rem;
+}
+
+.button {
+    padding: 0.25rem 0.75rem;
+}
+
+button {
+    padding: 0.25rem 0.75rem;
+    font-size: 1rem;
+}
+
+
+/* Container utilities */
+.container {
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    padding: 0 var(--content-padding);
+}
+
+/* Visibility utilities */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}

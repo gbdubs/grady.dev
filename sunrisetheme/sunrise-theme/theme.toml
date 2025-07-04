@@ -1,0 +1,18 @@
+# theme.toml template for a Hugo theme
+
+name = "Sunrise Theme"
+description = "A Hugo theme based on sunrise color animations with distinctive layouts for different content types"
+homepage = "http://grady.dev/"
+tags = ["portfolio", "projects", "animation", "minimal", "responsive"]
+features = ["blog", "projects", "tags", "responsive"]
+min_version = "0.41.0"
+
+[author]
+  name = "Grady Berry Ward"
+  homepage = "https://grady.dev"
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""

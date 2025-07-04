@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    {{/* Load CSS - use inline=true for production builds */}}
+    {{ partial "load-css" (dict "files" (slice "fonts" "globals" "project") "inline" (hugo.IsProduction)) }}
+</head>
+<body>
+    {{/* Load matrix data - FAIL LOUDLY if not available */}}
+    {{ $matrixData := .Site.Data.sunrise_matrix }}
+    
+    {{ if not $matrixData }}
+        {{ errorf "SUNRISE MATRIX DATA NOT FOUND: Run 'go run extract_matrix_data.go' to generate sunrise_matrix.json from CSV data" }}
+    {{ end }}
+    {{ if not $matrixData.blockConfigs }}
+        {{ errorf "SUNRISE MATRIX DATA INVALID: No block configurations found. Re-run extract_matrix_data.go" }}
+    {{ end }}
+    
+    {{/* Parse content into blocks using our partial */}}
+    {{ $contentBlocks := partial "content-parser.html" .Content }}
+    
+    {{/* Add navigation and title blocks at the beginning */}}
+    {{ $finalBlocks := slice }}
+    
+    {{/* Back button block - customizable via front matter */}}
+    {{ $backUrl := .Params.backUrl | default "/projects/" }}
+    {{ $backText := .Params.backText | default "← Back" }}
+    {{ $backButton := printf `<a href="%s" class="button back-button">%s</a>` $backUrl $backText }}
+    {{ $finalBlocks = $finalBlocks | append $backButton }}
+    
+    {{/* Title block */}}
+    {{ $titleHtml := printf `<h1>%s</h1>` .Title }}
+    {{ if .Params.subtitle }}
+        {{ $titleHtml = printf `%s<p class="subtitle">%s</p>` $titleHtml .Params.subtitle }}
+    {{ end }}
+    {{ if .Params.tags }}
+        {{ $titleHtml = printf `%s<div class="project-tags">` $titleHtml }}
+        {{ range .Params.tags }}
+            {{ $titleHtml = printf `%s<a href="%s%s" class="tag">%s</a>` $titleHtml ("/tags/" | relURL) (. | urlize) . }}
+        {{ end }}
+        {{ $titleHtml = printf `%s</div>` $titleHtml }}
+    {{ end }}
+    {{ $finalBlocks = $finalBlocks | append $titleHtml }}
+    
+    {{/* Add all content blocks */}}
+    {{ range $contentBlocks }}
+        {{ $finalBlocks = $finalBlocks | append . }}
+    {{ end }}
+    
+    {{/* Add footer if showDate is true */}}
+    {{ if .Params.showDate }}
+        {{ $footerHtml := printf `<div class="page-footer"><time datetime="%s">Last updated: %s</time></div>` (.Date.Format "2006-01-02") (.Date.Format "January 2, 2006") }}
+        {{ $finalBlocks = $finalBlocks | append $footerHtml }}
+    {{ end }}
+    
+    {{/* Find the appropriate gradient configuration */}}
+    {{ $totalBlocks := len $finalBlocks }}
+    {{ $selectedConfig := false }}
+    
+    {{/* Look for exact match */}}
+    {{ range $matrixData.blockConfigs }}
+        {{ if eq .totalBlocks $totalBlocks }}
+            {{ $selectedConfig = . }}
+        {{ end }}
+    {{ end }}
+    
+    {{/* If no exact match, find closest */}}
+    {{ if not $selectedConfig }}
+        {{ $closestDiff := 1000 }}
+        {{ range $matrixData.blockConfigs }}
+            {{ $diff := sub .totalBlocks $totalBlocks }}
+            {{ if lt $diff 0 }}
+                {{ $diff = mul $diff -1 }}
+            {{ end }}
+            {{ if lt $diff $closestDiff }}
+                {{ $closestDiff = $diff }}
+                {{ $selectedConfig = . }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+    
+    {{/* Render each block with its gradient */}}
+    {{ range $blockIdx, $blockContent := $finalBlocks }}
+        {{ if and $selectedConfig (lt $blockIdx (len $selectedConfig.gradients)) }}
+            {{ $gradient := index $selectedConfig.gradients $blockIdx }}
+            
+            {{/* Build horizontal gradient */}}
+            {{ $horizStops := slice }}
+            {{ range $gradient.horizontalStops }}
+                {{ $stop := printf "%s %.1f%%" .color (mul .offset 100) }}
+                {{ $horizStops = $horizStops | append $stop }}
+            {{ end }}
+            {{ $horizGradient := printf "linear-gradient(to right, %s)" (delimit $horizStops ", ") }}
+            
+            {{/* Build vertical gradient */}}
+            {{ $vertStops := slice }}
+            {{ range $gradient.verticalStops }}
+                {{ $stop := printf "%s %.1f%%" .color (mul .offset 100) }}
+                {{ $vertStops = $vertStops | append $stop }}
+            {{ end }}
+            {{ $vertGradient := printf "linear-gradient(to right, %s)" (delimit $vertStops ", ") }}
+            
+            <div class="content-block">
+                <div class="block-background" style="background: {{ $horizGradient | safeCSS }};"></div>
+                <div class="block-foreground" style="background: {{ $vertGradient | safeCSS }};"></div>
+                <div class="block-content">
+                    {{ $blockContent | safeHTML }}
+                </div>
+            </div>
+        {{ else }}
+            {{/* Fallback - this should not happen if we have enough configs */}}
+            <div class="content-block">
+                <div class="block-background" style="background: linear-gradient(to right, rgb(20,20,40), rgb(40,40,80));"></div>
+                <div class="block-foreground" style="background: linear-gradient(to bottom, rgba(60,60,100,0.6), transparent);"></div>
+                <div class="block-content">
+                    {{ $blockContent | safeHTML }}
+                </div>
+            </div>
+        {{ end }}
+    {{ end }}
+
+</body>
+</html>

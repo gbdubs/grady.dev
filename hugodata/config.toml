@@ -1,0 +1,33 @@
+baseURL = "https://grady.dev/"
+languageCode = "en-us"
+title = "grady.dev"
+theme = "sunrisetheme"
+
+# Taxonomies configuration for nested tags
+[taxonomies]
+  tag = "tags"
+
+[params]
+  # Theme-specific parameters
+  description = "Grady's personal website"
+  author = "Grady Berry Ward"
+  mountainsImage = "/images/mountains-only.png"
+  animationDuration = "20s"
+  
+# Menu configuration
+[menu]
+  # Landing page menu (shown on homepage)
+  [[menu.landing]]
+    name = "Portfolio"
+    url = "/projects"
+    weight = 10
+ 
+  [[menu.landing]]
+    name = "Dating"
+    url = "/dating"
+    weight = 20
+    
+  [[menu.landing]]
+    name = "Contact"
+    url = "/contact"
+    weight = 30

@@ -1,0 +1,29 @@
+{{/* Parse HTML content into block elements */}}
+{{ $content := . }}
+{{ $blocks := slice }}
+
+{{/* Replace closing tags with unique markers */}}
+{{ $content = replace $content "</h1>" "</h1>|||BLOCK|||" }}
+{{ $content = replace $content "</h2>" "</h2>|||BLOCK|||" }}
+{{ $content = replace $content "</h3>" "</h3>|||BLOCK|||" }}
+{{ $content = replace $content "</h4>" "</h4>|||BLOCK|||" }}
+{{ $content = replace $content "</h5>" "</h5>|||BLOCK|||" }}
+{{ $content = replace $content "</h6>" "</h6>|||BLOCK|||" }}
+{{ $content = replace $content "</p>" "</p>|||BLOCK|||" }}
+{{ $content = replace $content "</ul>" "</ul>|||BLOCK|||" }}
+{{ $content = replace $content "</ol>" "</ol>|||BLOCK|||" }}
+{{ $content = replace $content "</blockquote>" "</blockquote>|||BLOCK|||" }}
+{{ $content = replace $content "</pre>" "</pre>|||BLOCK|||" }}
+
+{{/* Split by our marker */}}
+{{ $parts := split $content "|||BLOCK|||" }}
+
+{{/* Process each part */}}
+{{ range $parts }}
+    {{ $trimmed := trim . " \n\r\t" }}
+    {{ if $trimmed }}
+        {{ $blocks = $blocks | append $trimmed }}
+    {{ end }}
+{{ end }}
+
+{{ return $blocks }}

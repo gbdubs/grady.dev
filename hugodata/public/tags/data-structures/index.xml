@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data-Structures on grady.dev</title>
+    <link>http://localhost:1313/tags/data-structures/</link>
+    <description>Recent content in Data-Structures on grady.dev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/data-structures/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trees</title>
+      <link>http://localhost:1313/projects/trees/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/trees/</guid>
+      <description>Invertible enumeration of the set of possible Binary Trees</description>
+    </item>
+    <item>
+      <title>Bananagrams</title>
+      <link>http://localhost:1313/projects/bananagrams/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/bananagrams/</guid>
+      <description>A beautiful algorithm for playing Bananagrams</description>
+    </item>
+  </channel>
+</rss>

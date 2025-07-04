@@ -16,7 +16,7 @@ rather than financial value would be accepted. Game on.
 
 After much deliberation, I decided to make them a puzzle. I'd been looking 
 for the opportunity to learn how to use a laser cutter, and thankfully both 
-Boulder + Denver offer the tools in their makerspaces. Over the course of 
+Boulder + Denver offer the tools in their library makerspaces. Over the course of 
 several months (and gifts for several close friends - celebrating a wedding,
 comiserating about the passing of a beloved dog, etc.), I fine tuned both the
 code for generating the puzzle, and the usage of the lazer cutters (trying 

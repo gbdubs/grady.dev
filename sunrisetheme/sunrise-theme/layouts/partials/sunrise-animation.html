@@ -1,0 +1,107 @@
+{{/* 
+    Sunrise Animation CSS Generator
+    Generates CSS animation from sunrise matrix data
+    Uses every 5th frame to reduce keyframes
+*/}}
+
+{{ $matrixData := .Site.Data.sunrise_matrix }}
+{{ if not $matrixData }}
+    {{ errorf "SUNRISE MATRIX DATA NOT FOUND: Run 'go run extract_matrix_data.go' to generate sunrise_matrix.json from CSV data" }}
+{{ end }}
+
+{{/* Calculate frames to use (every 5th frame) */}}
+{{ $frameStep := 5 }}
+{{ $selectedFrames := slice }}
+{{ range $idx, $frame := $matrixData.frames }}
+    {{ if eq (mod $frame.frame $frameStep) 0 }}
+        {{ $selectedFrames = $selectedFrames | append $frame }}
+    {{ end }}
+{{ end }}
+
+{{/* Also ensure we have the last frame */}}
+{{ $lastFrame := index $matrixData.frames (sub (len $matrixData.frames) 1) }}
+{{ $selectedFrames = $selectedFrames | append $lastFrame }}
+
+{{/* Get first frame for initial values */}}
+{{ $firstFrame := index $selectedFrames 0 }}
+
+<style>
+/* Register CSS custom properties for smooth color transitions */
+{{ range $i := seq 0 25 }}
+@property --color{{ $i }} {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: rgba(0, 0, 0, 1);
+}
+{{ end }}
+
+@property --top-of-sky-color {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: rgba(0, 0, 0, 1);
+}
+
+@property --bottom-of-mountain-color {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: rgba(0, 0, 0, 1);
+}
+
+/* Main gradient using CSS variables */
+.sunrise-gradient {
+    {{/* Build gradient stops */}}
+    {{ $gradientStops := slice }}
+    {{ range $idx, $bp := $firstFrame.breakpoints }}
+        {{ $offset := printf "%.1f%%" (mul (div (float $idx) 25.0) 100.0) }}
+        {{ $stop := printf "var(--color%d) %s" $idx $offset }}
+        {{ $gradientStops = $gradientStops | append $stop }}
+    {{ end }}
+    background: linear-gradient(to bottom, {{ delimit $gradientStops ", " | safeCSS }});
+    
+    /* Initial colors from first frame */
+    {{ range $idx, $bp := $firstFrame.breakpoints }}
+    --color{{ $idx }}: {{ $bp.rgb | safeCSS }};
+    {{ end }}
+    
+    /* Apply animation */
+    animation: sunrise-gradient {{ .Site.Params.animationDuration | default "20s" }} linear 1 forwards;
+    animation-play-state: running;
+}
+
+.sunrise-gradient.paused {
+    animation-play-state: paused;
+}
+
+/* Animate the CSS variables */
+@keyframes sunrise-gradient {
+    {{ range $frameIdx, $frame := $selectedFrames }}
+        {{ $percentage := div (float $frame.frame) 270.0 | mul 100.0 }}
+        {{ printf "%.1f%%" $percentage }} {
+            {{ range $bpIdx, $bp := $frame.breakpoints }}
+            --color{{ $bpIdx }}: {{ $bp.rgb | safeCSS }};
+            {{ end }}
+        }
+    {{ end }}
+}
+
+/* Combined sky and mountain color animation */
+:root {
+    --top-of-sky-color: {{ (index $firstFrame.breakpoints 0).rgb | safeCSS }};
+    --bottom-of-mountain-color: rgb(0, 0, 0);
+}
+
+@keyframes sunrise-combined-colors {
+    {{ range $frameIdx, $frame := $selectedFrames }}
+        {{ $percentage := div (float $frame.frame) 270.0 | mul 100.0 }}
+        {{ printf "%.1f%%" $percentage }} {
+            --top-of-sky-color: {{ (index $frame.breakpoints 0).rgb | safeCSS }};
+            {{/* Interpolate from black (0,0,0) to #031d37 (3,29,55) based on percentage */}}
+            {{ $progress := div (float $frame.frame) 270.0 }}
+            {{ $r := mul 3 $progress | int }}
+            {{ $g := mul 29 $progress | int }}
+            {{ $b := mul 55 $progress | int }}
+            --bottom-of-mountain-color: rgb({{ $r }}, {{ $g }}, {{ $b }});
+        }
+    {{ end }}
+}
+</style>

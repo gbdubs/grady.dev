@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Surveillance on grady.dev</title>
+    <link>http://localhost:1313/tags/surveillance/</link>
+    <description>Recent content in Surveillance on grady.dev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/surveillance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sniff</title>
+      <link>http://localhost:1313/projects/sniff/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/sniff/</guid>
+      <description>Why &lt;em&gt;Florida v. Harris&lt;/em&gt; should be the minimum bar for surveillance</description>
+    </item>
+    <item>
+      <title>Creditworthy</title>
+      <link>http://localhost:1313/projects/creditworthy/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/creditworthy/</guid>
+      <description>Thoughts on how Josh Lauer&amp;rsquo;s book &amp;ldquo;Creditworthy&amp;rdquo; can help us renegotiate the surveillance social contract.</description>
+    </item>
+  </channel>
+</rss>

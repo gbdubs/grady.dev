@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    {{/* Load CSS with production inlining support */}}
+    {{ partial "load-css" (dict "files" (slice "fonts" "globals" "projects") "inline" (hugo.IsProduction)) }}
+    
+    {{/* Generate gradient background from sunrise data */}}
+    {{ partial "projects-gradient.html" . }}
+</head>
+<body class="projects-page">
+    <div class="projects-container">
+        <!-- Back button -->
+        <div class="back-navigation">
+            <a href="{{ "/" | relURL }}" class="button back-button">← Back</a>
+        </div>
+        
+        <header class="projects-header">
+            <h1>{{ .Title }}</h1>
+            {{ if .Content }}
+            <div class="projects-description">
+                {{ .Content }}
+            </div>
+            {{ end }}
+        </header>
+        
+        <!-- Filter controls -->
+        <nav class="project-filters">
+            <div class="filter-row">
+                <button class="tag-toggle button" id="tag-toggle">Show Tags</button>
+                <button class="priority-toggle button active" data-filter="priority">Showing Best/Recent (Show All)</button>
+            </div>
+            
+            <div class="tag-list" id="tag-list">
+                {{ range .Site.Taxonomies.tags }}
+                <a href="{{ "tags/" | relURL }}{{ .Page.Title | urlize }}" class="tag">
+                    {{ replace .Page.Title "-" " " | title }} <span class="tag-count"> {{ .Count }}</span>
+                </a>
+                {{ end }}
+            </div>
+        </nav>
+        
+        <!-- Project grid -->
+        <div class="projects-grid">
+            {{ $pages := where .Site.RegularPages "Type" "projects" }}
+            {{ $pages = $pages.ByParam "priority" }}
+            
+            {{/* Load sunrise matrix data for border colors */}}
+            {{ $matrixData := .Site.Data.sunrise_matrix }}
+            {{ if not $matrixData }}
+                {{ errorf "sunrise_matrix.json not found in data directory" }}
+            {{ end }}
+            
+            {{/* Separate priority and regular projects for frame assignment */}}
+            {{ $priorityPages := where $pages "Params.isPriority" true }}
+            {{ $regularPages := where $pages "Params.isPriority" "!=" true }}
+            {{ $totalFrames := len $matrixData.frames }}
+            
+            {{ range $idx, $page := $pages }}
+                {{/* Assign frame based on priority status */}}
+                {{ $frameIdx := 0 }}
+                {{ if .Params.isPriority }}
+                    {{/* Priority projects get frames 205-255 */}}
+                    {{ $priorityIdx := 0 }}
+                    {{ range $i, $p := $priorityPages }}
+                        {{ if eq $p.Title $page.Title }}
+                            {{ $priorityIdx = $i }}
+                        {{ end }}
+                    {{ end }}
+                    {{ $frameIdx = add 205 (div (mul $priorityIdx 50) (len $priorityPages)) | int }}
+                {{ else }}
+                    {{/* Regular projects get frames 80-170 */}}
+                    {{ $regularIdx := 0 }}
+                    {{ range $i, $p := $regularPages }}
+                        {{ if eq $p.Title $page.Title }}
+                            {{ $regularIdx = $i }}
+                        {{ end }}
+                    {{ end }}
+                    {{ $frameIdx = add 80 (div (mul $regularIdx 90) (len $regularPages)) | int }}
+                {{ end }}
+                
+                {{ $frame := index $matrixData.frames $frameIdx }}
+                
+                {{/* Filter and select colors based on saturation */}}
+                {{ $allColors := $frame.breakpoints }}
+                {{ $colorCount := len $allColors }}
+                
+                {{/* Find saturation threshold for top 20% */}}
+                {{ $saturations := slice }}
+                {{ range $allColors }}
+                    {{ $saturations = $saturations | append .color.s }}
+                {{ end }}
+                
+                {{/* Simple approach: take colors with saturation > 0.3 or top 5 most saturated */}}
+                {{ $highSatColors := slice }}
+                {{ range $allColors }}
+                    {{ if gt .color.s 0.3 }}
+                        {{ $highSatColors = $highSatColors | append . }}
+                    {{ end }}
+                {{ end }}
+                
+                {{/* If we don't have enough high saturation colors, take the most saturated ones */}}
+                {{ if lt (len $highSatColors) 5 }}
+                    {{ $highSatColors = slice }}
+                    {{/* Take every 5th color to spread across the gradient, favoring higher indices (brighter) */}}
+                    {{ range $i := seq 0 4 }}
+                        {{ $colorIdx := add (mul $i 5) 1 }}
+                        {{ if lt $colorIdx $colorCount }}
+                            {{ $highSatColors = $highSatColors | append (index $allColors $colorIdx) }}
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+                
+                {{/* Select 5 diverse colors using simple spacing */}}
+                {{ $finalColors := slice }}
+                {{ $totalHigh := len $highSatColors }}
+                {{ if gt $totalHigh 0 }}
+                    {{ range $i := seq 0 4 }}
+                        {{ $idx := div (mul $i $totalHigh) 5 }}
+                        {{ if lt $idx $totalHigh }}
+                            {{ $finalColors = $finalColors | append (index $highSatColors $idx) }}
+                        {{ else }}
+                            {{ $finalColors = $finalColors | append (index $allColors (mod (mul $i 5) $colorCount)) }}
+                        {{ end }}
+                    {{ end }}
+                {{ else }}
+                    {{/* Fallback: use evenly spaced colors */}}
+                    {{ range $i := seq 0 4 }}
+                        {{ $colorIdx := mul $i 5 }}
+                        {{ $finalColors = $finalColors | append (index $allColors $colorIdx) }}
+                    {{ end }}
+                {{ end }}
+                
+                {{/* Generate CSS custom properties */}}
+                {{ $borderColorStyles := slice }}
+                {{ range $i, $bp := $finalColors }}
+                    {{ if lt $i 5 }}
+                        {{ $style := printf "--border-color-%d: %s" (add $i 1) ($bp.rgb | safeCSS) }}
+                        {{ $borderColorStyles = $borderColorStyles | append $style }}
+                    {{ end }}
+                {{ end }}
+                
+                {{/* Build class list for filtering */}}
+                {{ $classes := "project-card" }}
+                {{ if .Params.isPriority }}
+                    {{ $classes = printf "%s priority-project" $classes }}
+                {{ end }}
+                {{ if .Params.tags }}
+                    {{ range .Params.tags }}
+                        {{ $classes = printf "%s tag-%s" $classes (. | urlize) }}
+                    {{ end }}
+                {{ end }}
+                
+   
+                <article class="{{ $classes }}" style="{{ delimit $borderColorStyles "; " | safeCSS }}">
+                    <a href="{{ .Permalink }}" class="no-underline clickable-project-card">
+                        <div>
+                            <h2 class="project-title">
+                                {{ .Title }}
+                                {{ if .Params.isPriority }}
+                                <span class="priority-star" title="Best/Recent Work">★</span>
+                                {{ end }}
+                            </h2>
+                            <p class="project-description">{{ .Summary | truncate 150 }}</p>
+                            {{ if .Params.tags }}
+                            <div class="project-tags">
+                                {{ range .Params.tags }}
+                                <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag">{{ replace . "-" " " }}</a>
+                                {{ end }}
+                            </div>
+                            {{ end }}
+                            <time class="project-date">{{ .Date.Format "January 2006" }}</time>
+                        </div>
+                    </a>
+                </article>
+                
+            {{ end }}
+        </div>
+    </div>
+    
+    <script>
+        // Enhanced project filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const priorityToggle = document.querySelector('.priority-toggle');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            let showPriorityOnly = true;
+            
+            // Tag toggle functionality
+            const tagToggle = document.getElementById('tag-toggle');
+            const tagList = document.getElementById('tag-list');
+            
+            if (tagToggle && tagList) {
+                tagToggle.addEventListener('click', function() {
+                    const isVisible = tagList.classList.contains('visible');
+                    tagList.classList.toggle('visible');
+                    this.textContent = isVisible ? 'Show Tags' : 'Hide Tags';
+                });
+            }
+
+            const applyPriorityToCards = () => {
+                projectCards.forEach(card => {
+                    if (showPriorityOnly && !card.classList.contains('priority-project')) {
+                        card.classList.add('hidden');
+                    } else {
+                        card.classList.remove('hidden');
+                    }
+                });
+            };
+            
+            // Priority toggle functionality
+            if (priorityToggle) {
+                priorityToggle.addEventListener('click', function() {
+                    showPriorityOnly = !showPriorityOnly;
+                    this.classList.toggle('active', showPriorityOnly);
+                    this.textContent = showPriorityOnly ? 'Showing Best/Recent (Show All)' : 'Showing All (Show Only Best/Recent)';
+                    applyPriorityToCards();
+                    updateGridLayout();
+                });
+            }
+            
+            function updateGridLayout() {
+                // Force grid recalculation after filtering
+                const grid = document.querySelector('.projects-grid');
+                if (grid) {
+                    grid.style.display = 'none';
+                    grid.offsetHeight; // Trigger reflow
+                    grid.style.display = 'grid';
+                }
+            }
+
+            applyPriorityToCards();
+            updateGridLayout();
+        });
+    </script>
+</body>
+</html>

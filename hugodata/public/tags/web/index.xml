@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on grady.dev</title>
+    <link>http://localhost:1313/tags/web/</link>
+    <description>Recent content in Web on grady.dev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kerry Chase Website</title>
+      <link>http://localhost:1313/projects/chase/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/chase/</guid>
+      <description>A basic website for a politics professor</description>
+    </item>
+    <item>
+      <title>Personal Website V1</title>
+      <link>http://localhost:1313/projects/website_v1/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/website_v1/</guid>
+      <description>The very deprecated version of my personal portfolio</description>
+    </item>
+    <item>
+      <title>Personal Website V2</title>
+      <link>http://localhost:1313/projects/website_v2/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/website_v2/</guid>
+      <description>The deprecated version of my personal portfolio</description>
+    </item>
+    <item>
+      <title>Personal Website V3</title>
+      <link>http://localhost:1313/projects/website_v3/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/website_v3/</guid>
+      <description>The site you find yourself on right now</description>
+    </item>
+    <item>
+      <title>Ward Lab</title>
+      <link>http://localhost:1313/projects/ward_lab/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ward_lab/</guid>
+      <description>An academic profile for my father&amp;rsquo;s lab work</description>
+    </item>
+    <item>
+      <title>WSMD - What should Maddie Do?</title>
+      <link>http://localhost:1313/projects/wsmd/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/wsmd/</guid>
+      <description>A sprint-written tool for the indecisive</description>
+    </item>
+    <item>
+      <title>Zina Ward Website</title>
+      <link>http://localhost:1313/projects/zina_b_ward/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/zina_b_ward/</guid>
+      <description>My sister&amp;rsquo;s professional profile</description>
+    </item>
+    <item>
+      <title>ABOUND.art</title>
+      <link>http://localhost:1313/projects/abound/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/abound/</guid>
+      <description>A platform for anyone to make gorgeous art</description>
+    </item>
+    <item>
+      <title>Draw Me CSS</title>
+      <link>http://localhost:1313/projects/draw_me_css/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/draw_me_css/</guid>
+      <description>Simple framework for making websites that magically appear</description>
+    </item>
+  </channel>
+</rss>
