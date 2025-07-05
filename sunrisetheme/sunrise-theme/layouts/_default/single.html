@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head><title>{{ .Title }}</title></head>
+<head>
+    <title>{{ .Title }}</title>
+    {{ partial "cloudflare-analytics.html" . }}
+</head>
 <body>
 <h1>{{ .Title }}</h1>
 {{ .Content }}

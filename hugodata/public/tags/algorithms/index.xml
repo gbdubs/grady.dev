@@ -65,6 +65,13 @@
       <description>Give me a straightedge and a compass&amp;hellip;</description>
     </item>
     <item>
+      <title>Flux</title>
+      <link>http://localhost:1313/projects/flux/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/flux/</guid>
+      <description>Modifying attractor parameters via a parameter space orbit</description>
+    </item>
+    <item>
       <title>Cindi</title>
       <link>http://localhost:1313/projects/cindi/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>

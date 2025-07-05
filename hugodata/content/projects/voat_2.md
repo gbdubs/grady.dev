@@ -6,7 +6,7 @@ draft: false
 
 # Project classification
 type: "projects"
-tags: ["art", "css", "education", "interactive", "generative"]
+tags: ["art", "education", "websites"]
 isPriority: true
 sortPriority: 1710
 isSimple: false

@@ -6,14 +6,6 @@
     <description>Recent content in Framework on grady.dev</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/framework/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Draw Me CSS</title>
-      <link>http://localhost:1313/projects/draw_me_css/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/draw_me_css/</guid>
-      <description>Simple framework for making websites that magically appear</description>
-    </item>
   </channel>
 </rss>

@@ -4,11 +4,11 @@ subtitle: "Meteorites are beautiful - I learned some chemistry"
 summary: "Meteorites are beautiful - I learned some chemistry"
 type: "projects"
 isSimple: false
-isPriority: true
+isPriority: false 
 sortPriority: 1700
 draft: false
 date: 2019-06-01
-tags: ["art", "physics", "chemistry", "meteorites", "crystals", "visualization"]
+tags: ["art", "physics", "tools"]
 CTALink: ""
 CTA: ""
 CTAPreamble: ""

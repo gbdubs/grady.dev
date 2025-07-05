@@ -6,56 +6,6 @@
     <description>Recent content in Golang on grady.dev</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/golang/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Ecology</title>
-      <link>http://localhost:1313/projects/ecology/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/ecology/</guid>
-      <description>A command line tool for opinionated management of cloud resources</description>
-    </item>
-    <item>
-      <title>Grady.In</title>
-      <link>http://localhost:1313/projects/grady_in/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/grady_in/</guid>
-      <description>Go-Links for everybody</description>
-    </item>
-    <item>
-      <title>Laser Cut Puzzles</title>
-      <link>http://localhost:1313/projects/laser_puzzles/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/laser_puzzles/</guid>
-      <description>Writing algorithms for good jigsaw puzzles, and making them real on laser cutters</description>
-    </item>
-    <item>
-      <title>Sunrise</title>
-      <link>http://localhost:1313/projects/sunrise/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/sunrise/</guid>
-      <description>Capturing the best time of the day</description>
-    </item>
-    <item>
-      <title>Wingspan Deck Generation</title>
-      <link>http://localhost:1313/projects/wingspan/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/wingspan/</guid>
-      <description>Learn about the birds in your local area through a game</description>
-    </item>
-    <item>
-      <title>ABOUND.art</title>
-      <link>http://localhost:1313/projects/abound/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/abound/</guid>
-      <description>A platform for anyone to make gorgeous art</description>
-    </item>
-    <item>
-      <title>GoLog</title>
-      <link>http://localhost:1313/projects/golog/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/golog/</guid>
-      <description>a visual post-hoc logger for golang</description>
-    </item>
   </channel>
 </rss>

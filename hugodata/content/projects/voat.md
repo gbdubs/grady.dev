@@ -6,7 +6,7 @@ draft: false
 
 # Project classification
 type: "projects"
-tags: ["art", "javascript", "generative", "algorithms"]
+tags: ["art", "algorithms", "tools"]
 isPriority: false
 sortPriority: 600
 isSimple: false

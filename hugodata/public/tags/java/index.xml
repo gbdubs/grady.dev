@@ -6,56 +6,6 @@
     <description>Recent content in Java on grady.dev</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/java/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hardscrabble</title>
-      <link>http://localhost:1313/projects/hard_scrabble/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/hard_scrabble/</guid>
-      <description>Interactive pair programming webapp for a class of 200+ students</description>
-    </item>
-    <item>
-      <title>Trees</title>
-      <link>http://localhost:1313/projects/trees/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/trees/</guid>
-      <description>Invertible enumeration of the set of possible Binary Trees</description>
-    </item>
-    <item>
-      <title>3-SAT decomposition</title>
-      <link>http://localhost:1313/projects/3_sat/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/3_sat/</guid>
-      <description>Using exponential space to perform 3-SAT calculations in polynomial time</description>
-    </item>
-    <item>
-      <title>Flux</title>
-      <link>http://localhost:1313/projects/flux/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/flux/</guid>
-      <description>Modifying attractor parameters via a parameter space orbit</description>
-    </item>
-    <item>
-      <title>Cindi</title>
-      <link>http://localhost:1313/projects/cindi/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/cindi/</guid>
-      <description>Algorithmically generated art inspired by Janelle Monae&amp;rsquo;s Metropolis Suite</description>
-    </item>
-    <item>
-      <title>Draw Me CSS</title>
-      <link>http://localhost:1313/projects/draw_me_css/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/draw_me_css/</guid>
-      <description>Simple framework for making websites that magically appear</description>
-    </item>
-    <item>
-      <title>Bananagrams</title>
-      <link>http://localhost:1313/projects/bananagrams/</link>
-      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/bananagrams/</guid>
-      <description>A beautiful algorithm for playing Bananagrams</description>
-    </item>
   </channel>
 </rss>

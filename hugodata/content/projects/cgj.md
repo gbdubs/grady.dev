@@ -8,7 +8,7 @@ isPriority: false
 sortPriority: 1025
 draft: false
 date: 2017-09-01
-tags: ["government", "cgj", "civic", "investigation", "public-service", "california"]
+tags: ["government", "community"]
 CTALink: "http://civilgrandjury.sfgov.org"
 CTA: "Visit CGJ Website"
 CTAPreamble: "Learn more about the Civil Grand Jury:"

@@ -6,7 +6,7 @@ draft: false
 
 # Project classification
 type: "projects"
-tags: ["web", "collaborative", "education"]
+tags: ["websites", "education"]
 isPriority: false
 sortPriority: 0
 isSimple: false

@@ -6,14 +6,6 @@
     <description>Recent content in Optimization on grady.dev</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/optimization/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Bananagrams</title>
-      <link>http://localhost:1313/projects/bananagrams/</link>
-      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/bananagrams/</guid>
-      <description>A beautiful algorithm for playing Bananagrams</description>
-    </item>
   </channel>
 </rss>

@@ -6,7 +6,7 @@ draft: false
 
 # Project classification
 type: "projects"
-tags: ["theory", "java", "algorithms", "data-structures"]
+tags: ["algorithms", "tools"]
 isPriority: false
 sortPriority: 80
 isSimple: false

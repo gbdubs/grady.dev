@@ -8,7 +8,7 @@ isPriority: false
 sortPriority: 50
 draft: false
 date: 2015-11-01
-tags: ["tensorflow", "python", "ml", "kaggle", "competition", "ai"]
+tags: ["tools", "education"]
 CTALink: "https://www.kaggle.com/c/the-allen-ai-science-challenge/leaderboard"
 CTA: "View Competition Results"
 CTAPreamble: "See our top 10 placement on the leaderboard:"

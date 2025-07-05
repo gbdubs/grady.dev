@@ -8,7 +8,7 @@ isPriority: true
 sortPriority: 1800
 draft: false
 date: 2023-06-01
-tags: ["career", "mentoring", "software-engineering", "advice", "documentation"]
+tags: ["education", "writing"]
 CTALink: "/advice"
 CTA: "Read the Full Guide"
 CTAPreamble: "Access the comprehensive advice document:"

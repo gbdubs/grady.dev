@@ -6,14 +6,6 @@
     <description>Recent content in Backend on grady.dev</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/backend/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Ecology</title>
-      <link>http://localhost:1313/projects/ecology/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/ecology/</guid>
-      <description>A command line tool for opinionated management of cloud resources</description>
-    </item>
   </channel>
 </rss>

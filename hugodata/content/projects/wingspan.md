@@ -6,7 +6,7 @@ draft: false
 
 # Project classification
 type: "projects"
-tags: ["art", "scraping", "golang", "games", "birds", "data"]
+tags: ["art", "birds", "tools", "gifts"]
 isPriority: true
 sortPriority: 1740
 isSimple: false

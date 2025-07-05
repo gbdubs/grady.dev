@@ -4,12 +4,10 @@ date: 2024-01-15
 draft: false
 type: "projects"
 layout: "single"
-subtitle: "Get in touch"
-backUrl: "/"
-backText: "← Back"
+hideInList: true
 ---
 
-## Let's Connect
+## Let's connect
 
 If you have something to say, I want to hear from you!
 The best way to connect is below but first...
@@ -42,11 +40,11 @@ Finally, *I do not vouch for folks I don't know* - please do not ask
 for a referral or introduction (or connect solely with that intention) if we
 do not yet know one another.
 
-## Sounds good! 
+## Sounds good?
 
 Please reach out over email: [hello@grady.dev](mailto:hello@grady.dev).
 
-**Prefer an encrypted channel?** [Reach out to @gradyberryward.02 on Signal](https://signal.me/#eu/mL0eL_wo_guuO1v0sFBVAxIqrS1qiTiTUFuOQyDCjREisJmEEb1CXKufFxHVMk2T)
+Prefer an encrypted channel? [Reach out to @gradyberryward.02 on Signal](https://signal.me/#eu/mL0eL_wo_guuO1v0sFBVAxIqrS1qiTiTUFuOQyDCjREisJmEEb1CXKufFxHVMk2T)
 
 Alternatively, you can follow me on [LinkedIn](https://www.linkedin.com/in/gradyward/) or
 [Github](https://www.github.com/gbdubs).

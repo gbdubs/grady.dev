@@ -8,7 +8,7 @@ isPriority: false
 sortPriority: 900
 draft: true
 date: 2017-01-01
-tags: ["webapp", "collaborative", "healthcare", "abortion", "clinic", "backend"]
+tags: ["websites", "community"]
 CTALink: "http://www.findaclinic.org"
 CTA: "Visit Find A Clinic"
 CTAPreamble: "Access the platform:"

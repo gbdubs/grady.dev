@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} - {{ .Site.Title }}</title>
+    
+    {{ partial "cloudflare-analytics.html" . }}
+    
     {{/* Load CSS - use inline=true for production builds */}}
     {{ partial "load-css" (dict "files" (slice "fonts" "globals" "project") "inline" (hugo.IsProduction)) }}
 </head>
@@ -25,9 +28,7 @@
     {{ $finalBlocks := slice }}
     
     {{/* Back button block - customizable via front matter */}}
-    {{ $backUrl := .Params.backUrl | default "/projects/" }}
-    {{ $backText := .Params.backText | default "← Back" }}
-    {{ $backButton := printf `<a href="%s" class="button back-button">%s</a>` $backUrl $backText }}
+    {{ $backButton := printf `<button class="button back-button" onclick="history.back()">← Back</button>` }}
     {{ $finalBlocks = $finalBlocks | append $backButton }}
     
     {{/* Title block */}}

@@ -6,14 +6,6 @@
     <description>Recent content in OCR on grady.dev</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/ocr/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Birth Certificate Scraping</title>
-      <link>http://localhost:1313/projects/birth_certificate_scraping/</link>
-      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/birth_certificate_scraping/</guid>
-      <description>Scraping data from birth certificates between 1900 and 1950 for an Economics paper.</description>
-    </item>
   </channel>
 </rss>

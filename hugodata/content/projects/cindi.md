@@ -8,7 +8,7 @@ isPriority: false
 sortPriority: 1500
 draft: false
 date: 2017-01-01
-tags: ["art", "java", "generative", "algorithms", "emotion", "janelle-monae", "visual"]
+tags: ["art", "algorithms", "tools"]
 CTALink: "https://gbdubs.github.io/cindi-gallery"
 CTA: "View Art Gallery"
 CTAPreamble: "Explore the generated artwork:"

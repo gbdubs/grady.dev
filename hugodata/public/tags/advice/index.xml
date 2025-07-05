@@ -6,14 +6,6 @@
     <description>Recent content in Advice on grady.dev</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/advice/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Advice for new SWEs</title>
-      <link>http://localhost:1313/projects/advice/</link>
-      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/advice/</guid>
-      <description>My recommendations for folks starting (or considering) a career as a software engineer</description>
-    </item>
   </channel>
 </rss>

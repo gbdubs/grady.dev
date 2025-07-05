@@ -8,7 +8,7 @@ isPriority: false
 sortPriority: 1249
 draft: false
 date: 2021-01-01
-tags: ["privacy", "surveillance", "credit", "book-review", "regulation", "data"]
+tags: ["privacy", "books", "writing"]
 CTALink: ""
 CTA: ""
 CTAPreamble: ""

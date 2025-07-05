@@ -4,11 +4,11 @@ subtitle: "Themed gifts for friends and family"
 summary: "Themed gifts for friends and family"
 type: "projects"
 isSimple: false
-isPriority: true
+isPriority: false 
 sortPriority: 3999
 draft: false
 date: 2022-01-01
-tags: ["games", "gifts", "design", "art", "family", "creativity"]
+tags: ["gifts", "art", "design", "love"]
 CTALink: ""
 CTA: ""
 CTAPreamble: ""

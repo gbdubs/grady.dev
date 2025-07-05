@@ -8,7 +8,7 @@ isPriority: false
 sortPriority: 800
 draft: false
 date: 2018-01-01
-tags: ["art", "java", "attractors", "mathematics", "visual", "animation", "generative"]
+tags: ["art", "animation", "algorithms"]
 CTALink: "https://gbdubs.github.io/flux/"
 CTA: "View Interactive Demo"
 CTAPreamble: "Experience the attractor visualization:"

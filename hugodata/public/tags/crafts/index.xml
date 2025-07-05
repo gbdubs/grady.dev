@@ -9,6 +9,13 @@
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/crafts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Laser Cut Puzzles</title>
+      <link>http://localhost:1313/projects/laser_puzzles/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/laser_puzzles/</guid>
+      <description>Writing algorithms for good jigsaw puzzles, and making them real on laser cutters</description>
+    </item>
+    <item>
       <title>Shoe Rack</title>
       <link>http://localhost:1313/projects/shoe_rack/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>

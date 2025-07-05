@@ -21,12 +21,12 @@ theme = "sunrisetheme"
     name = "Portfolio"
     url = "/projects"
     weight = 10
- 
-  [[menu.landing]]
-    name = "Dating"
-    url = "/dating"
-    weight = 20
     
+  [[menu.landing]]
+    name = "Privacy"
+    url = "/privacy"
+    weight = 20
+
   [[menu.landing]]
     name = "Contact"
     url = "/contact"

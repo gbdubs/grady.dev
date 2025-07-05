@@ -6,7 +6,7 @@ draft: false
 
 # Project classification
 type: "projects"
-tags: ["theory", "algorithms", "mathematics", "research", "c", "matlab"]
+tags: ["algorithms", "education", "tools"]
 isPriority: false
 sortPriority: 1300
 isSimple: false

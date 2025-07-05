@@ -6,14 +6,6 @@
     <description>Recent content in Loss on grady.dev</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/loss/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Clock</title>
-      <link>http://localhost:1313/projects/clock/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/clock/</guid>
-      <description>Something that is more than the sum of its parts can be reduced back to it.</description>
-    </item>
   </channel>
 </rss>

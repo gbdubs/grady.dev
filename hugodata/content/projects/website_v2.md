@@ -6,7 +6,7 @@ draft: false
 
 # Project classification
 type: "projects"
-tags: ["web", "design", "css", "portfolio", "art"]
+tags: ["websites", "design", "art"]
 isPriority: false
 sortPriority: 101
 isSimple: false

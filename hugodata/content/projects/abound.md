@@ -8,7 +8,7 @@ isPriority: true
 sortPriority: 5000
 draft: false
 date: 2021-01-01
-tags: ["art", "platform", "golang", "generative", "algorithms", "web"]
+tags: ["art", "algorithms", "websites", "tools"]
 CTALink: "https://abound.art"
 CTA: "Visit ABOUND.art"
 CTAPreamble: "Try creating generative art yourself:"

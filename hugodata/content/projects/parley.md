@@ -6,7 +6,7 @@ draft: false
 
 # Project classification
 type: "projects"
-tags: ["webapp", "design", "ux", "collaborative", "discussion"]
+tags: ["websites", "design", "online spaces"]
 isPriority: false 
 sortPriority: 1100
 isSimple: false

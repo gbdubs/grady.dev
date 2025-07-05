@@ -8,7 +8,7 @@ isPriority: true
 sortPriority: 6000
 draft: false
 date: 2023-01-01
-tags: ["policy", "platform", "nuxt", "regulation", "content-moderation", "integrity", "fellowship"]
+tags: ["government", "online spaces"]
 CTALink: "https://fellowship.ii.grady.dev"
 CTA: "Browse Focus on Features"
 CTAPreamble: "Explore the resource:"

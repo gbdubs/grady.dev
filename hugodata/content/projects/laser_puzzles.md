@@ -6,8 +6,8 @@ draft: false
 
 # Project classification
 type: "projects"
-tags: ["algorithms", "art", "gifts", "woodworking", "laser-cutting", "golang"]
-isPriority: false
+tags: ["algorithms", "art", "gifts", "crafts", "tools"]
+isPriority: true 
 sortPriority: 3998
 isSimple: false
 
@@ -33,7 +33,7 @@ for the opportunity to learn how to use a laser cutter, and thankfully both
 Boulder + Denver offer the tools in their library makerspaces. Over the course of 
 several months (and gifts for several close friends - celebrating a wedding,
 comiserating about the passing of a beloved dog, etc.), I fine tuned both the
-code for generating the puzzle, and the usage of the lazer cutters (trying 
+code for generating the puzzle, and the usage of the laser cutters (trying 
 out three different kinds over time, and finding the right set of controls
 for each). 
 
@@ -43,7 +43,7 @@ for each).
 
 In the end I was very impressed by the Glowforge PRO, which consistently had 
 the lowest amount of hassle, and produced consistently good rasters. The 
-Epilog lazer I used for the final cut was also quite good both in precision
+Epilog laser I used for the final cut was also quite good both in precision
 and accuracy in the cut,but the raster left quite a bit to be desired.
 
 The final process I found to be effective involved first etching the image on

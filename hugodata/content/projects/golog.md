@@ -8,7 +8,7 @@ isPriority: false
 sortPriority: 1000
 draft: false
 date: 2020-01-01
-tags: ["art", "css", "golang", "debugging", "logger", "visual", "tools"]
+tags: ["art", "tools"]
 CTALink: "https://github.com/gbdubs/golog"
 CTA: "View on GitHub"
 CTAPreamble: "Check out the visual debugger:"

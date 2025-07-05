@@ -6,7 +6,7 @@ draft: false
 
 # Project classification
 type: "projects"
-tags: ["writing", "personal", "love", "loss"]
+tags: ["writing", "love"]
 isPriority: false
 sortPriority: 40
 isSimple: false

@@ -30,6 +30,13 @@
       <description>A shoe rack made as a gift - that had to fit in a suitcase</description>
     </item>
     <item>
+      <title>Wingspan Deck Generation</title>
+      <link>http://localhost:1313/projects/wingspan/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/wingspan/</guid>
+      <description>Learn about the birds in your local area through a game</description>
+    </item>
+    <item>
       <title>Custom Board Games</title>
       <link>http://localhost:1313/projects/board_games/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>

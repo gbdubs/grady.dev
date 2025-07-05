@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tags - {{ .Site.Title }}</title>
+    
+    {{ partial "cloudflare-analytics.html" . }}
+    
     <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}">
     <link rel="stylesheet" href="{{ "css/tag-list.css" | relURL }}">
 </head>

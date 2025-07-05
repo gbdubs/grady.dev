@@ -8,7 +8,7 @@ isPriority: false
 sortPriority: 400
 draft: false
 date: 2016-01-01
-tags: ["webapp", "nodejs", "aws", "mongodb", "collaborative", "real-time", "socketio"]
+tags: ["websites", "tools"]
 CTALink: "http://www.gradydocs.com"
 CTA: "Visit GradyDocs"
 CTAPreamble: "Try the collaborative editor:"

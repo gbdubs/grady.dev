@@ -20,7 +20,14 @@
       <link>http://localhost:1313/projects/chores/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/chores/</guid>
-      <description>Technological erosion of small service</description>
+      <description>How automation, specialization, and collectivization enable isolation</description>
+    </item>
+    <item>
+      <title>Custom Board Games</title>
+      <link>http://localhost:1313/projects/board_games/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/board_games/</guid>
+      <description>Themed gifts for friends and family</description>
     </item>
     <item>
       <title>Raison d&#39;être: le chien</title>

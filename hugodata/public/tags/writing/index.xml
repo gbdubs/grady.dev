@@ -36,5 +36,26 @@
       <guid>http://localhost:1313/projects/terry/</guid>
       <description>Case level analysis sometimes cannot arrive at agreeable precedent.</description>
     </item>
+    <item>
+      <title>Advice for new SWEs</title>
+      <link>http://localhost:1313/projects/advice/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/advice/</guid>
+      <description>My recommendations for folks starting (or considering) a career as a software engineer</description>
+    </item>
+    <item>
+      <title>Creditworthy</title>
+      <link>http://localhost:1313/projects/creditworthy/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/creditworthy/</guid>
+      <description>Thoughts on how Josh Lauer&amp;rsquo;s book &amp;ldquo;Creditworthy&amp;rdquo; can help us renegotiate the surveillance social contract.</description>
+    </item>
+    <item>
+      <title>Raison d&#39;être: le chien</title>
+      <link>http://localhost:1313/projects/dogs/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/dogs/</guid>
+      <description>My search for (and approximate answer to) the big questions</description>
+    </item>
   </channel>
 </rss>

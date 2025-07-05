@@ -13,21 +13,21 @@
       <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/contact/</guid>
-      <description>&lt;h2 id=&#34;lets-connect&#34;&gt;Let&amp;rsquo;s Connect&lt;/h2&gt;&#xA;&lt;p&gt;If you have something to say, I want to hear from you!&#xA;The best way to connect is below but first&amp;hellip;&lt;/p&gt;&#xA;&lt;h3 id=&#34;please-reach-out-if&#34;&gt;Please reach out if&amp;hellip;&lt;/h3&gt;&#xA;&lt;p&gt;You have ideas, feedback, suggestions, or an argument you want to share.&lt;/p&gt;&#xA;&lt;p&gt;You find a bug, flaw, or error in something that I built and want me to fix it.&lt;/p&gt;&#xA;&lt;p&gt;You have a book or album suggestion&lt;/p&gt;&#xA;&lt;p&gt;You want source code for almost anything on this site. I&amp;rsquo;ll probably give&#xA;you it if you ask and have some plan for using it.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;lets-connect&#34;&gt;Let&amp;rsquo;s connect&lt;/h2&gt;&#xA;&lt;p&gt;If you have something to say, I want to hear from you!&#xA;The best way to connect is below but first&amp;hellip;&lt;/p&gt;&#xA;&lt;h3 id=&#34;please-reach-out-if&#34;&gt;Please reach out if&amp;hellip;&lt;/h3&gt;&#xA;&lt;p&gt;You have ideas, feedback, suggestions, or an argument you want to share.&lt;/p&gt;&#xA;&lt;p&gt;You find a bug, flaw, or error in something that I built and want me to fix it.&lt;/p&gt;&#xA;&lt;p&gt;You have a book or album suggestion&lt;/p&gt;&#xA;&lt;p&gt;You want source code for almost anything on this site. I&amp;rsquo;ll probably give&#xA;you it if you ask and have some plan for using it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dating</title>
       <link>http://localhost:1313/dating/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/dating/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m building a simple tool to allow folks to create a static dating profile to&lt;/p&gt;&#xA;&lt;p&gt;Think of it as a classified&lt;/p&gt;</description>
+      <description>&lt;p&gt;&amp;ldquo;Fish with the right bait&amp;rdquo; &amp;lt;&amp;ndash; my advice to everyone dating.&lt;/p&gt;&#xA;&lt;p&gt;Dating apps are reductive, they encourage us to craft a narrative and vision of ourselves&#xA;that is pithy, and generically positive, since it often feels like d&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m building a simple tool to allow folks to create a static dating profile to&lt;/p&gt;&#xA;&lt;p&gt;Think of it as a classified&lt;/p&gt;</description>
     </item>
     <item>
       <title>Privacy Policy</title>
       <link>http://localhost:1313/privacy/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/privacy/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This website is designed with privacy in mind. We collect minimal data and respect your privacy choices.&lt;/p&gt;&#xA;&lt;h2 id=&#34;data-collection&#34;&gt;Data Collection&lt;/h2&gt;&#xA;&lt;h3 id=&#34;what-we-collect&#34;&gt;What We Collect&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Analytics&lt;/strong&gt;: We use privacy-focused analytics that don&amp;rsquo;t track individual users&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Contact Forms&lt;/strong&gt;: Information you voluntarily provide when contacting us&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Technical Data&lt;/strong&gt;: Basic server logs for security and performance monitoring&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;what-we-dont-collect&#34;&gt;What We Don&amp;rsquo;t Collect&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Personal identifiers&lt;/li&gt;&#xA;&lt;li&gt;Tracking cookies&lt;/li&gt;&#xA;&lt;li&gt;Third-party advertising data&lt;/li&gt;&#xA;&lt;li&gt;Behavioral profiles&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;data-usage&#34;&gt;Data Usage&lt;/h2&gt;&#xA;&lt;p&gt;Any data collected is used solely for:&lt;/p&gt;</description>
+      <description>&lt;p&gt;I try to keep data collection to a minimum (here and in other projects).&#xA;The only data I collect on this site is through Cloudflare Analytics,&#xA;which helps me understand how many people visit and which&#xA;pages are popular. I use it out of the box without tracking any&#xA;additional identifying or personal information.&lt;/p&gt;&#xA;&lt;p&gt;Cloudflare does not store any data on browser to do it&amp;rsquo;s analytics, but&#xA;it does send some minimal data about your browser and browsing when you&#xA;visit a page.&#xA;Cloudflare describes this in&#xA;&lt;a href=&#34;https://www.cloudflare.com/web-analytics/&#34;&gt;their Web Analytics documentation&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Clock</title>
@@ -223,7 +223,7 @@
       <link>http://localhost:1313/projects/chores/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/chores/</guid>
-      <description>Technological erosion of small service</description>
+      <description>How automation, specialization, and collectivization enable isolation</description>
     </item>
     <item>
       <title>Custom Board Games</title>

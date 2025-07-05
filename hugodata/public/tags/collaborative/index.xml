@@ -6,56 +6,6 @@
     <description>Recent content in Collaborative on grady.dev</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/collaborative/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hardscrabble</title>
-      <link>http://localhost:1313/projects/hard_scrabble/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/hard_scrabble/</guid>
-      <description>Interactive pair programming webapp for a class of 200+ students</description>
-    </item>
-    <item>
-      <title>Kerry Chase Website</title>
-      <link>http://localhost:1313/projects/chase/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/chase/</guid>
-      <description>A basic website for a politics professor</description>
-    </item>
-    <item>
-      <title>Parley</title>
-      <link>http://localhost:1313/projects/parley/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/parley/</guid>
-      <description>Recursive annotations as a counter-proposal to the comment thread</description>
-    </item>
-    <item>
-      <title>Student Union (In Line)</title>
-      <link>http://localhost:1313/projects/in_line/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/in_line/</guid>
-      <description>A multi-owner distributed WYSIWYG editor with CDN hosting</description>
-    </item>
-    <item>
-      <title>Ward Lab</title>
-      <link>http://localhost:1313/projects/ward_lab/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/ward_lab/</guid>
-      <description>An academic profile for my father&amp;rsquo;s lab work</description>
-    </item>
-    <item>
-      <title>Zina Ward Website</title>
-      <link>http://localhost:1313/projects/zina_b_ward/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/zina_b_ward/</guid>
-      <description>My sister&amp;rsquo;s professional profile</description>
-    </item>
-    <item>
-      <title>GradyDocs</title>
-      <link>http://localhost:1313/projects/grady_docs/</link>
-      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/grady_docs/</guid>
-      <description>GradyDocs - a shittier version of Google Docs</description>
-    </item>
   </channel>
 </rss>

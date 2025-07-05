@@ -45,6 +45,8 @@
 }
 
 .mountains-img {
+    position: absolute;
+    bottom: 0;
     height: 100%;
     object-fit: cover;
     object-position: bottom right;

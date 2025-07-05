@@ -8,7 +8,7 @@ isPriority: false
 sortPriority: 1600
 draft: false
 date: 2019-01-01
-tags: ["art", "css", "geometry", "euclid", "visual", "algorithms", "generative"]
+tags: ["art", "algorithms"]
 CTALink: "https://github.com/gbdubs/euclid"
 CTA: "View Code"
 CTAPreamble: "Check out the implementation:"

@@ -8,7 +8,7 @@ isPriority: false
 sortPriority: 1000
 draft: false
 date: 2015-01-01
-tags: ["webapp", "management", "education", "mathematics", "taxonomy", "learning"]
+tags: ["websites", "education"]
 CTALink: "http://www.calcu.education"
 CTA: "Visit CalcU"
 CTAPreamble: "Explore the learning platform:"

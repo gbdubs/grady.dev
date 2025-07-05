@@ -8,7 +8,7 @@ isPriority: false
 sortPriority: 150
 draft: false
 date: 2020-01-01
-tags: ["theory", "java", "algorithms", "complexity", "satisfiability"]
+tags: ["algorithms", "tools"]
 CTALink: "https://github.com/gbdubs/2001"
 CTA: "View on GitHub"
 CTAPreamble: "Check out the implementation and documentation:"

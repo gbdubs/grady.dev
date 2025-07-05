@@ -4,11 +4,11 @@ subtitle: "My search for (and approximate answer to) the big questions"
 summary: "My search for (and approximate answer to) the big questions"
 type: "projects"
 isSimple: false
-isPriority: true
+isPriority: false 
 sortPriority: 1705
 draft: false
 date: 2020-01-01
-tags: ["love", "meaning", "dogs", "philosophy", "existential", "gratitude", "responsibility"]
+tags: ["love", "essay", "writing"]
 CTALink: ""
 CTA: ""
 CTAPreamble: ""

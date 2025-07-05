@@ -8,7 +8,7 @@ isPriority: false
 sortPriority: 60
 draft: false
 date: 2014-01-01
-tags: ["scraping", "OCR", "matlab", "economics", "research", "data-extraction"]
+tags: ["tools", "education"]
 CTALink: "https://github.com/gbdubs/birthcertificatescraping"
 CTA: "View on GitHub"
 CTAPreamble: "Check out the code and documentation:"

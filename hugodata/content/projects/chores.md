@@ -1,21 +1,21 @@
 ---
 title: "Binding Beauty of Chores"
-subtitle: "Technological erosion of small service"
-summary: "Technological erosion of small service"
+subtitle: "How automation, specialization, and collectivization enable isolation"
+summary: "How automation, specialization, and collectivization enable isolation"
 type: "projects"
 isSimple: false
 isPriority: true
 sortPriority: 1750
 draft: false
 date: 2022-01-01
-tags: ["love", "meaning", "automation", "essay", "philosophy", "community", "relationships"]
+tags: ["love", "essay", "community"]
 CTALink: "https://www.thehartandthecur.com/binding-beauty-of-chores"
 CTA: "Read Full Essay"
 CTAPreamble: "Read the long-form version in The Hart and The Curr:"
 featured_image: ""
 ---
 
-*A long-form narrative version of this essay appeared in a friend's literary magazine, [The Hart and The Curr](https://www.thehartandthecur.com/binding-beauty-of-chores).*
+*A long-form narrative version of this essay appeared in a friend's literary magazine, The Hart and the Curr - I recommend you read [that version](https://www.thehartandthecur.com/binding-beauty-of-chores) - it benefits from his edits.*
 
 I recently did one of my favorite winter activities: a backcountry hut trip. A group of us schlepped a bunch of gear and food into the woods, and spent a few days living simply: heating a rustic cabin with firewood, melting snow for water, cooking, eating, and exploring the outdoors together. After a long weekend in this environment, I feel refreshed, relaxed, and more deeply connected with the friends that I accompanied.
 

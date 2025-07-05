@@ -6,7 +6,7 @@ draft: false
 
 # Project classification
 type: "projects"
-tags: ["privacy", "writing", "identity", "philosophy"]
+tags: ["privacy", "writing", "essay"]
 isPriority: false
 sortPriority: 1248
 isSimple: false

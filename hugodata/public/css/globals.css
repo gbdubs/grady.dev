@@ -37,6 +37,7 @@ p { margin-bottom: 0; padding: 0rem 0 1.25rem 0; }
 ul, ol {  margin-left: 1.75em; padding: 0rem 0 1.25rem 0; }
 li { margin-bottom: 0; padding-bottom: .5rem; }
 li:last-child { padding-bottom: 0; }
+li ul { padding-bottom: 0; }
 .subtitle { font-size: 1.25rem; margin: 0; padding: 0; }
 
 /* Common elements */
@@ -50,7 +51,6 @@ blockquote {
 img { 
     max-width: 100%; 
     height: auto; 
-    margin: 1rem 0; 
     max-height: 50vh;
 }
 

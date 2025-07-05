@@ -8,7 +8,7 @@ isPriority: false
 sortPriority: 500
 draft: false
 date: 2017-01-01
-tags: ["art", "web", "java", "css", "animation", "framework", "transitions"]
+tags: ["art", "websites", "animation", "tools"]
 CTALink: "https://github.com/gbdubs/draw-me"
 CTA: "View on GitHub"
 CTAPreamble: "Check out the framework code:"

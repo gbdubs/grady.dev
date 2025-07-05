@@ -8,7 +8,7 @@ isPriority: false
 sortPriority: 200
 draft: false
 date: 2018-01-01
-tags: ["webapp", "functional", "javascript", "database", "prototyping", "mongodb", "gcp"]
+tags: ["websites", "tools"]
 CTALink: ""
 CTA: ""
 CTAPreamble: ""

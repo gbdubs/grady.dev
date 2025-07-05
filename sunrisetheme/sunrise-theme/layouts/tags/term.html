@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} - {{ .Site.Title }}</title>
+    
+    {{ partial "cloudflare-analytics.html" . }}
+    
     {{/* Load CSS with production inlining support */}}
     {{ partial "load-css" (dict "files" (slice "fonts" "globals" "projects") "inline" (hugo.IsProduction)) }}
     
@@ -48,8 +51,10 @@
         <div class="projects-grid">
             {{ $currentTag := .Data.Term }}
             {{ $pages := where .Site.RegularPages "Type" "projects" }}
+            {{ $pages = where $pages "Params.hideInList" "!=" true }}
             {{ $filteredPages := where $pages "Params.tags" "intersect" (slice $currentTag) }}
-            {{ $filteredPages = $filteredPages.ByParam "priority" }}
+            {{ $filteredPages = $filteredPages.ByParam "sortPriority" }}
+            {{ $filteredPages = $filteredPages.Reverse }}
             
             {{/* Load sunrise matrix data for border colors */}}
             {{ $matrixData := .Site.Data.sunrise_matrix }}
@@ -158,25 +163,25 @@
                 {{ end }}
                 
                 <article class="{{ $classes }}" style="{{ delimit $borderColorStyles "; " | safeCSS }}">
-                    <a href="{{ .Permalink }}" class="no-underline clickable-project-card">
-                        <div>
-                            <h2 class="project-title">
-                                {{ .Title }}
-                                {{ if .Params.isPriority }}
-                                <span class="priority-star" title="Best/Recent Work">★</span>
-                                {{ end }}
-                            </h2>
-                            <p class="project-description">{{ .Summary | truncate 150 }}</p>
-                            {{ if .Params.tags }}
-                            <div class="project-tags">
-                                {{ range .Params.tags }}
-                                <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag">{{ replace . "-" " " }}</a>
-                                {{ end }}
-                            </div>
+                    <div onclick="window.location.href='{{ .Permalink }}'" class="clickable-project-card">
+                        <h2 class="project-title">
+                            {{ .Title }}
+                            {{ if .Params.isPriority }}
+                            <span class="priority-star" title="Best/Recent Work">★</span>
                             {{ end }}
-                            <time class="project-date">{{ .Date.Format "January 2006" }}</time>
+                        </h2>
+                        <p class="project-description">{{ .Summary | truncate 150 }}</p>
+                        {{ if .Params.tags }}
+                        <div class="project-tags">
+                            {{ range .Params.tags }}
+                            <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag">{{ replace . "-" " " }}</a>
+                            {{ end }}
                         </div>
-                    </a>
+                        {{ end }}
+                        {{ if .Params.showDate }}
+                            <time class="project-date">{{ .Date.Format "January 2006" }}</time>
+                        {{ end }}
+                    </div>
                 </article>
             {{ end }}
             
@@ -187,6 +192,12 @@
             </div>
             {{ end }}
         </div>
+        
+        <!-- Show all button -->
+        <div class="show-all-section" style="text-align: center; margin-top: 3rem; padding: 2rem;">
+            <p id="current-filter-description" style="margin-bottom: 1rem; color: rgba(255, 255, 255, 0.8);"></p>
+            <a href="/projects?all" id="show-all-link" class="button" style="display: none;">Show All Projects</a>
+        </div>
     </div>
     
     <script>
@@ -194,6 +205,10 @@
         document.addEventListener('DOMContentLoaded', function() {
             const priorityToggle = document.querySelector('.priority-toggle');
             const projectCards = document.querySelectorAll('.project-card');
+            
+            // Check for ?all parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const showAllParam = urlParams.has('all');
             
             let showPriorityOnly = false;
             
@@ -227,6 +242,7 @@
                     this.textContent = showPriorityOnly ? 'Showing Best/Recent (Show All)' : 'Showing All (Show Only Best/Recent)';
                     applyPriorityToCards();
                     updateGridLayout();
+                    updateFilterDescription();
                 });
             }
             
@@ -242,6 +258,24 @@
 
             applyPriorityToCards();
             updateGridLayout();
+            updateFilterDescription();
+            
+            function updateFilterDescription() {
+                const description = document.getElementById('current-filter-description');
+                const showAllLink = document.getElementById('show-all-link');
+                const tagName = "{{ replace .Title "-" " " | title }}";
+                
+                let currentState = '';
+                if (showPriorityOnly) {
+                    currentState = `Currently showing only best/recent projects tagged "${tagName}".`;
+                } else {
+                    currentState = `Currently showing all projects tagged "${tagName}".`;
+                }
+                
+                description.textContent = currentState;
+                showAllLink.style.display = 'inline-block';
+                showAllLink.textContent = 'Show All Projects (All Tags)';
+            }
         });
     </script>
 </body>

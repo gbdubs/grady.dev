@@ -6,7 +6,7 @@ draft: false
 
 # Project classification
 type: "projects"
-tags: ["woodworking", "gifts", "design", "crafts", "travel"]
+tags: ["crafts", "gifts", "design"]
 isPriority: false
 sortPriority: 1249
 isSimple: false

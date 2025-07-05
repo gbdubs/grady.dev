@@ -8,7 +8,7 @@ isPriority: false
 sortPriority: 1200
 draft: false
 date: 2016-01-01
-tags: ["algorithms", "theory", "java", "games", "optimization", "data-structures"]
+tags: ["algorithms", "tools"]
 CTALink: "http://github.com/gbdubs/bananagrams"
 CTA: "View Code"
 CTAPreamble: "Check out the implementation:"

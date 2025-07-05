@@ -6,14 +6,6 @@
     <description>Recent content in Family on grady.dev</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/family/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Custom Board Games</title>
-      <link>http://localhost:1313/projects/board_games/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/board_games/</guid>
-      <description>Themed gifts for friends and family</description>
-    </item>
   </channel>
 </rss>

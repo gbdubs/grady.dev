@@ -6,14 +6,14 @@ draft: false
 
 # Project classification
 type: "projects"
-tags: ["web", "design", "css", "hugo", "portfolio"]
+tags: ["websites", "design"]
 isPriority: false 
 sortPriority: 103
 isSimple: false
 
 # Call to action
 CTA: "View V3 Site"
-CTALink: "/oldindex/"
+CTALink: "/destijl/"
 CTAPreamble: "Want to see the previous version of this site"
 
 # Optional image
@@ -27,6 +27,6 @@ When I tried to update my website in December of 2017, I couldn’t find the fil
 
 The result was a nice site with a detailed portfolio section, some nice hugo-templated HTML, and the cute animations (which are NOT generated via draw-me-css). In this version of the site, I attempted to focus on how I could go beyond the original circut-board design of V2.
 
-It has since been replaced by V4 (Sunrise), but you can still see the V3 version [here](/oldindex/).
+It has since been replaced by V4 (Sunrise), but you can still see the V3 version [here](/destijl/).
 
 The result is a playful mix of formats that tries to stand out by being simple in design and complex in implementation.

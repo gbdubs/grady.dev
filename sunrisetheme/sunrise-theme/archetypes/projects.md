@@ -10,6 +10,7 @@ tags: []
 isPriority: true
 sortPriority: 100
 isSimple: false
+# hideInList: true  # Uncomment to hide this project from list views
 
 # Call to action
 CTA: "Learn More"

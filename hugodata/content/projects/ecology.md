@@ -6,7 +6,7 @@ draft: false
 
 # Project classification
 type: "projects"
-tags: ["serverless", "backend", "golang", "tools"]
+tags: ["tools"]
 isPriority: false
 sortPriority: 10
 isSimple: false

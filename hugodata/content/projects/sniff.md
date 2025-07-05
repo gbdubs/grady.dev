@@ -6,8 +6,8 @@ draft: false
 
 # Project classification
 type: "projects"
-tags: ["law", "privacy", "surveillance", "4th-amendment", "writing", "analysis"]
-isPriority: true
+tags: ["privacy", "writing", "government"]
+isPriority: false 
 sortPriority: 1725
 isSimple: false
 

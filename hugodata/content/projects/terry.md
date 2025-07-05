@@ -6,7 +6,7 @@ draft: false
 
 # Project classification
 type: "projects"
-tags: ["law", "privacy", "writing", "analysis", "policy"]
+tags: ["privacy", "writing", "government"]
 isPriority: true
 sortPriority: 1400
 isSimple: false
