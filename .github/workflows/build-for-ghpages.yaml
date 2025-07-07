@@ -21,16 +21,12 @@ jobs:
 
       - name: Ensure images are not LFS pointers
         run: |
-          # Create a list of all LFS tracked files
-          git lfs track "*.jpg"
-          git lfs track "*.png"
-          git lfs track "*.gif"
-
           # Force checkout these files as real files, not pointers
           git lfs pull
 
-          # Verify we have actual files
-          file hugoprojects/static/img/*
+          # Verify we have actual files in hugodata
+          echo "Checking LFS files in hugodata/static/img:"
+          file hugodata/static/img/* | head -10
 
       - name: Install Hugo
         uses: peaceiris/actions-hugo@v2
@@ -39,16 +35,14 @@ jobs:
 
       - name: Run hugo + manually move site files
         run: |
-          rm -f .gitattributes
-          rm -R -f project
-          mkdir project
-          rm -R -f img
-          mkdir img
-          cp -f favicons/* .
-          cd hugoprojects
+          # Build the Hugo site
+          cd hugodata
           hugo
-          cp -R public/project/* ../project
-          cp -R public/img/* ../img
+          
+          # Copy generated files from public to root directory
+          cp -R public/* ../
+          
+          # Clean up the public directory
           rm -R -f public
 
       - name: Deploy to gh-pages branch
@@ -57,4 +51,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
           force_orphan: true
-          exclude_assets: "README.md,hugoprojects,regenerate_projects.sh,.gitignore,.gitattributes,.github"
+          exclude_assets: "README.md,hugodata,sunrisetheme,destijl,.gitignore,*.zip,.gitattributes,.github,*.zip,.claude,TODO.md"
