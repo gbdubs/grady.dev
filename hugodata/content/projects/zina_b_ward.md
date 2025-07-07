@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/zina_b_ward/"]
 title: "Zina Ward Website"
 subtitle: "My sister's professional profile"
 date: 2024-01-01T00:00:00Z

@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/trees/"]
 title: "Trees"
 subtitle: "Invertible enumeration of the set of possible Binary Trees"
 date: 2024-01-01T00:00:00Z

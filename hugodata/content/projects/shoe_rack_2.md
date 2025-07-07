@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/shoe_rack_2/"]
 title: "Shoe Rack 2"
 subtitle: "A shoe rack made as a gift - that had to fit in a suitcase"
 date: 2024-01-01T00:00:00Z

@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/golog/"]
 title: "GoLog"
 subtitle: "a visual post-hoc logger for golang"
 summary: "a visual post-hoc logger for golang"

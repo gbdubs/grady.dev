@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/ai_science_test/"]
 title: "AI Science Test"
 subtitle: "Basic Tensorflow model predicting results of 8th grade science test"
 summary: "Basic Tensorflow model predicting results of 8th grade science test"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/website_v1/"]
 title: "Personal Website V1"
 subtitle: "The very deprecated version of my personal portfolio"
 date: 2024-01-01T00:00:00Z

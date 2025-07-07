@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/abound/"]
 title: "ABOUND.art"
 subtitle: "A platform for anyone to make gorgeous art"
 summary: "A platform for anyone to make gorgeous art"

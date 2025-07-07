@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/flux/"]
 title: "Flux"
 subtitle: "Modifying attractor parameters via a parameter space orbit"
 summary: "Modifying attractor parameters via a parameter space orbit"

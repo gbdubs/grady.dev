@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/chase/"]
 title: "Kerry Chase Website"
 subtitle: "A basic website for a politics professor"
 date: 2024-01-01T00:00:00Z

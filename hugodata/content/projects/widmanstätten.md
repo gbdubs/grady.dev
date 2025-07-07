@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/widmanstätten/"]
 title: "Widmanstätten pattern"
 subtitle: "Meteorites are beautiful - I learned some chemistry"
 summary: "Meteorites are beautiful - I learned some chemistry"

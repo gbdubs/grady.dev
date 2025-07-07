@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/find_a_clinic/"]
 title: "Find A Clinic"
 subtitle: "An effort to make all options clear and comparable to women seeking an abortion"
 summary: "An effort to make all options clear and comparable to women seeking an abortion"

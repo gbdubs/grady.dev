@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/shoe_rack/"]
 title: "Shoe Rack"
 subtitle: "A simple and fun shoe rack that fits exactly 3x4 pairs of shoes"
 date: 2024-01-01T00:00:00Z

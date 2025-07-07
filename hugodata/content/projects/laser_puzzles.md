@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/laser_puzzles/"]
 title: "Laser Cut Puzzles"
 subtitle: "Writing algorithms for good jigsaw puzzles, and making them real on laser cutters"
 date: 2024-01-01T00:00:00Z

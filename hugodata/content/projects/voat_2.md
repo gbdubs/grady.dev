@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/voat_2/"]
 title: "VOAT - Interactive"
 subtitle: "Learn CSS while generating creative patterns"
 date: 2024-01-01T00:00:00Z

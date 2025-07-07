@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/clock/"]
 title: "Clock"
 subtitle: "Something that is more than the sum of its parts can be reduced back to it."
 date: 2024-01-01T00:00:00Z

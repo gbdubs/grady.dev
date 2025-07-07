@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/website_v3/"]
 title: "Personal Website V3"
 subtitle: "The site you find yourself on right now"
 date: 2024-01-01T00:00:00Z

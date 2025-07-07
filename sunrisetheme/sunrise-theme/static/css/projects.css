@@ -228,4 +228,5 @@ a.no-underline {
     object-position: bottom right;
     filter: brightness(0);
     opacity: 0.925;
+    max-height: 100vh;
 }

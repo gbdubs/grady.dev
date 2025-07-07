@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/3_sat/"]
 title: "3-SAT decomposition"
 subtitle: "Using exponential space to perform 3-SAT calculations in polynomial time"
 summary: "Using exponential space to perform 3-SAT calculations in polynomial time"

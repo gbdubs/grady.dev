@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/dumb_db/"]
 title: "DumbDB"
 subtitle: "Dumb databases make for good prototypes"
 summary: "Dumb databases make for good prototypes"

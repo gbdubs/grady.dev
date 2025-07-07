@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/cgj/"]
 title: "Civil Grand Jury"
 subtitle: "San Francisco's Civil Grand Jury"
 summary: "San Francisco's Civil Grand Jury"

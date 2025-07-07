@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/sunrise/"]
 title: "Sunrise"
 subtitle: "The best time of the day - faithfully reproduced"
 date: 2024-01-01T00:00:00Z
@@ -6,7 +7,7 @@ draft: false
 
 # Project classification
 type: "projects"
-tags: ["art", "algorithms", "tools"]
+tags: ["art", "algorithms", "animation"]
 isPriority: true
 sortPriority: 5100 
 isSimple: false
@@ -17,6 +18,11 @@ featured_image: "/img/sunrise-better-correction.png"
 # Summary (used in lists)
 summary: "The best time of the day - faithfully reproduced"
 ---
+
+The colors of this site are copied from nature - they're the colors
+of the sunrise of June 19th, 2025, viewed from RMNP. It was a good one.
+
+## Why I built this
 
 I love mornings - they're the best time of the day.
 As a new day starts, nothing has yet been decided,

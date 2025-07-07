@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/calc_u/"]
 title: "CalcU"
 subtitle: "A course aid for mathematics based on a taxonomy of learning"
 summary: "A course aid for mathematics based on a taxonomy of learning"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/board_games/"]
 title: "Custom Board Games"
 subtitle: "Themed gifts for friends and family"
 summary: "Themed gifts for friends and family"

@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/narratives/"]
 title: "Narratives"
 subtitle: "Thoughts on how privacy and identity are related."
 date: 2024-01-01T00:00:00Z

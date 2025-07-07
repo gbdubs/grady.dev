@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/voat/"]
 title: "VOAT"
 subtitle: "Variations on a Theme (Elgar) meets a classic by Frank Stella"
 date: 2024-01-01T00:00:00Z

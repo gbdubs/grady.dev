@@ -33,11 +33,21 @@ jobs:
         with:
           hugo-version: "latest"
 
+      - name: Install minify
+        run: |
+          curl -L https://github.com/tdewolff/minify/releases/download/v2.20.37/minify_linux_amd64.tar.gz | tar xz
+          sudo mv minify /usr/local/bin/
+
       - name: Run hugo + manually move site files
         run: |
           # Build the Hugo site
           cd hugodata
           hugo
+          
+          # Minify all HTML, CSS, and JS files
+          find public -name "*.html" -exec minify -o {} {} \;
+          find public -name "*.css" -exec minify -o {} {} \;
+          find public -name "*.js" -exec minify -o {} {} \;
           
           # Copy generated files from public to root directory
           cp -R public/* ../

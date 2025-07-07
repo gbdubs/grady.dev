@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/fof/"]
 title: "Focus on Features"
 subtitle: "A resource for regulators and product managers to minimize digital harms"
 summary: "A resource for regulators and product managers to minimize digital harms"

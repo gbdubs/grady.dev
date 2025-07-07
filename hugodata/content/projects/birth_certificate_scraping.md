@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/birth_certificate_scraping/"]
 title: "Birth Certificate Scraping"
 subtitle: "Scraping data from birth certificates between 1900 and 1950 for an Economics paper."
 summary: "Scraping data from birth certificates between 1900 and 1950 for an Economics paper."

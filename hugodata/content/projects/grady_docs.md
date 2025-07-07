@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/grady_docs/"]
 title: "GradyDocs"
 subtitle: "GradyDocs - a shittier version of Google Docs"
 summary: "GradyDocs - a shittier version of Google Docs"

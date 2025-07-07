@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/draw_me_css/"]
 title: "Draw Me CSS"
 subtitle: "Simple framework for making websites that magically appear"
 summary: "Simple framework for making websites that magically appear"

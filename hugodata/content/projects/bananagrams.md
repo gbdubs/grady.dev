@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/bananagrams/"]
 title: "Bananagrams"
 subtitle: "A beautiful algorithm for playing Bananagrams"
 summary: "A beautiful algorithm for playing Bananagrams"

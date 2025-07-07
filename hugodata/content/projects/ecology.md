@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/ecology/"]
 title: "Ecology"
 subtitle: "A command line tool for opinionated management of cloud resources"
 date: 2024-01-01T00:00:00Z

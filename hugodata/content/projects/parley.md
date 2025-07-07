@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/parley/"]
 title: "Parley"
 subtitle: "Recursive annotations as a counter-proposal to the comment thread"
 date: 2024-01-01T00:00:00Z

@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/hard_scrabble/"]
 title: "Hardscrabble"
 subtitle: "Interactive pair programming webapp for a class of 200+ students"
 date: 2024-01-01T00:00:00Z

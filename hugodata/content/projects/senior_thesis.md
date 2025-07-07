@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/senior_thesis/"]
 title: "Senior Thesis"
 subtitle: "Senior thesis on the graph isomorphism (GI) problem"
 date: 2024-01-01T00:00:00Z

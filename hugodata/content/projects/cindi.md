@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/cindi/"]
 title: "Cindi"
 subtitle: "Algorithmically generated art inspired by Janelle Monae's Metropolis Suite"
 summary: "Algorithmically generated art inspired by Janelle Monae's Metropolis Suite"

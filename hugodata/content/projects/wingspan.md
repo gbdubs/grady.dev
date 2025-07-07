@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/wingspan/"]
 title: "Wingspan Deck Generation"
 subtitle: "Learn about the birds in your local area through a game"
 date: 2024-01-01T00:00:00Z

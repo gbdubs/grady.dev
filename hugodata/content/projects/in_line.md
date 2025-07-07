@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/in_line/"]
 title: "Student Union (In Line)"
 subtitle: "A multi-owner distributed WYSIWYG editor with CDN hosting"
 date: 2024-01-01T00:00:00Z

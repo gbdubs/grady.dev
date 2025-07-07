@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/euclid/"]
 title: "Euclid"
 subtitle: "Give me a straightedge and a compass..."
 summary: "Give me a straightedge and a compass..."

@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/dogs/"]
 title: "Raison d'être: le chien"
 subtitle: "My search for (and approximate answer to) the big questions"
 summary: "My search for (and approximate answer to) the big questions"

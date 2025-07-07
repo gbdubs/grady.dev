@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/chores/"]
 title: "Binding Beauty of Chores"
 subtitle: "How automation, specialization, and collectivization enable isolation"
 summary: "How automation, specialization, and collectivization enable isolation"

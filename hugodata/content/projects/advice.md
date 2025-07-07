@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/advice/"]
 title: "Advice for new SWEs"
 subtitle: "My recommendations for folks starting (or considering) a career as a software engineer"
 summary: "My recommendations for folks starting (or considering) a career as a software engineer"

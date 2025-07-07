@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/ward_lab/"]
 title: "Ward Lab"
 subtitle: "An academic profile for my father's lab work"
 date: 2024-01-01T00:00:00Z

@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/creditworthy/"]
 title: "Creditworthy"
 subtitle: "Thoughts on how Josh Lauer's book \"Creditworthy\" can help us renegotiate the surveillance social contract."
 summary: "Thoughts on how Josh Lauer's book \"Creditworthy\" can help us renegotiate the surveillance social contract."

@@ -1,4 +1,5 @@
 ---
+aliases: ["/project/sniff/"]
 title: "Sniff"
 subtitle: "Why _Florida v. Harris_ should be the minimum bar for surveillance"
 date: 2024-01-01T00:00:00Z
