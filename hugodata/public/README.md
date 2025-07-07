@@ -1,2 +1,0 @@
-- images = site level images
-- img = content level images

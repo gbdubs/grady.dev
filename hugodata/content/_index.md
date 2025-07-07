@@ -10,7 +10,7 @@ Hi there! My name is Grady, and I'm a software engineer living and working in Co
 I've been lucky to have a varied career spanning impact driven startups ([Ambrook](https://ambrook.com), current), big-tech ([Google](https://drive.google.com/)), the federal government ([FTC](https://www.ftc.gov/)), and running a small non-profit ([Silicon Ally](https://siliconally.org/)).
 
 Projects, writing, and some art can be found in my [portfolio](/projects). 
-I don't have social media, but you can 
-follow me on [Github](https://github.com/gbdubs) 
+This site
+You can find me on [Github](https://github.com/gbdubs) 
 or [LinkedIn](https://www.linkedin.com/in/gradybward/), or 
-[reach out](/contact) anytime.
+[reach out over email](/contact) anytime.

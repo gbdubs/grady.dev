@@ -13,6 +13,7 @@ theme = "sunrisetheme"
   author = "Grady Berry Ward"
   mountainsImage = "/images/mountains-only.png"
   animationDuration = "20s"
+  projectsBackgroundFrame = 230 
   
 # Menu configuration
 [menu]

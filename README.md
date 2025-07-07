@@ -1,6 +1,6 @@
 ## To Run Locally
 
-cd hugoprojects; hugo serve -M; 
+cd hugodata; hugo server --watch --disableFastRender; 
 
 visit http://localhost:1313/project
 

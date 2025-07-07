@@ -10,273 +10,81 @@
     {{/* Load CSS with production inlining support */}}
     {{ partial "load-css" (dict "files" (slice "fonts" "globals" "projects") "inline" (hugo.IsProduction)) }}
     
-    {{/* Generate gradient background from sunrise data */}}
-    {{ partial "projects-gradient.html" . }}
+    {{/* Load sunrise matrix data for background gradient */}}
+    {{ $matrixData := .Site.Data.sunrise_matrix }}
+    {{ if not $matrixData }}
+        {{ errorf "sunrise_matrix.json not found in data directory" }}
+    {{ end }}
+    
+    {{/* Get background frame - use same as projects page or configure separately */}}
+    {{ $backgroundFrame := .Site.Params.tagsBackgroundFrame | default (.Site.Params.projectsBackgroundFrame | default 120) }}
+    {{ $frame := index $matrixData.frames $backgroundFrame }}
+    
+    {{/* Generate CSS variables for the gradient colors */}}
+    <style>
+        :root {
+            {{/* Set CSS variables for each breakpoint color */}}
+            {{ range $idx, $bp := $frame.breakpoints }}
+            --bg-color-{{ $idx }}: {{ $bp.rgb | safeCSS }};
+            {{ end }}
+        }
+        
+        /* Full page gradient background */
+        .projects-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: Calc(100vh - max(6vw, 5rem));
+            z-index: -2;
+            
+            {{/* Build gradient stops */}}
+            {{ $gradientStops := slice }}
+            {{ range $idx, $bp := $frame.breakpoints }}
+                {{ $offset := printf "%.1f%%" (mul (div (float $idx) 25.0) 100.0) }}
+                {{ $stop := printf "%s %s" $bp.rgb $offset }}
+                {{ $gradientStops = $gradientStops | append $stop }}
+            {{ end }}
+            background: linear-gradient(to bottom, {{ delimit $gradientStops ", " | safeCSS }});
+        }
+    </style>
 </head>
 <body class="projects-page">
-    <div class="projects-container">
-        <!-- Back button -->
-        <div class="back-navigation">
-            <a href="/projects/" class="button back-button">← Back</a>
-        </div>
-        
-        <header class="projects-header">
-            <h1>{{ replace .Title "-" " " | title }}</h1>
-            {{ if .Content }}
-            <div class="projects-description">
-                {{ .Content }}
-            </div>
-            {{ else }}
-            <p>Projects tagged with "{{ replace .Title "-" " " }}"</p>
-            {{ end }}
-        </header>
-        
-        <!-- Filter controls -->
-        <nav class="project-filters">
-            <div class="filter-row">
-                <button class="tag-toggle button" id="tag-toggle">Show Tags</button>
-                <button class="priority-toggle button" data-filter="priority">Show Only Best/Recent</button>
-            </div>
-            
-            <div class="tag-list" id="tag-list">
-                {{ range .Site.Taxonomies.tags }}
-                <a href="{{ "tags/" | relURL }}{{ .Page.Title | urlize }}" class="tag{{ if eq $.Data.Term .Page.Data.Term }} active{{ end }}">
-                    {{ replace .Page.Title "-" " " | title }} <span class="tag-count">({{ .Count }})</span>
-                </a>
-                {{ end }}
-            </div>
-        </nav>
-        
-        <!-- Project grid -->
-        <div class="projects-grid">
-            {{ $currentTag := .Data.Term }}
-            {{ $pages := where .Site.RegularPages "Type" "projects" }}
-            {{ $pages = where $pages "Params.hideInList" "!=" true }}
-            {{ $filteredPages := where $pages "Params.tags" "intersect" (slice $currentTag) }}
-            {{ $filteredPages = $filteredPages.ByParam "sortPriority" }}
-            {{ $filteredPages = $filteredPages.Reverse }}
-            
-            {{/* Load sunrise matrix data for border colors */}}
-            {{ $matrixData := .Site.Data.sunrise_matrix }}
-            {{ if not $matrixData }}
-                {{ errorf "sunrise_matrix.json not found in data directory" }}
-            {{ end }}
-            
-            {{/* Separate priority and regular projects for frame assignment */}}
-            {{ $priorityPages := where $filteredPages "Params.isPriority" true }}
-            {{ $regularPages := where $filteredPages "Params.isPriority" "!=" true }}
-            {{ $totalFrames := len $matrixData.frames }}
-            
-            {{ range $idx, $page := $filteredPages }}
-                {{/* Assign frame based on priority status */}}
-                {{ $frameIdx := 0 }}
-                {{ if .Params.isPriority }}
-                    {{/* Priority projects get frames 205-255 */}}
-                    {{ $priorityIdx := 0 }}
-                    {{ range $i, $p := $priorityPages }}
-                        {{ if eq $p.Title $page.Title }}
-                            {{ $priorityIdx = $i }}
-                        {{ end }}
-                    {{ end }}
-                    {{ $frameIdx = add 205 (div (mul $priorityIdx 50) (len $priorityPages)) | int }}
-                {{ else }}
-                    {{/* Regular projects get frames 80-170 */}}
-                    {{ $regularIdx := 0 }}
-                    {{ range $i, $p := $regularPages }}
-                        {{ if eq $p.Title $page.Title }}
-                            {{ $regularIdx = $i }}
-                        {{ end }}
-                    {{ end }}
-                    {{ $frameIdx = add 80 (div (mul $regularIdx 90) (len $regularPages)) | int }}
-                {{ end }}
-                
-                {{ $frame := index $matrixData.frames $frameIdx }}
-                
-                {{/* Filter and select colors based on saturation */}}
-                {{ $allColors := $frame.breakpoints }}
-                {{ $colorCount := len $allColors }}
-                
-                {{/* Find saturation threshold for top 20% */}}
-                {{ $saturations := slice }}
-                {{ range $allColors }}
-                    {{ $saturations = $saturations | append .color.s }}
-                {{ end }}
-                
-                {{/* Simple approach: take colors with saturation > 0.3 or top 5 most saturated */}}
-                {{ $highSatColors := slice }}
-                {{ range $allColors }}
-                    {{ if gt .color.s 0.3 }}
-                        {{ $highSatColors = $highSatColors | append . }}
-                    {{ end }}
-                {{ end }}
-                
-                {{/* If we don't have enough high saturation colors, take the most saturated ones */}}
-                {{ if lt (len $highSatColors) 5 }}
-                    {{ $highSatColors = slice }}
-                    {{/* Take every 5th color to spread across the gradient, favoring higher indices (brighter) */}}
-                    {{ range $i := seq 0 4 }}
-                        {{ $colorIdx := add (mul $i 5) 1 }}
-                        {{ if lt $colorIdx $colorCount }}
-                            {{ $highSatColors = $highSatColors | append (index $allColors $colorIdx) }}
-                        {{ end }}
-                    {{ end }}
-                {{ end }}
-                
-                {{/* Select 5 diverse colors using simple spacing */}}
-                {{ $finalColors := slice }}
-                {{ $totalHigh := len $highSatColors }}
-                {{ if gt $totalHigh 0 }}
-                    {{ range $i := seq 0 4 }}
-                        {{ $idx := div (mul $i $totalHigh) 5 }}
-                        {{ if lt $idx $totalHigh }}
-                            {{ $finalColors = $finalColors | append (index $highSatColors $idx) }}
-                        {{ else }}
-                            {{ $finalColors = $finalColors | append (index $allColors (mod (mul $i 5) $colorCount)) }}
-                        {{ end }}
-                    {{ end }}
-                {{ else }}
-                    {{/* Fallback: use evenly spaced colors */}}
-                    {{ range $i := seq 0 4 }}
-                        {{ $colorIdx := mul $i 5 }}
-                        {{ $finalColors = $finalColors | append (index $allColors $colorIdx) }}
-                    {{ end }}
-                {{ end }}
-                
-                {{/* Generate CSS custom properties */}}
-                {{ $borderColorStyles := slice }}
-                {{ range $i, $bp := $finalColors }}
-                    {{ if lt $i 5 }}
-                        {{ $style := printf "--border-color-%d: %s" (add $i 1) ($bp.rgb | safeCSS) }}
-                        {{ $borderColorStyles = $borderColorStyles | append $style }}
-                    {{ end }}
-                {{ end }}
-                
-                {{/* Build class list for filtering */}}
-                {{ $classes := "project-card" }}
-                {{ if .Params.isPriority }}
-                    {{ $classes = printf "%s priority-project" $classes }}
-                {{ end }}
-                {{ if .Params.tags }}
-                    {{ range .Params.tags }}
-                        {{ $classes = printf "%s tag-%s" $classes (. | urlize) }}
-                    {{ end }}
-                {{ end }}
-                
-                <article class="{{ $classes }}" style="{{ delimit $borderColorStyles "; " | safeCSS }}">
-                    <div onclick="window.location.href='{{ .Permalink }}'" class="clickable-project-card">
-                        <h2 class="project-title">
-                            {{ .Title }}
-                            {{ if .Params.isPriority }}
-                            <span class="priority-star" title="Best/Recent Work">★</span>
-                            {{ end }}
-                        </h2>
-                        <p class="project-description">{{ .Summary | truncate 150 }}</p>
-                        {{ if .Params.tags }}
-                        <div class="project-tags">
-                            {{ range .Params.tags }}
-                            <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag">{{ replace . "-" " " }}</a>
-                            {{ end }}
-                        </div>
-                        {{ end }}
-                        {{ if .Params.showDate }}
-                            <time class="project-date">{{ .Date.Format "January 2006" }}</time>
-                        {{ end }}
-                    </div>
-                </article>
-            {{ end }}
-            
-            {{ if eq (len $filteredPages) 0 }}
-            <div class="no-projects">
-                <p>No projects found with the tag "{{ replace $currentTag "-" " " }}".</p>
-                <a href="/projects/" class="button">View All Projects</a>
-            </div>
-            {{ end }}
-        </div>
-        
-        <!-- Show all button -->
-        <div class="show-all-section" style="text-align: center; margin-top: 3rem; padding: 2rem;">
-            <p id="current-filter-description" style="margin-bottom: 1rem; color: rgba(255, 255, 255, 0.8);"></p>
-            <a href="/projects?all" id="show-all-link" class="button" style="display: none;">Show All Projects</a>
-        </div>
-    </div>
+    <!-- Full page gradient background -->
+    <div class="projects-background"></div>
     
-    <script>
-        // Enhanced project filtering for tag pages
-        document.addEventListener('DOMContentLoaded', function() {
-            const priorityToggle = document.querySelector('.priority-toggle');
-            const projectCards = document.querySelectorAll('.project-card');
-            
-            // Check for ?all parameter
-            const urlParams = new URLSearchParams(window.location.search);
-            const showAllParam = urlParams.has('all');
-            
-            let showPriorityOnly = false;
-            
-            // Tag toggle functionality
-            const tagToggle = document.getElementById('tag-toggle');
-            const tagList = document.getElementById('tag-list');
-            
-            if (tagToggle && tagList) {
-                tagToggle.addEventListener('click', function() {
-                    const isVisible = tagList.classList.contains('visible');
-                    tagList.classList.toggle('visible');
-                    this.textContent = isVisible ? 'Show Tags' : 'Hide Tags';
-                });
-            }
-
-            const applyPriorityToCards = () => {
-                projectCards.forEach(card => {
-                    if (showPriorityOnly && !card.classList.contains('priority-project')) {
-                        card.classList.add('hidden');
-                    } else {
-                        card.classList.remove('hidden');
-                    }
-                });
-            };
-            
-            // Priority toggle functionality
-            if (priorityToggle) {
-                priorityToggle.addEventListener('click', function() {
-                    showPriorityOnly = !showPriorityOnly;
-                    this.classList.toggle('active', showPriorityOnly);
-                    this.textContent = showPriorityOnly ? 'Showing Best/Recent (Show All)' : 'Showing All (Show Only Best/Recent)';
-                    applyPriorityToCards();
-                    updateGridLayout();
-                    updateFilterDescription();
-                });
-            }
-            
-            function updateGridLayout() {
-                // Force grid recalculation after filtering
-                const grid = document.querySelector('.projects-grid');
-                if (grid) {
-                    grid.style.display = 'none';
-                    grid.offsetHeight; // Trigger reflow
-                    grid.style.display = 'grid';
-                }
-            }
-
-            applyPriorityToCards();
-            updateGridLayout();
-            updateFilterDescription();
-            
-            function updateFilterDescription() {
-                const description = document.getElementById('current-filter-description');
-                const showAllLink = document.getElementById('show-all-link');
-                const tagName = "{{ replace .Title "-" " " | title }}";
-                
-                let currentState = '';
-                if (showPriorityOnly) {
-                    currentState = `Currently showing only best/recent projects tagged "${tagName}".`;
-                } else {
-                    currentState = `Currently showing all projects tagged "${tagName}".`;
-                }
-                
-                description.textContent = currentState;
-                showAllLink.style.display = 'inline-block';
-                showAllLink.textContent = 'Show All Projects (All Tags)';
-            }
-        });
-    </script>
+    <!-- Mountains overlay at bottom -->
+    <div class="mountains-overlay">
+        <img src="{{ "/images/mountains-only.png" | relURL }}" alt="Mountains silhouette">
+    </div>
+    {{/* Get pages and set up parameters for the partial */}}
+    {{ $currentTag := .Data.Term }}
+    {{ $pages := where .Site.RegularPages "Type" "projects" }}
+    {{ $pages = where $pages "Params.hideInList" "!=" true }}
+    {{ $filteredPages := where $pages "Params.tags" "intersect" (slice $currentTag) }}
+    {{ $filteredPages = $filteredPages.ByParam "sortPriority" }}
+    {{ $filteredPages = $filteredPages.Reverse }}
+    
+    {{/* Format title and description */}}
+    {{ $tagTitle := replace .Title "-" " " | title }}
+    {{ $description := .Content }}
+    {{ if not $description }}
+        {{ $description = printf "<p>Projects tagged with \"%s\"</p>" (replace .Title "-" " ") }}
+    {{ end }}
+    
+    {{/* Use the unified project listing partial */}}
+    {{ partial "project-listing" (dict
+        "pages" $filteredPages
+        "backUrl" "/projects/"
+        "backText" "← Back"
+        "title" $tagTitle
+        "description" $description
+        "showPriorityToggle" true
+        "defaultPriorityOnly" false
+        "emptyMessage" (printf "No projects found with the tag \"%s\"." (replace $currentTag "-" " "))
+        "emptyLinkUrl" "/projects/"
+        "emptyLinkText" "View All Projects"
+        "currentFilter" (printf "with tag '%s'" $tagTitle)
+    ) }}
 </body>
 </html>

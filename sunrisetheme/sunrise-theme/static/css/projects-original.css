@@ -8,7 +8,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 2rem;
 }
 
 /* Project list container */
@@ -97,36 +96,73 @@
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
-.clickable-project-card {
-    cursor: pointer;
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    background: var(--glass-bg);
-    padding: 1rem;
-    transition: all 0.3s ease;
+/* Project card */
+.project-card {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    transition: box-shadow 0.3s ease;
     position: relative;
     overflow: visible;
     display: block;
     text-decoration: none;
     color: inherit;
-    border-radius: 0.5rem;
-    height: 100%;
+}
+
+.clickable-project-card {
+    cursor: pointer;
 }
 
 a.no-underline {
     text-decoration: none;
 }
 
-.clickable-project-card:hover {
-    /* Less glassy on hover - more opaque background, less blur */
-    background: var(--glass-hover);
-    backdrop-filter: blur(10px) saturate(180%);
-    -webkit-backdrop-filter: blur(10px) saturate(180%);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+/* Gradient border effect */
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    background: radial-gradient(ellipse at bottom, 
+        var(--border-color-5) 0%, 
+        var(--border-color-5) 15%, 
+        var(--border-color-4) 25%, 
+        var(--border-color-3) 50%, 
+        var(--border-color-2) 75%, 
+        var(--border-color-1) 100%);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+.project-card:hover {
+    box-shadow: 
+        /* Innermost: brightest color (border-color-5), short reach, heavily bottom-biased */
+        0 2px 4px color-mix(in srgb, var(--border-color-5) 40%, transparent),
+        0 3px 6px color-mix(in srgb, var(--border-color-5) 30%, transparent),
+        /* Second layer: border-color-4, slightly more reach */
+        0 4px 8px color-mix(in srgb, var(--border-color-4) 35%, transparent),
+        0 6px 12px color-mix(in srgb, var(--border-color-4) 25%, transparent),
+        /* Third layer: border-color-3, medium reach */
+        0 6px 12px color-mix(in srgb, var(--border-color-3) 30%, transparent),
+        0 8px 16px color-mix(in srgb, var(--border-color-3) 20%, transparent),
+        /* Fourth layer: border-color-2, longer reach */
+        0 8px 16px color-mix(in srgb, var(--border-color-2) 25%, transparent),
+        0 12px 24px color-mix(in srgb, var(--border-color-2) 15%, transparent),
+        /* Outermost: border-color-1, longest reach, most diffuse */
+        0 12px 24px color-mix(in srgb, var(--border-color-1) 20%, transparent),
+        0 16px 32px color-mix(in srgb, var(--border-color-1) 10%, transparent);
 }
 
 .project-title {
@@ -206,26 +242,4 @@ a.no-underline {
 .back-home {
     text-align: center;
     margin-top: 3rem;
-}
-
- /* Mountains overlay */
- .mountains-overlay {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: auto;
-    z-index: -1;
-    overflow: visible;
-}
-
-.mountains-overlay img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    object-fit: cover;
-    object-position: bottom right;
-    filter: brightness(0);
-    opacity: 0.925;
 }

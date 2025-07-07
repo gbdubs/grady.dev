@@ -42,7 +42,7 @@ do not yet know one another.
 
 ## Sounds good?
 
-Please reach out over email: [hello@grady.dev](mailto:hello@grady.dev).
+The easiest way to reach me is email: [hello@grady.dev](mailto:hello@grady.dev)
 
 Prefer an encrypted channel? [Reach out to @gradyberryward.02 on Signal](https://signal.me/#eu/mL0eL_wo_guuO1v0sFBVAxIqrS1qiTiTUFuOQyDCjREisJmEEb1CXKufFxHVMk2T)
 

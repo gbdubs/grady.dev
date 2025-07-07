@@ -1,6 +1,6 @@
 ---
 title: "Terry v. Ohio + Bulk Infringement"
-subtitle: "Case level analysis sometimes cannot arrive at agreeable precedent."
+subtitle: "Case level analysis generates poor precedent"
 date: 2024-01-01T00:00:00Z
 draft: false
 
@@ -20,7 +20,7 @@ CTAPreamble: ""
 featured_image: ""
 
 # Summary (used in lists)
-summary: "Case level analysis sometimes cannot arrive at agreeable precedent."
+summary: "Case level analysis generates poor precedent"
 ---
 
 _Terry v. Ohio_ is known for it's implications on the probable cause requirement of the fourth amendment, but re-reading the decision over the weekend, something else jumped out at me when I put myself in the shoes of the Warren court: given the fact pattern, they were doing their best to encourage good policework, and in the case of stop and frisk the differentiation between 'good' and 'bad' policing hinges on the quality of the officer's decision making and the outcome of their choice:

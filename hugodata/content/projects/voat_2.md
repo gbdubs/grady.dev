@@ -7,7 +7,7 @@ draft: false
 # Project classification
 type: "projects"
 tags: ["art", "education", "websites"]
-isPriority: true
+isPriority: false 
 sortPriority: 1710
 isSimple: false
 

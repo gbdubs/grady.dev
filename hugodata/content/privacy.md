@@ -20,6 +20,4 @@ visit a page.
 Cloudflare describes this in 
 [their Web Analytics documentation](https://www.cloudflare.com/web-analytics/).
 
-This policy may change over time with no notice.
-
-For questions or concerns, [reach out](/contact)
+This policy may change over time with no notice. For questions or concerns, [reach out](/contact).

@@ -1,6 +1,6 @@
 ---
 title: "Sunrise"
-subtitle: "Capturing the best time of the day"
+subtitle: "The best time of the day - faithfully reproduced"
 date: 2024-01-01T00:00:00Z
 draft: false
 
@@ -15,7 +15,7 @@ isSimple: false
 featured_image: "/img/sunrise-better-correction.png"
 
 # Summary (used in lists)
-summary: "Capturing the best time of the day"
+summary: "The best time of the day - faithfully reproduced"
 ---
 
 I love mornings - they're the best time of the day.
