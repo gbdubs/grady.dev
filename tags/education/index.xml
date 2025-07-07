@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Education on grady.dev</title>
+    <link>https://grady.dev/tags/education/</link>
+    <description>Recent content in Education on grady.dev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://grady.dev/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hardscrabble</title>
+      <link>https://grady.dev/projects/hard_scrabble/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/hard_scrabble/</guid>
+      <description>Interactive pair programming webapp for a class of 200+ students</description>
+    </item>
+    <item>
+      <title>Kerry Chase Website</title>
+      <link>https://grady.dev/projects/chase/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/chase/</guid>
+      <description>A basic website for a politics professor</description>
+    </item>
+    <item>
+      <title>Senior Thesis</title>
+      <link>https://grady.dev/projects/senior_thesis/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/senior_thesis/</guid>
+      <description>Senior thesis on the graph isomorphism (GI) problem</description>
+    </item>
+    <item>
+      <title>Student Union (In Line)</title>
+      <link>https://grady.dev/projects/in_line/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/in_line/</guid>
+      <description>A multi-owner distributed WYSIWYG editor with CDN hosting</description>
+    </item>
+    <item>
+      <title>VOAT - Interactive</title>
+      <link>https://grady.dev/projects/voat_2/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/voat_2/</guid>
+      <description>Learn CSS while generating creative patterns</description>
+    </item>
+    <item>
+      <title>Ward Lab</title>
+      <link>https://grady.dev/projects/ward_lab/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/ward_lab/</guid>
+      <description>An academic profile for my father&amp;rsquo;s lab work</description>
+    </item>
+    <item>
+      <title>Advice for new SWEs</title>
+      <link>https://grady.dev/projects/advice/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/advice/</guid>
+      <description>My recommendations for folks starting (or considering) a career as a software engineer</description>
+    </item>
+    <item>
+      <title>AI Science Test</title>
+      <link>https://grady.dev/projects/ai_science_test/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/ai_science_test/</guid>
+      <description>Basic Tensorflow model predicting results of 8th grade science test</description>
+    </item>
+    <item>
+      <title>CalcU</title>
+      <link>https://grady.dev/projects/calc_u/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/calc_u/</guid>
+      <description>A course aid for mathematics based on a taxonomy of learning</description>
+    </item>
+    <item>
+      <title>Birth Certificate Scraping</title>
+      <link>https://grady.dev/projects/birth_certificate_scraping/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/birth_certificate_scraping/</guid>
+      <description>Scraping data from birth certificates between 1900 and 1950 for an Economics paper.</description>
+    </item>
+  </channel>
+</rss>
