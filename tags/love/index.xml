@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Love on grady.dev</title>
+    <link>https://grady.dev/tags/love/</link>
+    <description>Recent content in Love on grady.dev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://grady.dev/tags/love/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On the name Grady</title>
+      <link>https://grady.dev/projects/on-grady/</link>
+      <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/on-grady/</guid>
+      <description>Family lore, resillience, and what matters</description>
+    </item>
+    <item>
+      <title>Clock</title>
+      <link>https://grady.dev/projects/clock/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/clock/</guid>
+      <description>Something that is more than the sum of its parts can be reduced back to it.</description>
+    </item>
+    <item>
+      <title>Binding Beauty of Chores</title>
+      <link>https://grady.dev/projects/chores/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/chores/</guid>
+      <description>How automation, specialization, and collectivization enable isolation</description>
+    </item>
+    <item>
+      <title>Custom Board Games</title>
+      <link>https://grady.dev/projects/board_games/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/board_games/</guid>
+      <description>Themed gifts for friends and family</description>
+    </item>
+    <item>
+      <title>Raison d&#39;être: le chien</title>
+      <link>https://grady.dev/projects/dogs/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/dogs/</guid>
+      <description>My search for (and approximate answer to) the big questions</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Government on grady.dev</title>
+    <link>https://grady.dev/tags/government/</link>
+    <description>Recent content in Government on grady.dev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://grady.dev/tags/government/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sniff</title>
+      <link>https://grady.dev/projects/sniff/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/sniff/</guid>
+      <description>Why &lt;em&gt;Florida v. Harris&lt;/em&gt; should be the minimum bar for surveillance</description>
+    </item>
+    <item>
+      <title>Terry v. Ohio &#43; Bulk Infringement</title>
+      <link>https://grady.dev/projects/terry/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/terry/</guid>
+      <description>Case level analysis generates poor precedent</description>
+    </item>
+    <item>
+      <title>Focus on Features</title>
+      <link>https://grady.dev/projects/fof/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/fof/</guid>
+      <description>A resource for regulators and product managers to minimize digital harms</description>
+    </item>
+    <item>
+      <title>Civil Grand Jury</title>
+      <link>https://grady.dev/projects/cgj/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/cgj/</guid>
+      <description>San Francisco&amp;rsquo;s Civil Grand Jury</description>
+    </item>
+  </channel>
+</rss>

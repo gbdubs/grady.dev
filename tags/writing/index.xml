@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Writing on grady.dev</title>
+    <link>https://grady.dev/tags/writing/</link>
+    <description>Recent content in Writing on grady.dev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://grady.dev/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On the name Grady</title>
+      <link>https://grady.dev/projects/on-grady/</link>
+      <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/on-grady/</guid>
+      <description>Family lore, resillience, and what matters</description>
+    </item>
+    <item>
+      <title>Clock</title>
+      <link>https://grady.dev/projects/clock/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/clock/</guid>
+      <description>Something that is more than the sum of its parts can be reduced back to it.</description>
+    </item>
+    <item>
+      <title>Narratives</title>
+      <link>https://grady.dev/projects/narratives/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/narratives/</guid>
+      <description>Thoughts on how privacy and identity are related.</description>
+    </item>
+    <item>
+      <title>Sniff</title>
+      <link>https://grady.dev/projects/sniff/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/sniff/</guid>
+      <description>Why &lt;em&gt;Florida v. Harris&lt;/em&gt; should be the minimum bar for surveillance</description>
+    </item>
+    <item>
+      <title>Terry v. Ohio &#43; Bulk Infringement</title>
+      <link>https://grady.dev/projects/terry/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/terry/</guid>
+      <description>Case level analysis generates poor precedent</description>
+    </item>
+    <item>
+      <title>Advice for new SWEs</title>
+      <link>https://grady.dev/projects/advice/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/advice/</guid>
+      <description>My recommendations for folks starting (or considering) a career as a software engineer</description>
+    </item>
+    <item>
+      <title>Creditworthy</title>
+      <link>https://grady.dev/projects/creditworthy/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/creditworthy/</guid>
+      <description>Thoughts on how Josh Lauer&amp;rsquo;s book &amp;ldquo;Creditworthy&amp;rdquo; can help us renegotiate the surveillance social contract.</description>
+    </item>
+    <item>
+      <title>Raison d&#39;être: le chien</title>
+      <link>https://grady.dev/projects/dogs/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/dogs/</guid>
+      <description>My search for (and approximate answer to) the big questions</description>
+    </item>
+  </channel>
+</rss>

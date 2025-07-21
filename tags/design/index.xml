@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on grady.dev</title>
+    <link>https://grady.dev/tags/design/</link>
+    <description>Recent content in Design on grady.dev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://grady.dev/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Parley</title>
+      <link>https://grady.dev/projects/parley/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/parley/</guid>
+      <description>Recursive annotations as a counter-proposal to the comment thread</description>
+    </item>
+    <item>
+      <title>Personal Website V1</title>
+      <link>https://grady.dev/projects/website_v1/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/website_v1/</guid>
+      <description>The very deprecated version of my personal portfolio</description>
+    </item>
+    <item>
+      <title>Personal Website V2</title>
+      <link>https://grady.dev/projects/website_v2/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/website_v2/</guid>
+      <description>The deprecated version of my personal portfolio</description>
+    </item>
+    <item>
+      <title>Personal Website V3</title>
+      <link>https://grady.dev/projects/website_v3/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/website_v3/</guid>
+      <description>The site you find yourself on right now</description>
+    </item>
+    <item>
+      <title>Shoe Rack</title>
+      <link>https://grady.dev/projects/shoe_rack/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/shoe_rack/</guid>
+      <description>A simple and fun shoe rack that fits exactly 3x4 pairs of shoes</description>
+    </item>
+    <item>
+      <title>Shoe Rack 2</title>
+      <link>https://grady.dev/projects/shoe_rack_2/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/shoe_rack_2/</guid>
+      <description>A shoe rack made as a gift - that had to fit in a suitcase</description>
+    </item>
+    <item>
+      <title>Student Union (In Line)</title>
+      <link>https://grady.dev/projects/in_line/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/in_line/</guid>
+      <description>A multi-owner distributed WYSIWYG editor with CDN hosting</description>
+    </item>
+    <item>
+      <title>Ward Lab</title>
+      <link>https://grady.dev/projects/ward_lab/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/ward_lab/</guid>
+      <description>An academic profile for my father&amp;rsquo;s lab work</description>
+    </item>
+    <item>
+      <title>WSMD - What should Maddie Do?</title>
+      <link>https://grady.dev/projects/wsmd/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/wsmd/</guid>
+      <description>A sprint-written tool for the indecisive</description>
+    </item>
+    <item>
+      <title>Zina Ward Website</title>
+      <link>https://grady.dev/projects/zina_b_ward/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/zina_b_ward/</guid>
+      <description>My sister&amp;rsquo;s professional profile</description>
+    </item>
+    <item>
+      <title>Custom Board Games</title>
+      <link>https://grady.dev/projects/board_games/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://grady.dev/projects/board_games/</guid>
+      <description>Themed gifts for friends and family</description>
+    </item>
+  </channel>
+</rss>
