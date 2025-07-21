@@ -5,7 +5,7 @@ subtitle: "Family lore, resillience, and what matters"
 summary: "Family lore, resillience, and what matters"
 type: "projects"
 isSimple: false
-isPriority: true
+isPriority: false
 sortPriority: 1450
 draft: false
 date: 2025-07-20
@@ -18,13 +18,13 @@ When my mother was pregnant with me, my parents tentatively planned to name me W
 
 But every evening during pregnancy, as they had for a decade before, and at least a decade after, my parents watched the "News Hour" - the nonpartisan nightly news roundup on PBS. A few weeks before I was born, on July 15th 1994, the News Hour had a segment covering a dam failure in South Georgia, which included a quick interview of a retired couple whose home had been destroyed in the flood - Evelyn and Grady West:
 
-> EVELYN WEST: The water come up so fast it, well, it was floated from the top of my washing machine and busted the top off -- all my food -- my food scattered.
+*EVELYN WEST*: The water come up so fast it, well, it was floated from the top of my washing machine and busted the top off -- all my food -- my food scattered.
 
-> MS. BOWSER (Reporter): Evelyn West lost nearly everything. She and her husband, Grady, built this little brick house by the lake five years ago when he retired. It was supposed to be for their golden years. But now at the ages of 68 and 70, they are faced with starting over. They're determined to make the best of it.
+*MS. BOWSER (Reporter)*: Evelyn West lost nearly everything. She and her husband, Grady, built this little brick house by the lake five years ago when he retired. It was supposed to be for their golden years. But now at the ages of 68 and 70, they are faced with starting over. They're determined to make the best of it.
 
-> GRADY WEST: I look at it this way, you know, there's no use of grievin' over it, it's a material thing, and it can be replaced, and I've always been a hard worker, and I think that we can -- between the two of us -- we can overcome this, and really that you haven't got much choice.
+*GRADY WEST*: I look at it this way, you know, there's no use of grievin' over it, it's a material thing, and it can be replaced, and I've always been a hard worker, and I think that we can -- between the two of us -- we can overcome this, and really that you haven't got much choice.
 
-> MS. BOWSER (Reporter): For 32 years, Grady West worked for the Crisp County Power Commission that built this nearby dam. It broke at 5:30 last Saturday morning, causing most of the flooding in the Lake Blackshear area. There had been one inch of rain an hour for more than a day. It was too much water, too quickly for the 65 year old earth dam and power station. 
+*MS. BOWSER (Reporter)*: For 32 years, Grady West worked for the Crisp County Power Commission that built this nearby dam. It broke at 5:30 last Saturday morning, causing most of the flooding in the Lake Blackshear area. There had been one inch of rain an hour for more than a day. It was too much water, too quickly for the 65 year old earth dam and power station. 
 
 From that short clip, my parents decided to add Grady to their list of names. My mom always said it was his smile and resilience that stuck with her. After I was born, they both thought (and the labor nurse confirmed) I looked more like a Grady than a William - and the rest is paperwork. 
 
@@ -44,8 +44,3 @@ Reflecting back a few weeks later, I'm also struck by how we can make meaningful
 With that in mind: find people that you love, develop your skills, and build something with both. 
 
 After all, we haven't got much choice.
-
-
-
-After all, we haven't got much choice.
-
